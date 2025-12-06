@@ -1,0 +1,12 @@
+{
+  "type": "Item",
+  "name": "bronze",
+  "localizedName": "Bronze",
+  "description": "A Stronger Copper, But Weaker than Titanium",
+  "hardness": 1.5,
+  "cost": 1.5,
+  "color": "bf621b",
+  "research": {
+    "parent": "raw-copper"
+  }
+}

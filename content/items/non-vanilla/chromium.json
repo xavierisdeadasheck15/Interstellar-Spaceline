@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "chromium",
+  "localizedName": "Chromium",
+  "description": "A Resilient Ingot, Use for Heat Resistance And Corrosion Resistance",
+  "hardness": 4,
+  "cost": 2.5,
+  "color": "b5c6c9",
+  "research": {
+    "parent": "titanium",
+    "requirements": ["titanium/500"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "Energy Positive Alloy",
+  "description": "A Red Glowing Core with 2 Metal",
+  "hardness": 1,
+  "cost": 3,
+  "color": "b71c1c",
+  "research": {
+    "parent": "x-positive-energy-disperse"
+  },
+  "explosiveness": 0.30,
+  "charge": 0.80
+}

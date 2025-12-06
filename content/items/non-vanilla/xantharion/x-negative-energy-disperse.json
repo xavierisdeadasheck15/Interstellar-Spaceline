@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "Energy Negative Disperse",
+  "description": "Stable Yet Dangerous Negative Crystal",
+  "hardness": 5,
+  "cost": 2.5,
+  "color": "7e57c2",
+  "research": {
+    "parent": "x-compressed-metal"
+  },
+  "explosiveness": 1.15,
+  "charge": 2.25
+}

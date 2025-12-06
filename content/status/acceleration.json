@@ -1,0 +1,7 @@
+{
+  "type": "StatusEffect",
+  "Name": "Acceleration",
+  "description": "Boost up your Power!",
+  "damageMultiplier": 1.75,
+  "speedMultiplier": 1.5
+}

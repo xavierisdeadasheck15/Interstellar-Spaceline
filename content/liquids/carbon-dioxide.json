@@ -1,0 +1,13 @@
+{
+  "localizedName": "Carbon Dioxide",
+  "description": "A Complete Combustion Gas, a Bioproduct from Advance Generator",
+  "cache": "refreshed",
+  "gas": true,
+  "color": "b0bac0",
+  "gasColor": "b0bac0",
+  "flammability": 0,
+  "explosiveness": 1,
+  "heatCapacity": 0,
+  "viscosity": 0,
+  "temperature": 2
+}

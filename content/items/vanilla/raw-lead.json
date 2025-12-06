@@ -1,0 +1,12 @@
+{
+  "type": "Item",
+  "name": "raw-lead",
+  "localizedName": "Raw Lead",
+  "description": "A Lead from a wall, Required to refine it into Lead",
+  "hardness": 1,
+  "cost": 1,
+  "color": "6f687e",
+  "research": {
+    "parent": "raw-copper"
+  }
+}

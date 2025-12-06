@@ -1,0 +1,10 @@
+{
+  "localizedName": "Chronic",
+  "description": "Boiling Magenta Color, Look like a Expired Blood, use for research stuff",
+  "color": "c51162",
+  "flammability": 0.95,
+  "explosiveness": 0.25,
+  "heatCapacity": 0,
+  "viscosity": 0.5,
+  "temperature": 0.75
+}

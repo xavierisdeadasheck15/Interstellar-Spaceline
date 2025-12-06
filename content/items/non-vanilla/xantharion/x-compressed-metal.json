@@ -1,0 +1,11 @@
+{
+  "type": "Item",
+  "name": "Compressed Metal",
+  "description": "Compressed Metal from Xantharion, act as a Plate",
+  "hardness": 4,
+  "cost": 2,
+  "color": "263238",
+  "research": {
+    "parent": "x-dark-metal"
+  }
+}

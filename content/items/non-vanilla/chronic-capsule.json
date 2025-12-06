@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "Chronic Capsule",
+  "description": "A Container of Chronic",
+  "hardness": 5,
+  "cost": 1,
+  "color": "ad1457",
+  "research": {
+    "parent": "plastanium"
+  },
+  "explosiveness": 0.25,
+  "flammability": 0.95
+}

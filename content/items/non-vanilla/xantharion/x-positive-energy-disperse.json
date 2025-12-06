@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "Energy Positive Disperse",
+  "description": "Unstable Positive Crystal",
+  "hardness": 5,
+  "cost": 2.5,
+  "color": "ef5350",
+  "research": {
+    "parent": "x-compressed-metal"
+  },
+  "explosiveness": 0.90,
+  "charge": 1.15
+}

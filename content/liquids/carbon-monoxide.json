@@ -1,0 +1,13 @@
+{
+  "localizedName": "Carbon Monoxide",
+  "description": "A Incomplete Combustion Gas, a Bioproduct from Turbine Generator And Reactor, Very Dangerous",
+  "cache": "refreshed",
+  "gas": true,
+  "color": "707070",
+  "gasColor": "707070",
+  "flammability": 0.1,
+  "explosiveness": 1.5,
+  "heatCapacity": 1,
+  "viscosity": 0,
+  "temperature": 3
+}

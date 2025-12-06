@@ -1,0 +1,9 @@
+{
+  "name": "Hard metaglass",
+  "description": "hard glass layered, use for turret & production building",
+  "cost": 1,
+  "color": "FFFFFF",
+  "research": {
+    "parent": "metaglass"
+  }
+}

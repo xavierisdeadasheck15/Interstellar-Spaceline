@@ -1,0 +1,9 @@
+{
+  "type": "material",
+  "name": "Gold",
+  "description": "A rare and valuable metal, used for advanced technology.",
+  "color": "ffd700",
+  "hardness": 3,
+  "cost": 2.5,
+  "alwaysUnlocked": false
+}
