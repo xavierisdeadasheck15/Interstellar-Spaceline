@@ -1,0 +1,29 @@
+{
+  "type": "BeamDrill",
+  "name": "Copper Beam",
+  "description": "A Laser drill that drill resource from a wall, Never wasted a energy",
+  "size": 2,
+  "category": "production",
+  "research": "core-frontal",
+  "requirements": [
+    "copper/25",
+    "silicon/5" 
+  ],
+  "tier": 1,
+  "range": 3,
+  "drillTime": 200,
+  "fogRadius": 5,
+  "researchCost": [
+    "copper/50",
+    "silicon/10"
+  ],
+  "consumes": {
+    "power": 0.02,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.0010,
+      "optional": true,
+      "booster": true
+    }
+  }
+} 

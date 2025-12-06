@@ -1,0 +1,17 @@
+{
+   "type": "Wall",
+   "name": "Large Reinforce Copper Wall",
+   "description": "Large Reinforced Copper wall, Able to Block Laser",
+   "detail": "BUT NOT FOR CORVUS THO-",
+   "size": 2,
+   "health": 1350,
+   "armor": 2,
+   "buildTime": 1.5,
+   "absorbLasers": true,
+   "category": "defense",
+   "research": "reinforce-copper-wall",
+   "requirements": [
+      "bronze/12",
+      "copper/12"
+     ]
+}

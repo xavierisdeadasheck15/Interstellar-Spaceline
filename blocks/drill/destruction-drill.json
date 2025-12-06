@@ -1,0 +1,57 @@
+{
+  "type": "BurstDrill",
+  "name": "Destruction Drill",
+  "description": "Boil water into steam and combust to Obtain Resource from the ore",
+  "health": 3000,
+  "size": 4,
+  "buildTime": 1,
+  "squareSprite": false,
+  "hasPower": true,
+  "hasItems": true,
+  "tier": 6,
+  "drillTime": 500,
+  "shake": 5.0,
+  "arrowSpacing": 3.0,
+  "itemCapacity": 50,
+  "liquidCapacity": 100,
+  "consumes": {
+    "power": 5.5,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.020
+    }
+  },
+  "requirements": [
+    {
+      "item": "beryllium",
+      "amount": 250
+    },
+    {
+      "item": "titanium",
+      "amount": 200
+    },
+    {
+      "item": "bronze",
+      "amount": 500
+    },
+    {
+      "item": "graphite",
+      "amount": 300
+    },
+    {
+      "item": "silicon",
+      "amount": 300
+    }
+  ],
+  "category": "production",
+  "research": {
+    "parent": "titanium-beam",
+    "requirements": [
+      "beryllium/500",
+      "titanium/400",
+      "bronze/1000",
+      "graphite/600",
+      "silicon/600"
+    ]
+  }
+}
