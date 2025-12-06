@@ -1,0 +1,18 @@
+{
+  "localizedName": "Rematch",
+  "description": "[red]This is Familiar...[white]",
+  "difficulty": 9,
+  "captureWave": 19,
+  "planet": "glaciera-prime",
+  "sector": 9,
+  "addStartingItems": true,
+  "research": {
+    "parent": "breeze",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "southline"
+      }
+    ]
+  }
+}

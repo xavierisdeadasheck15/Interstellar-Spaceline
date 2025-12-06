@@ -1,0 +1,18 @@
+{
+  "localizedName": "Heartless",
+  "description": "Many Ore wall Detected here, Required Beam drill to Gather amount of Resource, and the enemy base are now has Mender and Advance Compression & Generator in their Area, Research them, and use them",
+  "difficulty": 2,
+  "planet": "glaciera-prime",
+  "sector": 17,
+  "allowLaunchLoadout": true,
+  "addStartingItems": true,
+  "research": {
+    "parent": "initial-landzone",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "initial-landzone"
+      }
+    ]
+  }
+}

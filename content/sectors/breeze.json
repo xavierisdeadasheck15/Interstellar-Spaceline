@@ -1,0 +1,19 @@
+{
+  "localizedName": "Breeze",
+  "description": "An Empty Structure, No Enemy Base Detected, but Detected Arrival of Enemy in Here, Build a Defense, and Capture the Sector",
+  "difficulty": 4,
+  "captureWave": 20,
+  "planet": "glaciera-prime",
+  "sector": 30,
+  "allowLaunchLoadout": true,
+  "addStartingItems": true,
+  "research": {
+    "parent": "heartless",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "heartless"
+      }
+    ]
+  }
+}

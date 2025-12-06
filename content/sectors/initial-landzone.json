@@ -1,0 +1,12 @@
+{
+  "localizedName": "Initial Landzone",
+  "description": "A Frosty Sector that Contain Small amount of Ore, but Abundant of Ore in Wall, Required [orange]Erekir [white]Technology Sample to Drill and Refine the Ore, Good for Early Arrival",
+  "difficulty": 2,
+  "planet": "glaciera-prime",
+  "sector": 0,
+  "allowLaunchLoadout": true,
+  "addStartingItems": true,
+  "research": {
+  "parent": "core-frontal"
+  }
+}
