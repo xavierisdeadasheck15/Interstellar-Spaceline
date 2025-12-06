@@ -1,0 +1,143 @@
+{
+  "type": "mech",
+  "name": "Destroyer",
+  "description": "Ground base Enemy from Xanthration, Missile Launcher",
+  "outlineColor": "141d21",
+  "healColor": "ef5350",
+  "flying": false,
+  "speed": 0.7,
+  "hitSize": 9.5,
+  "health": 300,
+  "armor": 2,
+  "weapons": [
+    {
+      "name": "destroyer-missile",
+      "top": false,
+      "shootY": 3,
+      "shootx": 0,
+      "reload": 100,
+      "x": -6.8,
+      "y": -1,
+      "alternate": true,
+      "mirror": true,
+      "recoil": 3,
+      "shootSound": "missile",
+      "shoot": {
+        "type": "shootPattern",
+         "shots": 3,
+         "shotDelay": 20
+         },
+      "bullet": {
+        "type": "MissileBulletType",
+        "damage": 50,
+        "splashDamage": 25,
+        "splashDamageRadius": 30,
+        "pierce": true,
+        "height": 12,
+        "width": 12,
+        "homingPower": 0.25,
+        "homingRange": 50,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 1,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 25,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootSmall",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 25,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "trailEffect": "colorTrail",
+        "trailWidth": 1.5,
+        "trailLength": 10,
+        "speed": 4,
+        "lifetime": 55
+      }
+    }
+  ],
+  "research": "x-light-fabricator",
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "type": "flying",
+  "name": "Missilith",
+  "description": "One of Xantharion Medium Missile Tank, Exploding Enemy with Bombardment Projectile",
+  "flying": false,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "healColor": "ef5350",
+  "rotateMoveFirst": true,
+  "speed": 1.15,
+  "accel": 0.015,
+  "drag": 0.06,
+  "rotateSpeed": 1,
+  "hitSize": 30,
+  "health": 4750,
+  "armor": 19,
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+  "hoverable": true,
+  "hovering": true,
+  "parts": [
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -15,
+      "y": 15,
+      "radius": 15,
+      "phase": 200,
+      "color": "ef5350",
+      "stroke": 5,
+      "layerOffset": -0.001
+    },
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -15,
+      "y": -15,
+      "radius": 15,
+      "phase": 200,
+      "color": "ef5350",
+      "stroke": 5,
+      "layerOffset": -0.001
+    }
+  ],
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning",
+    "blasted"
+  ],
+  "abilities": [
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "executor",
+      "amount": 3
+    }
+  ],
+  "weapons": [
+    {
+      "name": "missilith-turret",
+      "top": true,
+      "shootY": 20,
+      "reload": 500,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "shootCone": 20,
+      "rotate": true,
+      "rotateSpeed": 1.15,
+      "rotationLimit": 180,
+      "recoil": 2,
+      "inaccuracy": 1,
+      "shoot": {
+        "type": "ShootAlternate",
+        "shotDelay": 2,
+        "spread": 15,
+        "barrels": 2,
+        "shots": 10
+      },
+      "shootSound": "missileLarge",
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "sprite": "missile-large",
+        "backSprite": "missile-large-back",
+        "buildingDamageMultiplier": 1.5,
+        "damage": 150,
+        "splashDamage": 75,
+        "splashDamageRadius": 45,
+        "height": 15,
+        "width": 15,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 20,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 25
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 10,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 6,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 20,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 25
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 10,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 6,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootSmokeDisperse",
+        "smokeEffect": "missileTrailSmoke",
+        "trailWidth": 2,
+        "trailLength": 15,
+        "speed": 8,
+        "lifetime": 60
+      }
+    }
+  ],
+  "research": "x-medium-machinery-assembler"
+}

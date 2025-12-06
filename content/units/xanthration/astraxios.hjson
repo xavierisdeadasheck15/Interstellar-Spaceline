@@ -1,0 +1,27 @@
+ 
+type: flying
+name: Astraxios
+description: "Xantharion Cheaper Miner Drone"
+lowAltitude: false
+flying: true
+health: 200
+hitSize: 10
+armor: 1
+itemCapacity: 50
+accel: 0.003
+drag: 0.006
+speed: 4.0
+outlineColor: "141d21"
+healColor: "7e57c2"
+defaultController: "minerAI"
+playerControllable: false
+engineOffset: 9
+mineSpeed: 7.5
+rotateSpeed: 3
+mineTier: 2
+research": "x-mining-fabricator"
+mineItems: [
+    "copper",
+    "lead",
+    "beryllium"
+]

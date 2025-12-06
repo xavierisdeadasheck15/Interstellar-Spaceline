@@ -1,0 +1,356 @@
+{
+  "type": "flying",
+  "name": "Gravitonix",
+  "description": "One of Xantharion Medium Hover Tank, Capable to Destroy Structure",
+  "flying": false,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "healColor": "ef5350",
+  "rotateMoveFirst": true,
+  "speed": 1.25,
+  "accel": 0.02,
+  "drag": 0.07,
+  "rotateSpeed": 1,
+  "hitSize": 30,
+  "health": 4500,
+  "armor": 18,
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+  "hoverable": true,
+  "hovering": true,
+  "parts": [
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -15,
+      "y": 15,
+      "radius": 15,
+      "phase": 200,
+      "color": "ef5350",
+      "stroke": 5,
+      "layerOffset": -0.001
+    },
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -15,
+      "y": -15,
+      "radius": 15,
+      "phase": 200,
+      "color": "ef5350",
+      "stroke": 5,
+      "layerOffset": -0.001
+    }
+  ],
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning",
+    "blasted"
+  ],
+  "abilities": [
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "executor",
+      "amount": 2
+    }
+  ],
+  "weapons": [
+    {
+      "name": "gravitonix-turret",
+      "top": true,
+      "shootY": 20,
+      "reload": 200,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "shootCone": 25,
+      "rotate": true,
+      "rotateSpeed": 1.25,
+      "rotationLimit": 180,
+      "recoil": 3,
+      "inaccuracy": 2,
+      "shootSound": "mediumCannon",
+      "bullet": {
+        "sprite": "interstellar-spaceline-sharp-bullet",
+        "backSprite": "interstellar-spaceline-sharp-bullet-back",
+        "buildingDamageMultiplier": 1.25,
+        "type": "BasicBulletType",
+        "damage": 125,
+        "splashDamage": 62.5,
+        "splashDamageRadius": 40,
+        "pierceBuilding": true,
+        "pierceArmor": true,
+        "pierceDamageFactor": 0.01,
+        "height": 15,
+        "width": 15,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 20,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 25
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 10,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 6,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 20,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 25
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 20,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 10,
+              "sizeTo": 0,
+              "cone": 360,
+              "length": 100,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 6,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootBig2",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 40,
+              "length": 60,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "d50000",
+              "colorTo": "ff5722",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "trailWidth": 2,
+        "trailLength": 10,
+        "speed": 8,
+        "lifetime": 40,
+        "fragBullets": 5,
+        "fragSpread": 100,
+        "fragAngle": 50,
+        "fragRandomSpread": 100,
+        "fragBullet": {
+          "buildingDamageMultiplier": 0.8,
+          "type": "BasicBulletType",
+          "damage": 35.5,
+          "pierceBuilding": false,
+          "pierceArmor": true,
+          "pierceDamageFactor": 0.01,
+          "height": 7.5,
+          "width": 7.5,
+          "frontColor": "d32f2f",
+          "backColor": "b71c1c",
+          "trailColor": "d32f2f",
+          "despawnEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 20,
+                "sizeFrom": 5,
+                "sizeTo": 0,
+                "cone": 30,
+                "length": 50,
+                "colorFrom": "757575",
+                "colorTo": "424242"
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 20,
+                "sizeFrom": 1,
+                "sizeTo": 0,
+                "cone": 20,
+                "length": 25,
+                "colorFrom": "d32f2f",
+                "colorTo": "b71c1c",
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0
+              }
+            ]
+          },
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 20,
+                "sizeFrom": 5,
+                "sizeTo": 0,
+                "cone": 30,
+                "length": 50,
+                "colorFrom": "757575",
+                "colorTo": "424242"
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 20,
+                "sizeFrom": 1,
+                "sizeTo": 0,
+                "cone": 20,
+                "length": 25,
+                "colorFrom": "d32f2f",
+                "colorTo": "b71c1c",
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0
+              }
+            ]
+          },
+          "shootEffect": "shootBig2",
+          "smokeEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "WaveEffect",
+                "sides": 0,
+                "sizeFrom": 0,
+                "sizeTo": 20,
+                "strokeFrom": 4,
+                "strokeTo": 0,
+                "colorFrom": "b71c1c",
+                "colorTo": "e57373",
+                "lifetime": 30
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 20,
+                "sizeFrom": 4,
+                "sizeTo": 0,
+                "cone": 35,
+                "length": 70,
+                "colorFrom": "ef5350",
+                "colorTo": "d32f2f"
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 25,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "cone": 40,
+                "length": 60,
+                "colorFrom": "d32f2f",
+                "colorTo": "b71c1c"
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 40,
+                "sizeFrom": 5,
+                "sizeTo": 0,
+                "cone": 20,
+                "length": 75,
+                "colorFrom": "d50000",
+                "colorTo": "ff5722",
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0
+              }
+            ]
+          },
+          "trailWidth": 1,
+          "trailLength": 5,
+          "speed": 5,
+          "lifetime": 50
+        }
+      }
+    }
+  ],
+  "research": "x-medium-machinery-assembler"
+}

@@ -1,0 +1,97 @@
+{
+  "envDisabled": 0,
+  "name": "Velostrike",
+  "description": "One of Vanguard Unit",
+  "type": "mech",
+  "targetPriority": 5,
+  "speed": 0.8,
+  "hitSize": 9,
+  "health": 300,
+  "armor": 10,
+  "rotateSpeed": 3.5,
+  "outlineColor": "404049ff",
+  "faceTarget": true,
+  "drawCell": true,
+  "mechSideSway": 0.6,
+  "mechFrontSway": 0.3,
+  "mechLegColor": "4a4b53",
+  "mechStepParticles": true,
+  "immunities": [
+    "burning",
+    "melting"
+  ],
+  "weapons": [
+    {
+      "name": "velostrike-gun",
+      "top": false,
+      "ejectEffect": "casing2",
+      "shootY": 5,
+      "reload": 50,
+      "x": -8.5,
+      "y": 2,
+      "alternate": true,
+      "mirror": true,
+      "inaccuracy": 2,
+      "recoil": 3,
+      "shoot": {
+        "type": "shootPattern",
+         "shots": 3,
+         "shotDelay": 5
+         },
+      "shootSound": "pew",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 20,
+        "height": 10,
+        "width": 10,
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "despawnEffect": "hitBulletSmall",
+        "hitEffect": "hitBulletSmall",
+        "trailWidth": 1,
+        "trailLength": 3,
+        "speed": 5,
+        "lifetime": 25
+      }
+    },
+    {
+      "name": "modular-evasion",
+      "display": false,
+      "top": false,
+      "controllable": false,
+      "autoTarget": true,
+      "shootY": 0,
+      "reload": 500,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 10,
+      "recoil": 0,
+      "shootCone": 5,
+      "shootSound": "spark",
+      "bullet": {
+        "type": "BasicBulletType",
+        "pierceBuilding": true,
+        "collides": false,
+        "recoil": 30,
+        "damage": 0,
+        "height": 1,
+        "width": 1,
+        "shootEffect": "none",
+        "smokeEffect": "none",
+        "despawnEffect": "none",
+        "hitEffect": "none",
+        "speed": 15,
+        "lifetime": 5
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RegenAbility",
+      "amount": 0.055,
+      "healEffect": "regenParticle"
+    }
+  ]
+}

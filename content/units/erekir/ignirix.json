@@ -1,0 +1,76 @@
+{
+  "type": "mech",
+  "envDisabled": 0,
+  "name": "Ignirix",
+  "description": "Fire Energy Bullet that Damage and Heal",
+  "outlineColor": "141d21",
+  "flying": false,
+  "speed": 0.95,
+  "rotateSpeed": 2.5,
+  "hitSize": 9,
+  "health": 500,
+  "armor": 5,
+  "immunities": [
+    "shocked",
+    "electrified"
+  ],
+  "weapons": [
+    {
+      "name": "ignirix-rail",
+      "top": true,
+      "shootY": 6,
+      "shootx": 0,
+      "reload": 100,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 5,
+      "recoil": 0,
+      "shoot": {
+        "type": "shootPattern",
+         "shots": 3,
+         "shotDelay": 10
+         },
+      "shootShake": 1,
+      "shootSound": "shootLaser3",
+      "bullet": {
+        "type": "BasicBulletType",
+        "recoil": 0.5,
+        "drag": 0.01,
+        "damage": 18.5,
+        "pierceArmor": true,
+        "height": 12,
+        "width": 12,
+        "frontColor": "ffffff",
+        "backColor": "98ffa9",
+        "trailColor": "98ffa9",
+        "despawnEffect": "hitBulletColor",
+        "hitEffect": "hitBulletColor",
+        "shootEffect": "shootSmall",
+        "trailWidth": 2,
+        "trailLength": 5,
+        "healPercent": 2,
+        "collidesTeam": true,
+        "speed": 5,
+        "lifetime": 30,
+        "status": "electrified",
+        "statusDuration": 25,
+        "weaveScale": 8,
+        "weaveMag": 0.8
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RepairFieldAbility",
+      "amount": 25,
+      "reload": 100,
+      "range": 25
+    }
+  ],
+  "researchCostMultiplier": 1.5,
+  "research": {
+  "parent": "support-fabricator"
+  }
+}

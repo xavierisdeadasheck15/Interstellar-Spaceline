@@ -1,0 +1,151 @@
+{
+  "type": "legs",
+  "name": "Ballistron",
+  "description": "A Light Gunner Mech of Xantharion",
+  "flying": false,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "healColor": "ef5350",
+  "speed": 0.50,
+  "rotateSpeed": 2,
+  "hitSize": 10,
+  "health": 550,
+  "armor": 18,
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning",
+    "blasted"
+  ],
+  "legCount": 4,
+  "legPairOffset": 1.25,
+  "legLength": 35,
+  "legBaseOffset": 7,
+  "legExtension": 5,
+  "legSpeed": 0.75,
+  "rippleScale": 2,
+  "weapons": [
+    {
+      "name": "ballistron-primary",
+      "top": false,
+      "reload": 8,
+      "shootY": 9,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 5,
+      "recoil": 0,
+      "shootSound": "secondary-energy-blaster",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 10.5,
+        "pierce": true,
+        "height": 12,
+        "width": 12,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 1,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 25,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootSmall",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 25,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "trailEffect": "colorTrail",
+        "trailWidth": 1.5,
+        "trailLength": 10,
+        "speed": 6,
+        "lifetime": 50
+      }
+    }
+  ],
+  "research": "x-light-Machinery-fabricator",
+  "abilities": [
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "executor",
+      "amount": 1
+    }
+  ]
+}

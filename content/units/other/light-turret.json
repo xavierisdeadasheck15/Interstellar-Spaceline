@@ -1,0 +1,48 @@
+{
+  "name": "Light Turret",
+  "description": "Portable Trial Turret",
+  "type": "crawl",
+  "hidden": true,
+  "speed": 0,
+  "hitSize": 10,
+  "health": 500,
+  "armor": 0,
+  "drawBody": true,
+  "drawCell": false,
+  "itemCapacity": 10,
+  "outlineColor": "36363c",
+  "faceTarget": false,
+  "weapons": [
+    {
+      "name": "light-turret-gun",
+      "top": true,
+      "shootY": 5,
+      "reload": 5,
+      "x": 0,
+      "y": 0,
+      "mirror": false,
+      "recoil": 2,
+      "rotate": true,
+      "rotateSpeed": 4,
+      "inaccuracy": 2,
+      "shootSound": "shootSnap",
+      "bullet": {
+        "type": "BasicBulletType",
+        "reloadMultiplier": 1.0,
+        "damage": 15.75,
+        "speed": 3,
+        "lifetime": 65,
+        "height": 12,
+        "width": 5,
+        "frontColor": "eac1a8",
+        "backColor": "b8705c",
+        "despawnEffect": "hitBulletSmall",
+        "hitEffect": "hitBulletSmall",
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "trailEffect": "colorSpark",
+        "trailRotation": true
+      }
+    }
+  ]
+}

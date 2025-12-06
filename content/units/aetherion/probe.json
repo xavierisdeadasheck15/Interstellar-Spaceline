@@ -1,0 +1,123 @@
+{
+  "type": "flying",
+  "name": "Probe",
+  "envDisabled": 0,
+  "description": "Unknown Flying Probe",
+  "flying": true,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "healColor": "4dd0e1",
+  "engineOffset": 5,
+  "trailLength": 10,
+  "speed": 4,
+  "accel": 0.02,
+  "drag": 0.004,
+  "rotateSpeed": 2,
+  "hitSize": 8,
+  "health": 275,
+  "armor": 2,
+  "faceTarget": true,
+  "immunities": [
+    "shocked",
+    "electrified",
+    "freezing",
+    "sapped",
+    "blasted"
+  ],
+  "weapons": [
+    {
+      "name": "probe-cannon",
+      "shootY": 0,
+      "reload": 10,
+      "x": 0,
+      "y": 6,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 2,
+      "rotate": false,
+      "recoil": 0,
+      "shootSound": "shootLaser3",
+      "bullet": {
+        "type": "BasicBulletType",
+        "shieldDamageMultiplier": 5.0,
+        "absorbable": false,
+        "hittable": false,
+        "frontColor": "4dd0e1",
+        "backColor": "00838f",
+        "trailColor": "00acc1",
+        "sprite": "interstellar-spaceline-orb-bullet",
+        "backSprite": "interstellar-spaceline-orb-bullet-back",
+        "width": 10,
+        "height": 10,
+        "shrinkX": 0.5,
+        "shrinkY": 0.5,
+        "spin": 2.5,
+        "homingPower": 0.05,
+        "homingRange": 100,
+        "lifetime": 90,
+        "speed": 2,
+        "damage": 15.5,
+        "pierce": true,
+        "pierceBuilding": true,
+        "pierceArmor": true,
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "80cbc4",
+              "colorTo": "00796b",
+              "lifetime": 30
+            }
+          ]
+        },
+        "shootEffect": "generatespark",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "80cbc4",
+              "colorTo": "00796b",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "01579b",
+              "colorTo": "29b6f6",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "trailWidth": 1.5,
+        "trailLength": 10,
+        "despawnSound": "plasmaboom",
+        "reflectable": false
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RegenAbility",
+      "percentAmount": 0.1,
+      "amount": 0.1
+    }
+  ]
+}

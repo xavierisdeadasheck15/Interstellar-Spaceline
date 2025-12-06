@@ -1,0 +1,47 @@
+{
+  "type": "flying",
+  "name": "Coretal",
+  "description": "Core Unit within a Core:Frontal, Rapid fire",
+  "flying": true,
+  "itemCapacity": 150,
+  "buildSpeed": 6.5,
+  "mineSpeed": 15,
+  "mineTier": 3,
+  "mineWalls": true,
+  "lowAltitude": true,
+  "outlineColor": "616161",
+  "engineOffset": 7,
+  "trailLength": 5,
+  "speed": 3,
+  "rotateSpeed": 3,
+  "hitSize": 10,
+  "health": 250,
+  "armor": 2,
+  "weapons": [
+    {
+      "name": "coretal-rail",
+      "top": true,
+      "shootY": 5,
+      "reload": 10,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 1,
+      "recoil": 0,
+      "shootSound": "pew",
+      "bullet": {
+        "type": "BasicBulletType",
+        "buildingDamageMultiplier": 0.1,
+        "damage": 5.5,
+        "pierceArmor": true,
+        "homingPower": 0.1,
+        "homingRange": 25,
+        "height": 10,
+        "width": 6,
+        "speed": 4,
+        "lifetime": 50
+      }
+    }
+  ]
+}

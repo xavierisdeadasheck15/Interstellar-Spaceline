@@ -1,0 +1,129 @@
+{
+  "type": "flying",
+  "envDisabled": 0,
+  "name": "Overseer",
+  "description": "Unknown Fighter Ship",
+  "flying": true,
+  "lowAltitude": true,
+  "accel": 0.02,
+  "drag": 0.005,
+  "outlineColor": "141d21",
+  "healColor": "4dd0e1",
+  "engineOffset": 10,
+  "engineSize": 8,
+  "trailLength": 10,
+  "speed": 6,
+  "rotateSpeed": 2.5,
+  "hitSize": 30,
+  "health": 3000,
+  "armor": 10,
+  "faceTarget": true,
+  "immunities": [
+    "shocked",
+    "electrified",
+    "freezing",
+    "sapped",
+    "blasted"
+  ],
+  "weapons": [
+    {
+      "name": "overseer-gun",
+      "layerOffset": -0.01,
+      "top": false,
+      "shootY": 8,
+      "reload": 100,
+      "x": -12.5,
+      "y": 10,
+      "alternate": true,
+      "mirror": true,
+      "inaccuracy": 7,
+      "recoil": 3,
+      "shoot": {
+        "type": "shootPattern",
+         "shots": 5,
+         "shotDelay": 1
+         },
+      "shootSound": "shootLaser3",
+      "bullet": {
+        "type": "BasicBulletType",
+        "shieldDamageMultiplier": 7.5,
+        "absorbable": false,
+        "hittable": false,
+        "frontColor": "4dd0e1",
+        "backColor": "00838f",
+        "trailColor": "00acc1",
+        "sprite": "interstellar-spaceline-orb-bullet",
+        "backSprite": "interstellar-spaceline-orb-bullet-back",
+        "width": 15,
+        "height": 15,
+        "shrinkX": 0.1,
+        "shrinkY": 0.1,
+        "spin": 3,
+        "homingPower": 0.015,
+        "homingRange": 100,
+        "lifetime": 90,
+        "speed": 5,
+        "damage": 25.5,
+        "pierceBuilding": true,
+        "pierceArmor": true,
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "80cbc4",
+              "colorTo": "00796b",
+              "lifetime": 30
+            }
+          ]
+        },
+        "shootEffect": "generatespark",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "80cbc4",
+              "colorTo": "00796b",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "01579b",
+              "colorTo": "29b6f6",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "trailWidth": 2,
+        "trailLength": 10,
+        "despawnSound": "plasmaboom",
+        "reflectable": false
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RegenAbility",
+      "percentAmount": 0.1,
+      "amount": 0.2
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "flying",
+  "name": "splinter",
+  "description": "Cheaper Flare version",
+  "flying": true,
+  "lowAltitude": true,
+  "outlineColor": "616161",
+  "engineOffset": 6,
+  "trailLength": 10,
+  "speed": 3,
+  "rotateSpeed": 3,
+  "hitSize": 7,
+  "health": 75,
+  "armor": 0,
+  "circleTarget": true,
+  "weapons": [
+    {
+      "name": "splinter-gun",
+      "top": false,
+      "shootY": 5,
+      "reload": 10,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 1,
+      "shootSound": "pew",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "height": 10,
+        "width": 5,
+        "speed": 4,
+        "lifetime": 75
+      }
+    }
+  ],
+  "research": {
+  "parent": "assaulter-construction"
+  }
+}

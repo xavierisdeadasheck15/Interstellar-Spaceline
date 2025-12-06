@@ -1,0 +1,60 @@
+{
+  "type": "tether",
+  "name": "Skybastion",
+  "description": "Heavy Xanthration Aerial Carrier",
+  "flying": true,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "healColor": "ef5350",
+  "engineOffset": 10,
+  "trailLength": 5,
+  "speed": 1.5,
+  "accel": 0.01,
+  "drag": 0.006,
+  "rotateSpeed": 2,
+  "hitSize": 20,
+  "health": 2500,
+  "armor": 10,
+  "defaultController": "CargoAI",
+  "isEnemy": false,
+  "allowedInPayloads": false,
+  "logicControllable": false,
+  "playerControllable": false,
+  "itemCapacity": 500,
+  "engines": [
+    {
+      "x": 12,
+      "y": -4,
+      "rotation": 270,
+      "radius": 4,
+      "trailLength": 10
+    },
+    {
+      "x": -12,
+      "y": -4,
+      "rotation": 270,
+      "radius": 4,
+      "trailLength": 10
+    },
+    {
+      "x": 7,
+      "y": -20,
+      "rotation": 270,
+      "radius": 5,
+      "trailLength": 20
+    },
+    {
+      "x": -7,
+      "y": -20,
+      "rotation": 270,
+      "radius": 5,
+      "trailLength": 20
+    }
+  ],
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "type": "mech",
+  "name": "Scattervolt",
+  "description": "Medium Size Ground base Shotgunner Enemy from Xanthration",
+  "outlineColor": "141d21",
+  "healColor": "ef5350",
+  "flying": false,
+  "speed": 0.5,
+  "hitSize": 13,
+  "health": 650,
+  "armor": 3,
+  "weapons": [
+    {
+      "name": "scattervolt-gun",
+      "top": false,
+      "shootY": 6,
+      "shootx": 0,
+      "reload": 50,
+      "x": -10,
+      "y": -1,
+      "alternate": true,
+      "mirror": true,
+      "recoil": 4,
+      "inaccuracy": 10,
+      "shoot": {
+        "type": "shootPattern",
+        "shots": 7
+      },
+      "shootShake": 3,
+      "shootSound": "shotgun",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 20,
+        "pierceArmor": true,
+        "pierceDamageFactor": 0.01,
+        "height": 12,
+        "width": 8,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": "smokePuff",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 1,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 25,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootSmall",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 50,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 1,
+              "sizeTo": 0,
+              "cone": 45,
+              "length": 25,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "trailEffect": "colorTrail",
+        "trailWidth": 1.5,
+        "trailLength": 5,
+        "speed": 7,
+        "lifetime": 45
+      }
+    }
+  ],
+  "research": "x-medium-refabricator",
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ]
+}

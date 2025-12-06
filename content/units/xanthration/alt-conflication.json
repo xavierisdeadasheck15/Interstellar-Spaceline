@@ -1,0 +1,328 @@
+{
+  "type": "flying",
+  "name": "Harmonition",
+  "description": "Advanced Medium Xanthration Unit",
+  "flying": true,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "healColor": "7e57c2",
+  "engineOffset": 6,
+  "trailLength": 5,
+  "speed": 1.25,
+  "accel": 0.1,
+  "drag": 0.06,
+  "rotateSpeed": 1.75,
+  "hitSize": 10,
+  "health": 500,
+  "armor": 4,
+  "circleTarget": false,
+  "weapons": [
+    {
+      "name": "alt-conflication-concentration",
+      "layerOffset": -1,
+      "under": true,
+      "top": false,
+      "shootY": 4,
+      "reload": 200,
+      "x": 0,
+      "y": 6,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 0,
+      "recoil": 3,
+      "shoot": {
+        "type": "shootPattern",
+        "shots": 2,
+        "shotDelay": 50
+      },
+      "shootShake": 3,
+      "shootSound": "shootSmite",
+      "bullet": {
+        "type": "BasicBulletType",
+        "homingPower": 0.25,
+        "homingRange": 75,
+        "pierceArmor": true,
+        "damage": 50,
+        "height": 10,
+        "width": 10,
+        "speed": 3,
+        "frontColor": "512da8",
+        "backColor": "311b92",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "512da8",
+              "colorTo": "311b92",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 50,
+              "length": 65,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 60,
+              "colorFrom": "7e57c2",
+              "colorTo": "512da8",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 30,
+              "colorFrom": "512da8",
+              "colorTo": "311b92",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "311b92",
+              "colorTo": "9575cd",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "7e57c2",
+              "colorTo": "512da8"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 40,
+              "length": 60,
+              "colorFrom": "512da8",
+              "colorTo": "311b92"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "673ab7",
+              "colorTo": "9575cd",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "lifetime": 120
+      }
+    },
+    {
+      "name": "alt-conflication-gun",
+      "layerOffset": -1,
+      "under": true,
+      "top": false,
+      "shootY": 5,
+      "reload": 100,
+      "x": -5,
+      "y": 3,
+      "alternate": false,
+      "mirror": true,
+      "inaccuracy": 5,
+      "recoil": 2,
+      "shootSound": "shootSmite",
+      "bullet": {
+        "type": "BasicBulletType",
+        "homingPower": 0.25,
+        "homingRange": 75,
+        "pierceArmor": true,
+        "damage": 40,
+        "height": 10,
+        "width": 10,
+        "speed": 3,
+        "frontColor": "512da8",
+        "backColor": "311b92",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "512da8",
+              "colorTo": "311b92",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 50,
+              "length": 65,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 60,
+              "colorFrom": "7e57c2",
+              "colorTo": "512da8",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 30,
+              "colorFrom": "512da8",
+              "colorTo": "311b92",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "311b92",
+              "colorTo": "9575cd",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "7e57c2",
+              "colorTo": "512da8"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 40,
+              "length": 60,
+              "colorFrom": "512da8",
+              "colorTo": "311b92"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "673ab7",
+              "colorTo": "9575cd",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "lifetime": 120
+      }
+    }
+  ],
+  "research": "x-medium-refabricator",
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "type": "flying",
+  "name": "Celestial",
+  "description": "Xelestal Core Unit",
+  "flying": true,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "engineOffset": 5,
+  "trailLength": 30,
+  "speed": 2.75,
+  "accel": 0.06,
+  "drag": 0.008,
+  "rotateSpeed": 2,
+  "hitSize": 10,
+  "health": 550,
+  "armor": 2,
+  "controller": "builderAI",
+  "buildSpeed": 2.5,
+  "itemCapacity": 100,
+  "mineSpeed": 10,
+  "mineTier": 3,
+  "singleTarget": true,
+  "faceTarget": true,
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ],
+  "weapons": [
+    {
+      "name": "celestial-railgun",
+      "shootY": 5,
+      "reload": 200,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 0,
+      "recoil": 0,
+      "shoot": {
+        "type": "shootPattern",
+        "firstShotDelay": 80
+        },
+      "chargeSound": "lasercharge2",
+      "shootSound": "shootSmite",
+      "bullet": {
+        "type": "BasicBulletType",
+        "frontColor": "e53935",
+        "backColor": "b71c1c",
+        "sprite": "interstellar-spaceline-star-bullet",
+        "width": 30,
+        "height": 30,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "spin": 5.5,
+        "drag": 0.02,
+        "lifetime": 100,
+        "speed": 5,
+        "damage": 0.1,
+        "collides": false,
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 50,
+              "length": 65,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 60,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 30,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 40,
+              "length": 60,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "d50000",
+              "colorTo": "ff5722",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "despawnSound": "plasmaboom",
+        "reflectable": false,
+        "fragBullets": 10,
+        "fragSpread": 360,
+        "fragRandomSpread": 360,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "frontColor": "e53935",
+          "backColor": "b71c1c",
+          "sprite": "interstellar-spaceline-celestial-spear",
+          "width": 20,
+          "height": 20,
+          "shrinkX": 0,
+          "shrinkY": 0,
+          "drag": 0.05,
+          "homingPower": 0.05,
+          "homingRange": 50,
+          "lifetime": 50,
+          "speed": 3,
+          "damage": 0.1,
+          "pierceBuilding": true,
+          "pierceArmor": true,
+          "despawnEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "WaveEffect",
+                "sides": 0,
+                "sizeFrom": 0,
+                "sizeTo": 20,
+                "strokeFrom": 4,
+                "strokeTo": 0,
+                "colorFrom": "b71c1c",
+                "colorTo": "e57373",
+                "lifetime": 30
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 30,
+                "sizeFrom": 6,
+                "sizeTo": 0,
+                "cone": 200,
+                "length": 50,
+                "colorFrom": "d32f2f",
+                "colorTo": "b71c1c",
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0
+              }
+            ]
+          },
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 40,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "cone": 50,
+                "length": 65,
+                "colorFrom": "757575",
+                "colorTo": "424242"
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 30,
+                "sizeFrom": 6,
+                "sizeTo": 0,
+                "cone": 30,
+                "length": 60,
+                "colorFrom": "ef5350",
+                "colorTo": "d32f2f",
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 30,
+                "sizeFrom": 4,
+                "sizeTo": 0,
+                "cone": 30,
+                "length": 30,
+                "colorFrom": "d32f2f",
+                "colorTo": "b71c1c",
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0
+              }
+            ]
+          },
+          "reflectable": false,
+          "fragBullets": 1,
+          "fragSpread": 0,
+          "fragRandomSpread": 0,
+          "fragBullet": {
+            "type": "BasicBulletType",
+            "buildingDamageMultiplier": 0.01,
+            "frontColor": "e53935",
+            "backColor": "b71c1c",
+            "sprite": "interstellar-spaceline-celestial-spear",
+            "width": 20,
+            "height": 20,
+            "shrinkX": 0,
+            "shrinkY": 0,
+            "lifetime": 50,
+            "speed": 5,
+            "damage": 100,
+            "pierceBuilding": true,
+            "pierceArmor": true,
+            "despawnEffect": {
+              "type": "MultiEffect",
+              "effects": [
+                {
+                  "type": "ParticleEffect",
+                  "particles": 40,
+                  "sizeFrom": 4,
+                  "sizeTo": 0,
+                  "cone": 200,
+                  "length": 50,
+                  "colorFrom": "757575",
+                  "colorTo": "424242"
+                },
+                {
+                  "type": "ParticleEffect",
+                  "particles": 30,
+                  "sizeFrom": 6,
+                  "sizeTo": 0,
+                  "cone": 200,
+                  "length": 50,
+                  "colorFrom": "d32f2f",
+                  "colorTo": "b71c1c",
+                  "line": true,
+                  "strokeFrom": 5,
+                  "strokeTo": 0
+                }
+              ]
+            },
+            "hitEffect": {
+              "type": "MultiEffect",
+              "effects": [
+                {
+                  "type": "ParticleEffect",
+                  "particles": 40,
+                  "sizeFrom": 3,
+                  "sizeTo": 0,
+                  "cone": 50,
+                  "length": 65,
+                  "colorFrom": "757575",
+                  "colorTo": "424242"
+                },
+                {
+                  "type": "ParticleEffect",
+                  "particles": 30,
+                  "sizeFrom": 6,
+                  "sizeTo": 0,
+                  "cone": 30,
+                  "length": 60,
+                  "colorFrom": "ef5350",
+                  "colorTo": "d32f2f",
+                  "line": true,
+                  "strokeFrom": 5,
+                  "strokeTo": 0
+                },
+                {
+                  "type": "ParticleEffect",
+                  "particles": 30,
+                  "sizeFrom": 4,
+                  "sizeTo": 0,
+                  "cone": 30,
+                  "length": 30,
+                  "colorFrom": "d32f2f",
+                  "colorTo": "b71c1c",
+                  "line": true,
+                  "strokeFrom": 5,
+                  "strokeTo": 0
+                }
+              ]
+            },
+            "reflectable": false
+          }
+        }
+      }
+    }
+  ]
+}
