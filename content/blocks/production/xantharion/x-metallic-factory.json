@@ -1,0 +1,70 @@
+{
+  "type": "GenericCrafter",
+  "name": "Metallic Factory",
+  "description": "Smelt Silicon and Lead into Dark Metal",
+  "health": 350,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame"
+      }
+    ]
+  },
+  "craftTime": 50,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 3.5,
+      "items": {
+        "items": [
+        {
+          "item": "lead",
+          "amount": 5
+        },
+        {
+          "item": "silicon",
+          "amount": 2
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 100
+    },
+    {
+      "item": "lead",
+      "amount": 100
+    },
+    {
+      "item": "silicon",
+      "amount": 75
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "core-xelestal",
+    "requirements": [
+      "copper/200",
+      "lead/200",
+      "silicon/150"
+    ]
+  },
+  "craftEffect": "producesmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.15,
+  "outputItem": {
+    "item": "x-dark-metal",
+    "amount": 1
+  }
+}

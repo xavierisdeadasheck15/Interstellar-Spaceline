@@ -1,0 +1,53 @@
+{
+  "type": "AttributeCrafter",
+  "name": "Oil Mechanical Pump",
+  "description": "Pump out an Oil, Cheaper than other Oil Pumper",
+  "researchCostMultiplier": 1.5,
+  "category": "production",
+  "size": 2,
+  "health": 300,
+  "squareSprite": false,
+  "hasPower": true,
+  "craftTime": 100,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 1,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "suffix": "-liquid",
+        "drawLiquid": "oil"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "hasLiquids": true,
+  "minEfficiency": 0.1,
+  "liquidCapacity": 100,
+  "attribute": "oil",
+  "research": {
+    "parent": "copper-beam"
+  },
+  "consumes": {
+    "power": 5
+  },
+  "requirements": [
+    "silicon/100",
+    "graphite/75",
+    "copper/120",
+    "beryllium/150"
+  ],
+    "outputLiquid": "oil/0.2",
+    "baseEfficiency": 0
+}

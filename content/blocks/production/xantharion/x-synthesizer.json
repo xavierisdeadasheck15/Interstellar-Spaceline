@@ -1,0 +1,98 @@
+{
+  "type": "GenericCrafter",
+  "name": "Dispersal Synthesizer",
+  "description": "Synthesize Surge Into Dual Energy Disperse",
+  "researchCostMultiplier": 1.75,
+  "health": 650,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasLiquids": false,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawWeave"
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "8c4515",
+        "alpha": 0.95,
+        "glowScale": 15.0,
+        "glowIntensity": 1
+      }
+    ]
+  },
+  "craftTime": 200,
+  "itemCapacity": 50,
+  "consumes": {
+    "power": 9.5,
+    "items": {
+      "items": [
+        {
+          "item": "surge-alloy",
+          "amount": 1
+        },
+        {
+          "item": "x-compressed-metal",
+          "amount": 5
+        },
+        {
+          "item": "copper",
+          "amount": 5
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 300
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 50
+    },
+    {
+      "item": "beryllium",
+      "amount": 225
+    },
+    {
+      "item": "plastanium",
+      "amount": 125
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    },
+    {
+      "item": "tungsten",
+      "amount": 100
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-compressor-smelter"
+  },
+  "ambientSound": "techloop",
+  "ambientSoundVolume": 0.75,
+  "outputItems": [
+    {
+      "item": "x-negative-energy-disperse",
+      "amount": 2
+    },
+    {
+      "item": "x-positive-energy-disperse",
+      "amount": 2
+    }
+  ]
+}

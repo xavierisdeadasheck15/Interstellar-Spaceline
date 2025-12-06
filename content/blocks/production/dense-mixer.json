@@ -1,0 +1,70 @@
+{
+  "type": "GenericCrafter",
+  "name": "Dense Mixer",
+  "description": "Refine Both Copper and lead Into Bronze",
+  "health": 500,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame"
+      }
+    ]
+  },
+  "craftTime": 35,
+  "itemCapacity": 10,
+  "consumes": {
+    "power": 0.5,
+      "items": {
+        "items": [
+        {
+          "item": "copper",
+          "amount": 1
+        },
+        {
+          "item": "lead",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 50
+    },
+    {
+      "item": "lead",
+      "amount": 25
+    },
+    {
+      "item": "silicon",
+      "amount": 75
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "advance-compressor",
+    "requirements": [
+      "copper/100",
+      "lead/50",
+      "silicon/150"
+    ]
+  },
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "bronze",
+    "amount": 1
+  }
+}

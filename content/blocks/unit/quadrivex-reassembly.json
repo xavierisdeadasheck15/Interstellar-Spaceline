@@ -1,0 +1,75 @@
+{
+  "name": "Quadrivex Reassembly",
+  "description": "Upgrades inputted units to the alternate fifth and final tier",
+  "type": "Reconstructor",
+  "researchCostMultiplier": 2.5,
+  "health": 5830,
+  "size": 9,
+  "constructTime": 3300,
+  "consumes": {
+    "liquid": "cryofluid/4",
+    "power": 27,
+    "items": {
+      "items": [
+        {
+          "item": "silicon",
+          "amount": 1250
+        },
+        {
+          "item": "plastanium",
+          "amount": 550
+        },
+        {
+          "item": "surge-alloy",
+          "amount": 525
+        },
+        {
+          "item": "graphite",
+          "amount": 1000
+        },
+        {
+          "item": "phase-fabric",
+          "amount": 350
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "lead",
+      "amount": 4500
+    },
+    {
+      "item": "thorium",
+      "amount": 900
+    },
+    {
+      "item": "silicon",
+      "amount": 3550
+    },
+    {
+      "item": "plastanium",
+      "amount": 650
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 600
+    },
+    {
+      "item": "surge-alloy",
+      "amount": 1000
+    }
+  ],
+  "upgrades": [
+    [
+      "scepter",
+      "devastator"
+    ],
+    [
+      "antumbra",
+      "stratos"
+    ]
+  ],
+  "category": "units",
+  "research": "tetrative-reconstructor"
+}

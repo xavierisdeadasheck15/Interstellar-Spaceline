@@ -1,0 +1,19 @@
+{
+  "localizedName": "Construction Factory",
+  "description": "build all 2 by 2 blocks.",
+  "type": "Constructor",
+  "research": "ground-factory",
+  "size": 3,
+  "category": "units",
+  "consumes": {
+    "power": 2
+  },
+  "minBlockSize": 1,
+  "maxBlockSize": 2,
+  "requirements": [
+    "copper/500",
+    "graphite/500",
+    "silicon/300",
+    "titanium/100"
+  ]
+}

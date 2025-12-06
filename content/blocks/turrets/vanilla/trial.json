@@ -1,0 +1,124 @@
+{
+  "type": "ItemTurret",
+  "name": "Trial",
+  "description": "Duo Upgrade Version",
+  "ammoUseEffect": "casing1",
+  "ammoEjectBack": 3,
+  "size": 2,
+  "health": 500,
+  "buildTime": 10,
+  "coolantMultiplier": 2,
+  "consumes": {
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+  "shake": 1,
+  "maxAmmo": 50,
+  "ammoPerShot": 1,
+  "reload": 5,
+  "range": 195,
+  "shootY": 6,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 4,
+  "inaccuracy": 2,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "shootSnap",
+  "ammoTypes": {
+    "graphite": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 0.5,
+      "damage": 15,
+      "speed": 3,
+      "lifetime": 65,
+      "height": 15,
+      "width": 7,
+      "despawnEffect": "hitBulletSmall",
+      "hitEffect": "hitBulletSmall",
+      "shootEffect": "shootSmall",
+      "smokeEffect": "shootSmallSmoke",
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    },
+    "copper": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 1.0,
+      "damage": 15.75,
+      "speed": 3,
+      "lifetime": 65,
+      "height": 12,
+      "width": 5,
+      "frontColor": "eac1a8",
+      "backColor": "b8705c",
+      "despawnEffect": "hitBulletSmall",
+      "hitEffect": "hitBulletSmall",
+      "shootEffect": "shootSmall",
+      "smokeEffect": "shootSmallSmoke",
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    },
+    "lead": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 1.75,
+      "damage": 10.5,
+      "splashDamage": 5.5,
+      "splashDamageRadius": 35,
+      "speed": 3,
+      "lifetime": 65,
+      "height": 12,
+      "width": 5,
+      "frontColor": "ab98d2",
+      "backColor": "6f687e",
+      "despawnEffect": "flakExplosion",
+      "hitEffect": "flakExplosion",
+      "shootEffect": "shootSmall",
+      "smokeEffect": "shootSmallSmoke",
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    },
+    "titanium": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 0.75,
+      "damage": 20,
+      "pierceArmor": true,
+      "pierceBuilding": true,
+      "pierceCap": 3,
+      "pierceDamageFactor": 0.01,
+      "speed": 3,
+      "lifetime": 65,
+      "height": 12,
+      "width": 5,
+      "frontColor": "a4b8fa",
+      "backColor": "7575c8",
+      "despawnEffect": "hitBulletSmall",
+      "hitEffect": "hitBulletSmall",
+      "shootEffect": "shootSmall",
+      "smokeEffect": "shootSmallSmoke",
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 150
+    },
+    {
+      "item": "lead",
+      "amount": 150
+    },
+    {
+      "item": "silicon",
+      "amount": 200
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    }
+  ],
+  "category": "turret",
+  "research": "core-frontal",
+  "alwaysUnlocked": false
+}

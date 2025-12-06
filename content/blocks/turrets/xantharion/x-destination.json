@@ -1,0 +1,216 @@
+{
+  "type": "ItemTurret",
+  "name": "Destination",
+  "description": "Long Range Mortar made by Xantharion",
+  "ammoUseEffect": "casing4",
+  "ammoEjectBack": 7,
+  "size": 4,
+  "health": 5000,
+  "buildTime": 10,
+  "coolantMultiplier": 1.5,
+  "consumes": {
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+  "shake": 10,
+  "maxAmmo": 10,
+  "ammoPerShot": 1,
+  "reload": 200,
+  "range": 840,
+  "shootY": 10,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 2,
+  "inaccuracy": 1,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "artillery-launch",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "ArtilleryBulletType",
+      "damage": 500,
+      "splashDamage": 250,
+      "splashDamageRadius": 100,
+      "knockback": 20,
+      "impact": true,
+      "pierceArmor": true,
+      "speed": 7,
+      "lifetime": 120,
+      "height": 25,
+      "width": 25,
+      "frontColor": "e53935",
+      "backColor": "b71c1c",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 40,
+            "strokeFrom": 40,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 40
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 20,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 100,
+            "colorFrom": "757575",
+            "colorTo": "424242"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 10,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 100,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 6,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 40,
+            "strokeFrom": 40,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 40
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 20,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 100,
+            "colorFrom": "757575",
+            "colorTo": "424242"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 10,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 100,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 6,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 7,
+              "sizeTo": 0,
+              "cone": 40,
+              "length": 60,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 50,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "d50000",
+              "colorTo": "ff5722",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+      "trailEffect": "fireSmoke",
+      "hitSound": "artillery-boom",
+      "despawnSound": "artillery-boom",
+      "trailRotation": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "tungsten",
+      "amount": 300
+    },
+    {
+      "item": "silicon",
+      "amount": 500
+    },
+    {
+      "item": "graphite",
+      "amount": 250
+    },
+    {
+      "item": "copper",
+      "amount": 750
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 75
+    }
+  ],
+  "category": "turret",
+  "research": "x-burster",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-shutter",
+        "mirror": false,
+        "under": false,
+        "progress": "recoil",
+        "moveY": -6
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Support Fabricator",
+  "description": "Constructs Ignirix units, Outputted units can be used directly, or moved into refabricators for upgrading",
+  "type": "UnitFactory",
+  "researchCostMultiplier": 1.25,
+  "health": 625,
+  "size": 3,
+  "consumes": {
+    "power": 2
+  },
+  "plans": [
+    {
+      "unit": "ignirix",
+      "requirements": [
+        "beryllium/60",
+        "tungsten/25",
+        "silicon/50"
+      ],
+      "time": 3000
+    }
+  ],
+  "requirements": [
+    {
+      "item": "beryllium",
+      "amount": 350
+    },
+    {
+      "item": "tungsten",
+      "amount": 125
+    },
+    {
+      "item": "silicon",
+      "amount": 400
+    },
+    {
+      "item": "graphite",
+      "amount": 75
+    }
+  ],
+  "category": "units",
+  "research": {
+  "parent": "mech-fabricator"
+  }
+}

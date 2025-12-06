@@ -1,0 +1,89 @@
+{
+  "type": "PowerTurret",
+  "name": "Blaster",
+  "description": "Fire red laser at enemy, prioritize weakest one",
+  "unitSort": "strongest",
+  "size": 3,
+  "health": 5000,
+  "buildTime": 15,
+  "coolantMultiplier": 2,
+  "consumes": {
+    "power": 10,
+    "coolant": {
+      "amount": 0.5
+    }
+  },
+  "shake": 1,
+  "reload": 15,
+  "range": 250,
+  "shootY": 4,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 1,
+  "recoil": 2,
+  "predictTarget": false,
+  "shootSound": "shootLaser3",
+  "shootType": {
+    "type": "LaserBulletType",
+    "shieldDamageMultiplier": 10,
+    "collidesAir": true,
+    "largeHit": false,
+    "sideLength": 0,
+    "sideAngle": 10,
+    "sideWidth": 0,
+    "hitShake": 15,
+    "length": 250,
+    "width": 10,
+    "statusDuration": 50,
+    "status": "melting",
+    "lifetime": 10,
+    "damage": 100,
+    "colors": [ 
+      "c62828", "ff5252"
+    ]
+  },
+  "requirements": [
+    { "item": "gold", "amount": 200 },
+    { "item": "surge-alloy", "amount": 300 },
+    { "item": "bronze", "amount": 500 },
+    { "item": "titanium", "amount": 2500 },
+    { "item": "copper", "amount": 5000 },
+    { "item": "silicon", "amount": 1000 }
+  ],
+  "category": "turret",
+  "research": "ultimatum",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-core",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveY": 2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-l",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveRot": -15,
+        "moveY": 1,
+        "moveX": -4
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-r",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveRot": 15,
+        "moveY": 1,
+        "moveX": 4
+      }
+    ]
+  }
+}

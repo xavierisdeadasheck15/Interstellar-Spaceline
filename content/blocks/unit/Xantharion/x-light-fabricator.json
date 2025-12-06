@@ -1,0 +1,68 @@
+{
+  "name": "Xantharion Light Fabricatory",
+  "description": "Construct Xantharion light Unit",
+  "type": "UnitFactory",
+  "researchCostMultiplier": 1.5,
+  "buildTime": 10,
+  "squareSprite": true,
+  "size": 3,
+  "consumes": {
+    "power": 7
+  },
+  "plans": [
+    {
+      "unit": "executor",
+      "requirements": [
+        "silicon/50",
+        "x-dark-metal/25"
+      ],
+      "time": 500
+    },
+    {
+      "unit": "destroyer",
+      "requirements": [
+        "silicon/75",
+        "lead/100",
+        "x-dark-metal/50"
+      ],
+      "time": 550
+    },
+    {
+      "unit": "terminator",
+      "requirements": [
+        "silicon/50",
+        "lead/50",
+        "x-dark-metal/10"
+      ],
+      "time": 300
+    },
+    {
+      "unit": "alt-terminator",
+      "requirements": [
+        "silicon/50",
+        "lead/50",
+        "x-dark-metal/10",
+        "x-negative-energy-disperse/1"
+      ],
+      "time": 600
+    }
+  ],
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 125
+    },
+    {
+      "item": "titanium",
+      "amount": 200
+    },
+    {
+      "item": "silicon",
+      "amount": 150
+    }
+  ],
+  "category": "units",
+  "research": {
+  "parent": "core-xelestal"
+  }
+}

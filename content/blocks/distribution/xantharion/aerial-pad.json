@@ -1,0 +1,32 @@
+{
+    "type": "UnitCargoLoader",
+    "name": "Aerial Pad",
+    "description": "One Of Xantharion Large Transportation, Construct Sky Bastion and Receive Massive Amount of Resource",
+    "size": 6,
+    "health": 2000,
+    "unitType": "skybastion",
+    "itemCapacity": 500,
+    "liquidCapacity": 50,
+    "separateItemCapacity": true,
+    "requirements": 
+    [
+	"copper/1500",
+	"graphite/750",
+	"silicon/500",
+	"titanium/1000",
+	"plastanium/750",
+	"thorium/250"
+    ],
+    "category": "distribution",
+    "hasItems": true,
+    "hasPower": true,
+    "hasLiquids": true,
+    "consumes":
+    {
+        "power": 2,
+        "liquid": "carbon-monoxide/0.2"
+  },
+    "research": {
+    "parent": "core-xelestal"
+  }
+}

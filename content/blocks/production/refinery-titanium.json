@@ -1,0 +1,87 @@
+{
+  "type": "GenericCrafter",
+  "name": "Refinery Titanium",
+  "description": "Refine A Raw Titanium Into Titanium",
+  "health": 750,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFrames",
+        "frames": 15,
+        "sine": false
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "FFFFFF"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "craftTime": 60,
+  "itemCapacity": 15,
+  "consumes": {
+    "power": 2,
+      "items": {
+        "items": [
+        {
+          "item": "raw-titanium",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 25
+    },
+    {
+      "item": "lead",
+      "amount": 25
+    },
+    {
+      "item": "graphite",
+      "amount": 65
+    },
+    {
+      "item": "silicon",
+      "amount": 40
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "refinery-copper",
+    "requirements": [
+      "copper/100",
+      "lead/100",
+      "graphite/100",
+      "silicon/200",
+      "titanium/250"
+    ]
+  },
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "techloop",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "titanium",
+    "amount": 2
+  }
+}

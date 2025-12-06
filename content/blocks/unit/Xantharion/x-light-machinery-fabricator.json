@@ -1,0 +1,52 @@
+{
+  "name": "Xantharion Light Machinery Fabricator",
+  "description": "Construct Xantharion light Machinery Unit",
+  "type": "UnitFactory",
+  "researchCostMultiplier": 1.5,
+  "buildTime": 10,
+  "squareSprite": true,
+  "size": 3,
+  "consumes": {
+    "power": 8
+  },
+  "plans": [
+    {
+      "unit": "ballistron",
+      "requirements": [
+        "copper/175",
+        "silicon/125",
+        "titanium/75",
+        "x-dark-metal/100"
+      ],
+      "time": 750
+    },
+    {
+      "unit": "suppressor-x",
+      "requirements": [
+        "copper/150",
+        "silicon/175",
+        "graphite/100",
+        "x-dark-metal/125"
+      ],
+      "time": 750
+    }
+  ],
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 130
+    },
+    {
+      "item": "titanium",
+      "amount": 300
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    }
+  ],
+  "category": "units",
+  "research": {
+  "parent": "x-light-fabricator"
+  }
+}

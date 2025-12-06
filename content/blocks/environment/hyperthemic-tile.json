@@ -1,0 +1,21 @@
+{
+  "type": "Floor",
+  "name": "Hyperthemic",
+  "description": "A Cold Lava like Water",
+  "status": "freezing",
+  "statusDuration": 100,
+  "speedMultiplier": 0.5,
+  "damageTaken": 0.25,
+  "variants": 0,
+  "liquidDrop": "hyperthemic",
+  "isLiquid": true,
+  "cacheLayer": "cryofluid",
+  "attributes": {
+    "water": -2
+  },
+  "emitLight": true,
+  "lightRadius": 5,
+  "lightColor": "26c6da",
+  "albedo": 0.9,
+  "supportsOverlay": true
+}

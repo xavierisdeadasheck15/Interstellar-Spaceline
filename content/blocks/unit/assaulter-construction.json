@@ -1,0 +1,43 @@
+{
+  "name": "Assaulter Construction",
+  "description": "Construct Cheaper Air Unit",
+  "type": "UnitFactory",
+  "researchCostMultiplier": 1.2,
+  "buildTime": 10,
+  "squareSprite": true,
+  "size": 3,
+  "consumes": {
+    "power": 6
+  },
+  "plans": [
+    {
+      "unit": "splinter",
+      "requirements": [
+        "copper/75"
+      ],
+      "time": 200
+    },
+    {
+      "unit": "altar",
+      "requirements": [
+        "silicon/75",
+        "copper/100"
+      ],
+      "time": 250
+    }
+  ],
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 100
+    },
+    {
+      "item": "lead",
+      "amount": 100
+    }
+  ],
+  "category": "units",
+  "research": {
+  "parent": "core-frontal"
+  }
+}

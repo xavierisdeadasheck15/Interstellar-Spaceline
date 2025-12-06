@@ -1,0 +1,97 @@
+{
+  "type": "ItemTurret",
+  "name": "Cryo thrower",
+  "description": "launch a singular cold bombard toward enemy",
+  "researchCostMultiplier": 2.5,
+  "size": 2,
+  "health": 650,
+  "maxAmmo": 20,
+  "reload": 200,
+  "range": 320,
+  "minRange": 90.5,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 3,
+  "inaccuracy": 1,
+  "hasPower": true,
+  "coolantMultiplier": 1.25,
+  "consumes": {
+    "power": 4.5,
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shoot": {
+    "type": "shootPattern",
+    "shots": 3,
+    "shotDelay": 25
+  },
+  "shootSound": "shootSmite",
+  "ammoTypes": {
+    "titanium": {
+      "type": "ArtilleryBulletType",
+      "damage": 100,
+      "splashDamageRadius": 30,
+      "splashDamage": 50,
+      "speed": 4,
+      "lifetime": 80,
+      "ammoPerShot": 5,
+      "height": 10,
+      "width": 10,
+      "trailColor": "7DDBDB",
+      "frontColor": "FFFFFF",
+      "backColor": "7DDBDB",
+      "hitEffect": "mineImpactWave",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "trailEffect": "freezing",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "status": "freezing",
+      "statusDuration": 100
+    },
+    "cryo-orb": {
+      "type": "ArtilleryBulletType",
+      "rangeChange": 58,
+      "damage": 150,
+      "splashDamageRadius": 30,
+      "splashDamage": 75,
+      "speed": 4.2,
+      "lifetime": 90,
+      "ammoPerShot": 1,
+      "height": 15,
+      "width": 15,
+      "frontColor": "FFFFFF",
+      "backColor": "7DDBDB",
+      "trailColor": "7DDBDB",
+      "hitEffect": "mineImpactWave",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "trailEffect": "freezing",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "status": "freezing",
+      "statusDuration": 200
+    }
+  },
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 200
+    },
+    {
+      "item": "titanium",
+      "amount": 500
+    },
+    {
+      "item": "thorium",
+      "amount": 100
+    },
+    {
+      "item": "lead",
+      "amount": 250
+    }
+  ],
+  "category": "turret",
+  "research": "hail"
+}

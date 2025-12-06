@@ -1,0 +1,98 @@
+{
+  "type": "ItemTurret",
+  "name": "Laser Gun",
+  "description": "fire a laser bullet at enemy",
+  "researchCostMultiplier": 1.5,
+  "size": 2,
+  "health": 950,
+  "maxAmmo": 20,
+  "ammoPerShot": 1,
+  "reload": 8,
+  "range": 275,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 3,
+  "inaccuracy": 1,
+  "hasPower": true,
+  "coolantMultiplier": 2.75,
+  "consumes": {
+    "power": 5,
+    "coolant": {
+      "amount": 0.75
+    }
+  },
+  "recoilAmount": 3,
+  "restitution": 0.8,
+  "shootSound": "shootLaser3",
+  "ammoTypes": {
+    "metaglass": {
+      "type": "BasicBulletType",
+      "damage": 10,
+      "speed": 5.5,
+      "lifetime": 50,
+      "height": 10,
+      "width": 10,
+      "pierce": true,
+      "pierceDamageFactor": 0.015,
+      "homingPower": 0.025,
+      "homingRange": 100,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": true
+    },
+    "hardglass": {
+      "type": "BasicBulletType",
+      "damage": 50,
+      "speed": 5,
+      "lifetime": 55,
+      "height": 12,
+      "width": 12,
+      "pierce": true,
+      "pierceDamageFactor": 0.01,
+      "pierceArmor": true,
+      "homingPower": 0.05,
+      "homingRange": 100,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 200
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 50
+    },
+    {
+      "item": "lead",
+      "amount": 250
+    },
+    {
+      "item": "powergem",
+      "amount": 10
+    }
+  ],
+  "category": "turret",
+  "research": "laser-beam"
+}

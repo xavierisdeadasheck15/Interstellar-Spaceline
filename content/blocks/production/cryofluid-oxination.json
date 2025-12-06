@@ -1,0 +1,90 @@
+{
+  "type": "GenericCrafter",
+  "name": "Cryofluid Oxination",
+  "description": "Use Dioxide to Produce More Cryofluid",
+  "health": 750,
+  "size": 3,
+  "buildTime": 1,
+  "squareSprite": false,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "suffix": "-liquids",
+        "drawLiquid": "water",
+        "alpha": 1
+      },
+      {
+        "type": "DrawFrames",
+        "frames": 7,
+        "sine": false
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "ffcc80"
+      }
+    ]
+  },
+  "craftTime": 50,
+  "itemCapacity": 50,
+  "liquidCapacity": 50,
+  "consumes": {
+    "power": 5,
+    "liquids": [
+      "carbon-dioxide/0.3",
+      "water/0.1"
+    ],
+    "items": {
+      "items": [
+        {
+          "item": "titanium",
+          "amount": 5
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "lead",
+      "amount": 200
+    },
+    {
+      "item": "graphite",
+      "amount": 100
+    },
+    {
+      "item": "silicon",
+      "amount": 50
+    },
+    {
+      "item": "titanium",
+      "amount": 150
+    },
+    {
+      "item": "bronze",
+      "amount": 25
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "gas-filter",
+    "requirements": [
+      "lead/400",
+      "graphite/200",
+      "silicon/100",
+      "titanium/300",
+      "bronze/50"
+    ]
+  },
+  "ambientSound": "machine",
+  "ambientSoundVolume": 0.75,
+  "outputLiquid": "cryofluid/0.5"
+}

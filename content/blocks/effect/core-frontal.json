@@ -1,0 +1,41 @@
+{
+  "type": "CoreBlock",
+  "name": "Core: Frontal",
+  "description": "A Core within all 5 Planetary use",
+  "health": 5000,
+  "size": 4,
+  "itemCapacity": 30000,
+  "unitCapModifier": 30,
+  "researchCostMultiplier": 0.05,
+  "unitType": "coretal",
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 2000
+    },
+    {
+      "item": "lead",
+      "amount": 2000
+    },
+    {
+      "item": "bronze",
+      "amount": 4000
+    },
+    {
+      "item": "silicon",
+      "amount": 3500
+    },
+    {
+      "item": "titanium",
+      "amount": 1000
+    }
+  ],
+  "category": "effect",
+  "alwaysUnlocked": true,
+  "research": {
+    "planet": "glaciera-prime",
+    "root": true,
+    "name": "Interstellar",
+    "requiresUnlock": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "localizedName": "Xantharion Modular Assembler",
+  "description": "Increases assembler tier when placed next to a construction boundary. Requires power. Can be used as a payload input.",
+  "type": "UnitAssemblerModule",
+  "researchCostMultiplier": 1.5,
+  "health": 1000,
+  "category": "units",
+  "size": 3,
+  "tier": 1,
+  "consumes": {
+    "power": 5
+  },
+  "research": "x-medium-machinery-assembler",
+   "requirements": [
+    "x-compressed-metal/200",
+    "x-dark-metal/300",
+    "silicon/450",
+    "x-positive-energy-disperse/5"
+  ]
+}

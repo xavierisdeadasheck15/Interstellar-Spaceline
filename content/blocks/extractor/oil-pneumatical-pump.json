@@ -1,0 +1,55 @@
+{
+  "type": "AttributeCrafter",
+  "name": "Oil Pneumatical Pump",
+  "description": "Pump out an Oil, Least Expensive than other Oil Pumper",
+  "researchCostMultiplier": 1.75,
+  "category": "production",
+  "size": 3,
+  "health": 600,
+  "squareSprite": true,
+  "hasPower": true,
+  "craftTime": 90,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 2,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "suffix": "-liquid",
+        "drawLiquid": "oil"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "hasLiquids": true,
+  "minEfficiency": 0.1,
+  "liquidCapacity": 200,
+  "attribute": "oil",
+  "research": {
+    "parent": "oil-mechanical-pump"
+  },
+  "consumes": {
+    "power": 7.5
+  },
+  "requirements": [
+    "silicon/175",
+    "graphite/120",
+    "copper/100",
+    "lead/130",
+    "beryllium/120",
+    "tungsten/160"
+  ],
+    "outputLiquid": "oil/0.3",
+    "baseEfficiency": 0
+}

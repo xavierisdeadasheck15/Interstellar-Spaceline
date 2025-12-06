@@ -1,0 +1,36 @@
+{
+  "type": "CoreBlock",
+  "name": "Core: Xelestal",
+  "description": "A Core of Xantharion",
+  "health": 7500,
+  "size": 4,
+  "itemCapacity": 8500,
+  "unitCapModifier": 50,
+  "researchCostMultiplier": 0.05,
+  "unitType": "celestial",
+  "requirements": [
+    {
+      "item": "titanium",
+      "amount": 45000
+    },
+    {
+      "item": "silicon",
+      "amount": 5500
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 2000
+    },
+    {
+      "item": "x-energy-positive-alloy",
+      "amount": 1000
+    }
+  ],
+  "category": "effect",
+  "research": {
+    "planet": "infernia-cruor",
+    "root": true,
+    "name": "Xantharion",
+    "requiresUnlock": false
+  }
+}

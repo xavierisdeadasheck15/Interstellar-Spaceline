@@ -1,0 +1,79 @@
+{
+  "type": "ItemTurret",
+  "name": "Railgun Blaster",
+  "description": "unleash a devastating bullet at enemy",
+  "unitSort": "strongest",
+  "researchCostMultiplier": 2.0,
+  "size": 2,
+  "health": 1300,
+  "maxAmmo": 60,
+  "ammoPerShot": 30,
+  "reload": 200,
+  "range": 320,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 2,
+  "inaccuracy": 0,
+  "hasPower": true,
+  "coolantMultiplier": 1.5,
+  "consumes": {
+    "power": 15,
+    "coolant": {
+      "amount": 0.5
+    }
+  },
+  "recoilAmount": 30,
+  "restitution": 0.8,
+  "shootSound": "shootLaserBig2",
+  "ammoTypes": {
+    "surge-alloy": {
+      "type": "BasicBulletType",
+      "damage": 950,
+      "splashDamageRadius": 30,
+      "splashDamage": 1,
+      "speed": 8,
+      "lifetime": 40,
+      "height": 20,
+      "width": 20,
+      "homingPower": 0.05,
+      "homingRange": 100,
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "hitEffect": "bigShockwave",
+      "shootEffect": "mineImpactWave",
+      "smokeEffect": "fireballsmoke",
+      "trailEffect": "colorSpark",
+      "trailWidth": 1.5,
+      "trailLength": 30,
+      "knockback": 30,
+      "status": "shocked",
+      "statusDuration": 50,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": true,
+      "absorbable": false,
+      "despawnSound": "loudHeavyBlaster"
+    }
+  },
+  "requirements": [
+    {
+      "item": "surge-alloy",
+      "amount": 500
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "titanium",
+      "amount": 100
+    },
+    {
+      "item": "powergem",
+      "amount": 10
+    }
+  ],
+  "category": "turret",
+  "research": "lasergun"
+}

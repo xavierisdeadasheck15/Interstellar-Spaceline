@@ -1,0 +1,9 @@
+{
+  "name": "Darkstone Vent",
+  "type": "SteamVent",
+  "variants": 3,
+  "blendGroup": "darkstone",
+  "parent": "darkstone",
+  "mapColor": "616161",
+  "liquidDrop": "oil"
+}

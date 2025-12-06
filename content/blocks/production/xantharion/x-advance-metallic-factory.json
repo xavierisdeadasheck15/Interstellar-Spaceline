@@ -1,0 +1,105 @@
+{
+  "type": "GenericCrafter",
+  "name": "Advance Metallic Factory",
+  "description": "Smelt Silicon and Lead into Dark Metal, Required Oil and Some Graphite and Pyratite",
+  "health": 750,
+  "size": 3,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "carbon-monoxide",
+        "alpha": 0.5
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "alpha": 0.95,
+        "glowScale": 15.0,
+        "glowIntensity": 1
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 30,
+  "liquidCapacity": 50,
+  "consumes": {
+    "power": 5.5,
+    "liquid": "carbon-monoxide/0.2",
+      "items": {
+        "items": [
+        {
+          "item": "lead",
+          "amount": 10
+        },
+        {
+          "item": "silicon",
+          "amount": 5
+        },
+        {
+          "item": "graphite",
+          "amount": 1
+        },
+        {
+          "item": "pyratite",
+          "amount": 2
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 200
+    },
+    {
+      "item": "bronze",
+      "amount": 100
+    },
+    {
+      "item": "silicon",
+      "amount": 125
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 75
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-metallic-factory",
+    "requirements": [
+      "copper/400",
+      "bronze/200",
+      "silicon/250",
+      "titanium/100",
+      "x-dark-metal/150"
+    ]
+  },
+  "craftEffect": "producesmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.25,
+  "outputItem": {
+    "item": "x-dark-metal",
+    "amount": 5
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "type": "ItemTurret",
+  "name": "Recalibator",
+  "description": "fire medium laser bullet at enemy, less powerful than treachery",
+  "unitSort": "weakest",
+  "researchCostMultiplier": 1.5,
+  "size": 4,
+  "health": 1950,
+  "maxAmmo": 20,
+  "ammoPerShot": 5,
+  "reload": 25,
+  "range": 390,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 3,
+  "inaccuracy": 0,
+  "shootY": 2,
+  "hasPower": true,
+  "coolantMultiplier": 1.75,
+  "consumes": {
+    "power": 10,
+    "coolant": {
+      "amount": 0.6
+    }
+  },
+  "recoilAmount": 10,
+  "restitution": 0.8,
+  "shootSound": "malignShoot",
+  "ammoTypes": {
+    "powergem": {
+      "type": "BasicBulletType",
+      "damage": 200,
+      "speed": 6,
+      "lifetime": 65,
+      "height": 10,
+      "width": 10,
+      "homingPower": 5,
+      "homingRange": 85,
+      "pierce": true,
+      "pierceCap": 10,
+      "pierceDamageFactor": 0.5,
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "trailColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "shootSmokeDisperse",
+      "smokeEffect": "massiveExplosion",
+      "trailWidth": 2.5,
+      "trailLength": 5,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "surge-alloy",
+      "amount": 500
+    },
+    {
+      "item": "powergem",
+      "amount": 50
+    },
+    {
+      "item": "copper",
+      "amount": 1000
+    },
+    {
+      "item": "titanium",
+      "amount": 250
+    }
+  ],
+  "category": "turret",
+  "research": "executor"
+}

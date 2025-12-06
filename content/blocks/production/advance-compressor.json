@@ -1,0 +1,87 @@
+{
+  "type": "GenericCrafter",
+  "name": "Advance Compressor",
+  "description": "Use Dioxide to Boost up Compression Plus Extra Output of Graphite",
+  "health": 500,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "carbon-dioxide",
+        "alpha": 0.5
+      },
+      {
+        "type": "DrawFrames",
+        "frames": 10,
+        "sine": false
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "ffcc80"
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 20,
+  "liquidCapacity": 50,
+  "consumes": {
+    "power": 4.5,
+    "liquid": "carbon-dioxide/0.1",
+      "items": {
+        "items": [
+        {
+          "item": "coal",
+          "amount": 10
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 120
+    },
+    {
+      "item": "lead",
+      "amount": 150
+    },
+    {
+      "item": "silicon",
+      "amount": 70
+    },
+    {
+      "item": "titanium",
+      "amount": 100
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "core-frontal",
+    "requirements": [
+      "copper/240",
+      "lead/300",
+      "silicon/140",
+      "titanium/200"
+    ]
+  },
+  "outputItem": {
+    "item": "graphite",
+    "amount": 5
+  }
+}

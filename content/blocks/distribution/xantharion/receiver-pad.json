@@ -1,0 +1,26 @@
+{
+    "type": "UnitCargoUnloadPoint",
+    "name": "Receiver Pad",
+    "description": "One of Xantharion Unload Point, Unload a picked resource to the destinated place",
+    "size": 5,
+    "health": 1000,
+    "itemCapacity": 2000,
+    "liquidCapacity": 0,
+    "separateItemCapacity": true,
+    "requirements": 
+    [
+	"copper/1000",
+	"graphite/500",
+	"silicon/250",
+	"titanium/900",
+	"thorium/100"
+    ],
+    "category": "distribution",
+    "hasItems": true,
+    "hasLiquids": false,
+    "outputsLiquid": false,
+    "outputItems": true,
+    "research": {
+    "parent": "aerial-pad"
+  }
+}

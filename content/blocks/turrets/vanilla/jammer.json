@@ -1,0 +1,184 @@
+{
+  "type": "ItemTurret",
+  "name": "Jammer",
+  "description": "Large AA Turret, target the closest one",
+  "unitSort": "closest",
+  "size": 4,
+  "health": 2000,
+  "buildTime": 10,
+  "coolantMultiplier": 2.5,
+  "consumes": {
+    "coolant": {
+      "amount": 0.5
+    }
+  },
+  "shake": 10,
+  "maxAmmo": 100,
+  "ammoPerShot": 25,
+  "reload": 300,
+  "range": 1250,
+  "shootY": 0,
+  "targetAir": true,
+  "targetGround": false,
+  "rotateSpeed": 1.5,
+  "inaccuracy": 0,
+  "recoil": 4,
+  "predictTarget": false,
+  "shootSound": "missileLaunch",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "MissileBulletType",
+      "spawnUnit": "serpulo-missile",
+      "targetBlocks": false,
+      "collidesGround": false,
+      "damage": 500,
+      "splashDamageRadius": 50,
+      "splashDamage": 350,
+      "pierceArmor": true,
+      "speed": 5,
+      "lifetime": 250,
+      "height": 11,
+      "width": 11,
+      "shootEffect": "missileTrailSmoke",
+      "smokeEffect": "blastExplosion",
+      "trailEffect": "colorSpark",
+      "trailRotation": true,
+      "status": "blasted",
+      "statusDuration": 300
+    },
+    "pyratite": {
+      "type": "MissileBulletType",
+      "spawnUnit": "serpulo-incendiary-missile",
+      "targetBlocks": false,
+      "collidesGround": false,
+      "damage": 300,
+      "splashDamageRadius": 40,
+      "splashDamage": 150,
+      "pierceArmor": true,
+      "speed": 5,
+      "lifetime": 250,
+      "height": 11,
+      "width": 11,
+      "shootEffect": "missileTrailSmoke",
+      "smokeEffect": "blastExplosion",
+      "trailEffect": "colorSpark",
+      "trailRotation": true,
+      "makeFire": true,
+      "incendAmount": 10,
+      "incendSpread": 7,
+      "incendChance": 5,
+      "puddles": 5,
+      "puddleRange": 10,
+      "puddleAmount": 20,
+      "puddleLiquid": "oil",
+      "status": "burning",
+      "statusDuration": 300
+    },
+    "surge-alloy": {
+      "type": "MissileBulletType",
+      "spawnUnit": "serpulo-emp-missile",
+      "targetBlocks": false,
+      "collidesGround": false,
+      "damage": 500,
+      "splashDamageRadius": 30,
+      "splashDamage": 350,
+      "pierceArmor": true,
+      "speed": 5,
+      "lifetime": 250,
+      "height": 11,
+      "width": 11,
+      "shootEffect": "missileTrailSmoke",
+      "smokeEffect": "blastExplosion",
+      "trailEffect": "colorSpark",
+      "trailRotation": true,
+      "lightningColor": "ffe57f",
+      "lightning": 5,
+      "lightningLength": 6,
+      "lightningLengthRand": 2,
+      "lightningDamage": 100,
+      "lightningCone": 180,
+      "status": "shocked",
+      "statusDuration": 150
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 1200
+    },
+    {
+      "item": "bronze",
+      "amount": 1900
+    },
+    {
+      "item": "silicon",
+      "amount": 1650
+    },
+    {
+      "item": "graphite",
+      "amount": 1000
+    },
+    {
+      "item": "titanium",
+      "amount": 900
+    },
+    {
+      "item": "plastanium",
+      "amount": 750
+    },
+    {
+      "item": "thorium",
+      "amount": 500
+    }
+  ],
+  "category": "turret",
+  "research": "derail",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-missile",
+        "layerOffset": 0.01,
+        "mirror": false,
+        "under": false,
+        "progress": "recoil",
+        "moveY": -3
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-l",
+        "layerOffset": 0.02,
+        "mirror": false,
+        "under": false,
+        "progress": "warmup",
+        "heatprogress": "recoil",
+        "moveRot": 10,
+        "moveY": -2,
+        "movex": -4
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-r",
+        "layerOffset": 0.02,
+        "mirror": false,
+        "under": false,
+        "progress": "warmup",
+        "heatprogress": "recoil",
+        "moveRot": -10,
+        "moveY": -2,
+        "movex": 4
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-core",
+        "layerOffset": 0.03,
+        "mirror": false,
+        "under": false,
+        "progress": "warmup",
+        "heatprogress": "warmup"
+      }
+    ]
+  }
+}

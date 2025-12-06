@@ -1,0 +1,49 @@
+{
+  "name": "Mining Fabricator",
+  "description": "Construct Xantharion Mining Unit, The better the unit, the greater the mining",
+  "type": "unitFactory",
+  "researchCostMultiplier": 1.5,
+  "buildTime": 5,
+  "squareSprite": true,
+  "size": 3,
+  "consumes": {
+    "power": 2
+  },
+  "plans": [
+    {
+      "unit": "astraxios",
+      "requirements": [
+        "silicon/75",
+        "x-dark-metal/20"
+      ],
+      "time": 500
+    },
+    {
+      "unit": "althaxia",
+      "requirements": [
+        "silicon/80",
+        "graphite/20",
+        "x-dark-metal/30"
+      ],
+      "time": 750
+    }
+  ],
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 500
+    },
+    {
+      "item": "graphite",
+      "amount": 300
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 250
+    }
+  ],
+  "category": "units",
+  "research": {
+    "parent": "x-light-fabricator"
+  }
+}

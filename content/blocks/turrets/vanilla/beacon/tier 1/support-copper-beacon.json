@@ -1,0 +1,91 @@
+{
+  "type": "PowerTurret",
+  "name": "Copper Beacon - [green]Support[]",
+  "description": "A Basic Copper Beacon, Use to Transmit Communication to the HQ to Launch Offense, Support, And Assault. [yellow]call down 3 Nova[]",
+  "size": 2,
+  "health": 100,
+  "consumes": {
+    "power": 1
+  },
+  "buildTime": 10,
+  "reload": 500,
+  "range": 5,
+  "targetAir": false,
+  "targetGround": false,
+  "rotateSpeed": 10,
+  "inaccuracy": 0,
+  "shoot": {
+    "firstShotDelay": 200
+  },
+  "shootSound": "drillImpact",
+  "destroySound": "plasmadrop",
+  "chargeSound": "request2",
+  "shootType": {
+    "type": "BasicBulletType",
+    "damage": 1,
+    "speed": 1,
+    "lifetime": 1,
+    "height": 1,
+    "width": 1,
+    "despawnUnit": "nova",
+    "despawnUnitCount": 3,
+    "lightning": 3,
+    "killShooter": true,
+    "shootEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "WaveEffect",
+          "sides": 0,
+          "sizeFrom": 0,
+          "sizeTo": 200,
+          "strokeFrom": 4,
+          "strokeTo": 0,
+          "colorFrom": "4f4f4f",
+          "colorTo": "242323",
+          "lifetime": 23
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 30,
+          "sizeFrom": 25,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 100,
+          "colorFrom": "4f4f4f",
+          "colorTo": "242323"
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 50,
+          "sizeFrom": 20,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 200,
+          "colorFrom": "ffd000",
+          "colorTo": "ff892e",
+          "line": true,
+          "strokeFrom": 4,
+          "strokeTo": 0
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    },
+    {
+      "item": "metaglass",
+      "amount": 100
+    }
+  ],
+  "category": "units",
+  "research": "volt-arch",
+  "alwaysUnlocked": false
+}

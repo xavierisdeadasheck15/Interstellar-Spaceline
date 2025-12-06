@@ -1,0 +1,89 @@
+{
+  "type": "GenericCrafter",
+  "name": "Metal Compressor Smelter",
+  "description": "Smelt and Compress 2 Metal Into individual Compressed Metal",
+  "researchCostMultiplier": 1.5,
+  "health": 870,
+  "size": 3,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "carbon-monoxide",
+        "alpha": 0.5
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFrames",
+        "frames": 12
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "8c4515",
+        "alpha": 0.95,
+        "glowScale": 15.0,
+        "glowIntensity": 1
+      }
+    ]
+  },
+  "craftTime": 100,
+  "liquidCapacity": 100,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 5,
+    "liquid": "carbon-monoxide/0.2",
+    "items": {
+      "items": [
+        {
+          "item": "x-dark-metal",
+          "amount": 2
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 150
+    },
+    {
+      "item": "titanium",
+      "amount": 200
+    },
+    {
+      "item": "graphite",
+      "amount": 275
+    },
+    {
+      "item": "silicon",
+      "amount": 1000
+    },
+    {
+      "item": "tungsten",
+      "amount": 250
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-metallic-factory"
+  },
+  "ambientSound": "machine",
+  "ambientSoundVolume": 0.75,
+  "outputItem": {
+    "item": "x-compressed-metal",
+    "amount": 1
+  }
+}

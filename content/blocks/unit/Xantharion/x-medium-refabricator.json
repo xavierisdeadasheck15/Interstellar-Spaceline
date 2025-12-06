@@ -1,0 +1,72 @@
+{
+  "name": "Xantharion Medium Refabricator",
+  "description": "Upgrades inputted Xantharion units to the Medium Tier",
+  "type": "Reconstructor",
+  "researchCostMultiplier": 2,
+  "health": 1250,
+  "size": 5,
+  "constructTime": 1800,
+  "consumes": {
+    "power": 9,
+    "items": {
+      "items": [
+        {
+          "item": "x-compressed-metal",
+          "amount": 100
+        },
+        {
+          "item": "silicon",
+          "amount": 250
+        },
+        {
+          "item": "lead",
+          "amount": 300
+        },
+        {
+          "item": "titanium",
+          "amount": 50
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 100
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 200
+    },
+    {
+      "item": "titanium",
+      "amount": 350
+    },
+    {
+      "item": "silicon",
+      "amount": 400
+    }
+  ],
+  "upgrades": [
+    [
+      "executor",
+      "scattervolt"
+    ],
+    [
+      "destroyer",
+      "pyroclave"
+    ],
+    [
+      "terminator",
+      "conflication"
+    ],
+    [
+      "alt-terminator",
+      "alt-conflication"
+    ]
+  ],
+  "category": "units",
+  "research": {
+  "parent": "x-light-fabricator"
+  }
+}

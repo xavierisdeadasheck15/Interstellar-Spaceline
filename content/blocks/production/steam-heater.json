@@ -1,0 +1,65 @@
+{
+  "type": "GenericCrafter",
+  "name": "Steam Heater",
+  "description": "Vaporize Gases into Water",
+  "researchCostMultiplier": 1.25,
+  "health": 750,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": false,
+  "hasPower": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "suffix": "-liquid",
+        "drawLiquid": "carbon-dioxide",
+        "alpha": 0.5
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "ff9800",
+        "alpha": 0.95,
+        "glowScale": 15.0,
+        "glowIntensity": 1
+      }
+    ]
+  },
+  "craftTime": 50,
+  "liquidCapacity": 50,
+  "consumes": {
+    "power": 4,
+    "liquid": "carbon-dioxide/0.2"
+  },
+  "requirements": [
+    {
+      "item": "beryllium",
+      "amount": 100
+    },
+    {
+      "item": "metaglass",
+      "amount": 125
+    },
+    {
+      "item": "silicon",
+      "amount": 175
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "gas-filter"
+  },
+  "ambientSound": "machine",
+  "ambientSoundVolume": 0.75,
+  "outputLiquid": "water/0.5"
+}

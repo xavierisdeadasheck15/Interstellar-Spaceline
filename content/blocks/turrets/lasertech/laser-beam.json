@@ -1,0 +1,75 @@
+{
+  "type": "ItemTurret",
+  "name": "Laser Beam",
+  "description": "fire a weak laser bullet at enemy",
+  "researchCostMultiplier": 0.5,
+  "size": 1,
+  "health": 300,
+  "maxAmmo": 30,
+  "ammoPerShot": 1,
+  "reload": 60,
+  "range": 130,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 3,
+  "inaccuracy": 0,
+  "hasPower": true,
+  "coolantMultiplier": 1.25,
+  "consumes": {
+    "power": 2.5,
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shootSound": "shootLaser3",
+  "shoot": {
+    "type": "shootPattern",
+    "shotDelay": 10,
+    "shots": 3
+  },
+  "ammoTypes": {
+    "metaglass": {
+      "type": "BasicBulletType",
+      "damage": 10,
+      "speed": 2,
+      "lifetime": 65,
+      "height": 6,
+      "width": 6,
+      "pierce": true,
+      "homingPower": 0.01,
+      "homingRange": 50,
+      "trailColor": "FF0000",
+      "frontColor": "FFFFFF",
+      "backColor": "FF0000",
+      "hitEffect": "plasticExplosion",
+      "shootEffect": "none",
+      "smokeEffect": "shootSmokeDisperse",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "laserAbsorb": true,
+      "hittable": true,
+      "reflectable": true,
+      "absorbable": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "plastanium",
+      "amount": 100
+    },
+    {
+      "item": "copper",
+      "amount": 200
+    },
+    {
+      "item": "lead",
+      "amount": 55
+    },
+    {
+      "item": "hardglass",
+      "amount": 10
+    }
+  ],
+  "category": "turret",
+  "research": "duo"
+}

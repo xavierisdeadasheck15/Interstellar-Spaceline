@@ -1,0 +1,8 @@
+{
+  "type": "Floor",
+  "variants": 3,
+  "name": "Darkstone",
+  "wall": "darkstone-wall",
+  "hasColor": true,
+  "mapColor": "424242"
+}

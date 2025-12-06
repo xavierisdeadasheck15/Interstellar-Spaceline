@@ -1,0 +1,44 @@
+{
+  "Name": "Xantharion Medium Assembler",
+  "description": "Assembles All Unit into Medium Unit",
+  "type": "UnitAssembler",
+  "squareSprite": true,
+  "researchCostMultiplier": 1.75,
+  "size": 5,
+  "areaSize": 15,
+  "droneType": "assembly-drone",
+  "dronesCreated": 4,
+  "droneConstructTime": 90,
+  "health": 5000,
+  "category": "units",
+  "consumes": {
+    "power": 15
+    },
+  "plans": [
+    {
+      "unit": "gravitonix",
+      "requirements": [
+        "interstellar-spaceline-executor/2",
+        "interstellar-spaceline-x-large-metal-wall/6"
+      ],
+      "time": 3000
+    },
+    {
+      "unit": "missilith",
+      "requirements": [
+        "interstellar-spaceline-executor/3",
+        "interstellar-spaceline-x-large-metal-wall/4",
+        "swarmer/2"
+      ],
+      "time": 4000
+    }
+  ],
+  "research": "x-medium-refabricator",
+   "requirements": [
+    "x-compressed-metal/550",
+    "x-dark-metal/450",
+    "silicon/600",
+    "graphite/400",
+    "tungsten/500"
+  ]
+}

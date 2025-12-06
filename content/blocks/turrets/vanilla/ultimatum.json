@@ -1,0 +1,108 @@
+{
+  "type": "ItemTurret",
+  "name": "Ultimatum",
+  "description": "Heavy AOE Artillery, Can reach up Almost Furthest Area, but extremely low Reload and slow rotate",
+  "ammoUseEffect": "casing4",
+  "ammoEjectBack": 5,
+  "size": 5,
+  "health": 10000,
+  "buildTime": 50,
+  "coolantMultiplier": 1.25,
+  "consumes": {
+    "coolant": {
+      "amount": 0.5
+    }
+  },
+  "shake": 15,
+  "maxAmmo": 10,
+  "ammoPerShot": 1,
+  "reload": 1000,
+  "range": 2000,
+  "shootY": 20,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 0.5,
+  "inaccuracy": 0,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "artillery-launch",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "ArtilleryBulletType",
+      "damage": 3500,
+      "splashDamage": 1250,
+      "splashDamageRadius": 100,
+      "knockback": 20,
+      "impact": true,
+      "speed": 10,
+      "lifetime": 200,
+      "height": 30,
+      "width": 30,
+      "frontColor": "e57373",
+      "backColor": "d32f2f",
+      "trailColor": "d32f2f",
+      "despawnEffect": "massiveExplosion",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "shootBig2",
+      "smokeEffect": "shootBigSmoke2",
+      "trailWidth": 2,
+      "trailLength": 20,
+      "trailEffect": "formsmoke",
+      "trailRotation": true,
+      "despawnSound": "artillery-boom"
+    }
+  },
+  "requirements": [
+    {
+      "item": "titanium",
+      "amount": 1250
+    },
+    {
+      "item": "tungsten",
+      "amount": 1700
+    },
+    {
+      "item": "copper",
+      "amount": 2500
+    },
+    {
+      "item": "thorium",
+      "amount": 1000
+    },
+    {
+      "item": "graphite",
+      "amount": 750
+    },
+    {
+      "item": "silicon",
+      "amount": 1000
+    }
+  ],
+  "category": "turret",
+  "research": "accelerator",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-body",
+        "mirror": false,
+        "top": true,
+        "under": false,
+        "progress": "recoil",
+        "moveY": -2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-barrels",
+        "y": 15,
+        "x": 0,
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveY": -15
+      }
+    ]
+  }
+}

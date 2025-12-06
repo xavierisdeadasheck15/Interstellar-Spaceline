@@ -1,0 +1,59 @@
+{
+  "name": "Retachment Sustainer",
+  "description": "Large Repair Block, Repair Nearby Block, Better than Self Sustainer Mender",
+  "type": "mendProjector",
+  "researchCostMultiplier": 2.2,
+  "buildTime": 10,
+  "size": 3,
+  "consumes": {
+    "power": 10,
+    "items": {
+      "items": [
+        "x-negative-energy-disperse/1"
+      ],
+      "booster": true,
+      "optional": true
+    }
+  },
+  "timerUse": 1.5,
+  "baseColor": "7e57c2",
+  "phaseColor": "b39ddb",
+  "reload": 350,
+  "range": 110,
+  "healPercent": 30,
+  "phaseBoost": 20,
+  "phaseRangeBoost": 35,
+  "useTime": 280,
+  "requirements": [
+    {
+      "item": "chromium",
+      "amount": 750
+    },
+    {
+      "item": "silicon",
+      "amount": 600
+    },
+    {
+      "item": "graphite",
+      "amount": 800
+    },
+    {
+      "item": "plastanium",
+      "amount": 350
+    },
+    {
+      "item": "tungsten",
+      "amount": 500
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 200
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 100
+    }
+  ],
+  "category": "effect",
+  "research": "x-self-sustainer"
+}

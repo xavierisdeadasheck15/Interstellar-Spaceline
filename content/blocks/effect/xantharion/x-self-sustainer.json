@@ -1,0 +1,51 @@
+{
+  "name": "Self Sustainer",
+  "description": "Repair Nearby Block, Better than Mender",
+  "type": "mendProjector",
+  "researchCostMultiplier": 1.75,
+  "buildTime": 10,
+  "size": 2,
+  "consumes": {
+    "power": 5,
+    "items": {
+      "items": [
+        "x-positive-energy-disperse/1"
+      ],
+      "booster": true,
+      "optional": true
+    }
+  },
+  "timerUse": 1.2,
+  "baseColor": "ef5350",
+  "phaseColor": "ef9a9a",
+  "reload": 300,
+  "range": 95.5,
+  "healPercent": 18,
+  "phaseBoost": 15.5,
+  "phaseRangeBoost": 30,
+  "useTime": 380,
+  "requirements": [
+    {
+      "item": "chromium",
+      "amount": 500
+    },
+    {
+      "item": "silicon",
+      "amount": 300
+    },
+    {
+      "item": "graphite",
+      "amount": 650
+    },
+    {
+      "item": "tungsten",
+      "amount": 300
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 100
+    }
+  ],
+  "category": "effect",
+  "research": "core-xelestal"
+}

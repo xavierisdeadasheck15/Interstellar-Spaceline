@@ -1,0 +1,264 @@
+{
+  "type": "ItemTurret",
+  "name": "Xenon",
+  "description": "Heavy Rapid Penetration AA Turret",
+  "ammoUseEffect": "casing3Double",
+  "ammoEjectBack": 3,
+  "size": 3,
+  "health": 2500,
+  "buildTime": 10,
+  "coolantMultiplier": 3,
+  "consumes": {
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+  "shake": 5,
+  "maxAmmo": 100,
+  "ammoPerShot": 1,
+  "reload": 5,
+  "range": 420,
+  "shootY": 10,
+  "targetAir": true,
+  "targetGround": false,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 10,
+    "shots": 1
+  },
+  "rotateSpeed": 2,
+  "inaccuracy": 2,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "shootBig",
+  "ammoTypes": {
+    "tungsten": {
+      "type": "BasicBulletType",
+      "damage": 60.95,
+      "pierceArmor": true,
+      "pierceBuilding": true,
+      "pierceCap": 5,
+      "pierceDamageFactor": 0.01,
+      "collidesGround": false,
+      "speed": 6,
+      "lifetime": 70,
+      "height": 24,
+      "width": 12,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": "hitBulletBig",
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 30,
+            "length": 50,
+            "colorFrom": "757575",
+            "colorTo": "424242"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 1,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 25,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 5,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "shootEffect": "shootBig2",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 30
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 35,
+            "length": 70,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 25,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 40,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 75,
+            "colorFrom": "d50000",
+            "colorTo": "ff5722",
+            "line": true,
+            "strokeFrom": 5,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    },
+    "x-compressed-metal": {
+      "type": "BasicBulletType",
+      "damage": 80.5,
+      "pierceArmor": true,
+      "pierceBuilding": true,
+      "pierceCap": 7,
+      "pierceDamageFactor": 0.01,
+      "collidesGround": false,
+      "speed": 6,
+      "lifetime": 70,
+      "height": 24,
+      "width": 12,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": "hitBulletBig",
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 30,
+            "length": 50,
+            "colorFrom": "757575",
+            "colorTo": "424242"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 1,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 25,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 5,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "shootEffect": "shootBig2",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 30
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 35,
+            "length": 70,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 25,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 40,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 75,
+            "colorFrom": "d50000",
+            "colorTo": "ff5722",
+            "line": true,
+            "strokeFrom": 5,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "tungsten",
+      "amount": 250
+    },
+    {
+      "item": "silicon",
+      "amount": 300
+    },
+    {
+      "item": "titanium",
+      "amount": 500
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 50
+    }
+  ],
+  "category": "turret",
+  "research": "x-burster",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-calliber",
+        "alternate": true,
+        "mirror": true,
+        "under": true,
+        "progress": "recoil",
+        "moveY": -3
+      }
+    ]
+  }
+}

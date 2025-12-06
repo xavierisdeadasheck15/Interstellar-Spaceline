@@ -1,0 +1,146 @@
+{
+  "type": "ItemTurret",
+  "name": "Laser Artillery",
+  "description": "Discharge enemy with hailing a laser into the skies",
+  "researchCostMultiplier": 1.5,
+  "size": 3,
+  "health": 960,
+  "maxAmmo": 20,
+  "ammoPerShot": 5,
+  "reload": 300,
+  "range": 400,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 1.5,
+  "inaccuracy": 0,
+  "hasPower": true,
+  "coolantMultiplier": 2,
+  "consumes": {
+    "power": 10,
+    "coolant": {
+      "amount": 0.5
+    }
+  },
+  "shoot": {
+    "type": "shootPattern",
+    "shots": 3,
+    "shotDelay": 50
+  },
+  "shootSound": "shootSmite",
+  "ammoTypes": {
+    "phase-fabric": {
+      "type": "ArtilleryBulletType",
+      "shieldDamageMultiplier": 2.5,
+      "sprite": "interstellar-spaceline-star-bullet",
+      "spin": 5.5,
+      "damage": 50,
+      "splashDamageRadius": 50,
+      "splashDamage": 25,
+      "speed": 4,
+      "lifetime": 100,
+      "height": 15,
+      "width": 15,
+      "homingPower": 0.05,
+      "homingRange": 100,
+      "trailColor": "ffcc80",
+      "frontColor": "fff3e0",
+      "backColor": "ffcc80",
+      "depawnEffect": "massiveExplosion",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "shootBig2",
+      "smokeEffect": "shootSmokeDisperse",
+      "trailWidth": 1.5,
+      "trailLength": 5,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": false,
+      "status": "unmoving",
+      "statusDuration": 25
+    },
+    "surge-alloy": {
+      "type": "ArtilleryBulletType",
+      "shieldDamageMultiplier": 5,
+      "sprite": "interstellar-spaceline-star-bullet",
+      "spin": 5.5,
+      "damage": 100,
+      "splashDamageRadius": 50,
+      "splashDamage": 50,
+      "speed": 4,
+      "lifetime": 100,
+      "height": 15,
+      "width": 15,
+      "homingPower": 0.05,
+      "homingRange": 100,
+      "trailColor": "fdd835",
+      "frontColor": "fff176",
+      "backColor": "fdd835",
+      "depawnEffect": "massiveExplosion",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "shootBig2",
+      "smokeEffect": "shootSmokeDisperse",
+      "trailWidth": 1.5,
+      "trailLength": 5,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": false,
+      "status": "unmoving",
+      "statusDuration": 50
+    },
+    "powergem": {
+      "type": "ArtilleryBulletType",
+      "shieldDamageMultiplier": 7.5,
+      "sprite": "interstellar-spaceline-star-bullet",
+      "spin": 5.5,
+      "damage": 150,
+      "splashDamageRadius": 50,
+      "splashDamage": 75,
+      "speed": 4,
+      "lifetime": 100,
+      "height": 15,
+      "width": 15,
+      "homingPower": 0.05,
+      "homingRange": 100,
+      "trailColor": "d32f2f",
+      "frontColor": "e57373",
+      "backColor": "d32f2f",
+      "depawnEffect": "massiveExplosion",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "shootBig2",
+      "smokeEffect": "shootSmokeDisperse",
+      "trailWidth": 1.5,
+      "trailLength": 5,
+      "laserAbsorb": true,
+      "hittable": false,
+      "reflectable": false,
+      "absorbable": false,
+      "status": "unmoving",
+      "statusDuration": 75
+    }
+  },
+  "requirements": [
+    {
+      "item": "surge-alloy",
+      "amount": 150
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 200
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "titanium",
+      "amount": 325
+    },
+    {
+      "item": "powergem",
+      "amount": 50
+    }
+  ],
+  "category": "turret",
+  "research": "executor"
+}

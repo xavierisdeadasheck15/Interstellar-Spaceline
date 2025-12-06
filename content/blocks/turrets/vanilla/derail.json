@@ -1,0 +1,98 @@
+{
+  "type": "ItemTurret",
+  "name": "Derail",
+  "description": "Heavy Caliber AOE",
+  "ammoUseEffect": "casing4",
+  "ammoEjectBack": 5,
+  "size": 3,
+  "health": 1000,
+  "buildTime": 10,
+  "coolantMultiplier": 5,
+  "consumes": {
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shake": 5,
+  "maxAmmo": 20,
+  "ammoPerShot": 5,
+  "reload": 50,
+  "range": 400,
+  "shootY": 4,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 2,
+  "inaccuracy": 0,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "shotgun",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "BasicBulletType",
+      "buildingDamageMultiplier": 1.5,
+      "knockback": 5,
+      "damage": 100,
+      "splashDamage": 50,
+      "splashDamageRadius": 50,
+      "scaledSplashDamage": true,
+      "pierceArmor": true,
+      "pierceBuilding": true,
+      "pierceCap": 5,
+      "pierceDamageFactor": 0.01,
+      "speed": 8,
+      "lifetime": 50,
+      "height": 15,
+      "width": 10,
+      "despawnEffect": "massiveExplosion",
+      "hitEffect": "massiveExplosion",
+      "despawnSound": "explosionbig",
+      "hitSound": "explosionbig",
+      "shootEffect": "shootBigColor",
+      "smokeEffect": "blastExplosion",
+      "trailEffect": "colorSpark",
+      "trailRotation": true,
+      "status": "blasted",
+      "statusDuration": 200,
+      "reflectable": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "titanium",
+      "amount": 250
+    },
+    {
+      "item": "silicon",
+      "amount": 300
+    },
+    {
+      "item": "graphite",
+      "amount": 350
+    },
+    {
+      "item": "thorium",
+      "amount": 150
+    },
+    {
+      "item": "plastanium",
+      "amount": 100
+    }
+  ],
+  "category": "turret",
+  "research": "penetrator",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-gun",
+        "mirror": false,
+        "under": false,
+        "progress": "recoil",
+        "heatprogress": "recoil",
+        "moveY": -5
+      }
+    ]
+  }
+}

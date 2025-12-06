@@ -1,0 +1,88 @@
+{
+  "type": "GenericCrafter",
+  "name": "Advance Silicon Weaver",
+  "description": "Weave Graphite and sand within a water into Silicon",
+  "health": 800,
+  "size": 3,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "water",
+        "alpha": 0.5
+      },
+      {
+        "type": "DrawWeave"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 20,
+  "liquidCapacity": 50,
+  "consumes": {
+    "power": 3.5,
+    "liquid": "water/0.1",
+      "items": {
+        "items": [
+        {
+          "item": "graphite",
+          "amount": 2
+        },
+        {
+          "item": "sand",
+          "amount": 5
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 175
+    },
+    {
+      "item": "graphite",
+      "amount": 120
+    },
+    {
+      "item": "silicon",
+      "amount": 95
+    },
+    {
+      "item": "titanium",
+      "amount": 250
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "advance-compressor",
+    "requirements": [
+      "copper/350",
+      "graphite/240",
+      "silicon/190",
+      "titanium/500"
+    ]
+  },
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "techloop",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "silicon",
+    "amount": 5
+  }
+}

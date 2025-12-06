@@ -1,0 +1,64 @@
+{
+  "type": "GenericCrafter",
+  "name": "Gas Filter",
+  "description": "Filter a Monoxide into Dioxide Gases, Required Ozone",
+  "researchCostMultiplier": 1.5,
+  "health": 750,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "suffix": "-liquid",
+        "drawLiquid": "carbon-monoxide",
+        "alpha": 1
+      }
+    ]
+  },
+  "craftTime": 50,
+  "liquidCapacity": 50,
+  "consumes": {
+    "power": 3,
+    "liquids": [
+      "carbon-monoxide/0.2",
+      "ozone/0.1"
+    ]
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 200
+    },
+    {
+      "item": "bronze",
+      "amount": 100
+    },
+    {
+      "item": "metaglass",
+      "amount": 125
+    },
+    {
+      "item": "silicon",
+      "amount": 150
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "advance-compressor"
+  },
+  "ambientSound": "machine",
+  "ambientSoundVolume": 0.75,
+  "outputLiquid": "carbon-dioxide/0.2"
+}

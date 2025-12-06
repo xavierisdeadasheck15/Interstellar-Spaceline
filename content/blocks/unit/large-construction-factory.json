@@ -1,0 +1,21 @@
+{
+  "localizedName": "Large Construction Factory",
+  "description": "A Better Construction Factory, build all 4 by 4 blocks.",
+  "type": "Constructor",
+  "research": "construction-factory",
+  "size": 5,
+  "category": "units",
+  "consumes": {
+    "power": 6
+  },
+  "minBlockSize": 1,
+  "maxBlockSize": 4,
+  "requirements": [
+    "copper/800",
+    "lead/200",
+    "graphite/700",
+    "silicon/500",
+    "titanium/250",
+    "plastanium/100"
+  ]
+}

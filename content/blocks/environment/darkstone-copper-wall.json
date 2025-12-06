@@ -1,0 +1,8 @@
+{
+  "type": "StaticWall",
+  "variants": 2,
+  "name": "Darkstone Copper Wall",
+  "itemDrop": "raw-copper",
+  "hasColor": true,
+  "mapColor": "b8705c"
+}

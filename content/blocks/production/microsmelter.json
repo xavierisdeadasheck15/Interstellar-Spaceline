@@ -1,0 +1,107 @@
+{
+  "type": "GenericCrafter",
+  "name": "Nichrome Smelter",
+  "description": "Melt down Nickel & Chromium into Nichrome",
+  "health": 800,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "slag",
+        "alpha": 1
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 2,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "FFFFFF",
+        "rotate": true,
+        "rotateSpeed": 2
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "craftTime": 200,
+  "itemCapacity": 20,
+  "liquidCapacity": 40,
+  "consumes": {
+    "power": 5,
+    "liquid": "slag/0.20",
+      "items": {
+        "items": [
+        {
+          "item": "nickel",
+          "amount": 3
+        },
+        {
+          "item": "chromium",
+          "amount": 3
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "bronze",
+      "amount": 500
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    },
+    {
+      "item": "graphite",
+      "amount": 300
+    },
+    {
+      "item": "titanium",
+      "amount": 100
+    },
+    {
+      "item": "tungsten",
+      "amount": 150
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "thorium-refinery",
+    "requirements": [
+      "bronze/1000",
+      "silicon/500",
+      "graphite/600",
+      "titanium/200",
+      "tungsten/300"
+    ]
+  },
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "techloop",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "nichrome",
+    "amount": 3
+  }
+}

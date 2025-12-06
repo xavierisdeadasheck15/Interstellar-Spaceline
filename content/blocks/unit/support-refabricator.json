@@ -1,0 +1,59 @@
+{
+  "name": "Support Refabricator",
+  "description": "Upgrades inputted support units to the second tier",
+  "type": "Reconstructor",
+  "researchCostMultiplier": 2.5,
+  "health": 1050,
+  "size": 3,
+  "constructTime": 3300,
+  "consumes": {
+    "liquid": "hydrogen/0.08",
+    "power": 3,
+    "items": {
+      "items": [
+        {
+          "item": "silicon",
+          "amount": 100
+        },
+        {
+          "item": "beryllium",
+          "amount": 175
+        },
+        {
+          "item": "oxide",
+          "amount": 75
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 175
+    },
+    {
+      "item": "beryllium",
+      "amount": 100
+    },
+    {
+      "item": "tungsten",
+      "amount": 125
+    },
+    {
+      "item": "graphite",
+      "amount": 200
+    },
+    {
+      "item": "oxide",
+      "amount": 50
+    }
+  ],
+  "upgrades": [
+    [
+      "ignirix",
+      "pyrolith"
+    ]
+  ],
+  "category": "units",
+  "research": "ship-refabricator"
+}

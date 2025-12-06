@@ -1,0 +1,8 @@
+{
+  "type": "StaticWall",
+  "variants": 2,
+  "name": "Darkstone Thorium Wall",
+  "itemDrop": "raw-thorium",
+  "hasColor": true,
+  "mapColor": "cb8ebf"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "Floor",
+  "name": "Chronic",
+  "description": "Boiling Magenta Color, Look like a Expired Blood",
+  "speedMultiplier": 0.25,
+  "damageTaken": 0.5,
+  "variants": 0,
+  "liquidDrop": "chronic",
+  "isLiquid": true,
+  "cacheLayer": "tar",
+  "attributes": {
+    "water": -5
+  },
+  "emitLight": true,
+  "lightRadius": 2,
+  "lightColor": "c51162",
+  "albedo": 0.9,
+  "supportsOverlay": true
+}

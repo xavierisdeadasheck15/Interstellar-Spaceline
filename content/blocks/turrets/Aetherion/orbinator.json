@@ -1,0 +1,136 @@
+{
+  "type": "PowerTurret",
+  "name": "Orbinator",
+  "description": "Unknown advance Electric Turret",
+  "unitSort": "weakest",
+  "size": 3,
+  "health": 300,
+  "buildTime": 15,
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "water",
+    "amount": 0.5
+  },
+  "coolantMultiplier": 1.0,
+  "consumes": {
+    "power": 15
+  },
+  "shake": 5,
+  "reload": 500,
+  "range": 400,
+  "shootY": 4,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 1,
+  "recoil": 3.5,
+  "predictTarget": false,
+  "shootSound": "shootLaserBig2",
+  "shootType": {
+      "type": "BasicBulletType",
+      "drag": 0.01,
+      "sprite": "interstellar-spaceline-orb-bullet",
+      "backSprite": "interstellar-spaceline-orb-bullet-back",
+      "spin": 2,
+      "shrinkX": 0.5,
+      "shrinkY": 0.5,
+      "homingPower": 0.05,
+      "homingRange": 120,
+      "damage": 50,
+      "splashDamage": 25,
+      "splashDamageRadius": 25,
+      "pierce": true,
+      "pierceArmor": true,
+      "pierceBuilding": true,
+      "speed": 3.75,
+      "lifetime": 500,
+      "height": 50,
+      "width": 50,
+      "frontColor": "29b6f6",
+      "backColor": "01579b",
+      "despawnSound": "loudHeavyBlaster",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 70,
+            "colorFrom": "29b6f6",
+            "colorTo": "01579b"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 25,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 60,
+            "colorFrom": "29b6f6",
+            "colorTo": "01579b"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 75,
+            "colorFrom": "29b6f6",
+            "colorTo": "01579b",
+            "line": true,
+            "strokeFrom": 5,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "hitEffect": "colorSpark",
+      "reflectable": true,
+      "absorbable": true,
+      "bulletInterval": 5,
+      "intervalBullets": 5,
+      "intervalSpread": 360,
+      "intervalAngle": 360,
+      "intervalBullet": {
+        "type": "LightningBulletType",
+        "buildingDamageMultiplier": 0.5,
+        "damage": 25,
+        "frontColor": "29b6f6",
+        "backColor": "01579b",
+        "lightningColor": "29b6f6",
+        "lightningLength": 8,
+        "lightningCone": 10
+      }
+    },
+  "requirements": [
+    {
+      "item": "tungsten",
+      "amount": 650
+    },
+    {
+      "item": "silicon",
+      "amount": 1750
+    },
+    {
+      "item": "titanium",
+      "amount": 550
+    },
+    {
+      "item": "bronze",
+      "amount": 1000
+    },
+    {
+      "item": "surge-alloy",
+      "amount": 250
+    }
+  ],
+  "category": "turret",
+  "research": "smite",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "reinforced-"
+  }
+}

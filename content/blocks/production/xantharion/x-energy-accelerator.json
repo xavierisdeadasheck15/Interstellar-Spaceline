@@ -1,0 +1,92 @@
+{
+  "type": "GenericCrafter",
+  "name": "Energy Accelerator",
+  "description": "Synthesize and Accelerate the energy Crystal",
+  "health": 750,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 10,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "f5e2e1"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "craftTime": 200,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 20,
+      "items": {
+        "items": [
+        {
+          "item": "x-compressed-metal",
+          "amount": 2
+        },
+        {
+          "item": "x-positive-energy-disperse",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 900
+    },
+    {
+      "item": "chromium",
+      "amount": 500
+    },
+    {
+      "item": "silicon",
+      "amount": 1200
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 400
+    },
+    {
+      "item": "x-positive-energy-disperse",
+      "amount": 100
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-synthesizer",
+    "requirements": [
+      "copper/1800",
+      "chromium/1000",
+      "silicon/2400",
+      "x-compressed-metal/800",
+      "x-positive-energy-disperse/200"
+    ]
+  },
+  "craftEffect": "missileTrailSmoke",
+  "updateEffect": "flakExplosion",
+  "ambientSound": "flux",
+  "ambientSoundVolume": 0.10,
+  "outputItem": {
+    "item": "x-energy-positive-alloy",
+    "amount": 1
+  }
+}

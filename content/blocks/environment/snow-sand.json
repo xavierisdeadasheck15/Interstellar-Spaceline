@@ -1,0 +1,10 @@
+{
+  "type": "Floor",
+  "variants": 3,
+  "name": "Snow Sand",
+  "wall": "snow-wall",
+  "itemDrop": "sand",
+  "hasColor": true,
+  "mapColor": "ebeef5",
+  "playerUnmineable": true
+}
