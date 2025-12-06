@@ -1,0 +1,15 @@
+{
+   "type": "Wall",
+   "name": "Dark Metal Wall",
+   "description": "Small Metallic wall, Use to defend the structure",
+   "size": 1,
+   "health": 500,
+   "armor": 3,
+   "chanceDeflect": 5,
+   "category": "defense",
+   "research": "core-xelestal",
+   "requirements": [
+      "x-dark-metal/6",
+      "titanium/6"
+     ]
+}

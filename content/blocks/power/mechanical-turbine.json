@@ -1,0 +1,49 @@
+{
+  "type": "ThermalGenerator",
+  "name": "Mechanical Turbine",
+  "description": "A Turbine use for a Vent, Extract Monoxide Gas and create Power",
+  "size": 3,
+  "squareSprite": false,
+  "attribute": "steam",
+  "displayEfficiencyScale": 1,
+  "minEfficiency": 0.0001,
+  "powerProduction": 0.5,
+  "displayEfficiency": false,
+  "generateEffect": "turbinegenerate",
+  "effectChance": 0.05,
+  "liquidCapacity": 100,
+  "explodeOnFull": true,
+  "category": "power",
+  "research": "advance-steam-generator",
+  "requirements": [
+    "copper/100",
+    "graphite/75"
+  ],
+  "ambientSound": "hum",
+  "ambientSoundVolume": 0.1,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 3,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "hasLiquids": true,
+  "outputLiquid": "carbon-monoxide/0.01",
+  "fogRadius": 3,
+  "researchCost": [
+    "copper/200",
+    "graphite/150"
+  ]
+}

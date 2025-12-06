@@ -1,0 +1,56 @@
+{
+  "type": "ConsumeGenerator",
+  "size": 2,
+  "squareSprite": false,
+  "name": "Monoxide Chimney",
+  "description": "A Chimney Use to blow Monoxide out",
+  "generateEffect": "turbinegenerate",
+  "health": 300,
+  "hasPower": true,
+  "hasLiquids": true,
+  "powerProduction": 1,
+  "buildTime": 5,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "suffix": "-liquid",
+        "drawLiquid": "carbon-monoxide",
+        "alpha": 0.5
+      }
+    ]
+  },
+  "liquidCapacity": 50,
+  "consumes": {
+    "liquid": {
+      "liquid": "carbon-monoxide",
+      "amount": 0.1
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 50
+    },
+    {
+      "item": "bronze",
+      "amount": 25
+    },
+    {
+      "item": "silicon",
+      "amount": 75
+    },
+    {
+      "item": "titanium",
+      "amount": 100
+    }
+  ],
+  "category": "power",
+  "research": {
+    "parent": "mechanical-turbine"
+  }
+}

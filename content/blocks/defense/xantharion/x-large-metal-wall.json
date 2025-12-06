@@ -1,0 +1,15 @@
+{
+   "type": "Wall",
+   "name": "Large Dark Metal Wall",
+   "description": "Large Metallic wall, Use to defend the structure",
+   "size": 2,
+   "health": 1000,
+   "armor": 6,
+   "chanceDeflect": 7,
+   "category": "defense",
+   "research": "x-metal-wall",
+   "requirements": [
+      "x-dark-metal/24",
+      "x-compressed-metal/24"
+     ]
+}

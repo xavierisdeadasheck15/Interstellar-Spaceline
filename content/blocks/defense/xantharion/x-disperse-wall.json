@@ -1,0 +1,20 @@
+{
+   "type": "Wall",
+   "name": "Disperse Wall",
+   "description": "Small sparking wall, Use to defend the structure and damage any attacker, Can be use like a Cable",
+   "size": 1,
+   "health": 550,
+   "armor": 2,
+   "chanceDeflect": 3,
+   "lightningChance": 0.10,
+   "lightningDamage": 30,
+   "lightningLength": 15,
+   "lightningColor": "ef5350",
+   "conductivePower": true,
+   "category": "defense",
+   "research": "x-metal-wall",
+   "requirements": [
+      "x-compressed-metal/6",
+      "x-energy-positive-alloy/1"
+     ]
+}

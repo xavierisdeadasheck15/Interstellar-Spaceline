@@ -1,0 +1,17 @@
+{
+   "type": "Wall",
+   "name": "Reductant Wall",
+   "description": "Small Dimly wall, Use to defend the structure and Absorb Laser Base",
+   "size": 1,
+   "health": 550,
+   "armor": 2,
+   "chanceDeflect": 2,
+   "absorbLasers": true,
+   "category": "defense",
+   "baseExplosiveness": 10.0,
+   "research": "x-metal-wall",
+   "requirements": [
+      "x-compressed-metal/6",
+      "x-energy-negative-alloy/1"
+     ]
+}

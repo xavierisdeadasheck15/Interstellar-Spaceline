@@ -1,0 +1,33 @@
+{
+  "type": "BeamDrill",
+  "name": "Titanium Beam",
+  "description": "A Better Laser drill that drill resource from a wall, More Efficient",
+  "size": 2,
+  "category": "production",
+  "research": "copper-beam",
+  "requirements": [
+    "copper/10",  
+    "graphite/20", 
+    "titanium/30",  
+    "silicon/5" 
+  ],
+  "tier": 3,
+  "range": 5,
+  "drillTime": 150,
+  "fogRadius": 7,
+  "researchCost": [
+    "copper/20",  
+    "graphite/40",  
+    "titanium/60",  
+    "silicon/10" 
+  ],
+  "consumes": {
+    "power": 0.05,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.0015,
+      "optional": true,
+      "booster": true
+    }
+  }
+} 
