@@ -1,0 +1,180 @@
+{
+  "type": "ItemTurret",
+  "name": "Blaster",
+  "description": "Fire 4 Missile that target Enemy",
+  "ammoUseEffect": "casing2Double",
+  "ammoEjectBack": 3,
+  "size": 3,
+  "health": 1150,
+  "buildTime": 10,
+  "coolantMultiplier": 1.25,
+  "consumes": {
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+  "shake": 2,
+  "maxAmmo": 25,
+  "ammoPerShot": 5,
+  "reload": 30,
+  "range": 420,
+  "shootY": 10,
+  "targetAir": true,
+  "targetGround": true,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 7,
+    "shots": 4,
+    "shotDelay": 5
+  },
+  "rotateSpeed": 1.80,
+  "inaccuracy": 8,
+  "shootSound": "missile",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "MissileBulletType",
+      "homingPower": 0.02,
+      "homingRange": 150,
+      "damage": 30,
+      "splashDamage": 15,
+      "splashDamageRadius": 30,
+      "height": 15,
+      "width": 15,
+      "speed": 7,
+      "lifetime": 60,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sizeFrom": 0,
+            "sizeTo": 35,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 60,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 45,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 50,
+            "colorFrom": "b71c1c",
+            "colorTo": "d32f2f"
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sizeFrom": 0,
+            "sizeTo": 35,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 60,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 45,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 50,
+            "colorFrom": "b71c1c",
+            "colorTo": "d32f2f"
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 30
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 70,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 25,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    {
+      "item": "tungsten",
+      "amount": 150
+    },
+    {
+      "item": "copper",
+      "amount": 300
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    },
+    {
+      "item": "graphite",
+      "amount": 100
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 80
+    }
+  ],
+  "category": "turret",
+  "research": "x-burster",
+  "alwaysUnlocked": false
+}
