@@ -1,0 +1,364 @@
+{
+  "type": "payload",
+  "name": "Stormreaver",
+  "description": "Xanthration Heavy Aerial Gunship",
+  "details": "it is describe as one of the copied mech of [orange]stratos[] which it can be clearly see how it move, the different that are crucial is that it immediately boost than just wind up the movement, this particular gunship was use to counterattack [orange]stratos[] & [cyan]overseer[]",
+  "flying": true,
+  "lowAltitude": false,
+  "outlineColor": "141d21",
+  "healColor": "ef5350",
+  "engineSize": 8,
+  "engineOffset": 10,
+  "trailLength": 10,
+  "speed": 3.1,
+  "accel": 0.05,
+  "drag": 0.003,
+  "rotateSpeed": 1.75,
+  "hitSize": 35,
+  "health": 9500,
+  "armor": 17,
+  "circleTarget": true,
+  "faceTarget": false,
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ],
+  "weapons": [
+    {
+      "name": "stormreaver-turret",
+      "layerOffset": -0.02,
+      "under": true,
+      "top": false,
+      "shootY": 6.5,
+      "reload": 2,
+      "x": -20,
+      "y": 9,
+      "rotate": true,
+      "rotateSpeed": 1.75,
+      "rotationLimit": 360,
+      "alternate": false,
+      "mirror": true,
+      "inaccuracy": 2,
+      "recoil": 2, 
+      "shootSound": "shootLaserBig1",
+      "bullet": {
+        "type": "BasicBulletType",
+        "pierceArmor": true,
+        "pierceBuilding": true,
+        "pierceDamageFactor": 0.01,
+        "damage": 40,
+        "height": 10,
+        "width": 10,
+        "speed": 7,
+        "lifetime": 65,
+        "trailWidth": 2,
+        "trailLength": 10,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 50,
+              "length": 65,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 60,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 30,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 40,
+              "length": 60,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "d50000",
+              "colorTo": "ff5722",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "stormreaver-heavy-turret",
+      "layerOffset": -0.01,
+      "controllable": false,
+      "autoTarget": true,
+      "targetAir": false,
+      "under": true,
+      "top": false,
+      "shootY": 7,
+      "reload": 20,
+      "x": 0,
+      "y": 12,
+      "rotate": true,
+      "rotateSpeed": 2,
+      "rotationLimit": 360,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 3,
+      "recoil": 3, 
+      "shootSound": "shootLaserBig3",
+      "bullet": {
+        "type": "BasicBulletType",
+        "pierceArmor": true,
+        "pierceBuilding": true,
+        "collidesAir": false,
+        "pierceDamageFactor": 0.01,
+        "damage": 75,
+        "height": 15,
+        "width": 15,
+        "speed": 8,
+        "lifetime": 50,
+        "trailWidth": 2,
+        "trailLength": 10,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 50,
+              "length": 65,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 60,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 30,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootBig2",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "ef5350",
+              "colorTo": "d32f2f"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 25,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 40,
+              "length": 60,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "d50000",
+              "colorTo": "ff5722",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "MoveEffectAbility",
+      "minVelocity": 0.1,
+      "effect": "colorTrail",
+      "teamColor": false,
+      "interval": 1.0,
+      "x": -33,
+      "y": 1,
+      "effectParam": 3,
+      "color": "90a4ae"
+    },
+    {
+      "type": "MoveEffectAbility",
+      "minVelocity": 0.1,
+      "effect": "colorTrail",
+      "teamColor": false,
+      "interval": 1.0,
+      "x": 33,
+      "y": 1,
+      "effectParam": 3,
+      "color": "90a4ae"
+    }
+  ]
+}
