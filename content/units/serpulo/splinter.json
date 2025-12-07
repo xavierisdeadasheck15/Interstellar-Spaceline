@@ -2,6 +2,7 @@
   "type": "flying",
   "name": "splinter",
   "description": "Cheaper Flare version",
+  "details": "it is a cheaper version of [orange]flare[] which it can be use to destroy the enemy weakest frontier with ease",
   "flying": true,
   "lowAltitude": true,
   "outlineColor": "616161",
