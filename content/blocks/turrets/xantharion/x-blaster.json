@@ -7,7 +7,7 @@
   "size": 3,
   "health": 1150,
   "buildTime": 10,
-  "coolantMultiplier": 1.25,
+  "coolantMultiplier": 1.3,
   "consumes": {
     "coolant": {
       "amount": 0.2
@@ -36,8 +36,8 @@
       "type": "MissileBulletType",
       "homingPower": 0.02,
       "homingRange": 150,
-      "damage": 30,
-      "splashDamage": 15,
+      "damage": 50,
+      "splashDamage": 25,
       "splashDamageRadius": 30,
       "height": 15,
       "width": 15,
