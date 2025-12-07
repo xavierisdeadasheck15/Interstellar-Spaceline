@@ -2,6 +2,7 @@
   "type": "legs",
   "name": "Titanus",
   "description": "The Largest Mech Ever Created by Xantharion",
+  "details": "their greatest magnum opus, capable of annihilate even the strongest of the enemy frontier with ease",
   "flying": false,
   "lowAltitude": true,
   "outlineColor": "141d21",
@@ -401,12 +402,12 @@
       "inaccuracy": 2.5,
       "shoot": {
         "type": "ShootAlternate",
-        "shotDelay": 5,
+        "shotDelay": 20,
         "spread": 8,
         "barrels": 2,
-        "shots": 2
+        "shots": 3
       },
-      "shootSound": "largeCannon",
+      "shootSound": "titanus-artillery",
       "bullet": {
         "type": "ArtilleryBulletType",
         "sprite": "missile-large",
