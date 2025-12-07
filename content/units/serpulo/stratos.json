@@ -2,6 +2,7 @@
   "type": "flying",
   "name": "Stratos",
   "description": "Fires a barrage of bullets, homing missiles, and armor-piercing rounds at enemy targets.",
+  "details": "it is known to use a shape of capital ship which both faction use for mobility",
   "healColor": "ffa665",
   "flying": true,
   "lowAltitude": true,
