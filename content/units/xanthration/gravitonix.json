@@ -2,6 +2,7 @@
   "type": "flying",
   "name": "Gravitonix",
   "description": "One of Xantharion Medium Hover Tank, Capable to Destroy Structure",
+  "details": "who need treads when you just take [purple]elude[] hover and mix it with tank",
   "flying": false,
   "lowAltitude": true,
   "outlineColor": "141d21",
