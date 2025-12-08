@@ -8,7 +8,7 @@
   "requirements": [
     "copper/10"  
   ],
-  "tier": 2,
+  "tier": 1,
   "range": 2,
   "drillTime": 500,
   "fogRadius": 3,
