@@ -7,6 +7,7 @@
   "itemCapacity": 8500,
   "unitCapModifier": 50,
   "researchCostMultiplier": 0.05,
+  "squareSprite": false,
   "unitType": "celestial",
   "requirements": [
     {
