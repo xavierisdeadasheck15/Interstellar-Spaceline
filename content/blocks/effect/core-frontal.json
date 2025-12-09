@@ -7,6 +7,7 @@
   "itemCapacity": 30000,
   "unitCapModifier": 30,
   "researchCostMultiplier": 0.05,
+  "squareSprite": false,
   "unitType": "coretal",
   "requirements": [
     {
