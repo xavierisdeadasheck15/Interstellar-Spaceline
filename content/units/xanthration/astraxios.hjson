@@ -8,8 +8,8 @@ health: 200
 hitSize: 10
 armor: 1
 itemCapacity: 50
-accel: 0.003
-drag: 0.006
+accel: 0.06
+drag: 0.04
 speed: 4.0
 outlineColor: "141d21"
 healColor: "7e57c2"
