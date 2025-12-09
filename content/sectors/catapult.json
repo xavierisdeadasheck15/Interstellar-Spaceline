@@ -1,0 +1,17 @@
+{
+  "localizedName": "Catapult",
+  "description": "Enemy Main Transportation Resource, you will be required a transportation in order to progress, Detected a Valuable Erekir Resource, Secure Enemy Base, and Use Erekir Tech",
+  "difficulty": 6,
+  "planet": "glaciera-prime",
+  "sector": 100,
+  "addStartingItems": true,
+  "research": {
+    "parent": "ambush",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "ambush"
+      }
+    ]
+  }
+}
