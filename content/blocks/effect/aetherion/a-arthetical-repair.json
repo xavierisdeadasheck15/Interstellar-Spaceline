@@ -1,0 +1,48 @@
+{
+  "name": "Arthetical Repair",
+  "description": "Unknown Repair Structure, Act as a Mender",
+  "type": "mendProjector",
+  "researchCostMultiplier": 2,
+  "buildTime": 10,
+  "health": 1350,
+  "size": 2,
+  "squareSprite": false,
+  "consumes": {
+    "power": 5,
+    "items": {
+      "items": [
+        "surge-alloy/1"
+      ],
+      "booster": true,
+      "optional": true
+    }
+  },
+  "timerUse": 1.5,
+  "baseColor": "29b6f6",
+  "phaseColor": "80cbc4",
+  "reload": 200,
+  "range": 125,
+  "healPercent": 25,
+  "phaseBoost": 30,
+  "phaseRangeBoost": 50,
+  "useTime": 275,
+  "requirements": [
+    {
+      "item": "tungsten",
+      "amount": 500
+    },
+    {
+      "item": "titanium",
+      "amount": 250
+    },
+    {
+      "item": "silicon",
+      "amount": 750
+    },
+    {
+      "item": "chromium",
+      "amount": 200
+    }
+  ],
+  "category": "effect"
+}
