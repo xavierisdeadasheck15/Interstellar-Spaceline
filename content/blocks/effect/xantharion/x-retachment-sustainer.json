@@ -4,6 +4,7 @@
   "type": "mendProjector",
   "researchCostMultiplier": 2.2,
   "buildTime": 10,
+  "health": 1750,
   "size": 3,
   "consumes": {
     "power": 10,
@@ -18,12 +19,12 @@
   "timerUse": 1.5,
   "baseColor": "7e57c2",
   "phaseColor": "b39ddb",
-  "reload": 350,
+  "reload": 300,
   "range": 110,
   "healPercent": 30,
   "phaseBoost": 20,
-  "phaseRangeBoost": 35,
-  "useTime": 280,
+  "phaseRangeBoost": 40,
+  "useTime": 275,
   "requirements": [
     {
       "item": "chromium",
