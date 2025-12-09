@@ -1,16 +1,16 @@
 {
   "localizedName": "Quiet",
   "description": "Advance Enemy Base Detected Here, Has Some Resource you will needed",
-  "difficulty": 5,
+  "difficulty": 6,
   "planet": "glaciera-prime",
   "sector": 5,
   "addStartingItems": true,
   "research": {
-    "parent": "terrestial",
+    "parent": "catapult",
     "objectives": [
       {
         "type": "SectorComplete",
-        "preset": "terrestial"
+        "preset": "catapult"
       }
     ]
   }
