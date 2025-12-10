@@ -1,0 +1,14 @@
+{
+  "type": "Item",
+  "name": "Arethorium",
+  "description": "A Resource Mixed with the Radioactive Element, Use for Basic Advance Resource",
+  "hardness": 3,
+  "cost": 1.5,
+  "color": "01579b",
+  "research": {
+    "parent": "a-aether"
+  },
+  "radioactivity": 0.80,
+  "explosiveness": 0.50,
+  "charge": 1.25
+}

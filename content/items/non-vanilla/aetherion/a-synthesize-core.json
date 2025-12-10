@@ -1,0 +1,14 @@
+{
+  "type": "Item",
+  "name": "Synthesize Core",
+  "description": "A Powerful Core that Contain Extreme Electricity Charge and Great Explosiveness",
+  "hardness": 3,
+  "cost": 2,
+  "color": "4dd0e1",
+  "research": {
+    "parent": "a-asthemiun"
+  },
+  "radioactivity": 0.20,
+  "explosiveness": 1.75,
+  "charge": 2.90
+}

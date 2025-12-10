@@ -1,0 +1,14 @@
+{
+  "type": "Item",
+  "name": "Asthemiun",
+  "description": "Greater Refined Resource from Charge & radiation with hardest Alloy",
+  "hardness": 5,
+  "cost": 2.5,
+  "color": "0288d1",
+  "research": {
+    "parent": "a-arethorium"
+  },
+  "radioactivity": 0.50,
+  "explosiveness": 0.80,
+  "charge": 1.1
+}

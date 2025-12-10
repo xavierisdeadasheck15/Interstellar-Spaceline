@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "Aether",
+  "description": "A Glowing Crystal that seem to be an energy Connected to the Unknown Faction",
+  "hardness": 2,
+  "cost": 2,
+  "color": "00acc1",
+  "research": {
+    "parent": "surge-alloy"
+  },
+  "explosiveness": 0.50,
+  "charge": 1.25
+}
