@@ -13,7 +13,7 @@
   },
   "coolantMultiplier": 1.0,
   "consumes": {
-    "power": 15
+    "power": 20
   },
   "shake": 5,
   "reload": 500,
@@ -31,9 +31,9 @@
       "sprite": "interstellar-spaceline-orb-bullet",
       "backSprite": "interstellar-spaceline-orb-bullet-back",
       "spin": 2,
-      "shrinkX": 0.5,
-      "shrinkY": 0.5,
-      "homingPower": 0.05,
+      "shrinkX": 0.3,
+      "shrinkY": 0.3,
+      "homingPower": 0.025,
       "homingRange": 120,
       "damage": 50,
       "splashDamage": 25,
@@ -106,8 +106,8 @@
     },
   "requirements": [
     {
-      "item": "tungsten",
-      "amount": 650
+      "item": "a-asthemiun",
+      "amount": 500
     },
     {
       "item": "silicon",
@@ -115,15 +115,15 @@
     },
     {
       "item": "titanium",
-      "amount": 550
-    },
-    {
-      "item": "bronze",
-      "amount": 1000
-    },
-    {
-      "item": "surge-alloy",
       "amount": 250
+    },
+    {
+      "item": "a-aether",
+      "amount": 500
+    },
+    {
+      "item": "tungsten",
+      "amount": 300
     }
   ],
   "category": "turret",
