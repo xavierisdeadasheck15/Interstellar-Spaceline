@@ -11,7 +11,7 @@
     "power": 5,
     "items": {
       "items": [
-        "surge-alloy/1"
+        "a-synthesize-core/1"
       ],
       "booster": true,
       "optional": true
@@ -28,7 +28,7 @@
   "useTime": 275,
   "requirements": [
     {
-      "item": "tungsten",
+      "item": "a-arethorium",
       "amount": 500
     },
     {
