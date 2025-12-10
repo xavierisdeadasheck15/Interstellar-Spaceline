@@ -5,6 +5,7 @@
   "ammoUseEffect": "casing4",
   "ammoEjectBack": 5,
   "size": 5,
+  "squareSprite": false,
   "health": 10000,
   "buildTime": 50,
   "coolantMultiplier": 1.25,
@@ -14,8 +15,8 @@
     }
   },
   "shake": 15,
-  "maxAmmo": 10,
-  "ammoPerShot": 1,
+  "maxAmmo": 100,
+  "ammoPerShot": 50,
   "reload": 1000,
   "range": 2000,
   "shootY": 20,
@@ -44,12 +45,167 @@
       "despawnEffect": "massiveExplosion",
       "hitEffect": "massiveExplosion",
       "shootEffect": "shootBig2",
-      "smokeEffect": "shootBigSmoke2",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sizeFrom": 0,
+            "sizeTo": 40,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "ffffff",
+            "colorTo": "9e9e9e",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 60,
+            "sizeFrom": 6,
+            "sizeTo": 0,
+            "cone": 60,
+            "length": 100,
+            "colorFrom": "9e9e9e",
+            "colorTo": "616161"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 80,
+            "sizeFrom": 2,
+            "sizeTo": 0,
+            "cone": 90,
+            "length": 120,
+            "colorFrom": "ffeb3b",
+            "colorTo": "ffc107"
+          }
+        ]
+      },
       "trailWidth": 2,
       "trailLength": 20,
       "trailEffect": "formsmoke",
       "trailRotation": true,
       "despawnSound": "artillery-boom"
+    },
+    "surge-alloy": {
+      "type": "ArtilleryBulletType",
+      "reloadMultiplier": 1.5,
+      "damage": 3000,
+      "splashDamage": 800,
+      "splashDamageRadius": 60,
+      "knockback": 25,
+      "impact": true,
+      "speed": 10,
+      "lifetime": 200,
+      "height": 30,
+      "width": 30,
+      "frontColor": "f9f279",
+      "backColor": "f6e55a",
+      "trailColor": "f6e55a",
+      "lightning": 5,
+      "lightningLength": 15,
+      "lightningColor": "f6e55a",
+      "lightningDamage": 200,
+      "despawnEffect": "massiveExplosion",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "shootBig2",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sizeFrom": 0,
+            "sizeTo": 40,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "ffffff",
+            "colorTo": "f6e55a",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 80,
+            "sizeFrom": 2,
+            "sizeTo": 0,
+            "cone": 90,
+            "length": 120,
+            "colorFrom": "ffeb3b",
+            "colorTo": "f6e55a"
+          }
+        ]
+      },
+      "trailWidth": 2,
+      "trailLength": 20,
+      "trailEffect": "colorSpark",
+      "trailRotation": true,
+      "despawnSound": "artillery-boom"
+    },
+    "plastanium": {
+      "type": "ArtilleryBulletType",
+      "reloadMultiplier": 1.2,
+      "damage": 1000,
+      "splashDamage": 500,
+      "splashDamageRadius": 70,
+      "knockback": 15,
+      "impact": true,
+      "speed": 10,
+      "lifetime": 200,
+      "height": 30,
+      "width": 30,
+      "frontColor": "8bc34a",
+      "backColor": "4caf50",
+      "trailColor": "4caf50",
+      "despawnEffect": "massiveExplosion",
+      "hitEffect": "massiveExplosion",
+      "shootEffect": "shootBig2",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sizeFrom": 0,
+            "sizeTo": 40,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "c8e6c9",
+            "colorTo": "8bc34a",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 60,
+            "sizeFrom": 6,
+            "sizeTo": 0,
+            "cone": 60,
+            "length": 100,
+            "colorFrom": "8bc34a",
+            "colorTo": "4caf50"
+          }
+        ]
+      },
+      "trailWidth": 2,
+      "trailLength": 20,
+      "trailEffect": "pulverizeMedium",
+      "trailRotation": true,
+      "despawnSound": "artillery-boom",
+      "fragBullets": 20,
+      "fragSpread": 50,
+      "fragRandomSpread": 100,
+      "fragBullet": {
+        "type": "ArtilleryBulletType",
+        "damage": 100,
+        "splashDamage": 50,
+        "splashDamageRadius": 25,
+        "speed": 4,
+        "lifetime": 50,
+        "height": 10,
+        "width": 10,
+        "frontColor": "8bc34a",
+        "backColor": "4caf50",
+        "despawnEffect": "plasticExplosion",
+        "hitEffect": "plasticExplosion",
+        "trailEffect": "pulverizeMedium",
+        "trailRotation": true
+      }
     }
   },
   "requirements": [
