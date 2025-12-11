@@ -194,7 +194,7 @@
         "type": "ArtilleryBulletType",
         "damage": 100,
         "splashDamage": 50,
-        "splashDamageRadius": 25,
+        "splashDamageRadius": 50,
         "speed": 4,
         "lifetime": 50,
         "height": 10,
