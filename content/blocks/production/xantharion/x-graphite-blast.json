@@ -1,0 +1,70 @@
+{
+  "type": "HeatCrafter",
+  "name": "Graphite Blaster",
+  "description": "Blast out Inputted Coal into Graphite, Required Heat",
+  "health": 500,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawHeatInput"
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 20,
+  "heatRequirement": 5,
+  "consumes": {
+    "power": 5,
+      "items": {
+        "items": [
+        {
+          "item": "coal",
+          "amount": 5
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "graphite",
+      "amount": 250
+    },
+    {
+      "item": "lead",
+      "amount": 150
+    },
+    {
+      "item": "silicon",
+      "amount": 300
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 50
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-metallic-factory",
+    "requirements": [
+      "graphite/500",
+      "lead/300",
+      "silicon/600",
+      "x-dark-metal/100"
+    ]
+  },
+  "craftEffect": "producesmoke",
+  "updateEffect": "none",
+  "outputItem": {
+    "item": "graphite",
+    "amount": 5
+  }
+}
