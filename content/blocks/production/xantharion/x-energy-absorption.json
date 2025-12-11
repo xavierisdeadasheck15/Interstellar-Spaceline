@@ -23,7 +23,7 @@
       {
         "type": "DrawGlowRegion",
         "suffix": "-glow",
-        "color": "f5e2e1"
+        "color": "7e57c2"
       },
       {
         "type": "DrawRegion",
@@ -81,8 +81,56 @@
       "x-negative-energy-disperse/200"
     ]
   },
-  "craftEffect": "missileTrailSmoke",
-  "updateEffect": "flakExplosion",
+  "craftEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 20,
+        "sizeFrom": 4,
+        "sizeTo": 0,
+        "cone": 360,
+        "length": 30,
+        "colorFrom": "666666",
+        "colorTo": "222222"
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 50,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 360,
+        "length": 40,
+        "colorFrom": "b39ddb",
+        "colorTo": "7e57c2"
+      }
+    ]
+  },
+  "updateEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "WaveEffect",
+        "sizeFrom": 0,
+        "sizeTo": 20,
+        "strokeFrom": 2,
+        "strokeTo": 0,
+        "colorFrom": "b39ddb",
+        "colorTo": "7e57c2",
+        "lifetime": 30
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 360,
+        "length": 25,
+        "colorFrom": "b39ddb",
+        "colorTo": "7e57c2"
+      }
+    ]
+  },
   "ambientSound": "flux",
   "ambientSoundVolume": 0.10,
   "outputItem": {
