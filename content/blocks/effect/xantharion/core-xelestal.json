@@ -12,7 +12,7 @@
   "requirements": [
     {
       "item": "titanium",
-      "amount": 45000
+      "amount": 4500
     },
     {
       "item": "silicon",
@@ -21,10 +21,6 @@
     {
       "item": "x-compressed-metal",
       "amount": 2000
-    },
-    {
-      "item": "x-energy-positive-alloy",
-      "amount": 1000
     }
   ],
   "category": "effect",
