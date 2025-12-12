@@ -1,69 +1,73 @@
 {
-    "type": "ConsumeGenerator",
-    "name": "Biomechanical Generator",
-    "description": "Generate power from Fuel of oil and some Flammable resource, Produce Gas as bioproduct",
-    "size": 2,
-    "powerProduction": 6.75,
-    "drawer": {
+  "type": "HeatCrafter",
+  "name": "Silicon Heater",
+  "description": "Heat up Inputted Sand into Silicon, Required Heat",
+  "health": 500,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
     "type": "DrawMulti",
-        "drawers": [
-          {
-            "type": "drawRegion",
-            "suffix": "-bottom"
-          },
-          {
-            "type": "DrawLiquidTile",
-            "suffix": "-bottom",
-            "drawLiquid": "oil",
-            "alpha": 0.5
-          },
-          {
-            "type": "DrawDefault"
-          },
-          {
-            "type": "DrawRegion",
-            "suffix": "-rotator",
-            "rotateSpeed": 8,
-            "spinSprite": true
-          },
-          {
-            "type": "drawRegion",
-            "suffix": "-top"
-          },
-          {
-            "type": "DrawGlowRegion",
-            "suffix": "-glow",
-            "color": "ef5350"
-          }
-        ]
-    },
-    "hasItems": true,
-    "hasLiquids": true,
-    "itemCapacity": 20,
-    "liquidCapacity": 100,
-    "itemDuration": 50,
-    "liquidDuration": 200,
-    "consumes": {
-      "liquid": "oil/0.05",
-      "itemFlammable": {
-        "minFlammable": 0.1
+    "drawers": [
+      {
+        "type": "DrawDefault"
       },
-      "itemExplode": {}
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow"
+      },
+      {
+        "type": "DrawHeatInput"
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 50,
+  "heatRequirement": 3,
+  "consumes": {
+    "power": 5,
+      "items": {
+        "items": [
+        {
+          "item": "sand",
+          "amount": 5
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "graphite",
+      "amount": 300
     },
-    "minItemEfficiency": 0.1,
-        "requirements": [
-          "x-dark-metal/200",
-          "titanium/150",
-          "silicon/350",
-          "graphite/100"
-    ],
-    "category": "power",
-    "research": {
-      "parent": "core-xelestal"
+    {
+      "item": "lead",
+      "amount": 100
     },
-    "outputLiquid": "carbon-monoxide/0.02",
-    "loopSound": "hum",
-    "ambientSound": "machine",
-    "loopSoundVolume": 0.75,
-    "ambientSoundVolume": 0.50
+    {
+      "item": "silicon",
+      "amount": 250
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 25
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "requirements": [
+      "graphite/600",
+      "lead/200",
+      "silicon/500",
+      "x-dark-metal/50"
+    ]
+  },
+  "craftEffect": "smeltsmoke",
+  "updateEffect": "none",
+  "outputItem": {
+    "item": "silicon",
+    "amount": 5
+  }
 }
