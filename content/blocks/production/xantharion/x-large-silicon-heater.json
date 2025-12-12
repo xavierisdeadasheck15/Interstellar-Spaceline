@@ -1,0 +1,90 @@
+{
+  "type": "HeatCrafter",
+  "name": "Large Silicon Heater",
+  "description": "Burn Down A Sand into a Silicon, Require 6 heat and some Gases",
+  "health": 500,
+  "size": 3,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameRadius": 5,
+        "flameRadiusIn": 2,
+        "flameRadiusScl": 7,
+        "flameColor": "ef5350"
+      },
+      {
+        "type": "DrawHeatInput"
+      }
+    ]
+  },
+  "craftTime": 200,
+  "liquidCapacity": 100,
+  "itemCapacity": 30,
+  "heatRequirement": 6,
+  "consumes": {
+    "power": 8,
+    "liquid": "carbon-monoxide/0.08",
+      "items": {
+        "items": [
+        {
+          "item": "sand",
+          "amount": 15
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "graphite",
+      "amount": 400
+    },
+    {
+      "item": "lead",
+      "amount": 200
+    },
+    {
+      "item": "copper",
+      "amount": 500
+    },
+    {
+      "item": "silicon",
+      "amount": 500
+    },
+    {
+      "item": "chromium",
+      "amount": 200
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 75
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-silicon-heater",
+    "requirements": [
+      "graphite/900",
+      "lead/500",
+      "copper/1000",
+      "silicon/1500",
+      "chromium/450",
+      "x-dark-metal/600",
+      "x-compressed-metal/150"
+    ]
+  },
+  "craftEffect": "smeltsmoke",
+  "updateEffect": "none",
+  "outputItem": {
+    "item": "silicon",
+    "amount": 15
+  }
+}

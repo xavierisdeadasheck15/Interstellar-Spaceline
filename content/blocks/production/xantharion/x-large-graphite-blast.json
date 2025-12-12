@@ -1,0 +1,85 @@
+{
+  "type": "HeatCrafter",
+  "name": "Large Graphite Blaster",
+  "description": "Massively Blast out Inputted Coal into Graphite, Required More Heat",
+  "health": 500,
+  "size": 3,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow"
+      },
+      {
+        "type": "DrawHeatInput"
+      }
+    ]
+  },
+  "craftTime": 200,
+  "itemCapacity": 20,
+  "heatRequirement": 6,
+  "consumes": {
+    "power": 7.5,
+      "items": {
+        "items": [
+        {
+          "item": "coal",
+          "amount": 10
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "graphite",
+      "amount": 500
+    },
+    {
+      "item": "lead",
+      "amount": 150
+    },
+    {
+      "item": "copper",
+      "amount": 300
+    },
+    {
+      "item": "silicon",
+      "amount": 600
+    },
+    {
+      "item": "chromium",
+      "amount": 300
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 50
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-graphite-blast",
+    "requirements": [
+      "graphite/1200",
+      "lead/400",
+      "copper/600",
+      "silicon/1300",
+      "chromium/600",
+      "x-dark-metal/500",
+      "x-compressed-metal/100"
+    ]
+  },
+  "craftEffect": "producesmoke",
+  "updateEffect": "none",
+  "outputItem": {
+    "item": "graphite",
+    "amount": 10
+  }
+}
