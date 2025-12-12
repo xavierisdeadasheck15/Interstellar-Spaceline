@@ -21,7 +21,7 @@
   },
   "craftTime": 100,
   "itemCapacity": 20,
-  "heatRequirement": 5,
+  "heatRequirement": 3,
   "consumes": {
     "power": 5,
       "items": {
