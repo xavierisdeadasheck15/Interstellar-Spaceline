@@ -1,0 +1,36 @@
+{
+  "type": "CoreBlock",
+  "name": "Core: Axias",
+  "description": "A 2nd Iteration Core of Xantharion",
+  "health": 10000,
+  "size": 5,
+  "itemCapacity": 10000,
+  "unitCapModifier": 75,
+  "researchCostMultiplier": 2.5,
+  "squareSprite": false,
+  "unitType": "axes",
+  "requirements": [
+    {
+      "item": "titanium",
+      "amount": 7500
+    },
+    {
+      "item": "tungsten",
+      "amount": 6000
+    },
+    {
+      "item": "silicon",
+      "amount": 5000
+    },
+    {
+      "item": "graphite",
+      "amount": 6000
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 4000
+    }
+  ],
+  "category": "effect",
+  "research": "core-xelestal"
+}
