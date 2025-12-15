@@ -2,7 +2,7 @@
    "type": "Wall",
    "name": "Large Reinforce Copper Wall",
    "description": "Large Reinforced Copper wall, Able to Block Laser",
-   "detail": "BUT NOT FOR CORVUS THO-",
+   "details": "BUT NOT FOR CORVUS THO-",
    "size": 2,
    "health": 1350,
    "armor": 2,
