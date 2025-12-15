@@ -1,0 +1,25 @@
+{
+   "type": "ShieldWall",
+   "name": "Aether Wall",
+   "description": "Unknown Shield Wall, Seem it took a Reference to Current Erekir Shield Wall",
+   "size": 2,
+   "health": 2000,
+   "shieldHealth": 4500,
+   "breakCooldown": 550,
+   "regenSpeed": 2.5,
+   "consumes": {
+    "power": 5
+   },
+   "armor": 15,
+   "buildTime": 1.5,
+   "category": "defense",
+   "absorbLasers": true,
+   "conductivePower": true,
+   "research": "tungsten-wall",
+   "requirements": [
+      "a-asthemiun/10",
+      "a-cynium/8",
+      "a-synthesize-core/4",
+      "tungsten/10"
+     ]
+}

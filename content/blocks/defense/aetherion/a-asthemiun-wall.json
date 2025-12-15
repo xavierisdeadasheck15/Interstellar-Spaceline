@@ -1,0 +1,21 @@
+{
+   "type": "Wall",
+   "name": "Asthemiun Wall",
+   "description": "Unknown Advance Defense Wall, Really Tough Wall that Capable to withstand Major Damage And Block Laser",
+   "size": 1,
+   "health": 950,
+   "armor": 10,
+   "buildTime": 1.5,
+   "category": "defense",
+   "absorbLasers": true,
+   "lightningChance": 0.05,
+   "lightningDamage": 20,
+   "lightningLength": 10,
+   "lightningColor": "29b6f6",
+   "research": "tungsten-wall",
+   "requirements": [
+      "a-asthemiun/2",
+      "a-aether/2",
+      "tungsten/2"
+     ]
+}

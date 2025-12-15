@@ -1,0 +1,15 @@
+{
+   "type": "Wall",
+   "name": "Arethorium Wall",
+   "description": "Unknown Defense Wall, Tougher Wall that Capable to withstand Major Damage",
+   "size": 1,
+   "health": 700,
+   "armor": 5,
+   "buildTime": 1.5,
+   "category": "defense",
+   "research": "tungsten-wall",
+   "requirements": [
+      "a-arethorium/3",
+      "tungsten/3"
+     ]
+}
