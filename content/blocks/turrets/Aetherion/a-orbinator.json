@@ -2,7 +2,7 @@
   "type": "PowerTurret",
   "name": "Orbinator",
   "description": "Unknown advance Electric Turret",
-  "unitSort": "weakest",
+  "unitSort": "strongest",
   "size": 3,
   "health": 300,
   "buildTime": 15,
@@ -11,7 +11,7 @@
     "liquid": "water",
     "amount": 0.5
   },
-  "coolantMultiplier": 1.0,
+  "coolantMultiplier": 1.1,
   "consumes": {
     "power": 20
   },
@@ -87,8 +87,8 @@
         ]
       },
       "hitEffect": "colorSpark",
-      "reflectable": true,
-      "absorbable": true,
+      "reflectable": false,
+      "absorbable": false,
       "bulletInterval": 5,
       "intervalBullets": 5,
       "intervalSpread": 360,
