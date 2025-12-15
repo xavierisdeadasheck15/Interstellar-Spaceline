@@ -2,7 +2,7 @@
    "type": "Wall",
    "name": "Reinforce Copper Wall",
    "description": "Small Reinforced Copper wall, Able to Block Laser",
-   "detail": "BUT NOT FOR VELA THO-",
+   "details": "BUT NOT FOR VELA THO-",
    "size": 1,
    "health": 400,
    "armor": 1,
