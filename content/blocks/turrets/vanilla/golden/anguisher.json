@@ -1,0 +1,224 @@
+{
+  "type": "PowerTurret",
+  "name": "Anguisher",
+  "description": "Fire Rapid Laser at enemy, prioritize Strongest one",
+  "details": "The Predecessor of Blaster, which it should be The Stronger One than its Predecessor",
+  "unitSort": "strongest",
+  "size": 4,
+  "health": 7500,
+  "buildTime": 15,
+  "coolantMultiplier": 1.25,
+  "consumes": {
+    "power": 20,
+    "coolant": {
+      "amount": 0.5
+    }
+  },
+  "shake": 1,
+  "reload": 10,
+  "range": 315,
+  "shootY": 8,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 1.25,
+  "recoil": 2,
+  "inaccuracy": 3,
+  "predictTarget": false,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 23,
+    "shots": 1
+  },
+  "shootSound": "shootLaser3",
+  "shootType": {
+    "type": "BasicBulletType",
+    "shieldDamageMultiplier": 10,
+    "homingPower": 0.06,
+    "homingRange": 150,
+    "damage": 95,
+    "speed": 9,
+    "lifetime": 35,
+    "height": 20,
+    "width": 20,
+    "frontColor": "ff5252",
+    "backColor": "c62828",
+    "trailColor": "ff5252",
+    "despawnEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 10,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 20,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 360,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828"
+        }
+      ]
+    },
+    "hitEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 90,
+          "length": 30,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 3,
+          "strokeTo": 0
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "sizeFrom": 6,
+          "sizeTo": 0,
+          "cone": 90,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828"
+        }
+      ]
+    },
+    "shootEffect": "shootBig2",
+    "smokeEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 40,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 3,
+          "strokeTo": 0
+        }
+      ]
+    },
+    "trailWidth": 2,
+    "trailLength": 10,
+    "statusDuration": 100,
+    "status": "golden-weaken",
+    "fragBullets": 1,
+    "fragSpread": 1,
+    "fragRandomSpread": 1,
+    "fragBullet": {
+      "type": "LaserBulletType",
+      "damage": 50,
+      "sideLength": 0,
+      "sideAngle": 15,
+      "sideWidth": 0,
+      "hitShake": 1,
+      "length": 100,
+      "width": 10,
+      "colors": [ 
+        "c62828", "ff5252"
+      ],
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 5,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 90,
+            "length": 30,
+            "colorFrom": "ff5252",
+            "colorTo": "c62828",
+            "line": true,
+            "strokeFrom": 3,
+            "strokeTo": 0
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 1,
+            "sizeFrom": 6,
+            "sizeTo": 0,
+            "cone": 90,
+            "colorFrom": "ff5252",
+            "colorTo": "c62828"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    { "item": "gold", "amount": 450 },
+    { "item": "surge-alloy", "amount": 400 },
+    { "item": "thorium", "amount": 500 },
+    { "item": "bronze", "amount": 1000 },
+    { "item": "titanium", "amount": 2000 },
+    { "item": "plastanium", "amount": 2000 },
+    { "item": "copper", "amount": 4500 },
+    { "item": "silicon", "amount": 1500 }
+  ],
+  "category": "turret",
+  "research": "blaster",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-left-barrel",
+        "mirror": false,
+        "under": false,
+        "progress": "warmup",
+        "moveRot": 10,
+        "moveY": -2,
+        "moveX": -2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-right-barrel",
+        "mirror": false,
+        "under": false,
+        "progress": "warmup",
+        "moveRot": -10,
+        "moveY": -2,
+        "moveX": 2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-engage-l",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveY": 3,
+        "moveX": -3
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-engage-r",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveY": 3,
+        "moveX": 3
+      }
+    ]
+  }
+}
