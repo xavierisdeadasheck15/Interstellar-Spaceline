@@ -1,12 +1,13 @@
 {
   "type": "PowerTurret",
   "name": "Blaster",
-  "description": "Fire red laser at enemy, prioritize weakest one",
+  "description": "Fire red laser at enemy, prioritize Strongest one",
+  "details": "One and First Golden Technology, which it seem to be Stronger in technology that Rely on Raw Power Like Laser",
   "unitSort": "strongest",
   "size": 3,
   "health": 5000,
   "buildTime": 15,
-  "coolantMultiplier": 2,
+  "coolantMultiplier": 1.5,
   "consumes": {
     "power": 10,
     "coolant": {
@@ -26,16 +27,62 @@
   "shootType": {
     "type": "LaserBulletType",
     "shieldDamageMultiplier": 10,
+    "shootEffect": "shootBig2",
+    "smokeEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 40,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 3,
+          "strokeTo": 0
+        }
+      ]
+    },
+    "hitEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 90,
+          "length": 30,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 3,
+          "strokeTo": 0
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "sizeFrom": 6,
+          "sizeTo": 0,
+          "cone": 90,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828"
+        }
+      ]
+    },
     "collidesAir": true,
     "largeHit": false,
     "sideLength": 0,
     "sideAngle": 10,
     "sideWidth": 0,
-    "hitShake": 15,
+    "hitShake": 1,
     "length": 250,
     "width": 10,
-    "statusDuration": 50,
-    "status": "melting",
+    "statusDuration": 100,
+    "status": "golden-weaken",
     "lifetime": 10,
     "damage": 100,
     "colors": [ 
