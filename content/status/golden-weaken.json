@@ -1,0 +1,7 @@
+{
+  "type": "StatusEffect",
+  "Name": "Golden Weakening",
+  "damageMultiplier": 0.75,
+  "speedMultiplier": 0.95,
+  "reloadMultiplier": 0.9
+}
