@@ -1,0 +1,33 @@
+{
+  "type": "WallCrafter",
+  "name": "Gold Refinery",
+  "description": "Extract Gold from Sand",
+  "size": 3,
+  "category": "production",
+  "research": "laser-drill",
+  "requirements": [
+    "copper/350",
+    "graphite/100",
+    "silicon/60",
+    "titanium/200",
+    "plastanium/50",
+    "thorium/100"
+  ],
+  "drillTime": "750",
+  "attribute": "sand",
+  "output": "gold",
+  "fogRadius": 3,
+  "researchCost": [
+    "copper/1000",
+    "graphite/500",
+    "silicon/750",
+    "titanium/1250",
+    "plastanium/500",
+    "thorium/950"
+  ],
+  "consumes": {
+    "power": 5
+  },
+  "ambientSound": "drill",
+  "ambientSoundVolume": 0.08
+}
