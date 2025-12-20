@@ -1,0 +1,63 @@
+{
+  "type": "GenericCrafter",
+  "name": "Temperance Kiln",
+  "description": "Compress 2 Glass into Hard Glass",
+  "buildTime": 10,
+  "size": 2,
+  "health": 450,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame"
+      }
+    ]
+  },
+  "craftTime": 75,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 1,
+      "items": {
+        "items": [
+        {
+          "item": "metaglass",
+          "amount": 2
+        }
+      ]
+    }
+  },
+  "category": "crafting",
+  "research": {
+    "parent": "kiln",
+    "requirements": [
+      "copper/500",
+      "graphite/250",
+      "metaglass/100"
+    ]
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 125
+    },
+    {
+      "item": "graphite",
+      "amount": 75
+    },
+    {
+      "item": "metaglass",
+      "amount": 50
+    }
+  ],
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.1,
+  "outputItem": {
+    "item": "hardglass",
+    "amount": 1
+  }
+}

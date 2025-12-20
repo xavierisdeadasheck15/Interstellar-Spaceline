@@ -1,0 +1,82 @@
+{
+  "type": "GenericCrafter",
+  "name": "Power Press",
+  "description": "Combust 2 Hardglass with Mixed Alloy into Powergem",
+  "buildTime": 10,
+  "size": 2,
+  "health": 450,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "ffcdd2",
+        "alpha": 0.9,
+        "glowScale": 12.5,
+        "glowIntensity": 1
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 1,
+      "items": {
+        "items": [
+        {
+          "item": "hardglass",
+          "amount": 2
+        },
+        {
+          "item": "surge-alloy",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "category": "crafting",
+  "research": {
+    "parent": "temperance-kiln",
+    "requirements": [
+      "copper/1000",
+      "lead/750",
+      "silicon/500",
+      "plastanium/250",
+      "hardglass/100"
+    ]
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 200
+    },
+    {
+      "item": "lead",
+      "amount": 200
+    },
+    {
+      "item": "silicon",
+      "amount": 175
+    },
+    {
+      "item": "plastanium",
+      "amount": 120
+    },
+    {
+      "item": "hardglass",
+      "amount": 75
+    }
+  ],
+  "craftEffect": "none",
+  "updateEffect": "none",
+  "ambientSound": "machine",
+  "ambientSoundVolume": 0.1,
+  "outputItem": {
+    "item": "powergem",
+    "amount": 1
+  }
+}
