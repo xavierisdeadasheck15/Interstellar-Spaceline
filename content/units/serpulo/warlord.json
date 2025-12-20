@@ -2,15 +2,16 @@
   "type": "naval",
   "name": "Warlord",
   "description": "Basically a Warship but in this game",
+  "healColor": "ffa665",
   "outlineColor": "565666ff",
   "flying": false,
   "targetAir": false,
   "health": 75000,
   "armor": 30,
-  "drag": 0.05,
-  "accel": 0.010,
-  "speed": 0.30,
-  "rotateSpeed": 0.20,
+  "drag": 0.03,
+  "accel": 0.06,
+  "speed": 0.35,
+  "rotateSpeed": 0.25,
   "hitSize": 80,
   "singleTarget": true,
   "naval": true,
@@ -24,6 +25,7 @@
   "weapons": [
     {
       "name": "warlord-artillery",
+      "layerOffset": 0.02,
       "top": true,
       "shootY": 20,
       "reload": 1000,
@@ -34,17 +36,17 @@
       "shootCone": 15,
       "rotate": true,
       "rotateSpeed": 0.65,
-      "rotationLimit": 180,
+      "rotationLimit": 360,
       "recoil": 3,
       "inaccuracy": 2.5,
       "shoot": {
         "type": "ShootAlternate",
-        "shotDelay": 1,
+        "shotDelay": 5,
         "spread": 8,
         "barrels": 2,
-        "shots": 2
+        "shots": 4
       },
-      "shootSound": "largeCannon",
+      "shootSound": "titanus-artillery",
       "bullet": {
         "type": "ArtilleryBulletType",
         "sprite": "missile-large",
@@ -67,6 +69,7 @@
     },
     {
       "name": "warlord-artillery",
+      "layerOffset": 0.02,
       "top": true,
       "shootY": 20,
       "reload": 1000,
@@ -77,17 +80,17 @@
       "shootCone": 15,
       "rotate": true,
       "rotateSpeed": 0.65,
-      "rotationLimit": 180,
+      "rotationLimit": 360,
       "recoil": 3,
       "inaccuracy": 2.5,
       "shoot": {
         "type": "ShootAlternate",
-        "shotDelay": 1,
+        "shotDelay": 5,
         "spread": 8,
         "barrels": 2,
-        "shots": 2
+        "shots": 4
       },
-      "shootSound": "largeCannon",
+      "shootSound": "titanus-artillery",
       "bullet": {
         "type": "ArtilleryBulletType",
         "sprite": "missile-large",
@@ -110,6 +113,7 @@
     },
     {
       "name": "warlord-artillery",
+      "layerOffset": 0.02,
       "top": true,
       "shootY": 20,
       "reload": 1000,
@@ -120,17 +124,17 @@
       "shootCone": 15,
       "rotate": true,
       "rotateSpeed": 0.65,
-      "rotationLimit": 180,
+      "rotationLimit": 360,
       "recoil": 3,
       "inaccuracy": 2.5,
       "shoot": {
         "type": "ShootAlternate",
-        "shotDelay": 1,
+        "shotDelay": 5,
         "spread": 8,
         "barrels": 2,
-        "shots": 2
+        "shots": 4
       },
-      "shootSound": "largeCannon",
+      "shootSound": "titanus-artillery",
       "bullet": {
         "type": "ArtilleryBulletType",
         "sprite": "missile-large",
@@ -149,6 +153,49 @@
         "trailLength": 20,
         "speed": 6,
         "lifetime": 130
+      }
+    },
+    {
+      "name": "warlord-aa-gun",
+      "layerOffset": 0.01,
+      "top": true,
+      "controllable": false,
+      "autoTarget": true,
+      "shootY": 15,
+      "reload": 100,
+      "x": 10,
+      "y": 20,
+      "alternate": false,
+      "mirror": true,
+      "shootCone": 15,
+      "rotate": true,
+      "rotateSpeed": 0.9,
+      "rotationLimit": 360,
+      "recoil": 2,
+      "inaccuracy": 5,
+      "targetGround": false,
+      "shoot": {
+        "type": "ShootAlternate",
+        "shotDelay": 5,
+        "shots": 10
+      },
+      "shootSound": "shootSnap",
+      "bullet": {
+        "type": "BasicBulletType",
+        "collidesGround": false,
+        "damage": 100,
+        "splashDamage": 50,
+        "splashDamageRadius": 25,
+        "height": 10,
+        "width": 10,
+        "despawnEffect": "flakExplosion",
+        "hitEffect": "flakExplosion",
+        "shootEffect": "shootBigColor",
+        "smokeEffect": "shootSmokeDisperse",
+        "trailWidth": 1,
+        "trailLength": 10,
+        "speed": 7,
+        "lifetime": 80
       }
     }
   ]
