@@ -1,0 +1,17 @@
+{
+  "localizedName": "Mining Central",
+  "description": "Enemy Resource Central, Many of the abundant Resource, But the Terrain are Not Supportive, Required Aerial Unit",
+  "difficulty": 6,
+  "planet": "glaciera-prime",
+  "sector": 99,
+  "addStartingItems": true,
+  "research": {
+    "parent": "quiet",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "quiet"
+      }
+    ]
+  }
+}
