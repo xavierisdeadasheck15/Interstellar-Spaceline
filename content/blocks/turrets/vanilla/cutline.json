@@ -1,0 +1,82 @@
+{
+  "type": "ContinuousTurret",
+  "name": "Cutline",
+  "description": "One Continuous Laser Turret, Akin to Lustres",
+  "size": 3,
+  "health": 1100,
+  "buildTime": 10,
+  "consumes": {
+    "power": 10
+  },
+  "shake": 0.5,
+  "reload": 1,
+  "range": 250,
+  "shootY": 1,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 2,
+  "shootSound": "laser",
+  "shootType": {
+    "type": "PointLaserBulletType",
+    "buildingDamageMultiplier": 0.5,
+    "damage": 30,
+    "beamEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 1,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 50,
+          "colorFrom": "d1efff",
+          "colorTo": "8ca9e8",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0
+        }
+      ]
+    },
+    "damageInterval": 2.5,
+    "color": "d1efff"
+  },
+  "requirements": [
+    { "item": "copper", "amount": 900 },
+    { "item": "graphite", "amount": 550 },
+    { "item": "silicon", "amount": 750 },
+    { "item": "titanium", "amount": 800 },
+    { "item": "plastanium", "amount": 250 },
+    { "item": "surge-alloy", "amount": 100 }
+  ],
+  "category": "turret",
+  "research": "cluster",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-claw-l",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "heatprogress": "warmup",
+        "moveRot": -10,
+        "moveY": -2,
+        "moveX": -2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-claw-r",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "heatprogress": "warmup",
+        "moveRot": 10,
+        "moveY": -2,
+        "moveX": 2
+      }
+    ]
+  }
+}
