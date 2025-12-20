@@ -39,10 +39,10 @@
     "hitShake": 15,
     "length": 800,
     "width": 25,
-    "statusDuration": 1000,
+    "statusDuration": 500,
     "status": "melting",
     "lifetime": 50,
-    "damage": 6000,
+    "damage": 2500,
     "colors": [ 
       "98ffa9", "ffffff"
     ]
