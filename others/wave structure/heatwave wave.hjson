@@ -1,0 +1,372 @@
+[
+  // --- Light Units ---
+  // Terminator: Early harassment -> Swarm support
+  {
+    type: interstellar-spaceline-terminator,
+    begin: 2,
+    end: 15,
+    amount: 2,
+    scaling: 0.2,
+    spacing: 2
+  },
+  {
+    type: interstellar-spaceline-terminator,
+    begin: 10,
+    end: 35,
+    amount: 3,
+    scaling: 0.4,
+    spacing: 2
+  },
+  {
+    type: interstellar-spaceline-terminator,
+    begin: 30,
+    end: 60,
+    amount: 6,
+    scaling: 0.5,
+    spacing: 3
+  },
+
+  // Executor: Consistent pressure
+  {
+    type: interstellar-spaceline-executor,
+    begin: 3,
+    end: 20,
+    amount: 1,
+    scaling: 0.3,
+    spacing: 2
+  },
+  {
+    type: interstellar-spaceline-executor,
+    begin: 15,
+    end: 45,
+    amount: 3,
+    scaling: 0.5,
+    spacing: 2
+  },
+  {
+    type: interstellar-spaceline-executor,
+    begin: 40,
+    end: 70,
+    amount: 5,
+    scaling: 0.5,
+    spacing: 4
+  },
+
+  // Destroyer: Missile support
+  {
+    type: interstellar-spaceline-destroyer,
+    begin: 5,
+    end: 25,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 3
+  },
+  {
+    type: interstellar-spaceline-destroyer,
+    begin: 20,
+    end: 50,
+    amount: 2,
+    scaling: 0.4,
+    spacing: 3
+  },
+  {
+    type: interstellar-spaceline-destroyer,
+    begin: 45,
+    end: 80,
+    amount: 4,
+    scaling: 0.4,
+    spacing: 4
+  },
+
+  // Alt-Terminator: Mid-game swarm
+  {
+    type: interstellar-spaceline-alt-terminator,
+    begin: 12,
+    end: 30,
+    amount: 2,
+    scaling: 0.3,
+    spacing: 3
+  },
+  {
+    type: interstellar-spaceline-alt-terminator,
+    begin: 25,
+    end: 55,
+    amount: 3,
+    scaling: 0.5,
+    spacing: 3
+  },
+  {
+    type: interstellar-spaceline-alt-terminator,
+    begin: 50,
+    end: 85,
+    amount: 5,
+    scaling: 0.5,
+    spacing: 3
+  },
+
+  // Stabilion: Suppression
+  {
+    type: interstellar-spaceline-stabilion,
+    begin: 15,
+    end: 40,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 4
+  },
+  {
+    type: interstellar-spaceline-stabilion,
+    begin: 35,
+    end: 70,
+    amount: 2,
+    scaling: 0.3,
+    spacing: 4
+  },
+
+  // Ballistron: Mech gunner
+  {
+    type: interstellar-spaceline-ballistron,
+    begin: 18,
+    end: 45,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 3
+  },
+  {
+    type: interstellar-spaceline-ballistron,
+    begin: 40,
+    end: 75,
+    amount: 2,
+    scaling: 0.4,
+    spacing: 3
+  },
+
+  // Suppressor-X: Advanced suppression
+  {
+    type: interstellar-spaceline-suppressor-x,
+    begin: 20,
+    end: 50,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 5
+  },
+  {
+    type: interstellar-spaceline-suppressor-x,
+    begin: 45,
+    end: 80,
+    amount: 2,
+    scaling: 0.3,
+    spacing: 5
+  },
+
+  // --- Medium Units ---
+  // Conflictor: Arc damage
+  {
+    type: interstellar-spaceline-conflication,
+    begin: 26,
+    end: 55,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 4
+  },
+  {
+    type: interstellar-spaceline-conflication,
+    begin: 50,
+    end: 85,
+    amount: 2,
+    scaling: 0.3,
+    spacing: 4
+  },
+  {
+    type: interstellar-spaceline-conflication,
+    begin: 80,
+    end: 110,
+    amount: 3,
+    scaling: 0.4,
+    spacing: 3
+  },
+
+  // Alt-Conflictor
+  {
+    type: interstellar-spaceline-alt-conflication,
+    begin: 30,
+    end: 60,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 4
+  },
+  {
+    type: interstellar-spaceline-alt-conflication,
+    begin: 55,
+    end: 90,
+    amount: 2,
+    scaling: 0.3,
+    spacing: 4
+  },
+
+  // Scattervolt: Shotgun
+  {
+    type: interstellar-spaceline-scattervolt,
+    begin: 32,
+    end: 65,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 4
+  },
+  {
+    type: interstellar-spaceline-scattervolt,
+    begin: 60,
+    end: 95,
+    amount: 2,
+    scaling: 0.3,
+    spacing: 4
+  },
+
+  // Pyroclave: Flamethrower
+  {
+    type: interstellar-spaceline-pyroclave,
+    begin: 35,
+    end: 70,
+    amount: 1,
+    scaling: 0.2,
+    spacing: 5
+  },
+  {
+    type: interstellar-spaceline-pyroclave,
+    begin: 65,
+    end: 100,
+    amount: 2,
+    scaling: 0.3,
+    spacing: 4
+  },
+
+  // Gravitonix: Hover tank
+  {
+    type: interstellar-spaceline-gravitonix,
+    begin: 46,
+    end: 80,
+    amount: 1,
+    scaling: 0.15,
+    spacing: 5
+  },
+  {
+    type: interstellar-spaceline-gravitonix,
+    begin: 75,
+    end: 110,
+    amount: 2,
+    scaling: 0.2,
+    spacing: 5
+  },
+
+  // Missilith: Missile Hover tank
+  {
+    type: interstellar-spaceline-missilith,
+    begin: 48,
+    end: 85,
+    amount: 1,
+    scaling: 0.15,
+    spacing: 5
+  },
+  {
+    type: interstellar-spaceline-missilith,
+    begin: 80,
+    end: 120,
+    amount: 2,
+    scaling: 0.2,
+    spacing: 5
+  },
+
+  // Bastelith: Mech Gunner
+  {
+    type: interstellar-spaceline-bastelith,
+    begin: 50,
+    end: 90,
+    amount: 1,
+    scaling: 0.15,
+    spacing: 5
+  },
+  {
+    type: interstellar-spaceline-bastelith,
+    begin: 85,
+    end: 125,
+    amount: 2,
+    scaling: 0.2,
+    spacing: 5
+  },
+
+  // --- Heavy Units & Bosses ---
+  // Siegebreaker: Heavy Artillery Mech
+  {
+    type: interstellar-spaceline-siegebreaker,
+    begin: 60,
+    end: 60,
+    amount: 1,
+    effect: boss
+  },
+  {
+    type: interstellar-spaceline-siegebreaker,
+    begin: 80,
+    end: 120,
+    amount: 1,
+    scaling: 0.1,
+    spacing: 15
+  },
+  {
+    type: interstellar-spaceline-siegebreaker,
+    begin: 115,
+    end: 160,
+    amount: 1,
+    scaling: 0.15,
+    spacing: 12
+  },
+
+  // Stormreaver: Heavy Aerial Gunship
+  {
+    type: interstellar-spaceline-stormreaver,
+    begin: 70,
+    end: 70,
+    amount: 1,
+    effect: boss
+  },
+  {
+    type: interstellar-spaceline-stormreaver,
+    begin: 90,
+    end: 130,
+    amount: 1,
+    scaling: 0.1,
+    spacing: 15
+  },
+
+  // Dropnaught: Heavy Dropship
+  {
+    type: interstellar-spaceline-dropnaught,
+    begin: 80,
+    end: 80,
+    amount: 1,
+    effect: boss
+  },
+  {
+    type: interstellar-spaceline-dropnaught,
+    begin: 100,
+    end: 140,
+    amount: 1,
+    scaling: 0.1,
+    spacing: 15
+  },
+
+  // Titanus: Heavy Mech
+  {
+    type: interstellar-spaceline-titanus,
+    begin: 100,
+    end: 100,
+    amount: 1,
+    effect: boss
+  },
+  {
+    type: interstellar-spaceline-titanus,
+    begin: 120,
+    end: 200,
+    amount: 1,
+    scaling: 0.05,
+    spacing: 20
+  }
+]
