@@ -1,0 +1,88 @@
+{
+  "type": "mech",
+  "name": "Omega",
+  "description": "The Stronger Version of Scepter, and 2nd Version Variant of Alternative Scepter, On Prototype",
+  "outlineColor": "565666ff",
+  "healColor": "ffa665",
+  "flying": false,
+  "speed": 0.45,
+  "rotateSpeed": 1.3,
+  "hitSize": 39,
+  "health": 16000,
+  "armor": 12,
+  "mechSideSway": 1.5,
+  "mechFrontSway": 0.6,
+  "mechStride": -1.5,
+  "mechStepParticles": true,
+  "immunities": [
+    "burning",
+    "shocked"
+  ],
+  "weapons": [
+    {
+      "name": "omega-primary-gun",
+      "ejectEffect": "casing2",
+      "top": false,
+      "shootY": 10,
+      "shootx": 0,
+      "reload": 5,
+      "x": -22,
+      "y": 0,
+      "alternate": false,
+      "mirror": true,
+      "inaccuracy": 3,
+      "recoil": 3,
+      "shootShake": 10,
+      "shootSound": "shootSnap",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 25,
+        "height": 10,
+        "width": 10,
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke",
+        "despawnEffect": "hitBulletBig",
+        "hitEffect": "hitBulletBig",
+        "trailWidth": 2,
+        "trailLength": 5,
+        "speed": 8,
+        "lifetime": 40
+      }
+    },
+    {
+      "name": "omega-secondary-gun",
+      "layerOffset": -0.01,
+      "ejectEffect": "casing2",
+      "top": false,
+      "shootY": 10,
+      "shootx": 0,
+      "reload": 10,
+      "x": -20,
+      "y": 3,
+      "alternate": false,
+      "mirror": true,
+      "inaccuracy": 3,
+      "recoil": 3,
+      "shootShake": 10,
+      "shootSound": "shootSnap",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "height": 10,
+        "width": 10,
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke",
+        "despawnEffect": "hitBulletBig",
+        "hitEffect": "hitBulletBig",
+        "trailWidth": 2,
+        "trailLength": 5,
+        "speed": 8,
+        "lifetime": 40
+      }
+    }
+  ],
+  "researchCostMultiplier": 6.0,
+  "research": {
+  "parent": "fortress"
+  }
+}

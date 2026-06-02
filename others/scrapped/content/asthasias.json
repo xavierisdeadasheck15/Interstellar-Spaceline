@@ -1,0 +1,65 @@
+{
+  "type": "tank",
+  "name": "asthasias",
+  "description": "Plasma Tank that fire 2 high concentration plasma beam",
+  "healColor": "d1efff",
+  "health": 2350,
+  "hitSize": 20,
+  "speed": 0.5,
+  "rotateSpeed": 1,
+  "armor": 10,
+  "treadFrames": 15,
+  "treadRects": [
+    {
+      "x": 7,
+      "y": -26,
+      "width": 14,
+      "height": 51
+    }
+  ],
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+  "weapons": [
+  {
+    "name": "asthasias-turret",
+    "top": true,
+    "shootY": 11,
+    "reload": 250,
+    "x": 0,
+    "y": 0,
+    "alternate": false,
+    "mirror": false,
+    "rotate": true,
+    "rotateSpeed": 1.25,
+    "rotationLimit": 360,
+    "recoil": 3,
+    "shoot": {
+      "type": "ShootAlternate",
+      "shots": 2,
+      "spread": 12,
+      "barrels": 2,
+      "firstShotDelay": 100
+    },
+    "chargeSound": "lasercharge",
+    "shootSound": "railgunLaser",
+      "bullet": {
+        "type": "LaserBulletType",
+        "largeHit": true,
+        "sideLength": 0,
+        "sideAngle": 15,
+        "sideWidth": 0,
+        "hitShake": 10,
+        "length": 200,
+        "width": 10,
+        "statusDuration": 500,
+        "status": "melting",
+        "lifetime": 10,
+        "damage": 250,
+        "colors": [ 
+          "8ca9e8", "d1efff"
+        ]
+      }
+    }
+  ]
+}
