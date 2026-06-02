@@ -1,0 +1,15 @@
+{
+  "type": "Item",
+  "name": "Cynium",
+  "description": "Refined into a Cylinder Resource",
+  "details": "How many refinery do you even need?",
+  "hardness": 3.5,
+  "cost": 2,
+  "color": "29b6f6",
+  "research": {
+    "parent": "a-asthemiun"
+  },
+  "radioactivity": 0.10,
+  "explosiveness": 0.50,
+  "charge": 0.80
+}

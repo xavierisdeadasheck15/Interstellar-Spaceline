@@ -1,0 +1,18 @@
+{
+  "localizedName": "Terrestial",
+  "description": "Dual Base Detected here, one is the left side, one is the right side, The right side seem disable, while the rest is Not, but the defense are weak, try inflitrate it",
+  "difficulty": 5,
+  "planet": "glaciera-prime",
+  "sector": 64,
+  "allowLaunchLoadout": true,
+  "addStartingItems": true,
+  "research": {
+    "parent": "breeze",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "breeze"
+      }
+    ]
+  }
+}

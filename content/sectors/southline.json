@@ -1,0 +1,18 @@
+{
+  "localizedName": "Southline",
+  "description": "a Frontline Enemy Zone, it has been detected that this Zone contain Oil, But enemy has some tactical Advantage of this, Make a Move wisely",
+  "difficulty": 4,
+  "planet": "glaciera-prime",
+  "sector": 45,
+  "allowLaunchLoadout": true,
+  "addStartingItems": true,
+  "research": {
+    "parent": "breeze",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "breeze"
+      }
+    ]
+  }
+}

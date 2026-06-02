@@ -1,0 +1,12 @@
+{
+  "type": "Item",
+  "name": "raw-beryllium",
+  "localizedName": "Raw Beryllium",
+  "description": "A Beryllium from a wall, Required to refine it into Beryllium",
+  "hardness": 2.25,
+  "cost": 1.75,
+  "color": "3a5651",
+  "research": {
+    "parent": "raw-lead"
+  }
+}

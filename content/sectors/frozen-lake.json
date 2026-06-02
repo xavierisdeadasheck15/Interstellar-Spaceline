@@ -1,0 +1,18 @@
+{
+  "localizedName": "Frozen Lake",
+  "description": "A Resourceful Place with a Frozen Water, Useful For roduction, But Required to Defend incoming Ambush",
+  "difficulty": 5,
+  "captureWave": 30,
+  "planet": "glaciera-prime",
+  "sector": 95,
+  "addStartingItems": true,
+  "research": {
+    "parent": "quiet",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "quiet"
+      }
+    ]
+  }
+}

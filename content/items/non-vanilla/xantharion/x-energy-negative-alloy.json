@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "Energy Negative Alloy",
+  "description": "A Purple Glowing Core with 2 Metal",
+  "hardness": 1,
+  "cost": 3,
+  "color": "311b92",
+  "research": {
+    "parent": "x-negative-energy-disperse"
+  },
+  "explosiveness": 0.60,
+  "charge": 1
+}

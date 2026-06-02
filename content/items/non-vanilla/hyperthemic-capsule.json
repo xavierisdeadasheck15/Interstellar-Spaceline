@@ -1,0 +1,13 @@
+{
+  "type": "Item",
+  "name": "Hyperthemic Capsule",
+  "description": "A Container of Hyperthemic",
+  "hardness": 5,
+  "cost": 1,
+  "color": "009688",
+  "research": {
+    "parent": "plastanium"
+  },
+  "explosiveness": 0.50,
+  "flammability": -1
+}

@@ -1,0 +1,18 @@
+{
+  "localizedName": "Ambush",
+  "description": "A Dual Lineart Path, your base is in a central, and enemy will spawn on 2 Direction",
+  "difficulty": 4,
+  "captureWave": 30,
+  "planet": "glaciera-prime",
+  "sector": 84,
+  "addStartingItems": true,
+  "research": {
+    "parent": "terrestial",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "terrestial"
+      }
+    ]
+  }
+}

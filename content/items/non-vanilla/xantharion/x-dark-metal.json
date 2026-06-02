@@ -1,0 +1,11 @@
+{
+  "type": "Item",
+  "name": "Dark Metal",
+  "description": "A Dark Metal from Xantharion",
+  "hardness": 2,
+  "cost": 2,
+  "color": "37474f",
+  "research": {
+    "parent": "core-xelestal"
+  }
+}

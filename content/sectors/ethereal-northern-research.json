@@ -1,0 +1,18 @@
+{
+  "localizedName": "Ethereal Northern Research",
+  "description": "Large Base Enemy, There are 3 Detected Base in this area",
+  "details": "This Sector Was suppose to be the Last Sector of this Planet, But not, its not the last Sector",
+  "difficulty": 6,
+  "planet": "glaciera-prime",
+  "sector": 115,
+  "addStartingItems": true,
+  "research": {
+    "parent": "mining-central",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "mining-central"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Cryo Orb",
+  "description": "A cold Orb, use for Cryo thrower",
+  "cost": 1,
+  "color": "7DDBDB",
+  "charge": 3,
+  "flammability": -2,
+  "research": {
+    "parent": "titanium"
+  }
+}

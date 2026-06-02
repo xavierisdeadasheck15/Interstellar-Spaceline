@@ -1,0 +1,12 @@
+{
+  "type": "Item",
+  "name": "nickel",
+  "localizedName": "Nickel",
+  "description": "A Freshly Ore From the Wall, use for Advance Technology",
+  "hardness": 2.5,
+  "cost": 2,
+  "color": "a1887f",
+  "research": {
+    "parent": "raw-thorium"
+  }
+}
