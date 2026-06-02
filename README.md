@@ -26,6 +26,9 @@ This mod is also a continuous of the previous lefted mod called "Laser technolog
 
 for now, this is all the mod about!
 
+
+Oh yeah, this place is still outdated except the update so expect everything changed
+
 ----
 
 # Link
