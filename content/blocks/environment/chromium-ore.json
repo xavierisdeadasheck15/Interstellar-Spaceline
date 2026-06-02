@@ -1,8 +1,0 @@
-{
-  "type": "OreBlock",
-  "localizedName": "Chromium Ore",
-  "itemDrop": "chromium",
-  "hasColor": true,
-  "mapColor": "b5c6c9",
-  "variants": 3
-}

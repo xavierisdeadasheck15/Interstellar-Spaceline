@@ -1,8 +1,0 @@
-{
-  "type": "StaticWall",
-  "variants": 4,
-  "name": "Nickel Ore Wall",
-  "itemDrop": "nickel",
-  "hasColor": true,
-  "mapColor": "a1887f"
-}

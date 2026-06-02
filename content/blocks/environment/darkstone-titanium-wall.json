@@ -1,8 +1,0 @@
-{
-  "type": "StaticWall",
-  "variants": 3,
-  "name": "Darkstone Titanium Wall",
-  "itemDrop": "raw-titanium",
-  "hasColor": true,
-  "mapColor": "7575c8"
-}
