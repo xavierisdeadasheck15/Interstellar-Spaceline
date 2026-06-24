@@ -1,6 +1,6 @@
 # WELCOME TO INTERSTELLAR SPACELINE
 
-## A Mod Project that use for the Capability on Both V7 And V8
+## A Mod Project that use for the Capability on V8
 
 This mod introduce a widespread campaign expansion with the first campaign take place on a snow and use your real brain strategy!
 This one also Introduce A Lot of content with many mechanic and useful.
@@ -17,6 +17,21 @@ An Aggressive Faction from the otherside, their commander of this dangerous flee
 
 # Aetherion
 An Advance Futuristic Faction, Using Purely from Erekir to export to their homeland, their capability is they can regenerate really quick and can penetrate any defense with ease, to deal with them, you have to push your limit or just leave their homeland.
+
+----
+
+# GOAL OF THE MOD
+
+* Increase Campaign widely
+* Introduce Various strategy
+* Complete all 3 Faction Content (0/3)
+----
+* Slimonican (0%)
+* Xantharion (95%)
+* Aetherion (2.5%)
+----
+* Balancing
+* Trying to be compactible for every mod (ex. Exogenesis, New Horizon, Sapphirium)
 
 ----
 
