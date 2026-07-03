@@ -1,0 +1,114 @@
+{
+    "type": "PowerTurret",
+    "name": "Pipeshock Landmine",
+    "description": "Detect Nearby Enemy And initiate Electronic Explosion",
+    "rebuildable": false,
+    "canOverdrive": false,
+    "targetable": false,
+    "crushFragile": true,
+    "canPickup": false,
+    "size": 1,
+    "buildTime": 1.5,
+    "health": 100,
+    "baseExplosiveness": 1.0,
+    "consumes": {
+      "power": 0.01
+    },
+    "shake": 2,
+    "reload": 100,
+    "range": 65,
+    "targetAir": true,
+    "rotateSpeed": 0,
+    "shootCone": 180,
+    "shootSound": "emp-explosion",
+    "chargeSound": "none",
+    "shoot": {
+      "type": "shootPattern",
+      "firstShotDelay": 100
+      },
+    "shootType": {
+      "type": "ExplosionBulletType",
+      "chargeEffect": {
+        "type": "ParticleEffect",
+        "region": "interstellar-spaceline-thin-star",
+        "particles": 1,
+        "sizeFrom": 50,
+        "sizeTo": 5,
+        "cone": 180,
+        "length": 0,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 20
+      },
+      "buildingDamageMultiplier": 0.01,
+      "shieldDamageMultiplier": 2,
+      "lifetime": 1,
+      "speed": 1,
+      "damage": 150,
+      "splashDamage": 75,
+      "scaledSplashDamage": true,
+      "splashDamageRadius": 65,
+      "lightning": 3,
+      "lightningLength": 7,
+      "lightningLengthRand": 1.5,
+      "lightningDamage": 50,
+      "pierceArmor": false,
+      "status": "slow",
+      "statusDuration": 200
+    },
+    "destroyEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "sizeFrom": 6,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 70,
+          "colorFrom": "ccc0b1",
+          "colorTo": "3d322d",
+          "lifetime": 50
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 80,
+          "colorFrom": "d1efff",
+          "colorTo": "8ca9e8",
+          "line": true,
+          "strokeFrom": 3,
+          "strokeTo": 0,
+          "lifetime": 10
+        }
+      ]
+    },
+    "requirements": [
+      "titanium/125",
+      "silicon/65",
+      "copper/125",
+      "plastanium/30",
+      "tin/70",
+      "indium/20",
+      "blast-compound/50",
+      "surge-alloy/50"
+    ],
+    "category": "effect",
+    "research": {
+      "parent": "sensor-Landmine",
+      "objectives": [
+        "core-synergy"
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

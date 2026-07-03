@@ -1,0 +1,57 @@
+{
+    "type": "CoreBlock",
+    "name": "Core: Discharge",
+    "description": "Third iteration Plasma Core",
+    "health": 9500,
+    "size": 5,
+    "itemCapacity": 8000,
+    "unitCapModifier": 24,
+    "researchCostMultiplier": 3,
+    "squareSprite": false,
+    "unitType": "surge",
+    "requirements": [
+      {
+        "item": "tin",
+        "amount": 2000
+      }
+      {
+        "item": "titanium",
+        "amount": 2000
+      },
+      {
+        "item": "lead",
+        "amount": 2500
+      },
+      {
+        "item": "copper",
+        "amount": 2500
+      },
+      {
+        "item": "silicon",
+        "amount": 4000
+      },
+      {
+        "item": "graphite",
+        "amount": 3000
+      },
+      {
+        "item": "indium",
+        "amount": 2000
+      },
+      {
+        "item": "thorium",
+        "amount": 1000
+      }
+    ],
+    "category": "effect",
+    "research": "core-swift",
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

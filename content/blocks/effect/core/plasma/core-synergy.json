@@ -1,0 +1,49 @@
+{
+    "type": "CoreBlock",
+    "name": "Core: Synergy",
+    "description": "First iteration Plasma Core",
+    "health": 2500,
+    "size": 3,
+    "itemCapacity": 2000,
+    "unitCapModifier": 8,
+    "researchCostMultiplier": 2,
+    "squareSprite": true,
+    "unitType": "energize",
+    "requirements": [
+      {
+        "item": "tin",
+        "amount": 750
+      },
+      {
+        "item": "titanium",
+        "amount": 750
+      },
+      {
+        "item": "lead",
+        "amount": 1500
+      },
+      {
+        "item": "silicon",
+        "amount": 2000
+      }
+    ],
+    "category": "effect",
+    "research": {
+      "parent": "core-sawtooth",
+      "objectives": [
+        {
+          "type": "SectorComplete",
+          "preset": "frozen-ridge"
+        }
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

@@ -1,0 +1,42 @@
+{
+  "name": "Locater",
+  "description": "Improved Radar, Gradually uncovers terrain and enemy units in a larger radius. Requires power.",
+  "type": "Radar",
+  "researchCostMultiplier": 1.5,
+  "BuildVisibility": "fogOnly",
+  "health": 120,
+  "size": 2,
+  "consumes": {
+    "power": 2.5
+  },
+  "discoveryTime": 500,
+  "rotateSpeed": 2.5,
+  "fogRadius": 45,
+  "requirements": [
+    {
+      "item": "graphite",
+      "amount": 100
+    },
+    {
+      "item": "silicon",
+      "amount": 120
+    },
+    {
+      "item": "beryllium",
+      "amount": 20
+    },
+    {
+      "item": "tungsten",
+      "amount": 20
+    }
+  ],
+  "research": "radar",
+  "category": "effect",
+  "shownPlanets": [
+    "erekir", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

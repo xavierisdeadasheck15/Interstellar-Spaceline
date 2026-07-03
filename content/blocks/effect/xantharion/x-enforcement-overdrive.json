@@ -1,0 +1,47 @@
+{
+  "type": "OverdriveProjector",
+  "name": "Enforcement Overdrive",
+  "description": "Overdrive nearby structure",
+  "health": 950,
+  "size": 2,
+  "range": 70,
+  "hasBoost": false,
+  "reload": 50,
+  "speedBoost": 1.65,
+  "baseColor": "ef5350",
+  "consumes": {
+    "power": 3.5
+  },
+  "requirements": [
+    {
+      "item": "beryllium",
+      "amount": 120
+    },
+    {
+      "item": "tungsten",
+      "amount": 100
+    },
+    {
+      "item": "silicon",
+      "amount": 200
+    },
+    {
+      "item": "chromium",
+      "amount": 120
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 90
+    },
+    {
+      "item": "x-positive-energy-disperse",
+      "amount": 20
+    }
+  ],
+  "category": "effect",
+  "research": "x-self-sustainer",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

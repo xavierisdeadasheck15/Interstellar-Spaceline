@@ -1,0 +1,100 @@
+{
+  "type": "PowerTurret",
+  "name": "Landmine",
+  "description": "Detect Nearby Enemy And initiate Explosion",
+  "rebuildable": false,
+  "canOverdrive": false,
+  "targetable": false,
+  "crushFragile": true,
+  "canPickup": false,
+  "size": 1,
+  "buildTime": 1.5,
+  "health": 100,
+  "baseExplosiveness": 2.0,
+  "consumes": {
+    "power": 0.01
+  },
+  "shake": 5,
+  "reload": 100,
+  "range": 60,
+  "targetAir": false,
+  "rotateSpeed": 0,
+  "shootCone": 180,
+  "shootSound": "emp-explosion",
+  "chargeSound": "none",
+  "shoot": {
+    "type": "shootPattern",
+    "firstShotDelay": 100
+    },
+  "shootType": {
+    "type": "ExplosionBulletType",
+    "chargeEffect": {
+      "type": "ParticleEffect",
+      "region": "interstellar-spaceline-thin-star",
+      "particles": 1,
+      "sizeFrom": 50,
+      "sizeTo": 5,
+      "cone": 180,
+      "length": 0,
+      "colorFrom": "6e5d59",
+      "colorTo": "2e2927",
+      "lifetime": 20
+    },
+    "buildingDamageMultiplier": 0.25,
+    "shieldDamageMultiplier": 5,
+    "lifetime": 1,
+    "speed": 1,
+    "damage": 200,
+    "splashDamage": 100,
+    "scaledSplashDamage": true,
+    "splashDamageRadius": 60,
+    "pierceArmor": false
+  },
+  "destroyEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 7,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 70,
+        "colorFrom": "ccc0b1",
+        "colorTo": "3d322d",
+        "lifetime": 50
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 80,
+        "colorFrom": "ffa665",
+        "colorTo": "d06b53",
+        "line": true,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "lifetime": 10
+      }
+    ]
+  },
+  "requirements": [
+    "titanium/100",
+    "silicon/50",
+    "copper/150",
+    "indium/20",
+    "blast-compound/200"
+  ],
+  "category": "effect",
+  "research": "core-frontal",
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

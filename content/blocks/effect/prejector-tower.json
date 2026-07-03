@@ -1,0 +1,61 @@
+{
+  "name": "Prejector Tower",
+  "description": "Deflect Any Bullet within its range",
+  "type": "ShockwaveTower",
+  "researchCostMultiplier": 1.5,
+  "health": 1250,
+  "size": 3,
+  "consumes": {
+    "power": 10,
+    "liquid": "cryofluid/0.1"
+  },
+  "range": 175,
+  "reload": 150,
+  "bulletDamage": 300,
+  "shake": 5,
+  "waveColor": "d1efff",
+  "shapeColor": "d1efff",
+  "shapeRotateSpeed": 1.5,
+  "shapeRadius": 5.5,
+  "shapeSides": 6,
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 1000
+    },
+    {
+      "item": "titanium",
+      "amount": 750
+    },
+    {
+      "item": "copper",
+      "amount": 900
+    },
+    {
+      "item": "plastanium",
+      "amount": 500
+    },
+    {
+      "item": "phase-fabric",
+      "amount": 200
+    }
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "portable-force-holographic",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "ethereal-northern-research"
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

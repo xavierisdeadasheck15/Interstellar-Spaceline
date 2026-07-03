@@ -1,0 +1,32 @@
+{
+  "type": "StorageBlock",
+  "name": "Dark Armoured Container",
+  "description": "Storage Structure Use to Store Resource inside, Can withstand most of the damage",
+  "health": 750,
+  "armor": 10,
+  "size": 2,
+  "itemCapacity": 500,
+  "researchCostMultiplier": 2,
+  "squareSprite": true,
+  "coreMerge": true,
+  "requirements": [
+    {
+      "item": "titanium",
+      "amount": 50
+    },
+    {
+      "item": "tungsten",
+      "amount": 250
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 100
+    }
+  ],
+  "category": "effect",
+  "research": "core-xelestal",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

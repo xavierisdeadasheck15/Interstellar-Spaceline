@@ -1,0 +1,36 @@
+{
+  "type": "StorageBlock",
+  "name": "Dark Armoured Storage",
+  "description": "Storage Structure Use to Store Resource inside, Can withstand most of the damage",
+  "health": 1250,
+  "armor": 15,
+  "size": 3,
+  "itemCapacity": 2500,
+  "researchCostMultiplier": 2.5,
+  "squareSprite": true,
+  "coreMerge": true,
+  "requirements": [
+    {
+      "item": "titanium",
+      "amount": 100
+    },
+    {
+      "item": "tungsten",
+      "amount": 400
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 150
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 50
+    }
+  ],
+  "category": "effect",
+  "research": "x-container",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

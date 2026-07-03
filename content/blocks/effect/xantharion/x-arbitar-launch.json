@@ -1,0 +1,51 @@
+{
+  "type": "LaunchPad" ,
+  "name": "Arbitar Launch",
+  "description": "Launch resource from the Arbitar Pod itself into the designated location",
+  "size": 3,
+  "health": 1500,
+  "armor": 5,
+  "itemCapacity": 100,
+  "launchTime": 300,
+  "lightColor": "ff8482",
+  "bottomColor": "263238",
+  "acceptMultipleItems": true,
+  "lightSteps": 1,
+  "consumes": {
+    "power": 9.25,
+    "liquid": "oil/0.5"
+  },
+  "category": "effect",
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 100
+    },
+    {
+      "item": "graphite",
+      "amount": 250
+    },
+    {
+      "item": "tungsten",
+      "amount": 50
+    },
+    {
+      "item": "chromium",
+      "amount": 50
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 200
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 100
+    }
+  ],
+	"research": "core-xelestal",
+  "researchCostMultiplier": 5,
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

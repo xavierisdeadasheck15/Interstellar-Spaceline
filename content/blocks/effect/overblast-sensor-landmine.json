@@ -1,0 +1,153 @@
+{
+    "type": "PowerTurret",
+    "name": "Overblast Landmine",
+    "description": "Detect Nearby Enemy And initiate Destructive Explosion, can damage structure",
+    "rebuildable": false,
+    "canOverdrive": false,
+    "targetable": false,
+    "crushFragile": true,
+    "canPickup": false,
+    "size": 1,
+    "buildTime": 1.5,
+    "health": 100,
+    "baseExplosiveness": 5.0,
+    "consumes": {
+      "power": 0.01
+    },
+    "shake": 5,
+    "reload": 100,
+    "range": 90,
+    "targetAir": false,
+    "rotateSpeed": 0,
+    "shootCone": 180,
+    "shootSound": "eradicatorArtilleryExplosion",
+    "chargeSound": "none",
+    "shoot": {
+      "type": "shootPattern",
+      "firstShotDelay": 100
+      },
+    "shootType": {
+      "type": "ExplosionBulletType",
+      "chargeEffect": {
+        "type": "ParticleEffect",
+        "region": "interstellar-spaceline-thin-star",
+        "particles": 1,
+        "sizeFrom": 50,
+        "sizeTo": 5,
+        "cone": 180,
+        "length": 0,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 20
+      },
+      "buildingDamageMultiplier": 1.75,
+      "shieldDamageMultiplier": 5,
+      "lifetime": 1,
+      "speed": 1,
+      "damage": 400,
+      "splashDamage": 200,
+      "scaledSplashDamage": true,
+      "splashDamageRadius": 90,
+      "pierceArmor": true,
+      "status": "blasted",
+      "statusDuration": 100,
+      "fragBullets": 5,
+      "fragSpread": 180,
+      "fragRandomSpread": 180,
+      "fragOffsetMax": 2.5,
+      "fragLifeMin": 0.5,
+      "fragBullet": {
+        "type": "ArtilleryBulletType",
+        "damage": 200,
+        "splashDamage": 100,
+        "splashDamageRadius": 30,
+        "speed": 1,
+        "lifetime": 50,
+        "height": 7.5,
+        "width": 7.5,
+        "frontColor": "6e5d59",
+        "backColor": "2e2927",
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 6,
+                "sizeFrom": 4,
+                "sizeTo": 0,
+                "cone": 180,
+                "length": 60,
+                "colorFrom": "ccc0b1",
+                "colorTo": "3d322d",
+                "lifetime": 50
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 4,
+                "sizeFrom": 1.5,
+                "sizeTo": 0,
+                "cone": 180,
+                "length": 70,
+                "colorFrom": "ff9494",
+                "colorTo": "c85c51",
+                "line": true,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "lifetime": 10
+              }
+            ]
+          },
+        "trailEffect": "fireSmoke"
+      }
+    },
+    "destroyEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "sizeFrom": 6,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 100,
+          "colorFrom": "ccc0b1",
+          "colorTo": "3d322d",
+          "lifetime": 50
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 120,
+          "colorFrom": "ff9494",
+          "colorTo": "c85c51",
+          "line": true,
+          "strokeFrom": 3,
+          "strokeTo": 0,
+          "lifetime": 10
+        }
+      ]
+    },
+    "requirements": [
+      "titanium/150",
+      "silicon/75",
+      "graphite/150",
+      "tungsten/75",
+      "copper/100",
+      "lead/100",
+      "indium/20",
+      "blast-compound/400"
+    ],
+    "category": "effect",
+    "research": "sensor-Landmine",
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

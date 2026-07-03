@@ -1,0 +1,37 @@
+{
+  "type": "Unloader" ,
+  "name": "Xanthariam Unloader",
+  "description": "An unloader that unloads items way faster than the normal one",
+  "size": 1,
+  "itemCapacity": 10,
+  "speed": 2,
+  "category": "effect",
+  "research": "x-conveyor-bridge",
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 60
+    },
+    {
+      "item": "graphite",
+      "amount": 10
+    },
+    {
+      "item": "tungsten",
+      "amount": 10
+    },
+    {
+      "item": "titanium",
+      "amount": 10
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 15
+    }
+  ],
+  "researchCostMultiplier": 2.5,
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

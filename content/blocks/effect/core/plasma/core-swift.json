@@ -1,0 +1,45 @@
+{
+    "type": "CoreBlock",
+    "name": "Core: Swift",
+    "description": "Second iteration Plasma Core",
+    "health": 5000,
+    "size": 4,
+    "itemCapacity": 5000,
+    "unitCapModifier": 16,
+    "researchCostMultiplier": 2.5,
+    "squareSprite": true,
+    "unitType": "slayer",
+    "requirements": [
+      {
+        "item": "tin",
+        "amount": 1000
+      },
+      {
+        "item": "titanium",
+        "amount": 1000
+      },
+      {
+        "item": "copper",
+        "amount": 2000
+      },
+      {
+        "item": "silicon",
+        "amount": 1500
+      },
+      {
+        "item": "indium",
+        "amount": 850
+      }
+    ],
+    "category": "effect",
+    "research": "core-synergy",
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

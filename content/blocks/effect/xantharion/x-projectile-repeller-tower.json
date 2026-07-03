@@ -1,0 +1,49 @@
+{
+    "name": "Projectile Repeller Tower",
+    "description": "Widespread Deflect all Bullet",
+    "type": "ShockwaveTower",
+    "researchCostMultiplier": 2,
+    "health": 3500,
+    "armor": 10,
+    "size": 5,
+    "consumes": {
+      "power": 17.5
+    },
+    "range": 300,
+    "reload": 100,
+    "bulletDamage": 500,
+    "shake": 2.5,
+    "waveColor": "ef5350",
+    "shapeColor": "ef5350",
+    "shapeRotateSpeed": 2,
+    "shapeRadius": 8,
+    "shapeSides": 5,
+    "requirements": [
+      {
+        "item": "silicon",
+        "amount": 1750
+      },
+      {
+        "item": "titanium",
+        "amount": 900
+      },
+      {
+        "item": "tungsten",
+        "amount": 500
+      },
+      {
+        "item": "chromium",
+        "amount": 750
+      },
+      {
+        "item": "x-compressed-metal",
+        "amount": 500
+      }
+    ],
+    "research": "x-stronghold",
+    "category": "effect",
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+  }

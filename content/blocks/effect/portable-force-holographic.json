@@ -1,0 +1,49 @@
+{
+  "name": "Portable Force Holographic",
+  "description": "Cheapest and easier to use, quick enough to recharge force shield up, cannot use for defending complex enemy",
+  "type": "ForceProjector",
+  "researchCostMultiplier": 1.25,
+  "health": 200,
+  "size": 2,
+  "squareSprite": true,
+  "consumes": {
+    "power": 1.25
+  },
+  "radius": 70,
+  "sides": 6,
+  "shieldHealth": 400,
+  "cooldownNormal": 1,
+  "cooldownLiquid": 1.5,
+  "cooldownBrokenBase": 0.8,
+  "coolantConsumption": 0.2,
+  "consumeCoolant": true,
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 10
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    }
+  ],
+  "category": "effect",
+  "research": {
+    "parent": "core-frontal",
+    "objectives": [
+      "force-projector",
+      {
+        "type": "SectorComplete",
+        "preset": "ambush"
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

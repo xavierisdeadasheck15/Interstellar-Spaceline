@@ -1,0 +1,49 @@
+{
+    "type": "CoreBlock",
+    "name": "Core: Encore",
+    "description": "Third iteration EMP Core",
+    "health": 9500,
+    "size": 5,
+    "itemCapacity": 8000,
+    "unitCapModifier": 24,
+    "researchCostMultiplier": 3,
+    "squareSprite": false,
+    "unitType": "reverberate",
+    "requirements": [
+      {
+        "item": "titanium",
+        "amount": 4000
+      },
+      {
+        "item": "lead",
+        "amount": 5000
+      },
+      {
+        "item": "silicon",
+        "amount": 4000
+      },
+      {
+        "item": "graphite",
+        "amount": 3000
+      },
+      {
+        "item": "plastanium",
+        "amount": 2000
+      },
+      {
+        "item": "thorium",
+        "amount": 1000
+      }
+    ],
+    "category": "effect",
+    "research": "core-pulse",
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

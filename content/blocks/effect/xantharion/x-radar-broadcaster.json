@@ -1,0 +1,36 @@
+{
+    "name": "Radar Broadcaster",
+    "description": "Uncover Terrain and Structure In a Larger Radius, Required Power",
+    "type": "Radar",
+    "researchCostMultiplier": 1.25,
+    "BuildVisibility": "fogOnly",
+    "health": 500,
+    "armor": 3,
+    "size": 3,
+    "consumes": {
+      "power": 5
+    },
+    "discoveryTime": 650,
+    "rotateSpeed": 1,
+    "fogRadius": 60,
+    "requirements": [
+      {
+        "item": "silicon",
+        "amount": 150
+      },
+      {
+        "item": "tungsten",
+        "amount": 50
+      },
+      {
+        "item": "x-dark-metal",
+        "amount": 75
+      }
+    ],
+    "research": "core-xelestal",
+    "category": "effect",
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+  }

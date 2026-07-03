@@ -1,0 +1,45 @@
+{
+    "type": "CoreBlock",
+    "name": "Core: Sawtooth",
+    "description": "First iteration EMP Core",
+    "health": 2500,
+    "size": 3,
+    "itemCapacity": 2000,
+    "unitCapModifier": 8,
+    "researchCostMultiplier": 2,
+    "squareSprite": true,
+    "unitType": "sabertooth",
+    "requirements": [
+      {
+        "item": "titanium",
+        "amount": 1500
+      },
+      {
+        "item": "lead",
+        "amount": 1500
+      },
+      {
+        "item": "silicon",
+        "amount": 2000
+      }
+    ],
+    "category": "effect",
+    "research": {
+      "parent": "core-frontal",
+      "objectives": [
+        {
+          "type": "SectorComplete",
+          "preset": "oxide-cavern"
+        }
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

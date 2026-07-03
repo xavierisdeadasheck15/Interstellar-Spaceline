@@ -1,0 +1,54 @@
+{
+  "type": "PowerTurret",
+  "name": "Landmine Combustion",
+  "description": "Detect Nearby Enemy And Startup Combustion",
+  "rebuildable": false,
+  "canOverdrive": false,
+  "targetable": false,
+  "crushFragile": true,
+  "size": 3,
+  "buildTime": 1.5,
+  "health": 750,
+  "armor": 5,
+  "baseExplosiveness": 5.0,
+  "consumes": {
+    "power": 0.1
+  },
+  "shake": 10,
+  "reload": 100,
+  "range": 200,
+  "targetAir": false,
+  "rotateSpeed": 0,
+  "shootCone": 180,
+  "shootSound": "emp-explosion",
+  "chargeSound": "lasercharge",
+  "shoot": {
+    "type": "shootPattern",
+    "firstShotDelay": 50
+    },
+  "shootType": {
+    "type": "ExplosionBulletType",
+    "buildingDamageMultiplier": 1.25,
+    "shieldDamageMultiplier": 2.5,
+    "lifetime": 1,
+    "speed": 1,
+    "damage": 600,
+    "splashDamage": 300,
+    "scaledSplashDamage": true,
+    "splashDamageRadius": 200,
+    "pierceArmor": true
+  },
+  "requirements": [
+    "x-dark-metal/1000",
+    "tungsten/250",
+    "titanium/250",
+    "blast-compound/500",
+    "x-compressed-metal/300"
+  ],
+  "category": "effect",
+  "research": "core-axias",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}
