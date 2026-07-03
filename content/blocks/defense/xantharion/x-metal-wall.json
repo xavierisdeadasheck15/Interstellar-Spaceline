@@ -1,0 +1,20 @@
+{
+   "type": "Wall",
+   "name": "Dark Metal Wall",
+   "description": "Small Metallic wall, Use to defend the structure",
+   "researchCostMultiplier": 2,
+   "size": 1,
+   "health": 500,
+   "armor": 2,
+   "chanceDeflect": 1,
+   "category": "defense",
+   "research": "core-xelestal",
+   "requirements": [
+      "x-dark-metal/3",
+      "tungsten/3"
+     ],
+     "shownPlanets": [
+       "infernia-cruor",
+       "profanum-vox"
+     ]
+}

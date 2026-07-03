@@ -1,0 +1,25 @@
+{
+   "type": "Wall",
+   "name": "Large Golden Wall",
+   "description": "Big shiny wall, capable to withstand high laser damage",
+   "size": 2,
+   "health": 2500,
+   "armor": 4,
+   "buildTime": 1.5,
+   "absorbLasers": true,
+   "insulated": true,
+   "crushFragile": true,
+   "crushDamageMultiplier": 2,
+   "category": "defense",
+   "research": "gold-wall",
+   "requirements": [
+      "gold/24"
+     ],
+   "researchCostMultiplier": 3,
+   "shownPlanets": [
+     "serpulo", 
+     "aqualis-archipel", 
+     "glaciera-prime", 
+     "infernia-cruor"
+   ]
+}

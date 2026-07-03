@@ -1,0 +1,106 @@
+{
+    "type": "BurstDrill",
+    "name": "Impulsive Drill",
+    "description": "Combust underneath it with a large attainable amount of Resource, cannot mine sand and coal",
+    "arrowColor": "ef5350",
+    "baseArrowColor": "191d21",
+    "glowColor": "ef5350",
+    "researchCostMultiplier": 1.75,
+    "health": 1000,
+    "size": 3,
+    "buildTime": 1,
+    "squareSprite": false,
+    "hasPower": true,
+    "hasItems": true,
+    "hasLiquids": true,
+    "tier": 5,
+    "drillTime": 300,
+    "shake": 7.5,
+    "arrowSpacing": 2.0,
+    "itemCapacity": 35,
+    "liquidCapacity": 50,
+    "blockedItems": [
+      "sand",
+      "coal"
+    ],
+    "consumes": {
+      "power": 2.5,
+      "liquid": {
+        "liquid": "carbon-monoxide",
+        "amount": 0.035
+      }
+    },
+    "requirements": [
+      {
+        "item": "tungsten",
+        "amount": 300
+      },
+      {
+        "item": "silicon",
+        "amount": 400
+      },
+      {
+        "item": "graphite",
+        "amount": 400
+      },
+      {
+        "item": "chromium",
+        "amount": 200
+      },
+      {
+        "item": "x-compressed-metal",
+        "amount": 150
+      }
+    ],
+    "category": "production",
+    "research": {
+      "parent": "x-dispersal-drill"
+    },
+    "drillEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "WaveEffect",
+          "sides": 0,
+          "sizeFrom": 5,
+          "sizeTo": 30,
+          "strokeFrom": 5,
+          "strokeTo": 0,
+          "colorFrom": "4a4b53",
+          "colorTo": "989aa4",
+          "lifetime": 20
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 40,
+          "colorFrom": "707070",
+          "colorTo": "3b3838",
+          "lifetime": 100
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 50,
+          "colorFrom": "ef5350",
+          "colorTo": "b71c1c",
+          "line": true,
+          "strokeFrom": 4,
+          "strokeTo": 0,
+          "lifetime": 30
+        }
+      ]
+    },
+    "drillSound": "x-drillImpact",
+    "drillSoundVolume": 0.8,
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+  }

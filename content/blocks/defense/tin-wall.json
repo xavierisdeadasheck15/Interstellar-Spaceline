@@ -1,0 +1,20 @@
+{
+   "type": "Wall",
+   "name": "Tin Wall",
+   "description": "protects structures from enemy projectiles",
+   "size": 1,
+   "health": 750,
+   "buildTime": 1.5,
+   "category": "defense",
+   "research": "reinforce-copper-wall",
+   "requirements": [
+      "tin/6"
+     ],
+     "shownPlanets": [
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

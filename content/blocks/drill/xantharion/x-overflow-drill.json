@@ -1,0 +1,84 @@
+{
+  "type": "Drill",
+  "name": "Overflow Drill",
+  "description": "One of Xantharion Drill, Capable of Faster at mining, More Faster than Dispersal",
+  "category": "production",
+  "research": "x-dispersal-drill",
+  "requirements": [
+    "x-compressed-metal/5",
+    "x-dark-metal/5",
+    "titanium/100", 
+    "chromium/30", 
+    "silicon/40" 
+  ],
+  "health": 650,
+  "armor": 2,
+  "consumes": {
+    "power": 1.5
+  },
+  "size": 2,
+  "tier": 5,
+  "drillTime": 200,
+  "rotateSpeed": 7.5,
+  "blockedItem": "sand",
+  "drillEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "WaveEffect",
+        "sides": 0,
+        "sizeFrom": 0,
+        "sizeTo": 15,
+        "strokeFrom": 4,
+        "strokeTo": 0,
+        "colorFrom": "4a4b53",
+        "colorTo": "989aa4",
+        "lifetime": 15
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 3,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 360,
+        "length": 25,
+        "colorFrom": "311b92",
+        "colorTo": "7e57c2",
+        "lifetime": 40
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 1,
+        "sizeTo": 0,
+        "cone": 360,
+        "length": 20,
+        "colorFrom": "311b92",
+        "colorTo": "7e57c2",
+        "line": true,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "lifetime": 20
+      }
+    ]
+  },
+  "updateEffect": {
+    "type": "ParticleEffect",
+    "particles": 2,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "cone": 360,
+    "length": 10,
+    "colorFrom": "311b92",
+    "colorTo": "7e57c2",
+    "line": true,
+    "strokeFrom": 2,
+    "strokeTo": 0,
+    "lifetime": 15
+  },
+  "drawRim": true,
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

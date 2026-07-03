@@ -1,0 +1,20 @@
+{
+   "type": "Wall",
+   "name": "Large Dark Metal Wall",
+   "description": "Large Metallic wall, Use to defend the structure",
+   "researchCostMultiplier": 2,
+   "size": 2,
+   "health": 1000,
+   "armor": 4,
+   "chanceDeflect": 2,
+   "category": "defense",
+   "research": "x-metal-wall",
+   "requirements": [
+      "x-dark-metal/12",
+      "tungsten/12"
+     ],
+     "shownPlanets": [
+       "infernia-cruor",
+       "profanum-vox"
+     ]
+}

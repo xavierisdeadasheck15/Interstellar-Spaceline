@@ -1,0 +1,22 @@
+{
+   "type": "Wall",
+   "name": "Large Mutacynium Wall",
+   "description": "Large acid wall, capable to withstand most of the attack",
+   "size": 2,
+   "health": 1800,
+   "armor": 2,
+   "category": "defense",
+   "research": "mutacynium-wall",
+   "requirements": [
+      "mutacynium/12",
+      "lead/12"
+     ],
+     "shownPlanets": [
+       "serpulo", 
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

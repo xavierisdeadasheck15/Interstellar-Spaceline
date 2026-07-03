@@ -1,0 +1,22 @@
+{
+   "type": "Wall",
+   "name": "Large Iridium Wall",
+   "description": "protects structures from enemy projectiles, formidable enough to withstand",
+   "size": 2,
+   "health": 3950,
+   "armor": 10,
+   "buildTime": 1.5,
+   "category": "defense",
+   "research": "iridium-wall",
+   "requirements": [
+      "iridium/12",
+      "titanium/12"
+     ],
+     "shownPlanets": [
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

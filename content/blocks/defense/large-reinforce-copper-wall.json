@@ -1,0 +1,26 @@
+{
+   "type": "Wall",
+   "name": "Large Reinforce Copper Wall",
+   "description": "Large Reinforced Copper wall, Able to Block Laser",
+   "details": "BUT NOT FOR CORVUS THO-",
+   "size": 2,
+   "health": 1300,
+   "armor": 0,
+   "buildTime": 1.5,
+   "absorbLasers": true,
+   "insulated": true,
+   "category": "defense",
+   "research": "reinforce-copper-wall",
+   "requirements": [
+      "bronze/12",
+      "copper/12"
+     ],
+     "shownPlanets": [
+       "serpulo", 
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

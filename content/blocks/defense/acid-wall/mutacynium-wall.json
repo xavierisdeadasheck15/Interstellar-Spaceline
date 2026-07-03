@@ -1,0 +1,22 @@
+{
+   "type": "Wall",
+   "name": "Mutacynium Wall",
+   "description": "Small acid wall, capable to withstand most of the attack",
+   "size": 1,
+   "health": 650,
+   "armor": 1,
+   "category": "defense",
+   "research": "reinforce-copper-wall",
+   "requirements": [
+      "mutacynium/3",
+      "lead/3"
+     ],
+     "shownPlanets": [
+       "serpulo", 
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

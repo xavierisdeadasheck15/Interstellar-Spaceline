@@ -1,0 +1,26 @@
+{
+   "type": "Wall",
+   "name": "Reinforce Copper Wall",
+   "description": "Small Reinforced Copper wall, Able to Block Laser",
+   "details": "BUT NOT FOR VELA THO-",
+   "size": 1,
+   "health": 400,
+   "armor": 0,
+   "buildTime": 1.5,
+   "absorbLasers": true,
+   "insulated": true,
+   "category": "defense",
+   "research": "core-frontal",
+   "requirements": [
+      "bronze/3",
+      "copper/3"
+     ],
+     "shownPlanets": [
+       "serpulo", 
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

@@ -1,0 +1,26 @@
+{
+   "type": "Wall",
+   "name": "Golden Wall",
+   "description": "Shiny wall, capable to withstand high laser damage",
+   "details": "How much worth is this wall in real life?",
+   "size": 1,
+   "health": 1000,
+   "armor": 2,
+   "buildTime": 1.5,
+   "absorbLasers": true,
+   "insulated": true,
+   "crushFragile": true,
+   "crushDamageMultiplier": 4,
+   "category": "defense",
+   "research": "reinforce-copper-wall",
+   "requirements": [
+      "gold/6"
+     ],
+   "researchCostMultiplier": 2,
+   "shownPlanets": [
+     "serpulo", 
+     "aqualis-archipel", 
+     "glaciera-prime", 
+     "infernia-cruor"
+   ]
+}

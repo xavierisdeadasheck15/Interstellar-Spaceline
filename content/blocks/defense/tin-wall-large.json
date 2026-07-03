@@ -1,0 +1,20 @@
+{
+   "type": "Wall",
+   "name": "Large Tin Wall",
+   "description": "protects structures from enemy projectiles",
+   "size": 2,
+   "health": 2250,
+   "buildTime": 1.5,
+   "category": "defense",
+   "research": "reinforce-copper-wall",
+   "requirements": [
+      "tin/24"
+     ],
+     "shownPlanets": [
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

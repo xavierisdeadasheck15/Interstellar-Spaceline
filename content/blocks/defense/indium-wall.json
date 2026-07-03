@@ -1,0 +1,46 @@
+{
+   "type": "ShockwaveTower",
+   "name": "Indium Wall",
+   "description": "protects structures from enemy projectiles, Destroy incoming bullet",
+   "size": 1,
+   "health": 850,
+   "buildTime": 1.5,
+   "consumes": {
+     "power": 0.05
+   },
+   "canOverdrive": false,
+   "conductivePower": true,
+   "range": 20,
+   "reload": 100,
+   "bulletDamage": 50,
+   "waveColor": "a1b4b5",
+   "shapeColor": "a1b4b5",
+   "shapeRotateSpeed": 2,
+   "shapeRadius": 0.5,
+   "shapeSides": 4,
+   "waveEffect": {
+     "type": "WaveEffect",
+     "sides": 4,
+     "rotation": 90,
+     "sizeFrom": 20,
+     "sizeTo": 10,
+     "strokeFrom": 2,
+     "strokeTo": 0,
+     "colorFrom": "a1b4b5",
+     "colorTo": "2d2f3d",
+     "lifetime": 30
+   },
+   "category": "defense",
+   "research": "tin-wall",
+   "requirements": [
+      "indium/3",
+      "lead/3"
+    ],
+    "shownPlanets": [
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+}

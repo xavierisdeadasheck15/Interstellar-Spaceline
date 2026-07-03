@@ -1,0 +1,33 @@
+{
+  "type": "WallCrafter",
+  "name": "Cliff Destroyer",
+  "description": "Crush down the dense cliff into sand",
+  "size": 2,
+  "category": "production",
+  "research": "x-dispersal-drill",
+  "requirements": [
+    "beryllium/100",
+    "silicon/50",
+    "graphite/75",
+    "x-dark-metal/50"
+  ],
+  "drillTime": "190",
+  "attribute": "sand",
+  "output": "sand",
+  "fogRadius": 3,
+  "researchCost": [
+    "beryllium/200",
+    "silicon/100",
+    "graphite/150",
+    "x-dark-metal/100"
+  ],
+  "consumes": {
+    "power": 0.15
+  },
+  "ambientSound": "drill",
+  "ambientSoundVolume": 0.08,
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

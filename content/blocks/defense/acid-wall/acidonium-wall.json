@@ -1,0 +1,115 @@
+{
+   "type": "Wall",
+   "name": "Acidonium Wall",
+   "description": "Small reinforced acid wall, capable to withstand most of the attack, unleash corrosive gas when destroyed",
+   "size": 1,
+   "health": 800,
+   "armor": 2,
+   "category": "defense",
+   "baseExplosiveness": 0.5,
+   "explosivenessScale": 1.25,
+   "absorbLasers": true,
+   "research": "mutacynium-wall",
+   "destroyBullet": {
+      "type": "BasicBulletType",
+      "damage": 20,
+      "splashDamage": 50,
+      "splashDamageRadius": 40,
+      "speed": 1,
+      "lifetime": 5,
+      "height": 10,
+      "width": 10,
+      "frontColor": "60a873",
+      "backColor": "54614f",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "54614f",
+            "colorTo": "60a873",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 7,
+            "length": 60,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "line": true,
+            "strokeFrom": 7,
+            "strokeTo": 0,
+            "colorFrom": "60a873",
+            "colorTo": "54614f",
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "length": 80,
+            "sizeFrom": 8,
+            "sizeTo": 0,
+            "colorFrom": "60a873",
+            "colorTo": "54614f",
+            "lifetime": 30
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "54614f",
+            "colorTo": "60a873",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 7,
+            "length": 60,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "line": true,
+            "strokeFrom": 7,
+            "strokeTo": 0,
+            "colorFrom": "60a873",
+            "colorTo": "54614f",
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "length": 80,
+            "sizeFrom": 8,
+            "sizeTo": 0,
+            "colorFrom": "60a873",
+            "colorTo": "54614f",
+            "lifetime": 30
+          }
+        ]
+      },
+      "status": "corroded",
+      "statusDuration": 100
+   },
+   "requirements": [
+      "acidonium/3",
+      "titanium/3"
+     ],
+     "shownPlanets": [
+       "serpulo", 
+       "aqualis-archipel", 
+       "glaciera-prime", 
+       "infernia-cruor", 
+       "neon-expanse", 
+       "profanum-vox"
+     ]
+}

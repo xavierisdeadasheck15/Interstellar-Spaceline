@@ -1,0 +1,15 @@
+{
+   "type": "Wall",
+   "name": "Large Arethorium Wall",
+   "description": "Unknown Large Defense Wall, Tougher Wall that Capable to withstand Major Damage",
+   "size": 2,
+   "health": 2100,
+   "armor": 10,
+   "buildTime": 1.5,
+   "category": "defense",
+   "research": "a-arethorium-wall",
+   "requirements": [
+      "a-arethorium/6",
+      "tungsten/6"
+     ]
+}
