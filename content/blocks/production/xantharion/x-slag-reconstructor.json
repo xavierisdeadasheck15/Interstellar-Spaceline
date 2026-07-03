@@ -1,0 +1,69 @@
+{
+  "type": "HeatProducer",
+  "name": "Slag Reconstructor",
+  "description": "Solidified Slag Into A Metal, Alternatively Output Heat",
+  "health": 1250,
+  "size": 3,
+  "buildTime": 1.5,
+  "canOverdrive": true,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "slag",
+        "alpha": 1
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawHeatOutput"
+      }
+    ]
+  },
+  "craftTime": 500,
+  "liquidCapacity": 200,
+  "itemCapacity": 10,
+  "consumes": {
+    "power": 10,
+    "liquid": "slag/0.1"
+  },
+  "requirements": [
+    "graphite/700",
+    "copper/1000",
+    "silicon/800",
+    "x-dark-metal/4500",
+    "x-compressed-metal/100"
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-metallic-factory",
+    "requirements": [
+      "graphite/900",
+      "copper/1250",
+      "silicon/1000",
+      "x-dark-metal/500",
+      "x-compressed-metal/200"
+    ]
+  },
+  "craftEffect": "none",
+  "updateEffect": "none",
+  "heatOutput": 8,
+  "outputItem": {
+    "item": "x-dark-metal",
+    "amount": 2
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

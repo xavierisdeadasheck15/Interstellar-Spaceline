@@ -1,0 +1,92 @@
+{
+  "type": "GenericCrafter",
+  "name": "Blast Compositor",
+  "description": "Composite Coal, Sand, And Lead And then Mixture With Slag",
+  "researchCostMultiplier": 1.5,
+  "health": 550,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "slag",
+        "alpha": 1
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame"
+      }
+    ]
+  },
+  "craftTime": 100,
+  "liquidCapacity":75,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 3,
+    "liquid": "slag/0.1",
+    "items": {
+      "items": [
+        {
+          "item": "coal",
+          "amount": 2
+        },
+        {
+          "item": "lead",
+          "amount": 1
+        },
+        {
+          "item": "sand",
+          "amount": 2
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 200
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 25
+    },
+    {
+      "item": "graphite",
+      "amount": 100
+    },
+    {
+      "item": "copper",
+      "amount": 250
+    },
+    {
+      "item": "tungsten",
+      "amount": 300
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-metallic-factory"
+  },
+  "ambientSound": "machine",
+  "ambientSoundVolume": 0.75,
+  "outputItem": {
+    "item": "blast-compound",
+    "amount": 2
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

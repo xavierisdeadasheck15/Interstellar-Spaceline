@@ -1,0 +1,98 @@
+{
+    "type": "GenericCrafter",
+    "name": "Monoxide Burner",
+    "description": "Burn inputted fuel and oil into Monoxide",
+    "health": 500,
+    "size": 3,
+    "buildTime": 0.9,
+    "squareSprite": true,
+    "hasPower": true,
+    "hasItems": true,
+    "hasLiquids": true,
+    "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+        {
+          "type": "drawRegion",
+          "suffix": "-bottom"
+        },
+        {
+          "type": "DrawLiquidTile",
+          "suffix": "-bottom",
+          "drawLiquid": "oil",
+          "alpha": 1
+        },
+        {
+          "type": "DrawDefault"
+        },
+        {
+          "type": "drawRegion",
+          "suffix": "-top"
+        }
+      ]
+    },
+    "craftTime": 80,
+    "itemCapacity": 50,
+    "consumes": {
+      "power": 6.5,
+      "liquid": "oil/0.065",
+      "itemFlammable": {
+        "minFlammable": 0.1
+      },
+      "itemExplode": {}
+    },
+    "requirements": [
+      {
+        "item": "copper",
+        "amount": 200
+      },
+      {
+        "item": "silicon",
+        "amount": 350
+      },
+      {
+        "item": "titanium",
+        "amount": 150
+      },
+      {
+        "item": "chromium",
+        "amount": 350
+      },
+      {
+        "item": "x-dark-metal",
+        "amount": 100
+      }
+    ],
+    "category": "crafting",
+    "research": {
+      "parent": "x-compressor-smelter"
+    },
+    "craftEffect": {
+      "type": "ParticleEffect",
+      "particles": 6,
+      "sizeFrom": 7,
+      "sizeTo": 0,
+      "cone": 180,
+      "length": 80,
+      "colorFrom": "707070",
+      "colorTo": "3b3838",
+      "lifetime": 150
+    },
+    "updateEffect": {
+      "type": "ParticleEffect",
+      "particles": 2,
+      "sizeFrom": 6,
+      "sizeTo": 0,
+      "cone": 180,
+      "length": 40,
+      "colorFrom": "707070",
+      "colorTo": "3b3838",
+      "lifetime": 50
+    },
+    "outputLiquid": "carbon-monoxide/0.25",
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+  }
+  

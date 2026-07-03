@@ -1,0 +1,97 @@
+{
+  "type": "GenericCrafter",
+  "name": "Advance Metallic Factory",
+  "description": "Smelt Silicon and Lead into Dark Metal, Required Oil and Some Graphite and Pyratite",
+  "health": 750,
+  "size": 3,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "carbon-monoxide",
+        "alpha": 0.5
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "alpha": 0.70,
+        "glowScale": 10.0,
+        "glowIntensity": 1
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 30,
+  "liquidCapacity": 50,
+  "consumes": {
+    "power": 5.5,
+    "liquid": "carbon-monoxide/0.2",
+      "items": {
+        "items": [
+        {
+          "item": "lead",
+          "amount": 5
+        },
+        {
+          "item": "silicon",
+          "amount": 5
+        },
+        {
+          "item": "blast-compound",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 150
+    },
+    {
+      "item": "titanium",
+      "amount": 200
+    },
+    {
+      "item": "graphite",
+      "amount": 275
+    },
+    {
+      "item": "silicon",
+      "amount": 1000
+    },
+    {
+      "item": "tungsten",
+      "amount": 250
+    }
+  ],
+  "category": "crafting",
+  "research": "x-metallic-factory",
+  "researchCostMultiplier": 2,
+  "craftEffect": "producesmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.50,
+  "outputItem": {
+    "item": "x-dark-metal",
+    "amount": 5
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

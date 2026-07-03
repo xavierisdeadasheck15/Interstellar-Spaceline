@@ -1,0 +1,30 @@
+{
+  "type": "HeatProducer",
+  "name": "Xantharion Electric Heater",
+  "description": "Convert Power Into Heat",
+  "researchCostMultiplier": 2,
+  "health": 750,
+  "armor": 5,
+  "size": 2,
+  "buildTime": 1.5,
+  "squareSprite": true,
+  "hasPower": true,
+  "consumes": {
+    "power": 2
+  },
+  "requirements": [
+    "copper/500",
+    "tungsten/100",
+    "silicon/200",
+    "x-dark-metal/250"
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "x-metallic-factory"
+  },
+  "heatOutput": 5,
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}
