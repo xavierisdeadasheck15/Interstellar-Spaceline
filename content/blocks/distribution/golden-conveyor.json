@@ -1,0 +1,45 @@
+{
+  "type": "StackConveyor",
+  "name": "Golden Conveyor",
+  "description": "transport resource that stacked up to 20 pack",
+  "category": "distribution",
+  "requirements": [
+    "silicon/1",
+    "graphite/1",
+    "gold/1"
+  ],
+  "health": 80,
+  "speed": 0.09,
+  "itemCapacity": 20,
+  "unloadEffect": {
+    "type": "ParticleEffect",
+    "particles": 3,
+    "sizeFrom": 1.5,
+    "sizeTo": 0,
+    "cone": 180,
+    "length": 10,
+    "colorFrom": "ffd54f",
+    "colorTo": "ffab00",
+    "lifetime": 30
+  },
+  "outputRouter": true,
+  "loadEffect": {
+    "type": "ParticleEffect",
+    "particles": 3,
+    "sizeFrom": 1.5,
+    "sizeTo": 0,
+    "cone": 180,
+    "length": 10,
+    "colorFrom": "ffd54f",
+    "colorTo": "ffab00",
+    "lifetime": 30
+  },
+  "research": "core-frontal",
+  "researchCostMultiplier": 5,
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "type": "ArmoredConveyor",
+    "name": "Dark Armoured Conveyor",
+    "description": "Transports items forward, Does not accept to the side.",
+    "health": 150,
+    "armor": 10,
+    "requirements": [
+      {
+        "item": "copper",
+        "amount": 1
+      },
+      {
+        "item": "tungsten",
+        "amount": 1
+      },
+      {
+        "item": "x-compressed-metal",
+        "amount": 1
+      }
+    ],
+    "category": "distribution",
+    "speed": 0.15,
+    "displayedSpeed": 8,
+    "research": "x-conveyor",
+    "junctionReplacement": "x-junction",
+    "bridgeReplacement": "x-conveyor-bridge",
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+  }
+    

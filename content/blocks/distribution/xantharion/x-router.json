@@ -1,0 +1,22 @@
+{
+  "name": "Dark Router",
+  "description": "Distributes items to 3 output directions equally. Faster than the regular router.",
+  "type": "Router",
+  "dumpTime": 40,
+  "speed": 0.5,
+  "health": 150,
+  "armor": 1,
+  "itemCapacity": 20,
+  "size": 1,
+  "requirements": [
+    {"item": "copper", "amount": 2},
+    {"item": "x-dark-metal", "amount": 2}
+  ],
+  "researchCostMultiplier": 1.5,
+  "category": "distribution",
+  "research": "x-junction",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

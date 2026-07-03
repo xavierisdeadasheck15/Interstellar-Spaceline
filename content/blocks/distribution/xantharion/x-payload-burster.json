@@ -1,0 +1,47 @@
+{
+  "type": "MassDriver",
+  "name": "Payload Burster",
+  "health": 1000,
+  "description": "A Payload turret which use to transport a pack of resource to the designated Payload",
+  "itemCapacity": 500,
+  "squareSprite": false,
+  "reload": 300,
+  "range": 350,
+  "size": 3,
+  "rotateSpeed": 2.5,
+  "minDistribute": 50,
+  "shootSound": "x-massdriver",
+  "shootEffect": "blastExplosion",
+  "smokeEffect": "blockExplosionSmoke",
+  "receiveEffect": "bigShockwave",
+  "consumes": {
+    "power": {
+      "amount": 5
+    }
+  },
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 450
+    },
+    {
+      "item": "graphite",
+      "amount": 300
+    },
+    {
+      "item": "titanium",
+      "amount": 600
+    },
+    {
+      "item": "tungsten",
+      "amount": 200
+    }
+  ],
+  "category": "distribution",
+  "research": "core-xelestal",
+  "outlineColor": "162229",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

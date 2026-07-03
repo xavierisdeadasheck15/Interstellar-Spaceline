@@ -1,0 +1,45 @@
+{
+    "type": "StackConveyor",
+    "name": "Dark Stack Conveyor",
+    "description": "transport resource that stacked up to 15 pack",
+    "category": "distribution",
+    "requirements": [
+      "silicon/5",
+      "tungsten/5",
+      "thorium/2",
+      "x-compressed-metal/1"
+    ],
+    "health": 80,
+    "speed": 0.05,
+    "itemCapacity": 15,
+    "unloadEffect": {
+      "type": "ParticleEffect",
+      "particles": 4,
+      "sizeFrom": 2,
+      "sizeTo": 0,
+      "cone": 180,
+      "length": 15,
+      "colorFrom": "4a4b53",
+      "colorTo": "989aa4",
+      "lifetime": 20
+    },
+    "outputRouter": true,
+    "loadEffect": {
+      "type": "ParticleEffect",
+      "particles": 4,
+      "sizeFrom": 2,
+      "sizeTo": 0,
+      "cone": 180,
+      "length": 15,
+      "colorFrom": "4a4b53",
+      "colorTo": "989aa4",
+      "lifetime": 20
+    },
+    "research": "x-conveyor",
+    "researchCostMultiplier": 2,
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+  }
+  

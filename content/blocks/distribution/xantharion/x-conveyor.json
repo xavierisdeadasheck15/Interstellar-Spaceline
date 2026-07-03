@@ -1,0 +1,28 @@
+{
+  "type": "Conveyor",
+  "name": "Dark Conveyor",
+  "description": "Transports items forward.",
+  "health": 100,
+  "armor": 1,
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 1
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 1
+    }
+  ],
+  "category": "distribution",
+  "speed": 0.15,
+  "displayedSpeed": 8,
+  "research": "core-xelestal",
+  "junctionReplacement": "x-junction",
+  "bridgeReplacement": "x-conveyor-bridge",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}
+  

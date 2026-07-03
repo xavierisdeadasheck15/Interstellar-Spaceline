@@ -1,0 +1,20 @@
+{
+  "name": "Dark Junction",
+  "description": "Acts as a bridge for two crossing dark conveyor belts.",
+  "type": "Junction",
+  "speed": 10,
+  "health": 100,
+  "armor": 2,
+  "size": 1,
+  "requirements": [
+    {"item": "copper", "amount": 3},
+    {"item": "x-dark-metal", "amount": 3}
+  ],
+  "researchCostMultiplier": 1.5,
+  "category": "distribution",
+  "research": "x-conveyor",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

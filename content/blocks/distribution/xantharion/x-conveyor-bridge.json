@@ -1,0 +1,29 @@
+{
+  "type": "ItemBridge",
+  "name": "Dark Bridge Conveyor",
+  "description": "Transports items over terrain or buildings.",
+  "health": 250,
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 2
+    },
+    {
+      "item": "lead",
+      "amount": 2
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 2
+    }
+  ],
+  "range": 5,
+  "transportTime": 5,
+  "hasPower": false,
+  "category": "distribution",
+  "research": "x-junction",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}
