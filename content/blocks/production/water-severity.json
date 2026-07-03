@@ -1,0 +1,88 @@
+{
+    "type": "GenericCrafter",
+    "name": "Water Severity",
+    "description": "Separate deep flowing Water into gold",
+    "health": 700,
+    "size": 2,
+    "buildTime": 1,
+    "hasPower": true,
+    "hasItems": true,
+    "hasLiquids": true,
+    "drawer": {
+      "type": "DrawMulti",
+      "drawers": [
+        {
+          "type": "drawRegion",
+          "suffix": "-bottom"
+        },
+        {
+          "type": "DrawLiquidTile",
+          "suffix": "-bottom",
+          "drawLiquid": "water",
+          "alpha": 0.75
+        },
+        {
+          "type": "DrawFrames",
+          "frames": 17,
+          "sine": false
+        },
+        {
+          "type": "DrawRegion",
+          "suffix": "-rotator",
+          "rotateSpeed": 1,
+          "spinSprite": true
+        },
+        {
+          "type": "DrawDefault"
+        },
+        {
+          "type": "DrawRegion",
+          "suffix": "-top"
+        }
+      ]
+    },
+    "craftTime": 100,
+    "itemCapacity": 10,
+    "liquidCapacity": 50,
+    "consumes": {
+      "power": 3,
+      "liquid": "water/0.5"
+    },
+    "requirements": [
+      {
+        "item": "copper",
+        "amount": 300
+      },
+      {
+        "item": "silicon",
+        "amount": 400
+      },
+      {
+        "item": "titanium",
+        "amount": 200
+      },
+      {
+        "item": "plastanium",
+        "amount": 100
+      }
+    ],
+    "category": "crafting",
+    "research": {
+      "parent": "refinery-titanium"
+    },
+    "researchCostMultiplier": 1.5,
+    "craftEffect": "none",
+    "updateEffect": "none",
+    "ambientSound": "techloop",
+    "ambientSoundVolume": 0.05,
+    "outputItem": {
+      "item": "gold",
+      "amount": 1
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime"
+    ]
+  }
+  

@@ -1,0 +1,72 @@
+{
+  "type": "GenericCrafter",
+  "name": "Beryllium Refinery",
+  "description": "Refine A Raw Beryllium Into Beryllium",
+  "health": 750,
+  "size": 2,
+  "buildTime": 1,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "f5d3bc"
+      }
+ 
+    ]
+  },
+  "craftTime": 65,
+  "itemCapacity": 15,
+  "consumes": {
+    "power": 2.5,
+      "items": {
+        "items": [
+        {
+          "item": "raw-beryllium",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "beryllium",
+      "amount": 100
+    },
+    {
+      "item": "graphite",
+      "amount": 50
+    },
+    {
+      "item": "silicon",
+      "amount": 75
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "refinery-titanium",
+    "requirements": [
+      "beryllium/200",
+      "graphite/100",
+      "silicon/200"
+    ]
+  },
+  "craftEffect": "producesmoke",
+  "updateEffect": "none",
+  "ambientSound": "techloop",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "beryllium",
+    "amount": 2
+  }
+}

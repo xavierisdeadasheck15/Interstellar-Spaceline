@@ -1,0 +1,86 @@
+{
+  "type": "GenericCrafter",
+  "name": "Contaminate Smelter",
+  "description": "Smelt Lead with thorium",
+  "health": 650,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFlame",
+        "flameColor": "a5d96a"
+      }
+    ]
+  },
+  "craftTime": 50,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 2,
+      "items": {
+        "items": [
+        {
+          "item": "lead",
+          "amount": 2
+        },
+        {
+          "item": "thorium",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "lead",
+      "amount": 75
+    },
+    {
+      "item": "graphite",
+      "amount": 50
+    },
+    {
+      "item": "titanium",
+      "amount": 50
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "advance-compressor",
+    "objectives": [
+      "thorium-refinery"
+      {
+        "type": "SectorComplete",
+        "preset": "mining-central"
+      }
+    ],
+    "requirements": [
+      "lead/150",
+      "graphite/100",
+      "titanium/100"
+    ]
+  },
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "mutacynium",
+    "amount": 1
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

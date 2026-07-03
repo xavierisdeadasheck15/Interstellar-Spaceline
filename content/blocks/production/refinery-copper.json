@@ -1,0 +1,73 @@
+{
+  "type": "GenericCrafter",
+  "name": "Refinery Copper",
+  "description": "Refine A Raw Copper Into Copper",
+  "health": 500,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 2,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "FFFFFF"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "craftTime": 50,
+  "itemCapacity": 10,
+  "consumes": {
+    "power": 1,
+      "items": {
+        "items": [
+        {
+          "item": "raw-copper",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 75
+    },
+    {
+      "item": "graphite",
+      "amount": 20
+    },
+    {
+      "item": "silicon",
+      "amount": 25
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "core-frontal"
+  },
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "copper",
+    "amount": 2
+  }
+}

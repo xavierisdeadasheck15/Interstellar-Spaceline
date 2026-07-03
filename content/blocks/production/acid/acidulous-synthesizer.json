@@ -1,0 +1,92 @@
+{
+  "type": "GenericCrafter",
+  "name": "Acidulous Synthesizer",
+  "description": "Synthesize Mutacynium with Titanium",
+  "health": 700,
+  "size": 2,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawWeave"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "craftTime": 100,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 4,
+      "items": {
+        "items": [
+        {
+          "item": "mutacynium",
+          "amount": 1
+        },
+        {
+          "item": "titanium",
+          "amount": 2
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 200
+    },
+    {
+      "item": "lead",
+      "amount": 400
+    },
+    {
+      "item": "silicon",
+      "amount": 150
+    },
+    {
+      "item": "mutacynium",
+      "amount": 50
+    },
+    {
+      "item": "thorium",
+      "amount": 25
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "contaminate-smelter",
+    "requirements": [
+      "copper/400",
+      "lead/800",
+      "silicon/300",
+      "mutacynium/100",
+      "thorium/50"
+    ]
+  },
+  "craftEffect": "formsmoke",
+  "updateEffect": "none",
+  "ambientSound": "smelter",
+  "ambientSoundVolume": 0.05,
+  "outputItem": {
+    "item": "acidonium",
+    "amount": 1
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

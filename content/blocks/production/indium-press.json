@@ -1,0 +1,91 @@
+{
+  "type": "GenericCrafter",
+  "name": "Indium Press",
+  "description": "Compress Nickel & Tin into Indium",
+  "researchCostMultiplier": 2.5,
+  "health": 500,
+  "size": 3,
+  "buildTime": 0.9,
+  "squareSprite": true,
+  "hasPower": true,
+  "hasItems": true,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawPistons",
+        "sinMag": 1,
+        "sinScl": 5
+      },
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "de7f5d",
+        "alpha": 0.9,
+        "glowScale": 12.5,
+        "glowIntensity": 1
+      }
+    ]
+  },
+  "craftTime": 50,
+  "itemCapacity": 20,
+  "consumes": {
+    "power": 1.5,
+      "items": {
+        "items": [
+        {
+          "item": "tin",
+          "amount": 2
+        },
+        {
+          "item": "nickel",
+          "amount": 1
+        }
+      ]
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 350
+    },
+    {
+      "item": "silicon",
+      "amount": 500
+    },
+    {
+      "item": "titanium",
+      "amount": 250
+    },
+    {
+      "item": "tin",
+      "amount": 100
+    }
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "dense-mixer"
+  },
+  "craftEffect": "none",
+  "updateEffect": "none",
+  "ambientSound": "none",
+  "outputItem": {
+    "item": "indium",
+    "amount": 1
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}
