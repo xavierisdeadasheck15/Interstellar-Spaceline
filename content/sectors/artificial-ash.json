@@ -1,0 +1,20 @@
+{
+    "type": "SectorPreset",
+    "localizedName": "Artificial Ash",
+    "description": "It is known to be as 'Architecture Snowfall Hour' Project, it is currently Unknown but it was Possibly use to something Devastating, Seize this sector once, but be wary that they will deploy the unit directly to the destroyed core",
+    "details": "This Sector Was suppose to be the Last Sector of this Planet, But not, its not the last Sector",
+    "difficulty": 8,
+    "planet": "glaciera-prime",
+    "sector": 161,
+    "addStartingItems": true,
+    "research": {
+      "parent": "ethereal-northern-research",
+      "objectives": [
+        {
+          "type": "SectorComplete",
+          "preset": "ethereal-northern-research"
+        }
+      ]
+    }
+  }
+  

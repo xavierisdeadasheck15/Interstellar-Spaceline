@@ -1,0 +1,12 @@
+{
+  "type": "Item",
+  "name": "raw-copper",
+  "localizedName": "Raw Copper",
+  "description": "A Copper from a wall, Required to refine it into Copper",
+  "hardness": 1,
+  "cost": 1,
+  "color": "b8705c",
+  "research": {
+    "parent": "core-frontal"
+  }
+}

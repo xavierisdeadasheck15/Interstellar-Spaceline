@@ -1,0 +1,12 @@
+{
+  "type": "Item",
+  "name": "raw-thorium",
+  "localizedName": "Raw Thorium",
+  "description": "A Thorium from a wall, Required to refine it into Thorium",
+  "hardness": 2.5,
+  "cost": 2,
+  "color": "cb8ebf",
+  "research": {
+    "parent": "raw-titanium"
+  }
+}

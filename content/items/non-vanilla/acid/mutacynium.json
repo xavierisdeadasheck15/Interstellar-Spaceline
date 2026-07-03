@@ -1,0 +1,23 @@
+{
+    "type": "Item",
+    "name": "mutacynium",
+    "localizedName": "Mutacynium",
+    "description": "Metal Compressed with radiation, used for basic acid base structure",
+    "hardness": 1.5,
+    "cost": 1.5,
+    "explosiveness": 0.45,
+    "radioactivity": 1.3,
+    "color": "90b369",
+    "research": {
+      "parent": "raw-thorium"
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

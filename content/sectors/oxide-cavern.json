@@ -1,0 +1,19 @@
+{
+  "type": "SectorPreset",
+  "localizedName": "Oxide Cavern",
+  "description": "A Longway sector, their main core contain advance Iteration, seize it, but remember to not use air when near it",
+  "difficulty": 6,
+  "planet": "glaciera-prime",
+  "sector": 3,
+  "allowLaunchLoadout": true,
+  "addStartingItems": true,
+  "research": {
+    "parent": "frozen-lake",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "frozen-lake"
+      }
+    ]
+  }
+}

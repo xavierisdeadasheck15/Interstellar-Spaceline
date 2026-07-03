@@ -1,0 +1,20 @@
+{
+  "type": "Item",
+  "name": "Arkycite Capsule",
+  "description": "A Container of Arkycite",
+  "hardness": 5,
+  "cost": 1,
+  "color": "4e904f",
+  "research": {
+    "parent": "plastanium"
+  },
+  "flammability": 0.40,
+  "shownPlanets": [
+    "erekir", 
+    "glaciera-prime", 
+    "aqualis-archipel", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

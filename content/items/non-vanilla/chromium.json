@@ -1,0 +1,19 @@
+{
+  "type": "Item",
+  "name": "chromium",
+  "localizedName": "Chromium",
+  "description": "A Resilient Ingot, Use for Heat Resistance And Corrosion Resistance",
+  "hardness": 4,
+  "cost": 2.5,
+  "color": "b5c6c9",
+  "research": {
+    "parent": "bronze"
+  },
+  "shownPlanets": [
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

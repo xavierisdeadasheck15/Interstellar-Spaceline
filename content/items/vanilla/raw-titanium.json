@@ -1,0 +1,12 @@
+{
+  "type": "Item",
+  "name": "raw-titanium",
+  "localizedName": "Raw Titanium",
+  "description": "A Titanium from a wall, Required to refine it into Titanium",
+  "hardness": 2,
+  "cost": 1.5,
+  "color": "7575c8",
+  "research": {
+    "parent": "raw-copper"
+  }
+}

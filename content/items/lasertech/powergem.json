@@ -1,0 +1,18 @@
+{
+  "name": "Power gem",
+  "description": "a energetic core, use for a better turret building",
+  "cost": 1,
+  "color": "FF0000",
+  "charge": 5,
+  "research": {
+    "parent": "hardglass"
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

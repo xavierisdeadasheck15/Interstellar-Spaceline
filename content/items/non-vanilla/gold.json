@@ -1,0 +1,20 @@
+{
+  "type": "material",
+  "name": "Gold",
+  "description": "A rare and valuable metal, used for advanced technology.",
+  "color": "ffd700",
+  "hardness": 1,
+  "cost": 5,
+  "alwaysUnlocked": false,
+  "research": {
+    "parent": "bronze"
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

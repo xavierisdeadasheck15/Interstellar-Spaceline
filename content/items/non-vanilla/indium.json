@@ -1,0 +1,19 @@
+{
+  "type": "Item",
+  "name": "indium",
+  "localizedName": "Indium",
+  "description": "Smelted Indium from Tin and Nickel, use for advance sensory landmine and detection door",
+  "hardness": 1.5,
+  "cost": 5,
+  "color": "707b80",
+  "research": {
+    "parent": "tin"
+  },
+  "shownPlanets": [
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

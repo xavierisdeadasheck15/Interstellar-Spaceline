@@ -1,0 +1,24 @@
+{
+  "type": "SectorPreset",
+  "localizedName": "Fabrication Site",
+  "description": "A Longway path, small enemy base are detected here, but don't get cocky, enemy has already establish horde in this base along with their mass produced factory, be ready",
+  "difficulty": 8,
+  "captureWave": 40,
+  "planet": "glaciera-prime",
+  "sector": 10,
+  "attackAfterWaves": true,
+  "addStartingItems": true,
+  "research": {
+    "parent": "oxide-cavern",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "oxide-cavern"
+      },
+      {
+        "type": "SectorComplete",
+        "preset": "frozen-ridge"
+      }
+    ]
+  }
+}

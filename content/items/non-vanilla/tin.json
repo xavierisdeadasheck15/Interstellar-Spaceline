@@ -1,0 +1,19 @@
+{
+  "type": "Item",
+  "name": "tin",
+  "localizedName": "Tin",
+  "description": "Dark Blueish Metal use for Advance electrical structure",
+  "hardness": 2,
+  "cost": 3,
+  "color": "454952",
+  "research": {
+    "parent": "bronze"
+  },
+  "shownPlanets": [
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

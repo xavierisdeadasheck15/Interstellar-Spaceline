@@ -1,0 +1,19 @@
+{
+  "type": "Item",
+  "name": "nichrome",
+  "localizedName": "Nichrome",
+  "description": "A Mixture Between Nickel & Chromium, Use for Extreme Heat Resistance ",
+  "hardness": 1.5,
+  "cost": 2.5,
+  "color": "616161",
+  "research": {
+    "parent": "chromium"
+  },
+  "shownPlanets": [
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

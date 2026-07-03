@@ -1,0 +1,17 @@
+{
+  "name": "Hard metaglass",
+  "description": "hard glass layered, use for turret & production building",
+  "cost": 1,
+  "color": "FFFFFF",
+  "research": {
+    "parent": "metaglass"
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

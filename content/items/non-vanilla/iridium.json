@@ -1,0 +1,19 @@
+{
+  "type": "Item",
+  "name": "iridium",
+  "localizedName": "Iridium",
+  "description": "Advance smelted resource, use for advance repairing and advance electrical structure",
+  "hardness": 3,
+  "cost": 5.5,
+  "color": "7d969e",
+  "research": {
+    "parent": "indium"
+  },
+  "shownPlanets": [
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

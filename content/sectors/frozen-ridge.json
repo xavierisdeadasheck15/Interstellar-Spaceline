@@ -1,0 +1,19 @@
+{
+  "type": "SectorPreset",
+  "localizedName": "Frozen Ridge",
+  "description": "A Multiple core has detected here, and in this sector contain abundant of Tin & Nickel here, Seize it and research their core",
+  "difficulty": 7,
+  "planet": "glaciera-prime",
+  "sector": 35,
+  "allowLaunchLoadout": true,
+  "addStartingItems": true,
+  "research": {
+    "parent": "oxide-cavern",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "oxide-cavern"
+      }
+    ]
+  }
+}
