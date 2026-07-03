@@ -1,0 +1,60 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "Exhaustion Ventilator",
+    "description": "Generate power From Carbon Monoxide",
+    "size": 3,
+    "powerProduction": 5,
+    "drawer": {
+    "type": "DrawMulti",
+        "drawers": [
+          {
+            "type": "drawRegion",
+            "suffix": "-bottom"
+          },
+          {
+            "type": "DrawLiquidTile",
+            "suffix": "-bottom",
+            "drawLiquid": "carbon-monoxide",
+            "alpha": 0.75
+          },
+          {
+            "type": "DrawDefault"
+          },
+          {
+            "type": "DrawRegion",
+            "suffix": "-rotator",
+            "rotateSpeed": 10,
+            "spinSprite": true
+          },
+          {
+            "type": "drawRegion",
+            "suffix": "-top"
+          }
+        ]
+    },
+    "hasLiquids": true,
+    "liquidCapacity": 100,
+    "liquidDuration": 100,
+    "consumes": {
+      "liquid": "carbon-monoxide/0.1"
+    },
+    "minItemEfficiency": 0.1,
+        "requirements": [
+          "x-dark-metal/200",
+          "graphite/500",
+          "silicon/300",
+          "tungsten/50"
+    ],
+    "category": "power",
+    "research": {
+      "parent": "x-Biomechanical-Generator"
+    },
+    "loopSound": "hum",
+    "ambientSound": "machine",
+    "loopSoundVolume": 0.75,
+    "ambientSoundVolume": 0.50,
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Large Xantharion Solar Panel",
+  "description": "Generate Better Power From Solar",
+  "type": "SolarGenerator",
+  "researchCostMultiplier": 3,
+  "buildTime": 5,
+  "squareSprite": true,
+  "size": 3,
+  "health": 500,
+  "armor": 2,
+  "hasPower": true,
+  "outputsPower": true,
+  "conductivePower": true,
+  "powerProduction": 2.55,
+  "requirements": [
+    {
+      "item": "silicon",
+      "amount": 300
+    },
+    {
+      "item": "copper",
+      "amount": 200
+    },
+    {
+      "item": "lead",
+      "amount": 500
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 100
+    },
+    {
+      "item": "x-positive-energy-disperse",
+      "amount": 20
+    }
+  ],
+  "category": "power",
+  "research": {
+  "parent": "x-solar-panel"
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

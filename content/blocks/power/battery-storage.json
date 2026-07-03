@@ -1,0 +1,29 @@
+{
+    "type": "battery",
+    "name": "Battery Storage",
+    "description": "Store largest power inside",
+    "size": 5,
+    "health": 1000,
+    "consumes": {
+      "powerBuffered": 150000
+    },
+    "research": "advance-steam-generator",
+    "category": "power",
+    "requirements": [
+      "lead/120",
+      "bronze/150",
+      "titanium/150",
+      "silicon/100",
+      "plastanium/25",
+      "tin/100"
+    ],
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

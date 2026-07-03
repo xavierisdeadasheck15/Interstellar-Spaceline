@@ -1,0 +1,21 @@
+{	
+  "type": "LiquidRouter",
+  "name": "Xantharion Fluid Storage",
+  "description": "Store a Fluid From the Conduit, can be outputted to drain the storage",
+  "size": 2, 
+  "buildTime": 1.5,
+  "liquidCapacity": 1000,
+  "health": 1000,
+  "armor": 1,
+  "requirements": [
+    "x-dark-metal/500",
+    "tungsten/150",
+    "titanium/150"
+	],
+  "category": "liquid",
+  "research": "x-dark-conduit",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

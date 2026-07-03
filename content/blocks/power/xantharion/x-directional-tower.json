@@ -1,0 +1,27 @@
+{
+  "type": "PowerNode",
+  "name": "Xantharion Directional Tower",
+  "description": "A Tower Node use to redirect 4 Node to the other",
+  "researchCostMultiplier": 1.5,
+  "size": 2,
+  "health": 300,
+  "armor": 5,
+  "laserRange": 60,
+  "maxNodes": 4,
+  "hasPower": true,
+  "laserColor1": "ff6663",
+  "laserColor2": "8a2220",
+  "category": "power",
+  "requirements": [
+    "x-compressed-metal/20",
+    "tungsten/10",
+    "x-positive-energy-disperse/2"
+  ],
+  "research": {
+    "parent": "x-large-node"
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

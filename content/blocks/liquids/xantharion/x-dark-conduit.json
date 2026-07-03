@@ -1,0 +1,22 @@
+{
+  "localizedName": "Dark Conduit",
+  "description": "Transport Liquid to the designated Place",
+  "type": "Conduit",
+  "health": 100,
+  "armor": 1,
+  "leaks": true,
+  "liquidPressure": 5,
+  "liquidCapacity": 100,
+  "junctionReplacement": "x-conduit-dual-pathway",
+  "bridgeReplacement": "x-conduit-bridge",
+  "requirements": [
+    "x-dark-metal/5",
+    "tungsten/1"
+  ],
+  "research": "x-absorbant-pump",
+  "category": "liquid",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Pyrotech Generator",
+  "description": "Produces power in hot locations.",
+  "type": "ThermalGenerator",
+  "attribute": "heat",
+  "size": 3,
+  "powerProduction": 2,
+  "category": "power",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawGlowRegion",
+        "suffix": "-glow",
+        "color": "ffa665"
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 80
+    },
+    {
+      "item": "lead",
+      "amount": 100
+    },
+    {
+      "item": "bronze",
+      "amount": 50
+    },
+    {
+      "item": "metaglass",
+      "amount": 80
+    },
+    {
+      "item": "graphite",
+      "amount": 70
+    },
+    {
+      "item": "silicon",
+      "amount": 70
+    },
+    {
+      "item": "titanium",
+      "amount": 40
+    }
+  ],
+  "research": "advance-steam-generator",
+  "researchCostMultiplier": 2.5,
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

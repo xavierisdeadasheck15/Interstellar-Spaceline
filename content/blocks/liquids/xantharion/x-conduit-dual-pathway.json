@@ -1,0 +1,21 @@
+{
+ "type": "LiquidJunction",
+ "name": "Dark Conduit Dual Pathway",
+ "description": "Used for crossing two aqueducts.",
+ "size": 1,
+ "squareSprite": false,
+ "solid": false,
+ "underBullets": true,
+ "health": 100,
+ "liquidCapacity": 100,
+ "requirements": [
+    "x-dark-metal/10",
+    "tungsten/1"
+  ],
+  "research": "x-absorbant-pump",
+  "category": "liquid",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

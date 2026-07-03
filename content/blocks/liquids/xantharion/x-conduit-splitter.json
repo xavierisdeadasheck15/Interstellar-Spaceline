@@ -1,0 +1,20 @@
+{
+ "type": "LiquidRouter",
+ "name": "Dark Conduit Splitter",
+ "description": "Distributes inputted liquids to three outputs equally.",
+ "size": 1,
+ "solid": false,
+ "underBullets": true,
+ "health": 100,
+ "liquidCapacity": 100,
+ "requirements": [
+   "x-dark-metal/10",
+   "tungsten/10"
+ ],
+  "research": "x-absorbant-pump",
+  "category": "liquid",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

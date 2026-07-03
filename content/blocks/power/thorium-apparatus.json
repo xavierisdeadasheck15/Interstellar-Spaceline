@@ -1,0 +1,46 @@
+{
+    "name": "Thorium Apparatus",
+    "description": "Generate Power with thorium and cryofluid, can cause destruction if cryofluid is not enough.",
+	"type": "NuclearReactor",
+	"health": 2000,
+	"itemCapacity": 20,
+	"liquidCapacity": 50,
+	"size": 4,
+	"ambientSound": "hum",
+	"ambientSoundVolume": 0.30,
+    "explosionRadius": 25,
+    "explosionDamage": 3500,
+	"hasLiquids": true,
+	"powerProduction": 50,
+	"itemDuration": 500,
+	"heating": 0.02,
+	"consumes": {
+			"items": [
+                "thorium/5"
+			],
+            "liquid": {
+                "liquid": "cryofluid",
+                "amount": 0.25
+            }
+	},
+	"requirements": [
+        "bronze/1100",
+		"lead/22000",
+		"metaglass/3000",
+		"graphite/9500",
+		"thorium/10000",
+		"tungsten/1500",
+		"silicon/9000"
+	],
+	"category": "power",
+	"research": "exterestial-generator",
+	"researchCostMultiplier": 4,
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+}

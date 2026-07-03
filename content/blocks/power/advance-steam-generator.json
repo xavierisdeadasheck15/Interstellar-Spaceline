@@ -1,0 +1,81 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "Advance Steam Generator",
+    "description": "Generate power from Fuel And Water, Produce More Power, and expensive",
+    "size": 2,
+    "powerProduction": 6.5,
+    "drawer": {
+    "type": "DrawMulti",
+        "drawers": [
+          {
+            "type": "drawRegion",
+            "suffix": "-bottom"
+          },
+          {
+            "type": "DrawLiquidRegion",
+            "suffix": "-liquid",
+            "drawLiquid": "water",
+            "alpha": 0.8
+          },
+          {
+            "type": "DrawRegion",
+            "suffix": "-rotator",
+            "rotateSpeed": 3,
+            "spinSprite": true
+          },
+          {
+            "type": "DrawDefault"
+          },
+          {
+            "type": "DrawRegion",
+            "suffix": "-top"
+          },
+          {
+            "type": "DrawGlowRegion",
+            "suffix": "-glow",
+            "alpha": 0.8,
+            "glowScale": 11.0,
+            "glowIntensity": 0.55,
+            "color": "f8c266"
+          }
+        ]
+    },
+    "hasItems": true,
+    "hasLiquids": true,
+    "itemCapacity": 10,
+    "liquidCapacity": 30,
+    "itemDuration": 100,
+    "liquidDuration": 100,
+    "consumes": {
+      "liquid": "water/0.11",
+      "itemFlammable": {
+        "minFlammable": 0.1
+      },
+      "itemExplode": {}
+    },
+    "minItemEfficiency": 0.1,
+        "requirements": [
+          "copper/70",
+          "silicon/60",
+          "lead/80",
+          "graphite/50"
+    ],
+    "category": "power",
+    "research": {
+      "parent": "core-frontal"
+    },
+    "outputLiquid": "carbon-dioxide/0.05",
+    "loopSound": "hum",
+    "ambientSound": "machine",
+    "generateEffect": "fuelburn",
+    "loopSoundVolume": 0.75,
+    "ambientSoundVolume": 0.50,
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+}

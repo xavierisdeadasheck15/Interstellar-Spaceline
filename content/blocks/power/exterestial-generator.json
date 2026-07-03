@@ -1,0 +1,51 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "Exterestial Generator",
+    "description": "Generate Massive amount of energy, more efficient than diffirence generator",
+    "size": 4,
+    "powerProduction": 10,
+    "hasItems": true,
+    "hasLiquids": true,
+    "itemCapacity": 20,
+    "liquidCapacity": 30,
+    "itemDuration": 100,
+    "liquidDuration": 100,
+    "consumes": {
+      "liquid": "cryofluid/0.2",
+      "items": {
+        "items": [
+          {
+            "item": "pyratite",
+            "amount": 2
+          }
+        ]
+      }
+    },
+    "minItemEfficiency": 0.1,
+    "requirements": [
+      "copper/140",
+      "lead/200",
+      "bronze/50",
+      "metaglass/100",
+      "titanium/75",
+      "plastanium/25",
+      "silicon/130"
+    ],
+    "category": "power",
+    "research": {
+      "parent": "advance-steam-generator"
+    },
+    "loopSound": "hum",
+    "ambientSound": "machine",
+    "generateEffect": "fuelburn",
+    "loopSoundVolume": 0.75,
+    "ambientSoundVolume": 0.50,
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+}

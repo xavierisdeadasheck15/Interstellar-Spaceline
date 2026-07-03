@@ -1,0 +1,48 @@
+{
+    "name": "Mega Solar Panel",
+    "description": "Provides a small amount of power from the sun. More efficient than the standard and large solar panel",
+    "type": "SolarGenerator",
+    "researchCostMultiplier": 3,
+    "buildTime": 5,
+    "squareSprite": true,
+    "size": 5,
+    "health": 850,
+    "hasPower": true,
+    "outputsPower": true,
+    "conductivePower": true,
+    "powerProduction": 3,
+    "requirements": [
+      {
+        "item": "silicon",
+        "amount": 140
+      },
+      {
+        "item": "lead",
+        "amount": 120
+      },
+      {
+        "item": "bronze",
+        "amount": 40
+      },
+      {
+        "item": "titanium",
+        "amount": 100
+      },
+      {
+        "item": "phase-fabric",
+        "amount": 30
+      }
+    ],
+    "category": "power",
+    "research": {
+    "parent": "advance-steam-generator"
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

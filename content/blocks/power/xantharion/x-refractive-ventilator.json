@@ -1,0 +1,62 @@
+{
+    "type": "ConsumeGenerator",
+    "name": "Refractive Ventilator",
+    "description": "Advance Ventilator, Generate More power From Carbon Monoxide",
+    "size": 4,
+    "powerProduction": 10,
+    "drawer": {
+    "type": "DrawMulti",
+        "drawers": [
+          {
+            "type": "drawRegion",
+            "suffix": "-bottom"
+          },
+          {
+            "type": "DrawLiquidTile",
+            "suffix": "-bottom",
+            "drawLiquid": "carbon-monoxide",
+            "alpha": 0.75
+          },
+          {
+            "type": "DrawDefault"
+          },
+          {
+            "type": "DrawRegion",
+            "suffix": "-rotator",
+            "rotateSpeed": 15,
+            "spinSprite": true
+          },
+          {
+            "type": "drawRegion",
+            "suffix": "-top"
+          }
+        ]
+    },
+    "hasLiquids": true,
+    "liquidCapacity": 200,
+    "liquidDuration": 350,
+    "consumes": {
+      "liquid": "carbon-monoxide/0.2"
+    },
+    "minItemEfficiency": 0.1,
+        "requirements": [
+          "x-compressed-metal/350",
+          "graphite/750",
+          "lead/900",
+          "titanium/500",
+          "silicon/200",
+          "tungsten/350"
+    ],
+    "category": "power",
+    "research": {
+      "parent": "x-exhaustion-ventilator"
+    },
+    "loopSound": "hum",
+    "ambientSound": "machine",
+    "loopSoundVolume": 0.75,
+    "ambientSoundVolume": 0.50,
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+}

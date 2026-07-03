@@ -1,0 +1,23 @@
+{
+  "localizedName": "Dark Armoured Conduit",
+  "description": "Transport Liquid to the designated Place",
+  "type": "ArmoredConduit",
+  "health": 200,
+  "armor": 5,
+  "noSideBlend": false,
+  "leaks": false,
+  "liquidPressure": 5,
+  "liquidCapacity": 100,
+  "junctionReplacement": "x-conduit-dual-pathway",
+  "bridgeReplacement": "x-conduit-bridge",
+  "requirements": [
+    "x-compressed-metal/5",
+    "tungsten/5"
+  ],
+  "research": "x-dark-conduit",
+  "category": "liquid",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

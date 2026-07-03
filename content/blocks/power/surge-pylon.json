@@ -1,0 +1,31 @@
+{
+    "type": "PowerNode",
+    "name": "Surge Pylons",
+    "description": "Bigger tower than surge tower, capable to connect 4 node at once with bigger range",
+    "researchCostMultiplier": 2,
+    "size": 3,
+    "health": 300,
+    "laserRange": 60,
+    "maxNodes": 4,
+    "hasPower": true,
+    "laserColor2": "fbd367ff",
+    "category": "power",
+    "requirements": [
+      "lead/20",
+      "bronze/10",
+      "titanium/14",
+      "silicon/30",
+      "surge-alloy/30"
+    ],
+    "research": {
+      "parent": "advance-steam-generator"
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
