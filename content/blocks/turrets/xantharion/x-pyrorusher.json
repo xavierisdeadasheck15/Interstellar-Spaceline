@@ -1,0 +1,290 @@
+{
+  "type": "ItemTurret",
+  "name": "Pyrorusher",
+  "description": "Unleash devastating straightline of pyro bullets at enemy",
+  "size": 3,
+  "health": 1500,
+  "buildTime": 10,
+  "coolantMultiplier": 1.75,
+  "consumes": {
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shake": 7.5,
+  "maxAmmo": 75,
+  "ammoPerShot": 5,
+  "reload": 100,
+  "range": 240,
+  "shootY": 3,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 3.5,
+  "inaccuracy": 1,
+  "recoil": 5,
+  "shootSound": "x-flame",
+  "shoot": {
+    "type": "shootPattern",
+    "shotDelay": 5,
+    "shots": 5
+  },
+  "ammoTypes": {
+    "pyratite": {
+      "type": "BasicBulletType",
+      "damage": 50,
+      "splashDamage": 25,
+      "splashDamageRadius": 40,
+      "speed": 8,
+      "lifetime": 30,
+      "height": 15,
+      "width": 15,
+      "statusDuration": 300,
+      "status": "burning",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "ff9233",
+            "colorTo": "701b15",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 180,
+            "length": 100,
+            "colorFrom": "ff683b",
+            "colorTo": "fc4823",
+            "lifetime": 80
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "ff9233",
+            "colorTo": "701b15",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lifetime": 15
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 100,
+            "colorFrom": "ff683b",
+            "colorTo": "fc4823",
+            "lifetime": 30
+          }
+        ]
+      },
+      "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 6,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 10,
+            "length": 100,
+            "colorFrom": "ff683b",
+            "colorTo": "4a120e",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 9,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 35,
+            "length": 80,
+            "colorFrom": "ff683b",
+            "colorTo": "fc4823",
+            "lifetime": 50
+          }
+        ]
+      },
+      "smokeEffect": "none",
+      "trailEffect": {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 5,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 40,
+        "colorFrom": "ff683b",
+        "colorTo": "fc4823",
+        "lifetime": 30
+      },
+      "trailChance": 0.5,
+      "trailInterval": 0.1,
+      "trailMinVelocity": 0.2,
+      "trailSpread": 5,
+      "trailParam": 2.5,
+      "trailRotation": true
+    },
+    "blast-compound": {
+      "type": "BasicBulletType",
+      "damage": 60,
+      "splashDamage": 30,
+      "splashDamageRadius": 45,
+      "speed": 8,
+      "lifetime": 30,
+      "height": 15,
+      "width": 15,
+      "statusDuration": 100,
+      "status": "blasted",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "ffa49e",
+            "colorTo": "701b15",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 180,
+            "length": 100,
+            "colorFrom": "ff675c",
+            "colorTo": "260705",
+            "lifetime": 80
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "ffa49e",
+            "colorTo": "701b15",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lifetime": 15
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 100,
+            "colorFrom": "ff675c",
+            "colorTo": "260705",
+            "lifetime": 30
+          }
+        ]
+      },
+      "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 6,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 10,
+            "length": 100,
+            "colorFrom": "ff6b61",
+            "colorTo": "4a120e",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 9,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 35,
+            "length": 80,
+            "colorFrom": "ff675c",
+            "colorTo": "260705",
+            "lifetime": 50
+          }
+        ]
+      },
+      "smokeEffect": "none",
+      "trailEffect": {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 5,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 40,
+        "colorFrom": "ff6b61",
+        "colorTo": "4a120e",
+        "lifetime": 30
+      },
+      "trailChance": 0.5,
+      "trailInterval": 0.1,
+      "trailMinVelocity": 0.2,
+      "trailSpread": 5,
+      "trailParam": 2.5,
+      "trailRotation": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 900
+    },
+    {
+      "item": "silicon",
+      "amount": 650
+    },
+    {
+      "item": "tungsten",
+      "amount": 500
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 200
+    }
+  ],
+  "category": "turret",
+  "research": "x-duster",
+  "outlineColor": "162229",
+  "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "xantharian-",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-direct",
+        "mirror": false,
+        "top": true,
+        "under": false,
+        "heatProgress": "warmup"
+      }
+    ]
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

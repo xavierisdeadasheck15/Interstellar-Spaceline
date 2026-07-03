@@ -1,0 +1,193 @@
+{
+  "type": "ItemTurret",
+  "name": "Gusher",
+  "description": "Fire a barrage of powerful artillery shells at the adversary from above.",
+  "ammoUseEffect": "casing2",
+  "ammoEjectBack": 5,
+  "size": 3,
+  "health": 3500,
+  "buildTime": 10,
+  "coolantMultiplier": 1.75,
+  "consumes": {
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shake": 12.5,
+  "maxAmmo": 50,
+  "ammoPerShot": 10,
+  "reload": 100,
+  "range": 525,
+  "shootY": 5,
+  "targetAir": false,
+  "targetGround": true,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "shots": 3,
+    "shotDelay": 3,
+    "spread": 8
+  },
+  "rotateSpeed": 3,
+  "inaccuracy": 7.5,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "x-artillery",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "ArtilleryBulletType",
+      "damage": 100,
+      "splashDamage": 50,
+      "splashDamageRadius": 40,
+      "speed": 3,
+      "lifetime": 175,
+      "height": 15,
+      "width": 15,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "e53935",
+            "colorTo": "b71c1c",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 7,
+            "length": 90,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "line": true,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "colorFrom": "ff9a4d",
+            "colorTo": "ff5521",
+            "lifetime": 25
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "length": 90,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "colorFrom": "ad5950",
+            "colorTo": "362725",
+            "lifetime": 60
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "hitSound": "explosionbig",
+      "despawnSound": "explosionbig",
+      "trailRotation": false
+    },
+    "x-compressed-metal": {
+      "type": "ArtilleryBulletType",
+      "reloadMultiplier": 0.5,
+      "damage": 200,
+      "splashDamage": 100,
+      "splashDamageRadius": 20,
+      "speed": 3,
+      "lifetime": 175,
+      "height": 15,
+      "width": 15,
+      "frontColor": "373f4a",
+      "backColor": "25292e",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "waveEffect",
+            "colorFrom": "ff8e3d",
+            "colorTo": "eb2e10",
+            "sizeFrom": 0,
+            "sizeTo": 50,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 7,
+            "length": 90,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "line": true,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "colorFrom": "ff8e3d",
+            "colorTo": "eb2e10",
+            "lifetime": 25
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "length": 90,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "colorFrom": "43464d",
+            "colorTo": "292a2e",
+            "lifetime": 60
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "hitSound": "explosionbig",
+      "despawnSound": "explosionbig",
+      "trailRotation": false
+    }
+  },
+  "requirements": [
+    {
+      "item": "tungsten",
+      "amount": 250
+    },
+    {
+      "item": "silicon",
+      "amount": 600
+    },
+    {
+      "item": "graphite",
+      "amount": 200
+    },
+    {
+      "item": "beryllium",
+      "amount": 500
+    },
+    {
+      "item": "x-compressed-metal",
+      "amount": 50
+    }
+  ],
+  "category": "turret",
+  "research": "x-duster",
+  "alwaysUnlocked": false,
+  "outlineColor": "162229",
+  "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "xantharian-",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel",
+        "mirror": false,
+        "under": false,
+        "progress": "recoil",
+        "moveY": -4
+      }
+    ]
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "type": "PowerTurret",
+  "name": "Vibrant",
+  "description": "One of the energy turrets of Xantharion is capable of firing energy bullets that can penetrate hostile armor.",
+  "unitSort": "weakest",
+  "size": 3,
+  "health": 1250,
+  "buildTime": 15,
+  "coolantMultiplier": 1.25,
+  "consumes": {
+    "power": 15,
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shake": 2,
+  "reload": 10,
+  "range": 375,
+  "shootY": 14,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 2.5,
+  "recoil": 5,
+  "predictTarget": true,
+  "shootSound": "shootLaser3",
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 6
+  },
+  "shootType": {
+    "type": "BasicBulletType",
+    "damage": 20,
+    "pierce": true,
+    "pierceArmor": true,
+    "pierceDamageFactor": 0.01,
+    "collidesGround": true,
+    "speed": 5,
+    "lifetime": 70,
+    "height": 10,
+    "width": 10,
+    "homingPower": 0.25,
+    "homingRange": 100,
+    "frontColor": "f54242",
+    "backColor": "852626",
+    "trailColor": "852626",
+    "despawnEffect": {
+      "type": "ParticleEffect",
+      "particles": 9,
+      "length": 50,
+      "cone": 30,
+      "sizeFrom": 4,
+      "sizeTo": 0,
+      "line": true,
+      "strokeFrom": 3,
+      "strokeTo": 0,
+      "colorFrom": "f54242",
+      "colorTo": "852626",
+      "lifetime": 20
+    },
+    "hitEffect": {
+      "type": "ParticleEffect",
+      "particles": 11,
+      "length": 50,
+      "cone": 80,
+      "sizeFrom": 4,
+      "sizeTo": 0,
+      "line": true,
+      "strokeFrom": 3,
+      "strokeTo": 0,
+      "colorFrom": "f54242",
+      "colorTo": "852626",
+      "lifetime": 20
+    },
+    "shootEffect": "shootBig",
+    "trailWidth": 2,
+    "trailLength": 5
+  },
+  "requirements": [
+    { "item": "copper", "amount": 950 },
+    { "item": "silicon", "amount": 700 },
+    { "item": "beryllium", "amount": 500 },
+    { "item": "titanium", "amount": 600 },
+    { "item": "x-compressed-metal", "amount": 200 },
+    { "item": "x-positive-energy-disperse", "amount": 100 }
+  ],
+  "category": "turret",
+  "research": "x-burster",
+  "alwaysUnlocked": false,
+  "outlineColor": "162229",
+  "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "xantharian-",
+    "parts": [
+        {
+          "type": "RegionPart",
+          "suffix": "-barrel-extender",
+          "layerOffset": 0,
+          "mirror": false,
+          "under": false,
+          "progress": "warmup",
+          "moveY": 4
+        },
+        {
+        "type": "RegionPart",
+        "suffix": "-l-shutter",
+        "layerOffset": 0,
+        "mirror": false,
+        "under": false,
+        "progress": "warmup",
+        "moveX": -2
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-r-shutter",
+        "layerOffset": 0,
+        "mirror": false,
+        "under": false,
+        "progress": "warmup",
+        "moveX": 2
+      }
+    ]
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

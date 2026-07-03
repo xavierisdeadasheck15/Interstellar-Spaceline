@@ -1,0 +1,538 @@
+{
+  "type": "ItemTurret",
+  "name": "Duster",
+  "description": "Medium Well size Gunner, Firing Medium Size Bullet at enemy",
+  "ammoUseEffect": "casing2",
+  "ammoEjectBack": 3,
+  "size": 3,
+  "health": 1000,
+  "buildTime": 10,
+  "coolantMultiplier": 1.5,
+  "consumes": {
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+  "shake": 0.5,
+  "maxAmmo": 60,
+  "ammoPerShot": 2,
+  "reload": 10 ,
+  "range": 300,
+  "shootY": 10,
+  "targetAir": true,
+  "targetGround": true,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 8
+  },
+  "shootSound": "x-shoot",
+  "rotateSpeed": 2,
+  "inaccuracy": 5,
+  "ammoTypes": {
+    "titanium": {
+      "type": "BasicBulletType",
+      "damage": 16,
+      "speed": 5,
+      "lifetime": 55,
+      "height": 18.5,
+      "width": 15,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 30,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 10,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 15
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "sizeFrom": 7,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 50,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f",
+            "lifetime": 50
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 70,
+            "colorFrom": "d50000",
+            "colorTo": "ff5722",
+            "line": true,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lifetime": 30
+          }
+        ]
+      }
+    },
+    "tungsten": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 0.8,
+      "pierceArmor": true,
+      "pierceDamageFactor": 0.01,
+      "damage": 50,
+      "speed": 5,
+      "lifetime": 60,
+      "height": 15,
+      "width": 10,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 30,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 10,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 15
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "sizeFrom": 7,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 50,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f",
+            "lifetime": 50
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 70,
+            "colorFrom": "d50000",
+            "colorTo": "ff5722",
+            "line": true,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lifetime": 30
+          }
+        ]
+      }
+    },
+    "silicon": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 1.5,
+      "damage": 12,
+      "speed": 5,
+      "lifetime": 55,
+      "homingPower": 0.15,
+      "homingRange": 45,
+      "height": 15,
+      "width": 10,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "fragBullets": 3,
+      "fragSpread": 50,
+      "fragRandomSpread": 25,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "speed": 4,
+        "lifetime": 20,
+        "height": 5,
+        "width": 5,
+        "despawnEffect": "hitBulletSmall",
+        "hitEffect": "hitBulletSmall"
+      },
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 30,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 10,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 15
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "sizeFrom": 7,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 50,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f",
+            "lifetime": 50
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 70,
+            "colorFrom": "d50000",
+            "colorTo": "ff5722",
+            "line": true,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lifetime": 30
+          }
+        ]
+      }
+    },
+    "x-dark-metal": {
+      "type": "BasicBulletType",
+      "pierce": true,
+      "pierceBuilding": true,
+      "pierceDamageFactor": 0.01,
+      "damage": 40,
+      "speed": 5,
+      "lifetime": 60,
+      "height": 15,
+      "width": 10,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 9,
+            "sizeTo": 0,
+            "cone": 30,
+            "length": 40,
+            "colorFrom": "757575",
+            "colorTo": "424242",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 10,
+            "length": 60,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "line": true,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "lifetime": 10
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 15
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "sizeFrom": 7,
+            "sizeTo": 0,
+            "cone": 50,
+            "length": 50,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f",
+            "lifetime": 50
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 70,
+            "colorFrom": "d50000",
+            "colorTo": "ff5722",
+            "line": true,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "lifetime": 30
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    {
+      "item": "titanium",
+      "amount": 250
+    },
+    {
+      "item": "graphite",
+      "amount": 400
+    },
+    {
+      "item": "silicon",
+      "amount": 500
+    },
+    {
+      "item": "beryllium",
+      "amount": 100
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 500
+    }
+  ],
+  "category": "turret",
+  "research": "x-burster",
+  "alwaysUnlocked": false,
+  "outlineColor": "162229",
+  "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "xantharian-"
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

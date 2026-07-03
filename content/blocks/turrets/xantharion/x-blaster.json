@@ -1,0 +1,197 @@
+{
+  "type": "ItemTurret",
+  "name": "Blaster",
+  "description": "Fire 4 Missile that target Enemy",
+  "ammoUseEffect": "casing2Double",
+  "ammoEjectBack": 3,
+  "size": 3,
+  "health": 1150,
+  "buildTime": 10,
+  "coolantMultiplier": 1.3,
+  "consumes": {
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+  "shake": 2,
+  "maxAmmo": 25,
+  "ammoPerShot": 5,
+  "reload": 30,
+  "range": 420,
+  "shootY": 10,
+  "targetAir": true,
+  "targetGround": true,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 7,
+    "shots": 4,
+    "shotDelay": 5
+  },
+  "rotateSpeed": 1.80,
+  "inaccuracy": 8,
+  "shootSound": "x-missile",
+  "ammoTypes": {
+    "blast-compound": {
+      "type": "MissileBulletType",
+      "homingPower": 0.02,
+      "homingRange": 150,
+      "damage": 42,
+      "splashDamage": 22,
+      "splashDamageRadius": 30,
+      "height": 15,
+      "width": 15,
+      "speed": 7,
+      "lifetime": 55,
+      "frontColor": "ef5350",
+      "backColor": "b71c1c",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sizeFrom": 0,
+            "sizeTo": 35,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722",
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 180,
+            "length": 60,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722",
+            "lifetime": 40
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 110,
+            "length": 90,
+            "colorFrom": "b71c1c",
+            "colorTo": "d32f2f",
+            "lifetime": 20
+          }
+        ]
+      },
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sizeFrom": 0,
+            "sizeTo": 35,
+            "strokeFrom": 4,
+            "strokeTo": 0,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722",
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 90,
+            "length": 50,
+            "colorFrom": "ff795e",
+            "colorTo": "ff5722",
+            "lifetime": 40
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 100,
+            "colorFrom": "b71c1c",
+            "colorTo": "d32f2f",
+            "lifetime": 20
+          }
+        ]
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "strokeFrom": 3,
+            "strokeTo": 0,
+            "colorFrom": "b71c1c",
+            "colorTo": "e57373",
+            "lifetime": 10
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 90,
+            "length": 70,
+            "colorFrom": "ef5350",
+            "colorTo": "d32f2f",
+            "lifetime": 50
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 15,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 20,
+            "colorFrom": "d32f2f",
+            "colorTo": "b71c1c",
+            "lifetime": 30
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    {
+      "item": "tungsten",
+      "amount": 150
+    },
+    {
+      "item": "copper",
+      "amount": 300
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    },
+    {
+      "item": "graphite",
+      "amount": 100
+    },
+    {
+      "item": "x-dark-metal",
+      "amount": 80
+    }
+  ],
+  "category": "turret",
+  "research": "x-burster",
+  "alwaysUnlocked": false,
+  "outlineColor": "162229",
+  "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "xantharian-"
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

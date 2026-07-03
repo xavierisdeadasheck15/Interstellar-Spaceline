@@ -1,0 +1,242 @@
+{
+  "type": "PowerTurret",
+  "name": "Judicator",
+  "description": "Fire EMP Laser toward crowd of enemy, Prioritizing strongest one",
+  "details": "The Other Variant of Blaster, which it charge its energy instead and unleash with Full Power, It may take long but it worth it",
+  "unitSort": "strongest",
+  "size": 3,
+  "health": 5500,
+  "buildTime": 15,
+  "coolantMultiplier": 1.25,
+  "consumes": {
+    "power": 15,
+    "coolant": {
+      "amount": 0.35
+    }
+  },
+  "shake": 2,
+  "reload": 100,
+  "range": 350,
+  "shootY": 8,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 1.5,
+  "recoil": 4,
+  "inaccuracy": 0,
+  "predictTarget": true,
+  "shootSound": "shootLaser4",
+  "shootType": {
+    "type": "ArtilleryBulletType",
+    "shieldDamageMultiplier": 10,
+    "homingPower": 0.03,
+    "homingRange": 200,
+    "splashDamage": 150,
+    "splashDamageRadius": 100,
+    "speed": 7,
+    "lifetime": 50,
+    "height": 20,
+    "width": 20,
+    "frontColor": "ff5252",
+    "backColor": "c62828",
+    "trailColor": "ff5252",
+    "despawnEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "waveEffect",
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "sizeFrom": 100,
+          "sizeTo": 0
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 15,
+          "sizeFrom": 6,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 150,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 150,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828"
+        }
+      ]
+    },
+    "shootEffect": "shootBig2",
+    "smokeEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 4,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 50,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 20
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 60,
+          "length": 70,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "lifetime": 30
+        },
+        {
+          "type": "ParticleEffect",
+          "region": "interstellar-spaceline-star-bullet",
+          "lifetime": 10,
+          "length": 0,
+          "sizeFrom": 50,
+          "sizeTo": 0,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828"
+        }
+      ]
+    },
+    "trailWidth": 2,
+    "trailLength": 10,
+    "statusDuration": 300,
+    "status": "golden-weaken",
+    "fragBullets": 5,
+    "fragSpread": 360,
+    "fragRandomSpread": 360,
+    "fragBullet": {
+      "type": "LaserBulletType",
+      "damage": 25,
+      "sideLength": 0,
+      "sideAngle": 15,
+      "sideWidth": 0,
+      "hitShake": 2,
+      "length": 100,
+      "width": 15,
+      "colors": [ 
+        "c62828", "ff5252"
+      ],
+      "hitEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 5,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 180,
+            "length": 50,
+            "colorFrom": "ff5252",
+            "colorTo": "c62828",
+            "line": true,
+            "strokeFrom": 2,
+            "strokeTo": 0,
+            "lifetime": 15
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 6,
+            "sizeTo": 0,
+            "cone": 25,
+            "length": 90,
+            "colorFrom": "ff5252",
+            "colorTo": "c62828",
+            "lifetime": 20
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    { "item": "gold", "amount": 900 },
+    { "item": "surge-alloy", "amount": 1200 },
+    { "item": "copper", "amount": 3500 },
+    { "item": "bronze", "amount": 2000 },
+    { "item": "plastanium", "amount": 900 },
+    { "item": "graphite", "amount": 4000 },
+    { "item": "silicon", "amount": 5500 }
+  ],
+  "category": "turret",
+  "research": "blaster",
+  "researchCostMultiplier": 3,
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-core",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "heatProgress": "warmup",
+        "moveY": 4
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel-l",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveY": 2,
+        "moveX": -3
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel-r",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveY": 2,
+        "moveX": 3
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-l",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveRot": 25,
+        "moveY": 2,
+        "moveX": -4
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-r",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "moveRot": -25,
+        "moveY": 2,
+        "moveX": 4
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

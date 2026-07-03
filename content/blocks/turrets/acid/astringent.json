@@ -1,0 +1,303 @@
+{
+    "type": "ItemTurret",
+    "name": "Astringent",
+    "description": "Fire acid bullet at enemy",
+    "ammoUseEffect": "casing2",
+    "ammoEjectBack": 6,
+    "size": 2,
+    "health": 950,
+    "coolantMultiplier": 1.5,
+    "consumes": {
+      "coolant": { "amount": 0.3 }
+    },
+    "shake": 2,
+    "maxAmmo": 30,
+    "ammoPerShot": 2,
+    "reload": 20,
+    "range": 285,
+    "shootY": 8,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 3,
+    "inaccuracy": 2,
+    "recoil": 2,
+    "restitution": 0.8,
+    "shootSound": "rapidShoot",
+    "shoot": {
+      "type": "ShootAlternate",
+      "barrels": 2,
+      "shots": 1,
+      "spread": 5
+    },
+    "ammoTypes": {
+      "lead": {
+        "type": "BasicBulletType",
+        "reloadMultiplier": 0.80,
+        "damage": 30,
+        "knockback": 1,
+        "impact": true,
+        "speed": 3,
+        "lifetime": 95,
+        "height": 10,
+        "width": 8,
+        "frontColor": "90b369",
+        "backColor": "434d44",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "waveEffect",
+              "colorFrom": "434d44",
+              "colorTo": "90b369",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "lifetime": 5
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 7,
+              "length": 30,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "colorFrom": "90b369",
+              "colorTo": "434d44",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "length": 25,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "colorFrom": "90b369",
+              "colorTo": "434d44",
+              "lifetime": 20
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "waveEffect",
+              "colorFrom": "434d44",
+              "colorTo": "90b369",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "lifetime": 5
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 8,
+              "length": 40,
+              "cone": 45,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "colorFrom": "90b369",
+              "colorTo": "434d44",
+              "lifetime": 10
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke",
+        "status": "corroded",
+        "statusDuration": 50
+      },
+      "mutacynium": {
+        "type": "BasicBulletType",
+        "reloadMultiplier": 1,
+        "damage": 40,
+        "knockback": 1,
+        "impact": true,
+        "speed": 3,
+        "lifetime": 95,
+        "height": 10,
+        "width": 8,
+        "frontColor": "90b369",
+        "backColor": "434d44",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "waveEffect",
+              "colorFrom": "434d44",
+              "colorTo": "90b369",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "lifetime": 5
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 7,
+              "length": 30,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "colorFrom": "90b369",
+              "colorTo": "434d44",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "length": 25,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "colorFrom": "90b369",
+              "colorTo": "434d44",
+              "lifetime": 20
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "waveEffect",
+              "colorFrom": "434d44",
+              "colorTo": "90b369",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "lifetime": 5
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 8,
+              "length": 40,
+              "cone": 45,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "colorFrom": "90b369",
+              "colorTo": "434d44",
+              "lifetime": 10
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke",
+        "status": "corroded",
+        "statusDuration": 100
+      },
+      "acidonium": {
+        "type": "BasicBulletType",
+        "reloadMultiplier": 1.30,
+        "damage": 35,
+        "knockback": 1,
+        "impact": true,
+        "speed": 3,
+        "lifetime": 95,
+        "height": 10,
+        "width": 8,
+        "frontColor": "60a873",
+        "backColor": "54614f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "waveEffect",
+              "colorFrom": "54614f",
+              "colorTo": "60a873",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "lifetime": 5
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 7,
+              "length": 30,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "colorFrom": "60a873",
+              "colorTo": "54614f",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 5,
+              "length": 25,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "colorFrom": "60a873",
+              "colorTo": "54614f",
+              "lifetime": 20
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "waveEffect",
+              "colorFrom": "54614f",
+              "colorTo": "60a873",
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "lifetime": 5
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 8,
+              "length": 40,
+              "cone": 45,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "colorFrom": "60a873",
+              "colorTo": "54614f",
+              "lifetime": 10
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke",
+        "status": "corroded",
+        "statusDuration": 150
+      }
+    },
+    "requirements": [
+      { "item": "lead", "amount": 250 },
+      { "item": "titanium", "amount": 200 },
+      { "item": "mutacynium", "amount": 100 }
+    ],
+    "category": "turret",
+    "research": "trial",
+    "alwaysUnlocked": false,
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

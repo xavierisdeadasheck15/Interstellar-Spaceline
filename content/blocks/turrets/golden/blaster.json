@@ -1,0 +1,154 @@
+{
+  "type": "PowerTurret",
+  "name": "Blaster",
+  "description": "Fire red laser at enemy, prioritize Strongest one",
+  "details": "One and First Golden Technology, which it seem to be Stronger in technology that Rely on Raw Power Like Laser",
+  "unitSort": "strongest",
+  "size": 3,
+  "health": 5000,
+  "buildTime": 15,
+  "coolantMultiplier": 1.5,
+  "consumes": {
+    "power": 10,
+    "coolant": {
+      "amount": 0.5
+    }
+  },
+  "shake": 1,
+  "reload": 15,
+  "range": 250,
+  "shootY": 4,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 1,
+  "recoil": 2,
+  "predictTarget": false,
+  "shootSound": "shootLaser3",
+  "shootType": {
+    "type": "LaserBulletType",
+    "shieldDamageMultiplier": 10,
+    "shootEffect": "shootBig2",
+    "smokeEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 4,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 50,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 20
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 7,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 60,
+          "length": 70,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "lifetime": 30
+        }
+      ]
+    },
+    "hitEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 50,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 15
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 8,
+          "sizeFrom": 6,
+          "sizeTo": 0,
+          "cone": 25,
+          "length": 90,
+          "colorFrom": "ff5252",
+          "colorTo": "c62828",
+          "lifetime": 20
+        }
+      ]
+    },
+    "collidesAir": true,
+    "largeHit": false,
+    "sideLength": 0,
+    "sideAngle": 10,
+    "sideWidth": 0,
+    "hitShake": 1,
+    "length": 250,
+    "width": 10,
+    "statusDuration": 100,
+    "status": "golden-weaken",
+    "lifetime": 10,
+    "damage": 100,
+    "colors": [ 
+      "c62828", "ff5252"
+    ]
+  },
+  "requirements": [
+    { "item": "gold", "amount": 200 },
+    { "item": "surge-alloy", "amount": 300 },
+    { "item": "bronze", "amount": 500 },
+    { "item": "titanium", "amount": 2500 },
+    { "item": "copper", "amount": 5000 },
+    { "item": "silicon", "amount": 1000 }
+  ],
+  "category": "turret",
+  "research": "trial",
+  "researchCostMultiplier": 2,
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-l",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "heatProgress": "warmup",
+        "moveRot": 30,
+        "moveY": 1,
+        "moveX": -3
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-r",
+        "mirror": false,
+        "under": true,
+        "progress": "warmup",
+        "heatProgress": "warmup",
+        "moveRot": -30,
+        "moveY": 1,
+        "moveX": 3
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

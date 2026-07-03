@@ -1,0 +1,151 @@
+{
+  "type": "PowerTurret",
+  "name": "Proton",
+  "description": "Unknown advance Electric Railgun Turret",
+  "unitSort": "strongest",
+  "size": 3,
+  "health": 360,
+  "buildTime": 15,
+  "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "water",
+    "amount": 0.5
+  },
+  "coolantMultiplier": 1.20,
+  "consumes": {
+    "power": 10
+  },
+  "shake": 5,
+  "reload": 100,
+  "range": 520,
+  "shootY": 8,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 1.5,
+  "recoil": 5,
+  "predictTarget": false,
+  "shootSound": "shootLaserBig3",
+  "shootType": {
+      "type": "BasicBulletType",
+      "buildingDamageMultiplier": 1.25,
+      "shieldDamageMultiplier": 5.5,
+      "homingPower": 0.020,
+      "homingRange": 120,
+      "damage": 150,
+      "splashDamage": 10,
+      "splashDamageRadius": 30,
+      "pierceDamageFactor": 0.01,
+      "pierce": true,
+      "speed": 8,
+      "lifetime": 65,
+      "height": 25,
+      "width": 15,
+      "frontColor": "29b6f6",
+      "backColor": "01579b",
+      "despawnSound": "loudHeavyBlaster",
+      "despawnEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 20,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 70,
+            "colorFrom": "29b6f6",
+            "colorTo": "01579b"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 25,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 60,
+            "colorFrom": "29b6f6",
+            "colorTo": "01579b"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 40,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 360,
+            "length": 75,
+            "colorFrom": "29b6f6",
+            "colorTo": "01579b",
+            "line": true,
+            "strokeFrom": 5,
+            "strokeTo": 0
+          }
+        ]
+      },
+      "hitEffect": "colorSpark",
+      "reflectable": false,
+      "absorbable": true,
+      "bulletInterval": 5,
+      "intervalBullets": 5,
+      "intervalSpread": 360,
+      "intervalAngle": 360,
+      "intervalBullet": {
+        "type": "LightningBulletType",
+        "buildingDamageMultiplier": 0.01,
+        "damage": 30,
+        "frontColor": "29b6f6",
+        "backColor": "01579b",
+        "lightningColor": "29b6f6",
+        "lightningLength": 5,
+        "lightningCone": 10
+      }
+    },
+  "requirements": [
+    {
+      "item": "a-asthemiun",
+      "amount": 650
+    },
+    {
+      "item": "a-aether",
+      "amount": 400
+    },
+    {
+      "item": "tungsten",
+      "amount": 500
+    },
+    {
+      "item": "silicon",
+      "amount": 300
+    },
+    {
+      "item": "graphite",
+      "amount": 700
+    }
+  ],
+  "category": "turret",
+  "research": "a-orbinator",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "basePrefix": "reinforced-",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-l",
+        "under": false,
+        "progress": "warmup",
+        "moveRot": 20,
+        "moveY": -2,
+        "moveX": -3
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-wing-r",
+        "under": false,
+        "progress": "warmup",
+        "moveRot": -20,
+        "moveY": -2,
+        "moveX": 3
+      }
+    ]
+  }
+}
