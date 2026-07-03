@@ -1,0 +1,57 @@
+{
+  "Name": "Xantharion Advantage Reconstruction",
+  "description": "Construct Light to Medium Size Unit",
+  "type": "UnitAssembler",
+  "squareSprite": true,
+  "researchCostMultiplier": 1.5,
+  "size": 5,
+  "areaSize": 15,
+  "droneType": "assembly-drone",
+  "dronesCreated": 4,
+  "droneConstructTime": 90,
+  "health": 4500,
+  "category": "units",
+  "consumes": {
+    "power": 15
+    },
+    "plans": [
+    {
+      "unit": "stabilion",
+      "requirements": [
+        "interstellar-spaceline-executor/3",
+        "interstellar-spaceline-x-duster/1",
+        "interstellar-spaceline-x-large-metal-wall/3"
+      ],
+      "time": 1000
+    },
+    {
+      "unit": "bastelith",
+      "requirements": [
+        "interstellar-spaceline-scattervolt/2",
+        "interstellar-spaceline-x-large-metal-wall/6",
+        "interstellar-spaceline-x-duster/2"
+      ],
+      "time": 3000
+    },
+    {
+      "unit": "ravemiss",
+      "requirements": [
+        "interstellar-spaceline-destroyer/4",
+        "interstellar-spaceline-x-large-metal-wall/5",
+        "interstellar-spaceline-x-gusher/2"
+      ],
+      "time": 3000
+    }
+  ],
+  "research": "x-medium-refabricator",
+   "requirements": [
+    "x-compressed-metal/100",
+    "silicon/500",
+    "graphite/450",
+    "titanium/300"
+  ],
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

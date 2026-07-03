@@ -1,0 +1,13 @@
+upgrades: [
+[locus, precept]
+[cleroi, anthicus]
+[avert, obviate]
+[pyrolith, solmiris]
+]
+shownPlanets: [
+    erekir,
+    glaciera-prime, 
+    infernia-cruor, 
+    neon-expanse, 
+    profanum-vox
+]

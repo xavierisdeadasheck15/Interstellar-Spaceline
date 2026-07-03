@@ -1,0 +1,50 @@
+{
+    "name": "Advance Air Factory",
+    "description": "Produces Advance Air Units, Output units can be used directly, or moved into reconstructors for upgrading. More expensive than Original",
+    "type": "UnitFactory",
+    "researchCostMultiplier": 2,
+    "buildTime": 10,
+    "squareSprite": true,
+    "size": 3,
+    "consumes": {
+      "power": 6
+    },
+    "plans": [
+    {
+      "unit": "glare",
+      "requirements": [
+        "silicon/15",
+        "titanium/10",
+        "graphite/15"
+      ],
+      "time": 1200
+    }
+    ],
+    "requirements": [
+      {
+        "item": "copper",
+        "amount": 120
+      },
+      {
+        "item": "lead",
+        "amount": 140
+      },
+      {
+        "item": "silicon",
+        "amount": 80
+      }
+    ],
+    "category": "units",
+    "research": {
+    "parent": "advance-ground-factory"
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

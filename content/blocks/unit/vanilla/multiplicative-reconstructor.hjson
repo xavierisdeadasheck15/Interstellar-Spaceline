@@ -1,0 +1,20 @@
+upgrades: [
+[pulsar, quasar]
+[mace, fortress]
+[atrax, spiroct]
+[ignitor, combustor]
+[cudgel, standown]
+[horizon, zenith]
+[poly, mega]
+[vertical, apogee]
+[minke, bryde]
+[oxynoe, cyerce]
+]
+shownPlanets: [
+    serpulo, 
+    aqualis-archipel, 
+    glaciera-prime, 
+    infernia-cruor, 
+    neon-expanse, 
+    profanum-vox
+]

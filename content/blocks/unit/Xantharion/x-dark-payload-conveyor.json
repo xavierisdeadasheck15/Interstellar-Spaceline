@@ -1,0 +1,29 @@
+{
+  "type": "PayloadConveyor",
+  "name": "Dark Payload Conveyor",
+  "description": "A Large Conveyor belt use to transport Unit",
+  "category": "units",
+  "health": 250,
+  "size": 3,
+  "armor": 5,
+  "moveTime": 50,
+  "moveForce": 200,
+  "payloadLimit": 3,
+  "requirements": [
+    {
+      "item": "x-dark-metal",
+      "amount": 50
+    },
+    {
+      "item": "tungsten",
+      "amount": 50
+    }
+  ],
+  "research": {
+  "parent": "x-light-fabricator"
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

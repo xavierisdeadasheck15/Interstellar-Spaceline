@@ -1,0 +1,17 @@
+upgrades: [
+[fortress, scepter]
+[quasar, vela]
+[spiroct, arkyid]
+[zenith, antumbra]
+[mega, quad]
+[bryde, sei]
+[cyerce, aegires]
+]
+shownPlanets: [
+    serpulo, 
+    aqualis-archipel, 
+    glaciera-prime, 
+    infernia-cruor, 
+    neon-expanse, 
+    profanum-vox
+]

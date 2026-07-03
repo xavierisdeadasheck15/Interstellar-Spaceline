@@ -1,0 +1,25 @@
+plans: [
+  {
+  unit: flare
+  requirements: [
+    silicon/15
+  ]
+  time: 900
+  }
+  {
+  unit: mono
+  requirements: [
+    silicon/30
+    lead/15
+  ]
+  time: 2100
+  }
+]
+shownPlanets: [
+    serpulo, 
+    aqualis-archipel, 
+    glaciera-prime, 
+    infernia-cruor, 
+    neon-expanse, 
+    profanum-vox
+]

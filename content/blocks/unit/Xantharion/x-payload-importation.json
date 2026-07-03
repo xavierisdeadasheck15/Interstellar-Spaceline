@@ -1,0 +1,29 @@
+{
+  "type": "PayloadUnloader",
+  "name": "Xantharian Payload Exportation",
+  "description": "Import all resource into storage structure inside the payload",
+  "researchCostMultiplier": 2.0,
+  "health": 2000,
+  "armor": 10,
+  "size": 3,
+  "category": "units",
+  "consumes": {
+    "power": 2
+  },
+  "timerLoad": 1,
+  "offloadSpeed": 1.5,
+  "maxBlockSize": 3,
+  "maxPowerUnload": 50,
+  "research": "x-payload-arbitary-driver",
+  "requirements": [
+    "tungsten/250",
+    "silicon/400",
+    "chromium/275",
+    "x-dark-metal/90",
+    "x-compressed-metal/45"
+  ],
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "localizedName": "Large Structural Construction",
+  "description": "build all 4 by 4 Xantharion blocks.",
+  "type": "Constructor",
+  "research": "x-structure-constructor",
+  "researchCostMultiplier": 3,
+  "size": 5,
+  "category": "units",
+  "consumes": {
+    "power": 4
+  },
+  "minBlockSize": 1,
+  "maxBlockSize": 4,
+  "filter": [
+    "x-metal-wall",
+    "x-large-metal-wall",
+    "x-disperse-wall",
+    "x-large-disperse-wall",
+    "x-reductant-wall",
+    "x-large-reductant-wall",
+    "x-container",
+    "x-storage",
+    "x-self-sustainer",
+    "x-retachment-sustainer",
+    "x-enforcement-overdrive",
+    "x-landmine-combustion",
+    "x-blaster",
+    "x-burster",
+    "x-destination",
+    "x-duster",
+    "x-gusher",
+    "x-pyrorusher",
+    "x-resistance",
+    "x-vibrant",
+    "x-xenon"
+  ],
+  "requirements": [
+    "lead/400",
+    "beryllium/150",
+    "tungsten/200",
+    "graphite/500",
+    "silicon/650",
+    "chromium/200",
+    "x-compressed-metal/100"
+  ],
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

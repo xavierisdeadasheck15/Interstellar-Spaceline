@@ -1,0 +1,67 @@
+{
+    "name": "Advance Ground Factory",
+    "description": "Produces Advance Ground Units, Output units can be used directly, or moved into reconstructors for upgrading. More expensive than Original",
+    "type": "UnitFactory",
+    "researchCostMultiplier": 2,
+    "buildTime": 10,
+    "squareSprite": true,
+    "size": 3,
+    "consumes": {
+      "power": 6
+    },
+    "plans": [
+    {
+      "unit": "strider",
+      "requirements": [
+        "copper/50",
+        "silicon/25",
+        "titanium/10"
+      ],
+      "time": 750
+    },
+    {
+      "unit": "roovert",
+      "requirements": [
+        "silicon/30",
+        "titanium/20",
+        "graphite/20"
+      ],
+      "time": 1000
+    }
+    ],
+    "requirements": [
+      {
+        "item": "copper",
+        "amount": 100
+      },
+      {
+        "item": "lead",
+        "amount": 240
+      },
+      {
+        "item": "graphite",
+        "amount": 80
+      },
+      {
+        "item": "silicon",
+        "amount": 80
+      },
+      {
+        "item": "titanium",
+        "amount": 50
+      }
+    ],
+    "category": "units",
+    "research": {
+    "parent": "assaulter-construction"
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

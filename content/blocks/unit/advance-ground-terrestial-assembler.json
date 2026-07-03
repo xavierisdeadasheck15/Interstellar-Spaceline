@@ -1,0 +1,63 @@
+{
+    "Name": "Advance Ground Assembler",
+    "description": "Assembles large Advance unit out of inputted blocks and units, output tier may be increased by adding modules",
+    "type": "UnitAssembler",
+    "researchCostMultiplier": 4,
+    "size": 5,
+    "areaSize": 13,
+    "droneType": "assembly-drone",
+    "dronesCreated": 4,
+    "droneConstructTime": 100,
+    "health": 1500,
+    "category": "units",
+    "consumes": {
+      "power": 15
+    },
+    "plans": [
+      {
+        "unit": "desolute",
+        "requirements": [
+          "interstellar-spaceline-strider/4",
+          "interstellar-spaceline-large-reinforce-copper-wall/5",
+          "titanium-wall-large/20"
+        ],
+        "time": 2500
+      },
+      {
+        "unit": "warmech",
+        "requirements": [
+          "interstellar-spaceline-cudgel/4",
+          "interstellar-spaceline-large-reinforce-copper-wall/10",
+          "thorium-wall-large/20"
+        ],
+        "time": 5000
+      }
+    ],
+    "research": {
+    "parent": "advance-ground-factory",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "ethereal-northern-research"
+      }
+    ]
+  },
+    "requirements": [
+      "copper/1500",
+      "graphite/1000",
+      "silicon/2000",
+      "titanium/1000",
+      "plastanium/950",
+      "thorium/1000",
+      "surge-alloy/500"
+    ],
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }
+  

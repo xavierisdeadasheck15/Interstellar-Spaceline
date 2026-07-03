@@ -1,0 +1,35 @@
+plans: [
+  {
+  unit: nova
+  requirements: [
+    titanium/30
+    silicon/30
+    lead/20
+  ]
+  time: 2400
+  }
+  {
+  unit: dagger
+  requirements: [
+    silicon/10
+    lead/10
+  ]
+  time: 900
+  }
+  {
+  unit: crawler
+  requirements: [
+    silicon/8
+    coal/10
+  ]
+  time: 600
+  }
+]
+shownPlanets: [
+    serpulo, 
+    aqualis-archipel, 
+    glaciera-prime, 
+    infernia-cruor, 
+    neon-expanse, 
+    profanum-vox
+]

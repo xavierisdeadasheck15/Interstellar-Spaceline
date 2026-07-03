@@ -1,0 +1,31 @@
+{
+  "type": "PayloadLoader",
+  "name": "Xantharian Payload Exportation",
+  "description": "Export all resource into storage structure inside the payload",
+  "researchCostMultiplier": 2.0,
+  "health": 2500,
+  "armor": 10,
+  "size": 3,
+  "category": "units",
+  "consumes": {
+    "power": 2.5
+  },
+  "timerLoad": 1,
+  "loadTime": 1.5,
+  "itemsLoaded": 50,
+  "liquidsLoaded": 50,
+  "maxBlockSize": 3,
+  "maxPowerConsumption": 50,
+  "research": "x-payload-arbitary-driver",
+  "requirements": [
+    "tungsten/300",
+    "silicon/400",
+    "chromium/250",
+    "x-dark-metal/100",
+    "x-compressed-metal/50"
+  ],
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}
