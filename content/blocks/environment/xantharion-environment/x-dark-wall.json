@@ -1,0 +1,7 @@
+{
+  "type": "StaticWall",
+  "variants": 2,
+  "name": "Xantharion Metal Wall",
+  "hasColor": true,
+  "mapColor": "37474f"
+}

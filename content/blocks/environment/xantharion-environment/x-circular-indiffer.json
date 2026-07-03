@@ -1,0 +1,11 @@
+{
+  "type": "Floor",
+  "variants": 2,
+  "name": "Xantharion Circular Indiffer Tile",
+  "wall": "x-dark-wall",
+  "hasColor": true,
+  "mapColor": "512da8",
+  "emitLight": true,
+  "lightRadius": 2,
+  "lightColor": "7e57c2"
+}

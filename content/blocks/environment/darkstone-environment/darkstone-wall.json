@@ -1,0 +1,10 @@
+{
+  "type": "StaticWall",
+  "variants": 3,
+  "name": "Darkstone Wall",
+  "hasColor": true,
+  "mapColor": "616161",
+  "attributes": {
+    "sand": 0.90
+  }
+}

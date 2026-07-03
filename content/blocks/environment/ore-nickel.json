@@ -1,0 +1,9 @@
+{
+    "type": "OreBlock",
+    "localizedName": "Nickel Ore",
+    "itemDrop": "nickel",
+    "hasColor": true,
+    "mapColor": "6d4c41",
+    "variants": 3
+  }
+  

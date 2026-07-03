@@ -1,0 +1,11 @@
+{
+  "type": "Floor",
+  "variants": 2,
+  "name": "Xantharion Circular Invision Tile",
+  "wall": "x-dark-wall",
+  "hasColor": true,
+  "mapColor": "d32f2f",
+  "emitLight": true,
+  "lightRadius": 2,
+  "lightColor": "ef5350"
+}

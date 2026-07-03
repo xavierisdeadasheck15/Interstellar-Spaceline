@@ -1,0 +1,8 @@
+{
+  "type": "Floor",
+  "variants": 3,
+  "name": "Xantharion Metal Circular",
+  "wall": "x-dark-wall",
+  "hasColor": true,
+  "mapColor": "263238"
+}

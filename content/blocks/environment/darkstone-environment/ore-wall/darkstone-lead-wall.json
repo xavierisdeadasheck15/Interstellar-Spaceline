@@ -1,0 +1,8 @@
+{
+  "type": "StaticWall",
+  "variants": 3,
+  "name": "Darkstone Lead Wall",
+  "itemDrop": "raw-lead",
+  "hasColor": true,
+  "mapColor": "6f687e"
+}

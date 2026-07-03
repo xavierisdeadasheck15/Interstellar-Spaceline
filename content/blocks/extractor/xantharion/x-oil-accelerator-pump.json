@@ -1,0 +1,63 @@
+{
+  "type": "AttributeCrafter",
+  "name": "Oil Accelerator Pump",
+  "description": "Pump Out Good Amount of Oil From a Ground",
+  "researchCostMultiplier": 1.75,
+  "category": "production",
+  "size": 3,
+  "health": 750,
+  "squareSprite": true,
+  "hasPower": true,
+  "craftTime": 100,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "drawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "suffix": "-bottom",
+        "drawLiquid": "oil",
+        "alpha": 1
+      },
+      {
+        "type": "DrawDefault" 
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 3,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+  "hasLiquids": true,
+  "minEfficiency": 0.1,
+  "liquidCapacity": 200,
+  "attribute": "oil",
+  "research": {
+    "parent": "core-xelestal"
+  },
+  "consumes": {
+    "power": 8.75
+  },
+  "requirements": [
+    "x-dark-metal/200",
+    "silicon/150",
+    "graphite/200",
+    "lead/350",
+    "tungsten/50"
+  ],
+    "outputLiquid": "oil/0.2",
+    "baseEfficiency": 1,
+    "shownPlanets": [
+      "infernia-cruor",
+      "profanum-vox"
+    ]
+}

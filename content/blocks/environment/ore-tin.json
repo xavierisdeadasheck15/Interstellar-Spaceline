@@ -1,0 +1,9 @@
+{
+    "type": "OreBlock",
+    "localizedName": "Tin Ore",
+    "itemDrop": "tin",
+    "hasColor": true,
+    "mapColor": "2d2f3d",
+    "variants": 2
+  }
+  
