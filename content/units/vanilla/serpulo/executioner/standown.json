@@ -1,0 +1,111 @@
+{
+    "type": "mech",
+    "name": "Standown",
+    "description": "Medim size mech, better round and better penetration",
+    "outlineColor": "565666ff",
+    "healColor": "ffa665",
+    "flying": false,
+    "speed": 0.80,
+    "rotateSpeed": 3.5,
+    "hitSize": 22,
+    "fogRadius": 40,
+    "health": 2500,
+    "armor": 5,
+    "mechSideSway": 1.3,
+    "mechFrontSway": 0.55,
+    "mechStride": -1.35,
+    "researchCostMultiplier": 4,
+    "immunities": [
+      "burning",
+      "freezing"
+    ],
+    "weapons": [
+      {
+        "name": "standown-gun",
+        "ejectEffect": "casing1",
+        "top": false,
+        "shootY": 13,
+        "shootx": 0,
+        "reload": 4,
+        "x": -15,
+        "y": -4,
+        "alternate": true,
+        "mirror": true,
+        "rotate": false,
+        "inaccuracy": 1.5,
+        "recoil": 3,
+        "shootShake": 2,
+        "shootSound": "shootMmg",
+        "bullet": {
+          "type": "BasicBulletType",
+          "damage": 21,
+          "pierce": true,
+          "pierceDamageFactor": 0.01,
+          "height": 8,
+          "width": 8,
+          "shootEffect": "shootBig",
+          "smokeEffect": "shootBigSmoke",
+          "despawnEffect": "flakExplosion",
+          "hitEffect": "flakExplosion",
+          "trailWidth": 2,
+          "trailLength": 2,
+          "speed": 6,
+          "lifetime": 40
+        }
+      },
+      {
+        "name": "standown-missiles",
+        "top": true,
+        "shootY": 6,
+        "shootx": 0,
+        "reload": 200,
+        "x": 8,
+        "y": -2.5,
+        "alternate": false,
+        "mirror": false,
+        "inaccuracy": 8,
+        "recoil": 3.5,
+        "shootShake": 3,
+        "shootSound": "missileImpactShoot1",
+        "shoot": {
+          "type": "shootPattern",
+          "shots": 4,
+          "shotDelay": 2.5
+        },
+        "bullet": {
+          "type": "MissileBulletType",
+          "damage": 30,
+          "splashDamage": 15,
+          "splashDamageRadius": 22.5,
+          "height": 10,
+          "width": 10,
+          "homingPower": 0.20,
+          "homingRange": 50,
+          "homingDelay": 0.75,
+          "shootEffect": "shootSmall",
+          "smokeEffect": "shootSmallSmoke",
+          "despawnEffect": "blastExplosion",
+          "hitEffect": "blastExplosion",
+          "despawnSound": "missileImpactHit",
+          "trailWidth": 2,
+          "trailLength": 2,
+          "speed": 5,
+          "lifetime": 70
+        }
+      }
+    ],
+    "research": {
+      "parent": "cudgel",
+      "objectives": [
+        "fortress"
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

@@ -1,0 +1,72 @@
+{
+    "type": "flying",
+    "name": "Slayer",
+    "description": "Second Plasma Iteration, Pierce through enemy defense, but slow to rebuild",
+    "flying": true,
+    "healColor": "d1efff",
+    "itemCapacity": 80,
+    "buildSpeed": 3,
+    "mineSpeed": 4,
+    "mineTier": 2,
+    "lowAltitude": true,
+    "outlineColor": "616161",
+    "engineOffset": 7,
+    "trailLength": 5,
+    "speed": 3,
+    "accel": 0.090,
+    "drag": 0.040,
+    "rotateSpeed": 6,
+    "hitSize": 8.5,
+    "health": 300,
+    "armor": 0,
+    "parts": [
+      {
+        "type": "shapePart",
+        "hollow": true,
+        "circle": true,
+        "y": 1,
+        "layer": 110,
+        "color": "d1efff",
+        "stroke": 0,
+        "strokeTo": 0.5,
+        "radiusTo": 1,
+        "radius": 0
+      }
+    ],
+    "weapons": [
+      {
+        "name": "slayer-railgun",
+        "top": true,
+        "shootY": 1,
+        "reload": 30,
+        "x": 0,
+        "y": 0,
+        "alternate": false,
+        "mirror": false,
+        "inaccuracy": 1,
+        "recoil": 0,
+        "shootSound": "shootBeamPlasma",
+        "bullet": {
+          "type": "BasicBulletType",
+          "buildingDamageMultiplier": 0.01,
+          "damage": 22.5,
+          "pierceBuilding": false,
+          "pierce": true,
+          "pierceArmor": true,
+          "pierceDamageFactor": 0.01,
+          "height": 11,
+          "width": 11,
+          "speed": 6,
+          "lifetime": 27,
+          "frontColor": "d1efff",
+          "backColor": "8ca9e8",
+          "trailColor": "8ca9e8",
+          "trailWidth": 2,
+          "trailLength": 5,
+          "despawnEffect": "hitBulletColor",
+          "hitEffect": "hitBulletColor",
+          "shootEffect": "shootSmall"
+        }
+      }
+    ]
+  }

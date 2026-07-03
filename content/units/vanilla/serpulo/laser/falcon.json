@@ -1,0 +1,76 @@
+{
+  "type": "flying",
+  "name": "Falcon",
+  "description": "The Child of the Eagle, Circle around the target and bombard the area",
+  "flying": true,
+  "lowAltitude": true,
+  "accel": 0.03,
+  "drag": 0.006,
+  "outlineColor": "616161",
+  "healColor": "ff4049",
+  "engineOffset": 20,
+  "engineSize": 5,
+  "trailLength": 10,
+  "engines": [
+    {
+      "x": 9,
+      "y": -21,
+      "rotation": 270,
+      "radius": 5
+    },
+    {
+      "x": -9,
+      "y": -21,
+      "rotation": 270,
+      "radius": 5
+    }
+  ],
+  "speed": 4,
+  "rotateSpeed": 2.25,
+  "hitSize": 30,
+  "health": 4500,
+  "armor": 10,
+  "circleTarget": true,
+  "weapons": [
+    {
+      "name": "falcon-missile",
+      "layerOffset": -0.01,
+      "top": false,
+      "shootY": 3,
+      "reload": 100,
+      "x": -8,
+      "y": 5,
+      "alternate": false,
+      "mirror": true,
+      "inaccuracy": 5,
+      "recoil": 3,
+      "shoot": {
+        "type": "shootPattern",
+         "shots": 5,
+         "shotDelay": 3
+         },
+      "shootSound": "missile",
+      "bullet": {
+        "type": "MissileBulletType",
+        "homingPower": 0.02,
+        "homingRange": 100,
+        "damage": 40,
+        "splashDamage": 20,
+        "splashDamageRadius": 30,
+        "height": 12,
+        "width": 12,
+        "frontColor": "FF4049",
+        "trailColor": "FF4049",
+        "backColor": "C21739",
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootBigSmoke",
+        "despawnEffect": "flakExplosion",
+        "hitEffect": "flakExplosion",
+        "trailWidth": 2,
+        "trailLength": 5,
+        "speed": 6,
+        "lifetime": 45
+      }
+    }
+  ]
+}

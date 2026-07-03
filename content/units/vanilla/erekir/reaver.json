@@ -1,0 +1,62 @@
+{
+  "envDisabled": 0,
+  "name": "Reaver",
+  "description": "One of Vanguard Unit",
+  "type": "mech",
+  "targetPriority": 5,
+  "speed": 0.75,
+  "hitSize": 9,
+  "health": 290,
+  "armor": 12,
+  "rotateSpeed": 3.5,
+  "outlineColor": "404049ff",
+  "faceTarget": true,
+  "drawCell": true,
+  "mechSideSway": 0.6,
+  "mechFrontSway": 0.3,
+  "mechLegColor": "4a4b53",
+  "mechStepParticles": true,
+  "immunities": [
+    "burning",
+    "melting"
+  ],
+  "weapons": [
+    {
+      "name": "reaver-gun",
+      "top": false,
+      "ejectEffect": "casing2",
+      "shootY": 6,
+      "reload": 5,
+      "x": -8.3,
+      "y": 2.2,
+      "alternate": false,
+      "mirror": true,
+      "inaccuracy": 4,
+      "recoil": 2,
+      "shootSound": "shootSnap",
+      "shootStatus": "acceleration",
+      "shootStatusDuration": 100,
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 15,
+        "height": 10,
+        "width": 10,
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "despawnEffect": "hitBulletSmall",
+        "hitEffect": "hitBulletSmall",
+        "trailWidth": 1,
+        "trailLength": 3,
+        "speed": 6,
+        "lifetime": 30
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RegenAbility",
+      "amount": 0.055,
+      "healEffect": "regenParticle"
+    }
+  ]
+}

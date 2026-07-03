@@ -1,0 +1,74 @@
+{
+  "type": "mech",
+  "name": "Strider",
+  "description": "Small and formidable mech, relying on fast firing rate",
+  "outlineColor": "565666ff",
+  "healColor": "ffa665",
+  "flying": false,
+  "speed": 1,
+  "rotateSpeed": 5,
+  "hitSize": 9,
+  "fogRadius": 20,
+  "health": 500,
+  "armor": 2,
+  "mechSideSway": 1.20,
+  "mechFrontSway": 0.5,
+  "mechStride": -1.25,
+  "researchCostMultiplier": 2,
+  "immunities": [
+    "burning"
+  ],
+  "weapons": [
+    {
+      "name": "strider-gun",
+      "ejectEffect": "casing1",
+      "top": false,
+      "shootY": 10,
+      "shootx": 0,
+      "reload": 5,
+      "x": -8.5,
+      "y": 0,
+      "alternate": true,
+      "mirror": true,
+      "rotate": false,
+      "inaccuracy": 2.5,
+      "recoil": 2,
+      "shootShake": 1,
+      "shootSound": "shootLmg",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "pierce": true,
+        "pierceDamageFactor": 0.01,
+        "height": 5,
+        "width": 5,
+        "shootEffect": "shootSmall",
+        "smokeEffect": "shootSmallSmoke",
+        "despawnEffect": "flakExplosion",
+        "hitEffect": "flakExplosion",
+        "trailWidth": 1.5,
+        "trailLength": 2,
+        "speed": 7,
+        "lifetime": 25
+      }
+    }
+  ],
+  "research": {
+    "parent": "advance-ground-factory",
+    "objectives": [
+      "dagger",
+      {
+        "type": "SectorComplete",
+        "preset": "frozen-lake"
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

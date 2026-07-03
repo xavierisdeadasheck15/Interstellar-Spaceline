@@ -1,0 +1,113 @@
+{
+    "type": "mech",
+    "name": "Desolute",
+    "description": "Heavy size mech, faster firing rate and pure destruction capability",
+    "outlineColor": "565666ff",
+    "healColor": "ffa665",
+    "flying": false,
+    "speed": 0.60,
+    "rotateSpeed": 2.5,
+    "hitSize": 29,
+    "fogRadius": 50,
+    "health": 7500,
+    "armor": 10,
+    "mechSideSway": 1.35,
+    "mechFrontSway": 0.6,
+    "mechStride": -1.4,
+    "researchCostMultiplier": 8,
+    "immunities": [
+      "burning",
+      "freezing",
+      "blasted"
+    ],
+    "weapons": [
+      {
+        "name": "desolute-gun",
+        "ejectEffect": "casing2",
+        "top": false,
+        "shootY": 16,
+        "shootx": 0,
+        "reload": 3.5,
+        "x": -19,
+        "y": -1,
+        "alternate": true,
+        "mirror": true,
+        "rotate": false,
+        "inaccuracy": 2,
+        "recoil": 2,
+        "shootShake": 2,
+        "shootSound": "shootMmg",
+        "bullet": {
+          "type": "BasicBulletType",
+          "damage": 26.5,
+          "pierce": true,
+          "pierceDamageFactor": 0.01,
+          "height": 10,
+          "width": 10,
+          "shootEffect": "shootBig",
+          "smokeEffect": "shootBigSmoke",
+          "despawnEffect": "flakExplosion",
+          "hitEffect": "flakExplosion",
+          "trailWidth": 2,
+          "trailLength": 3,
+          "speed": 6,
+          "lifetime": 50
+        }
+      },
+      {
+        "name": "desolute-missiles",
+        "top": true,
+        "shootY": 6,
+        "shootx": 0,
+        "reload": 100,
+        "x": 8,
+        "y": -2.5,
+        "alternate": true,
+        "mirror": true,
+        "inaccuracy": 8,
+        "recoil": 3.5,
+        "shootShake": 3,
+        "shootSound": "missileImpactShoot2",
+        "shoot": {
+          "type": "shootPattern",
+          "shots": 3,
+          "shotDelay": 3
+        },
+        "bullet": {
+          "type": "MissileBulletType",
+          "damage": 60,
+          "splashDamage": 30,
+          "splashDamageRadius": 25,
+          "height": 12,
+          "width": 12,
+          "homingPower": 0.25,
+          "homingRange": 75,
+          "homingDelay": 1,
+          "shootEffect": "shootBig",
+          "smokeEffect": "shootBigSmoke",
+          "despawnEffect": "blastExplosion",
+          "hitEffect": "blastExplosion",
+          "despawnSound": "missileImpactHit",
+          "trailWidth": 2,
+          "trailLength": 2,
+          "speed": 6,
+          "lifetime": 70
+        }
+      }
+    ],
+    "research": {
+      "parent": "standown",
+      "objectives": [
+        "advance-ground-terrestial-assembler",
+        "scepter"
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

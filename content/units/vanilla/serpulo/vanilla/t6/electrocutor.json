@@ -1,0 +1,470 @@
+{
+  "type": "naval",
+  "name": "Electrocutor",
+  "description": "Supportive Battleship That Utilize Heavy Firing Turret, Entering Combat Activate Passive EMP",
+  "healColor": "84f491",
+  "outlineColor": "565666ff",
+  "flying": false,
+  "targetAir": false,
+  "health": 70000,
+  "armor": 35,
+  "drag": 0.02,
+  "accel": 0.05,
+  "speed": 0.32,
+  "rotateSpeed": 0.25,
+  "hitSize": 79,
+  "singleTarget": true,
+  "naval": true,
+  "omniMovement": false,
+  "immunities": [
+    "shocked",
+    "wet",
+    "freezing",
+    "blasted",
+    "electrified"
+  ],
+  "weapons": [
+    {
+      "name": "electrocutor-railgun",
+      "layerOffset": 0.02,
+      "top": true,
+      "shootY": 10,
+      "reload": 1000,
+      "x": 0,
+      "y": 40,
+      "alternate": false,
+      "mirror": false,
+      "shootCone": 10,
+      "rotate": true,
+      "rotateSpeed": 0.50,
+      "rotationLimit": 360,
+      "recoil": 5,
+      "shoot": {
+        "type": "ShootAlternate",
+        "shotDelay": 25,
+        "shots": 3
+      },
+      "shootSound": "railgunLaser2",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "interstellar-spaceline-emp-sharp-bullet",
+        "backSprite": "interstellar-spaceline-emp-sharp-bullet-back",
+        "buildingDamageMultiplier": 2,
+        "shieldDamageMultiplier": 5,
+        "damage": 500,
+        "pierce": true,
+        "pierceBuilding": true,
+        "pierceDamageFactor": 0.01,
+        "height": 30,
+        "width": 15,
+        "frontColor": "84f491",
+        "trailColor": "84f491",
+        "backColor": "62ae7f",
+        "hitColor": "84f491",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 120,
+              "colorFrom": "444444",
+              "colorTo": "222222"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 150,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 160,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491"
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 120,
+              "colorFrom": "444444",
+              "colorTo": "222222"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 150,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 160,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491"
+            }
+          ]
+        },
+        "shootEffect": "instShoot",
+        "smokeEffect": "greenCloud",
+        "speed": 10,
+        "lifetime": 80,
+        "trailWidth": 5,
+        "trailLength": 10,
+        "status": "emp-stun",
+        "statusDuration": 100
+      }
+    },
+    {
+      "name": "electrocutor-railgun",
+      "layerOffset": 0.02,
+      "top": true,
+      "shootY": 10,
+      "reload": 1000,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "shootCone": 10,
+      "rotate": true,
+      "rotateSpeed": 0.50,
+      "rotationLimit": 360,
+      "recoil": 5,
+      "shoot": {
+        "type": "ShootAlternate",
+        "shotDelay": 25,
+        "shots": 3
+      },
+      "shootSound": "railgunLaser2",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "interstellar-spaceline-emp-sharp-bullet",
+        "backSprite": "interstellar-spaceline-emp-sharp-bullet-back",
+        "buildingDamageMultiplier": 2,
+        "shieldDamageMultiplier": 5,
+        "damage": 500,
+        "pierce": true,
+        "pierceBuilding": true,
+        "pierceDamageFactor": 0.01,
+        "height": 30,
+        "width": 15,
+        "frontColor": "84f491",
+        "trailColor": "84f491",
+        "backColor": "62ae7f",
+        "hitColor": "84f491",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 120,
+              "colorFrom": "444444",
+              "colorTo": "222222"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 150,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 160,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491"
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 120,
+              "colorFrom": "444444",
+              "colorTo": "222222"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 150,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 160,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491"
+            }
+          ]
+        },
+        "shootEffect": "instShoot",
+        "smokeEffect": "greenCloud",
+        "speed": 10,
+        "lifetime": 80,
+        "trailWidth": 5,
+        "trailLength": 10,
+        "status": "emp-stun",
+        "statusDuration": 100
+      }
+    },
+    {
+      "name": "electrocutor-railgun",
+      "layerOffset": 0.02,
+      "top": true,
+      "shootY": 10,
+      "reload": 1000,
+      "x": 0,
+      "y": -35,
+      "alternate": false,
+      "mirror": false,
+      "shootCone": 10,
+      "rotate": true,
+      "rotateSpeed": 0.50,
+      "rotationLimit": 360,
+      "recoil": 5,
+      "shoot": {
+        "type": "ShootAlternate",
+        "shotDelay": 25,
+        "shots": 3
+      },
+      "shootSound": "railgunLaser2",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "interstellar-spaceline-emp-sharp-bullet",
+        "backSprite": "interstellar-spaceline-emp-sharp-bullet-back",
+        "buildingDamageMultiplier": 2,
+        "shieldDamageMultiplier": 5,
+        "damage": 500,
+        "pierce": true,
+        "pierceBuilding": true,
+        "pierceDamageFactor": 0.01,
+        "height": 30,
+        "width": 15,
+        "frontColor": "84f491",
+        "trailColor": "84f491",
+        "backColor": "62ae7f",
+        "hitColor": "84f491",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 120,
+              "colorFrom": "444444",
+              "colorTo": "222222"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 150,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 160,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491"
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sizeFrom": 0,
+              "sizeTo": 45,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 120,
+              "colorFrom": "444444",
+              "colorTo": "222222"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 150,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 160,
+              "colorFrom": "b9f6ca",
+              "colorTo": "84f491"
+            }
+          ]
+        },
+        "shootEffect": "instShoot",
+        "smokeEffect": "greenCloud",
+        "speed": 10,
+        "lifetime": 80,
+        "trailWidth": 5,
+        "trailLength": 10,
+        "status": "emp-stun",
+        "statusDuration": 100
+      }
+    },
+    {
+      "name": "electrocutor-stun-gun",
+      "layerOffset": 0.01,
+      "controllable": false,
+      "autoTarget": true,
+      "top": true,
+      "shootY": 5,
+      "reload": 250,
+      "x": -10,
+      "y": -20,
+      "alternate": false,
+      "mirror": true,
+      "shootCone": 5,
+      "rotate": true,
+      "rotateSpeed": 0.75,
+      "rotationLimit": 360,
+      "recoil": 3,
+      "shoot": {
+        "type": "ShootAlternate",
+        "shotDelay": 10,
+        "shots": 3
+      },
+      "shootSound": "shootLaser3",
+      "bullet": {
+        "type": "BasicBulletType",
+        "sprite": "interstellar-spaceline-emp-sharp-bullet",
+        "backSprite": "interstellar-spaceline-emp-sharp-bullet-back",
+        "buildingDamageMultiplier": 0.01,
+        "shieldDamageMultiplier": 5,
+        "damage": 50,
+        "height": 10,
+        "width": 10,
+        "frontColor": "84f491",
+        "trailColor": "84f491",
+        "backColor": "62ae7f",
+        "hitColor": "84f491",
+        "despawnEffect": "hitLaserColor",
+        "hitEffect": "hitLaserColor",
+        "shootEffect": "shootBigColor",
+        "smokeEffect": "greenCloud",
+        "speed": 5,
+        "lifetime": 100,
+        "trailWidth": 2,
+        "trailLength": 5,
+        "status": "emp-stun",
+        "statusDuration": 50
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RepairFieldAbility",
+      "amount": 100,
+      "reload": 100,
+      "range": 400
+    },
+    {
+      "type": "StatusFieldAbility",
+      "effect": "emp-boost",
+      "reload": 500,
+      "range": 400,
+      "duration": 500,
+      "onShoot": true,
+      "activeEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 400,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "84f491",
+            "colorTo": "62ae7f",
+            "lifetime": 10
+          },
+          {
+            "type": "WaveEffect",
+            "sides": 0,
+            "sizeFrom": 0,
+            "sizeTo": 250,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "84f491",
+            "colorTo": "62ae7f",
+            "lifetime": 10
+          }
+        ]
+      }
+    }
+  ]
+}

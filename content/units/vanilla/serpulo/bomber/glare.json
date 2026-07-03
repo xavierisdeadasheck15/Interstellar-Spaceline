@@ -1,0 +1,150 @@
+{
+    "type": "flying",
+    "name": "Glare",
+    "description": "Release frag that destroy enemy from above",
+    "details": "Smol bombah",
+    "flying": true,
+    "lowAltitude": false,
+    "faceTarget": false,
+    "healColor": "bf92f9",
+    "outlineColor": "616161",
+    "engineOffset": 2,
+    "trailLength": 5,
+    "speed": 2,
+    "accel": 0.09,
+    "drag": 0.06,
+    "rotateSpeed": 4,
+    "hitSize": 4,
+    "fogRadius": 5,
+    "health": 95,
+    "armor": 0,
+    "immunities": [
+      "sapped"
+    ],
+    "targetFlags": [
+      "drill",
+      "storage"
+    ],
+    "circleTarget": true,
+    "weapons": [
+      {
+        "name": "glare-bomb",
+        "top": false,
+        "shootY": 0,
+        "reload": 20,
+        "x": 0,
+        "y": 0,
+        "alternate": false,
+        "mirror": false,
+        "inaccuracy": 0,
+        "shootSound": "none",
+        "bullet": {
+          "type": "BombBulletType",
+          "killShooter": false,
+          "splashDamage": 30,
+          "splashDamageRadius": 20,
+          "height": 5,
+          "width": 5,
+          "shootEffect": "none",
+          "smokeEffect": "none",
+          "despawnEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "waveEffect",
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "sizeFrom": 0,
+                "sizeTo": 25,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 2,
+                "length": 30,
+                "sizeFrom": 2,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 5,
+                "length": 20,
+                "sizeFrom": 5,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 20
+              }
+            ]
+          },
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "waveEffect",
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "sizeFrom": 0,
+                "sizeTo": 25,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 2,
+                "length": 30,
+                "sizeFrom": 2,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 5,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 5,
+                "length": 20,
+                "sizeFrom": 5,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 20
+              }
+            ]
+          },
+          "frontColor": "bf92f9",
+          "backColor": "665c9f",
+          "lifetime": 50
+        }
+      }
+    ],
+    "research": {
+      "parent": "advance-air-factory",
+      "objectives": [
+        "crawler",
+        {
+          "type": "SectorComplete",
+          "preset": "catapult"
+        }
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

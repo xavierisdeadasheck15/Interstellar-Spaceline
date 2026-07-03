@@ -1,0 +1,59 @@
+{
+  "type": "flying",
+  "name": "EXECUTOR-0",
+  "description": "Probe created by Eradicaor itself",
+  "flying": true,
+  "lowAltitude": true,
+  "accel": 0.03,
+  "drag": 0.009,
+  "outlineColor": "616161",
+  "healColor": "ff4049",
+  "engineOffset": 10,
+  "engineSize": 5,
+  "trailLength": 10,
+  "speed": 5,
+  "rotateSpeed": 2,
+  "hitSize": 30,
+  "health": 1500,
+  "armor": 5,
+  "weapons": [
+    {
+      "name": "ex0-laser",
+      "layerOffset": -0.01,
+      "top": false,
+      "shootY": 8,
+      "reload": 100,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 6.5,
+      "recoil": 2,
+      "shoot": {
+        "type": "shootPattern",
+         "shots": 3,
+         "shotDelay": 10
+         },
+      "shootSound": "shootLaser3",
+      "bullet": {
+        "type": "BasicBulletType",
+        "homingPower": 0.03,
+        "homingRange": 100,
+        "damage": 40,
+        "height": 20,
+        "width": 20,
+        "frontColor": "FF4049",
+        "trailColor": "FF4049",
+        "backColor": "C21739",
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootSmokeSquareBig",
+        "despawnEffect": "circleColorSpark",
+        "hitEffect": "circleColorSpark",
+        "trailWidth": 2,
+        "trailLength": 10,
+        "speed": 8,
+        "lifetime": 40
+      }
+    }
+  ]
+}

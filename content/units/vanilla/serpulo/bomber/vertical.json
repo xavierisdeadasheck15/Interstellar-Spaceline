@@ -1,0 +1,153 @@
+{
+    "type": "flying",
+    "name": "Vertical",
+    "description": "Unleash multiple frag that destroy enemy from above",
+    "details": "Isn't it the opposite name of horizon?",
+    "flying": true,
+    "lowAltitude": false,
+    "faceTarget": false,
+    "healColor": "bf92f9",
+    "outlineColor": "616161",
+    "engineOffset": 5,
+    "trailLength": 7,
+    "speed": 1.9,
+    "accel": 0.08,
+    "drag": 0.06,
+    "rotateSpeed": 3.75,
+    "hitSize": 7,
+    "fogRadius": 5,
+    "health": 300,
+    "armor": 2,
+    "immunities": [
+      "sapped"
+    ],
+    "targetFlags": [
+      "drill",
+      "storage",
+      "hasFogRadius"
+    ],
+    "circleTarget": true,
+    "weapons": [
+      {
+        "name": "vertical-bomb",
+        "top": false,
+        "shootY": 0,
+        "reload": 60,
+        "x": 0,
+        "y": 0,
+        "alternate": false,
+        "mirror": false,
+        "inaccuracy": 0,
+        "shootSound": "none",
+        "shoot": {
+          "type": "ShootAlternate",
+          "shotDelay": 5,
+          "shots": 3
+        },
+        "bullet": {
+          "type": "BombBulletType",
+          "splashDamage": 25,
+          "splashDamageRadius": 17.5,
+          "height": 7.5,
+          "width": 7.5,
+          "shootEffect": "none",
+          "smokeEffect": "none",
+          "despawnEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "waveEffect",
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "sizeFrom": 0,
+                "sizeTo": 20,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 3,
+                "length": 25,
+                "sizeFrom": 2,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 5,
+                "length": 17,
+                "sizeFrom": 4,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 20
+              }
+            ]
+          },
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "waveEffect",
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "sizeFrom": 0,
+                "sizeTo": 20,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 3,
+                "length": 25,
+                "sizeFrom": 2,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 5,
+                "length": 17,
+                "sizeFrom": 4,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 20
+              }
+            ]
+          },
+          "frontColor": "bf92f9",
+          "backColor": "665c9f",
+          "lifetime": 40,
+          "status": "sapped",
+          "statusDuration": 100
+        }
+      }
+    ],
+    "research": {
+      "parent": "glare",
+      "objectives": [
+        "horizon"
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

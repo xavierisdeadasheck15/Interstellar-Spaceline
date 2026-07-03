@@ -1,0 +1,46 @@
+{
+    "type": "mech",
+    "name": "Frostbite",
+    "description": "Wrecker ALike, Freezing Laser Shotgunner Mech",
+    "outlineColor": "565666ff",
+    "healColor": "d1efff",
+    "flying": false,
+    "speed": 0.8,
+    "rotateSpeed": 2.05,
+    "hitSize": 20,
+    "health": 10000,
+    "armor": 10,
+    "mechSideSway": 1.30,
+    "mechFrontSway": 0.85,
+    "mechStride": -1.80,
+    "mechStepParticles": false,
+    "weapons": [
+      {
+        "name": "frostbite-gun",
+        "ejectEffect": "casing3",
+        "top": false,
+        "shootY": 10,
+        "shootx": 0,
+        "reload": 100,
+        "x": -17,
+        "y": 0,
+        "alternate": true,
+        "mirror": true,
+        "inaccuracy": 0.5,
+        "recoil": 6,
+        "shootShake": 10,
+        "shootSound": "shotgun",
+        "bullet": {
+          "type": "ShrapnelBulletType",
+          "hitLarge": true,
+          "length": 200,
+          "damage": 50,
+          "width": 10,
+          "fromColor": "d1efff",
+          "toColor": "8ca9e8",
+          "status": "freezing",
+          "statusDuration": 300
+        }
+      }
+    ]
+  }

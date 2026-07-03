@@ -1,0 +1,352 @@
+{
+    "type": "flying",
+    "name": "Umbra",
+    "description": "Fire heavy artillery bullet toward enemy's ground, contain light gun incase of air attack",
+    "flying": true,
+    "lowAltitude": true,
+    "healColor": "bf92f9",
+    "outlineColor": "616161",
+    "engineSize": 3,
+    "engineOffset": 12,
+    "trailLength": 5,
+    "speed": 1.5,
+    "accel": 0.08,
+    "drag": 0.06,
+    "rotateSpeed": 3,
+    "hitSize": 20,
+    "fogRadius": 15,
+    "health": 3500,
+    "armor": 7,
+    "immunities": [
+      "sapped",
+      "shocked"
+    ],
+    "targetFlags": [
+      "generator",
+      "battery",
+      "factory",
+      "repair",
+      "hasFogRadius"
+    ],
+    "weapons": [
+      {
+        "name": "umbra-gun",
+        "layerOffset": -0.01,
+        "top": false,
+        "shootY": 6,
+        "reload": 30,
+        "x": -8,
+        "y": 9,
+        "alternate": true,
+        "mirror": true,
+        "inaccuracy": 3,
+        "shootSound": "shootMmg",
+        "shoot": {
+          "type": "shootPattern",
+          "shots": 3,
+          "shotDelay": 5
+        },
+        "bullet": {
+          "type": "BasicBulletType",
+          "buildingDamageMultiplier": 0.25,
+          "damage": 30,
+          "height": 8,
+          "width": 8,
+          "shootEffect": "shootBig",
+          "smokeEffect": "shootBigSmoke",
+          "despawnEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "waveEffect",
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "sizeFrom": 0,
+                "sizeTo": 20,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 3,
+                "length": 35,
+                "sizeFrom": 2,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 5,
+                "length": 40,
+                "sizeFrom": 6,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 20
+              }
+            ]
+          },
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "ParticleEffect",
+                "particles": 5,
+                "length": 40,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 2,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 2,
+                "length": 35,
+                "sizeFrom": 5,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 20
+              }
+            ]
+          },
+          "frontColor": "bf92f9",
+          "backColor": "665c9f",
+          "speed": 4,
+          "lifetime": 30,
+          "status": "sapped",
+          "statusDuration": 100
+        }
+      },
+      {
+        "name": "umbra-artillery",
+        "layerOffset": 0.01,
+        "top": true,
+        "shootY": 7,
+        "reload": 80,
+        "x": -10,
+        "y": -7,
+        "alternate": true,
+        "mirror": true,
+        "rotate": true,
+        "rotateSpeed": 3,
+        "rotationLimit": 90,
+        "inaccuracy": 1,
+        "recoil": 4,
+        "shootSound": "shootArtillerySap",
+        "bullet": {
+          "type": "ArtilleryBulletType",
+          "buildingDamageMultiplier": 1.15,
+          "splashDamage": 80,
+          "splashDamageRadius": 25,
+          "height": 12,
+          "width": 12,
+          "shootEffect": "shootBig2",
+          "smokeEffect": "shootBigSmoke2",
+          "despawnEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "waveEffect",
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "sizeFrom": 0,
+                "sizeTo": 30,
+                "strokeFrom": 4,
+                "strokeTo": 0,
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 6,
+                "length": 40,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 8,
+                "length": 50,
+                "sizeFrom": 6,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 30
+              }
+            ]
+          },
+          "hitEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "type": "waveEffect",
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "sizeFrom": 0,
+                "sizeTo": 30,
+                "strokeFrom": 4,
+                "strokeTo": 0,
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 6,
+                "length": 40,
+                "sizeFrom": 3,
+                "sizeTo": 0,
+                "line": true,
+                "strokeFrom": 3,
+                "strokeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 10
+              },
+              {
+                "type": "ParticleEffect",
+                "particles": 8,
+                "length": 50,
+                "sizeFrom": 6,
+                "sizeTo": 0,
+                "colorFrom": "bf92f9",
+                "colorTo": "665c9f",
+                "lifetime": 30
+              }
+            ]
+          },
+          "frontColor": "bf92f9",
+          "backColor": "665c9f",
+          "speed": 2,
+          "lifetime": 60,
+          "status": "sapped",
+          "statusDuration": 200,
+          "lightning": 4,
+          "lightningColor": "bf92f9",
+          "lightningLength": 6,
+          "lightningDamage": 20,
+          "fragRandomSpread": 180,
+          "fragSpread": 10,
+          "fragAngle": 20,
+          "fragOffsetMax": 4,
+          "fragBullets": 3,
+          "fragBullet": {
+            "type": "ArtilleryBulletType",
+            "splashDamage": 10,
+            "splashDamageRadius": 10,
+            "speed": 2,
+            "lifetime": 30,
+            "height": 4,
+            "width": 4,
+            "despawnEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                  {
+                    "type": "waveEffect",
+                    "colorFrom": "bf92f9",
+                    "colorTo": "665c9f",
+                    "sizeFrom": 0,
+                    "sizeTo": 10,
+                    "strokeFrom": 1,
+                    "strokeTo": 0,
+                    "lifetime": 10
+                  },
+                  {
+                    "type": "ParticleEffect",
+                    "particles": 3,
+                    "length": 15,
+                    "sizeFrom": 1,
+                    "sizeTo": 0,
+                    "line": true,
+                    "strokeFrom": 1,
+                    "strokeTo": 0,
+                    "colorFrom": "bf92f9",
+                    "colorTo": "665c9f",
+                    "lifetime": 10
+                  },
+                  {
+                    "type": "ParticleEffect",
+                    "particles": 6,
+                    "length": 15,
+                    "sizeFrom": 3,
+                    "sizeTo": 0,
+                    "colorFrom": "bf92f9",
+                    "colorTo": "665c9f",
+                    "lifetime": 20
+                  }
+                ]
+              },
+            "hitEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                  {
+                    "type": "waveEffect",
+                    "colorFrom": "bf92f9",
+                    "colorTo": "665c9f",
+                    "sizeFrom": 0,
+                    "sizeTo": 10,
+                    "strokeFrom": 1,
+                    "strokeTo": 0,
+                    "lifetime": 10
+                  },
+                  {
+                    "type": "ParticleEffect",
+                    "particles": 3,
+                    "length": 15,
+                    "sizeFrom": 1,
+                    "sizeTo": 0,
+                    "line": true,
+                    "strokeFrom": 1,
+                    "strokeTo": 0,
+                    "colorFrom": "bf92f9",
+                    "colorTo": "665c9f",
+                    "lifetime": 10
+                  },
+                  {
+                    "type": "ParticleEffect",
+                    "particles": 6,
+                    "length": 15,
+                    "sizeFrom": 3,
+                    "sizeTo": 0,
+                    "colorFrom": "bf92f9",
+                    "colorTo": "665c9f",
+                    "lifetime": 20
+                  }
+                ]
+              },
+            "frontColor": "bf92f9",
+            "backColor": "665c9f"
+          }
+        }
+      }
+    ],
+    "research": {
+      "parent": "apogee",
+      "objectives": [
+        "advance-aerial-terrestial-assembler",
+        "antumbra"
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

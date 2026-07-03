@@ -1,0 +1,110 @@
+{
+    "type": "mech",
+    "name": "Cudgel",
+    "description": "Better and more formidable mech, Equipped with Portable Missile",
+    "outlineColor": "565666ff",
+    "healColor": "ffa665",
+    "flying": false,
+    "speed": 0.90,
+    "rotateSpeed": 4.5,
+    "hitSize": 15,
+    "fogRadius": 29,
+    "health": 900,
+    "armor": 3,
+    "mechSideSway": 1.25,
+    "mechFrontSway": 0.525,
+    "mechStride": -1.30,
+    "researchCostMultiplier": 3,
+    "immunities": [
+      "burning"
+    ],
+    "weapons": [
+      {
+        "name": "cudgel-gun",
+        "ejectEffect": "casing1",
+        "top": false,
+        "shootY": 8,
+        "shootx": 0,
+        "reload": 4.5,
+        "x": -9,
+        "y": 0,
+        "alternate": true,
+        "mirror": true,
+        "rotate": false,
+        "inaccuracy": 2,
+        "recoil": 2.2,
+        "shootShake": 1,
+        "shootSound": "shootLmg",
+        "bullet": {
+          "type": "BasicBulletType",
+          "damage": 15.5,
+          "pierce": true,
+          "pierceDamageFactor": 0.01,
+          "height": 6,
+          "width": 6,
+          "shootEffect": "shootSmall",
+          "smokeEffect": "shootSmallSmoke",
+          "despawnEffect": "flakExplosion",
+          "hitEffect": "flakExplosion",
+          "trailWidth": 1.5,
+          "trailLength": 2,
+          "speed": 7,
+          "lifetime": 25
+        }
+      },
+      {
+        "name": "cudgel-missiles",
+        "top": true,
+        "shootY": 5,
+        "shootx": 0,
+        "reload": 200,
+        "x": 6.5,
+        "y": -2,
+        "alternate": false,
+        "mirror": false,
+        "inaccuracy": 7.5,
+        "recoil": 4,
+        "shootShake": 1,
+        "shootSound": "missileImpactShoot1",
+        "shoot": {
+          "type": "shootPattern",
+          "shots": 2,
+          "shotDelay": 5
+        },
+        "bullet": {
+          "type": "MissileBulletType",
+          "damage": 25,
+          "splashDamage": 12.5,
+          "splashDamageRadius": 20,
+          "height": 9,
+          "width": 9,
+          "homingPower": 0.20,
+          "homingRange": 50,
+          "homingDelay": 0.75,
+          "shootEffect": "shootSmall",
+          "smokeEffect": "shootSmallSmoke",
+          "despawnEffect": "blastExplosion",
+          "hitEffect": "blastExplosion",
+          "despawnSound": "missileImpactHit",
+          "trailWidth": 2,
+          "trailLength": 2,
+          "speed": 4,
+          "lifetime": 60
+        }
+      }
+    ],
+    "research": {
+      "parent": "strider",
+      "objectives": [
+        "mace"
+      ]
+    },
+    "shownPlanets": [
+      "serpulo", 
+      "aqualis-archipel", 
+      "glaciera-prime", 
+      "infernia-cruor", 
+      "neon-expanse", 
+      "profanum-vox"
+    ]
+  }

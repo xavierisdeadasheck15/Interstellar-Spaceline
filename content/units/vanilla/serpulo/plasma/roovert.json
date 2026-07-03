@@ -1,0 +1,123 @@
+{
+  "type": "flying",
+  "name": "Roovert",
+  "description": "Small Hover tank, Firing high concentrate orb toward its aiming direction",
+  "healColor": "d1efff",
+  "health": 450,
+  "hitSize": 10,
+  "fogRadius": 30,
+  "armor": 10,
+  "rotateSpeed": 1.5,
+  "speed": 1.25,
+  "accel": 0.07,
+  "drag": 0.05,
+  "rotateMoveFirst": true,
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+  "hoverable": true,
+  "hovering": true,
+  "parts": [
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": 0,
+      "y": 0,
+      "radius": 10,
+      "phase": 50,
+      "color": "d1efff",
+      "stroke": 5,
+      "layerOffset": -0.001
+    }
+  ],
+  "weapons": [
+    {
+      "name": "roovert-gun",
+      "top": true,
+      "shootY": 2,
+      "reload": 100,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "shootCone": 10,
+      "rotate": true,
+      "rotateSpeed": 1.75,
+      "recoil": 2,
+      "inaccuracy": 1,
+      "shootSound": "shootLaser3",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 25.25,
+        "pierceArmor": true,
+        "pierceDamageFactor": 0.01,
+        "height": 20,
+        "width": 20,
+        "frontColor": "d1efff",
+        "backColor": "8ca9e8",
+        "trailColor": "8ca9e8",
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "particles": 4,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 30,
+          "colorFrom": "d1efff",
+          "colorTo": "8ca9e8",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 4,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 90,
+          "length": 30,
+          "colorFrom": "d1efff",
+          "colorTo": "8ca9e8",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0
+        },
+        "shootEffect": "shootBig2",
+        "smokeEffect": {
+          "type": "ParticleEffect",
+          "particles": 3,
+          "sizeFrom": 3,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 20,
+          "colorFrom": "d1efff",
+          "colorTo": "8ca9e8",
+          "line": true,
+          "strokeFrom": 3,
+          "strokeTo": 0
+        },
+        "trailWidth": 3,
+        "trailLength": 10,
+        "speed": 9,
+        "lifetime": 30
+      }
+    }
+  ],
+  "research": {
+    "parent": "advance-ground-factory",
+    "objectives": [
+      {
+        "type": "SectorComplete",
+        "preset": "ambush"
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}
