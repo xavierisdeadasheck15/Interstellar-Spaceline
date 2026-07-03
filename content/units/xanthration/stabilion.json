@@ -1,0 +1,155 @@
+{
+  "type": "flying",
+  "name": "Stabilion",
+  "description": "Large Size Suppression light Vehicle with Rapid Fire Capability",
+  "outlineColor": "141d21",
+  "targetPriority": 4,
+  "healColor": "7e57c2",
+  "flying": false,
+  "accel": 0.09,
+  "drag": 0.05,
+  "speed": 0.75,
+  "rotateSpeed": 1.9,
+  "hitSize": 20,
+  "health": 2500,
+  "armor": 10,
+  "rotateMoveFirst": true,
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+  "hoverable": true,
+  "hovering": true,
+  "parts": [
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -7.5,
+      "y": 12,
+      "radius": 10,
+      "phase": 50,
+      "color": "7e57c2",
+      "stroke": 5,
+      "layerOffset": -0.001
+    },
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -8,
+      "y": -6,
+      "radius": 10,
+      "phase": 50,
+      "color": "7e57c2",
+      "stroke": 5,
+      "layerOffset": -0.001
+    }
+  ],
+  "immunities": [
+    "freezing",
+    "melting",
+    "burning"
+  ],
+  "abilities": [
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "executor",
+      "amount": 3
+    },
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "scattervolt",
+      "amount": 1
+    }
+  ],
+  "deathSound": "x-explosionDeath",
+  "deathExplosionEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 30,
+        "sizeFrom": 7,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 90,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 80
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 30,
+        "sizeFrom": 9,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 80,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 100
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 35,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 220,
+        "colorFrom": "512da8",
+        "colorTo": "311b92",
+        "line": true,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "lifetime": 40
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "stabilion-mount-gun",
+      "top": true,
+      "shootY": 11,
+      "shootx": 0,
+      "reload": 10,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "rotate": true,
+      "rotateSpeed": 1.95,
+      "recoil": 3,
+      "inaccuracy": 3,
+      "shootShake": 2,
+      "shootSound": "x-shootBig",
+      "shoot": {
+        "type": "ShootAlternate",
+         "spread": 12,
+         "barrels": 2
+        },
+      "bullet": {
+        "type": "BasicBulletType",
+        "pierce": true,
+        "pierceDamageFactor": 0.01,
+        "buildingDamageMultiplier": 0.25,
+        "damage": 30,
+        "height": 12,
+        "width": 10,
+        "frontColor": "7e57c2",
+        "backColor": "311b92",
+        "trailColor": "7e57c2",
+        "despawnEffect": "hitBulletBig",
+        "hitEffect": "hitBulletBig",
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootSmokeSquareBig",
+        "trailEffect": "colorTrail",
+        "trailWidth": 2,
+        "trailLength": 10,
+        "speed": 6,
+        "lifetime": 30
+      }
+    }
+  ],
+  "research": "x-advantage-reconstruction",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

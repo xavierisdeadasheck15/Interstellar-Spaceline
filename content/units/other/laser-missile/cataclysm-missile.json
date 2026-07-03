@@ -1,0 +1,102 @@
+{
+    "type": "missile",
+    "name": "Cataclysm Missile",
+    "template": "MissileUnitType",
+    "flying": true,
+    "speed": 5,
+    "physics": false,
+    "missileAccelTime": 0.20,
+    "lifetime": 125,
+    "rotateSpeed": 20,
+    "homingDelay": 10,
+    "hitSize": 15,
+    "trailLength": 10,
+    "engineOffset": 11,
+    "useUnitCap": false,
+    "health": 600,
+    "armor": 3,
+    "autoFindTarget": true,
+    "circleTarget": false,
+    "faceTarget": true,
+    "aimDst": 20,
+    "drawCell": false,
+    "outlines": true,
+    "range": 15,
+    "hidden": true,
+    "deathSound": "eradicatorRapidExplosion",
+    "deathExplosionEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+        "type": "WaveEffect",
+          "lifetime": 50,
+          "sizeFrom": 0,
+          "sizeTo": 150,
+          "strokeFrom": 10,
+          "strokeTo": 0,
+          "colorFrom": "FF4049",
+          "colorTo": "C21739"
+        },
+        {
+          "type": "ParticleEffect",
+          "region": "interstellar-spaceline-star-bullet",
+          "lifetime": 10,
+          "length": 0,
+          "sizeFrom": 150,
+          "sizeTo": 0,
+          "colorFrom": "FF4049",
+          "colorTo": "C21739"
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 15,
+          "sizeFrom": 35,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 150,
+          "colorFrom": "757575",
+          "colorTo": "424242"
+        }
+      ]
+    },
+    "weapons": [
+      {
+        "reload": 1,
+        "shootOnDeath": true,
+        "mirror": true,
+        "shootCone": 360,
+        "shake": 10,
+        "bullet": {
+          "type": "ExplosionBulletType",
+          "buildingDamageMultiplier": 4.5,
+          "targetBlocks": true,
+          "collidesGround": true,
+          "splashDamageRadius": 150,
+          "splashDamage": 500,
+          "pierceArmor": true,
+          "status": "blasted",
+          "statusDuration": 250
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "type": "MoveEffectAbility",
+        "effect": {
+          "type": "ParticleEffect",
+          "particles": 10,
+          "sizeFrom": 2,
+          "sizeTo": 0,
+          "cone": 180,
+          "length": 100,
+          "colorFrom": "757575",
+          "colorTo": "424242"
+        },
+        "interval": 5,
+        "effectParam": 5,
+        "x": 0,
+        "y": 11
+      }
+    ]
+  }
+  

@@ -1,0 +1,68 @@
+{
+    "type": "missile",
+    "name": "Destructive Missile",
+    "template": "MissileUnitType",
+    "flying": true,
+    "speed": 7.5,
+    "physics": false,
+    "missileAccelTime": 0.10,
+    "lifetime": 100,
+    "rotateSpeed": 40,
+    "homingDelay": 20,
+    "hitSize": 10,
+    "trailLength": 15,
+    "engineOffset": 8,
+    "useUnitCap": false,
+    "health": 300,
+    "armor": 1,
+    "autoFindTarget": true,
+    "circleTarget": false,
+    "faceTarget": true,
+    "aimDst": 15,
+    "drawCell": false,
+    "outlines": true,
+    "range": 12.5,
+    "hidden": true,
+    "deathSound": "explosionbig",
+    "deathExplosionEffect": "massiveExplosion",
+    "weapons": [
+      {
+        "reload": 1,
+        "shootOnDeath": true,
+        "mirror": true,
+        "shootCone": 360,
+        "shake": 5,
+        "bullet": {
+          "type": "ExplosionBulletType",
+          "buildingDamageMultiplier": 2,
+          "targetBlocks": true,
+          "collidesGround": true,
+          "splashDamageRadius": 70,
+          "splashDamage": 250,
+          "pierceArmor": true,
+          "status": "blasted",
+          "statusDuration": 200
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "type": "MoveEffectAbility",
+        "effect": {
+          "type": "ParticleEffect",
+          "particles": 5,
+          "sizeFrom": 1,
+          "sizeTo": 0,
+          "cone": 360,
+          "length": 50,
+          "colorFrom": "757575",
+          "colorTo": "424242"
+        },
+        "interval": 5,
+        "effectParam": 5,
+        "x": 0,
+        "y": 8
+      }
+    ]
+  }
+  

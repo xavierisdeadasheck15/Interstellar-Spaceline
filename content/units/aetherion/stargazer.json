@@ -1,0 +1,137 @@
+{
+  "type": "flying",
+  "envDisabled": 0,
+  "name": "Stargazer",
+  "description": "Unknown Portable Drone",
+  "details": "oh cool its a dimond pickaxe - the_light_of_carcosa",
+  "flying": true,
+  "lowAltitude": true,
+  "accel": 0.05,
+  "drag": 0.005,
+  "outlineColor": "141d21",
+  "healColor": "4dd0e1",
+  "engineOffset": 0,
+  "engineSize": 1,
+  "speed": 3,
+  "rotateSpeed": 3,
+  "hitSize": 15,
+  "health": 1250,
+  "armor": 15,
+  "faceTarget": true,
+  "engines": [
+    {
+      "x": -5,
+      "y": -3,
+      "rotation": 25,
+      "radius": 6
+    },
+    {
+      "x": 5,
+      "y": -3,
+      "rotation": -25,
+      "radius": 6
+    }
+  ],
+  "immunities": [
+    "shocked",
+    "electrified",
+    "freezing",
+    "sapped",
+    "blasted"
+  ],
+  "weapons": [
+    {
+      "name": "stargazer-gun",
+      "layerOffset": -0.01,
+      "top": false,
+      "shootY": 5,
+      "reload": 10,
+      "x": -15,
+      "y": 10,
+      "alternate": false,
+      "mirror": true,
+      "shootCone": 5,
+      "rotate": true,
+      "rotateSpeed": 0.75,
+      "rotationLimit": 90,
+      "shootSound": "shootLaser2",
+      "recoil": 2,
+      "bullet": {
+        "type": "BasicBulletType",
+        "shieldDamageMultiplier": 10,
+        "sprite": "interstellar-spaceline-star-bullet",
+        "damage": 25,
+        "pierce": true,
+        "pierceDamageFactor": 0.01,
+        "width": 10,
+        "height": 10,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "spin": 5,
+        "homingPower": 0.03,
+        "homingRange": 300,
+        "frontColor": "4dd0e1",
+        "backColor": "00838f",
+        "trailColor": "00acc1",
+        "hitColor": "84f491",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "80cbc4",
+              "colorTo": "00796b",
+              "lifetime": 30
+            }
+          ]
+        },
+        "shootEffect": "generatespark",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "80cbc4",
+              "colorTo": "00796b",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "01579b",
+              "colorTo": "29b6f6",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "speed": 5,
+        "lifetime": 50,
+        "trailWidth": 5,
+        "trailLength": 10
+      }
+    }
+  ],
+  "abilities": [
+    {
+      "type": "RegenAbility",
+      "percentAmount": 0.1,
+      "amount": 0.1
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "type": "tether",
+  "name": "Skybastion",
+  "description": "Heavy Xanthration Aerial Carrier",
+  "flying": true,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "targetPriority": 4,
+  "healColor": "ef5350",
+  "engineOffset": 10,
+  "trailLength": 5,
+  "speed": 1.5,
+  "accel": 0.01,
+  "drag": 0.006,
+  "rotateSpeed": 2,
+  "hitSize": 20,
+  "health": 2500,
+  "armor": 10,
+  "defaultController": "CargoAI",
+  "isEnemy": false,
+  "allowedInPayloads": false,
+  "logicControllable": false,
+  "playerControllable": false,
+  "itemCapacity": 500,
+  "engines": [
+    {
+      "x": 12,
+      "y": -4,
+      "rotation": 270,
+      "radius": 4,
+      "trailLength": 10
+    },
+    {
+      "x": -12,
+      "y": -4,
+      "rotation": 270,
+      "radius": 4,
+      "trailLength": 10
+    },
+    {
+      "x": 7,
+      "y": -17,
+      "rotation": 270,
+      "radius": 5,
+      "trailLength": 20
+    },
+    {
+      "x": -7,
+      "y": -17,
+      "rotation": 270,
+      "radius": 5,
+      "trailLength": 20
+    }
+  ],
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ],
+  "deathSound": "x-explosionDeath3",
+  "deathExplosionEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 40,
+        "sizeFrom": 20,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 180,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 170
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 50,
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 200,
+        "colorFrom": "ff7a70",
+        "colorTo": "661c16",
+        "line": true,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "lifetime": 55
+      }
+    ]
+  },
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

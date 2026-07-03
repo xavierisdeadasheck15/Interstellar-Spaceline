@@ -1,0 +1,238 @@
+{
+  "type": "flying",
+  "name": "Progenitron",
+  "description": "Advance Light Xanthration Unit",
+  "flying": true,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "targetPriority": 1,
+  "healColor": "7e57c2",
+  "engineOffset": 6,
+  "trailLength": 5,
+  "speed": 1.55,
+  "accel": 0.2,
+  "drag": 0.06,
+  "rotateSpeed": 1.75,
+  "hitSize": 8,
+  "health": 200,
+  "armor": 3,
+  "circleTarget": false,
+  "deathSound": "x-explosionDeath",
+  "deathExplosionEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 25,
+        "sizeFrom": 7,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 70,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 100
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 20,
+        "sizeFrom": 7,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 120,
+        "colorFrom": "512da8",
+        "colorTo": "311b92",
+        "line": true,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "lifetime": 40
+      }
+    ]
+  },
+  "fallEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 30,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 20
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 2,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 50,
+        "colorFrom": "512da8",
+        "colorTo": "311b92",
+        "line": true,
+        "strokeFrom": 1,
+        "strokeTo": 0,
+        "lifetime": 10
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "alt-terminator-concentration",
+      "layerOffset": -0.01,
+      "under": true,
+      "top": false,
+      "shootY": 5,
+      "reload": 100,
+      "x": 0,
+      "y": 4,
+      "alternate": false,
+      "mirror": false,
+      "inaccuracy": 0,
+      "recoil": 3, 
+      "shootShake": 3,
+      "shootSound": "x-shootCannon",
+      "bullet": {
+        "type": "BasicBulletType",
+        "recoil": 0.5,
+        "homingPower": 0.075,
+        "homingRange": 100,
+        "pierceArmor": true,
+        "damage": 60,
+        "height": 10,
+        "width": 10,
+        "speed": 5,
+        "frontColor": "512da8",
+        "backColor": "311b92",
+        "trailColor": "512da8",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 200,
+              "length": 50,
+              "colorFrom": "512da8",
+              "colorTo": "311b92",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "hitEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 40,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 50,
+              "length": 65,
+              "colorFrom": "757575",
+              "colorTo": "424242"
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 6,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 60,
+              "colorFrom": "7e57c2",
+              "colorTo": "512da8",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 30,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 30,
+              "colorFrom": "512da8",
+              "colorTo": "311b92",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0
+            }
+          ]
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "colorFrom": "311b92",
+              "colorTo": "9575cd",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 15,
+              "sizeFrom": 4,
+              "sizeTo": 0,
+              "cone": 35,
+              "length": 70,
+              "colorFrom": "7e57c2",
+              "colorTo": "512da8",
+              "lifetime": 60
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 9,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 75,
+              "colorFrom": "673ab7",
+              "colorTo": "9575cd",
+              "line": true,
+              "strokeFrom": 4,
+              "strokeTo": 0,
+              "lifetime": 30
+            }
+          ]
+        },
+        "lifetime": 70,
+        "trailWidth": 2,
+        "trailLength": 10
+      }
+    }
+  ],
+  "research": "x-light-fabricator",
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning"
+  ],
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

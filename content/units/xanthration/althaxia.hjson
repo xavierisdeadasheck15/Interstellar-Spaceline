@@ -1,0 +1,60 @@
+ 
+type: flying
+name: Althaxia
+description: "Xantharion Least Better Miner Drone"
+lowAltitude: false
+flying: true
+health: 550
+hitSize: 13
+armor: 2
+itemCapacity: 100
+accel: 0.04
+drag: 0.03
+speed: 4.0
+outlineColor: "141d21"
+healColor: "7e57c2"
+defaultController: "minerAI"
+playerControllable: false
+engineOffset: 10
+mineSpeed: 10
+rotateSpeed: 4.5
+mineTier: 3
+research": "astraxios"
+mineItems: [
+    "copper",
+    "lead",
+    "beryllium",
+    "titanium"
+]
+deathSound: x-explosionDeath2
+deathExplosionEffect: {
+    type: MultiEffect
+    effects: [
+        {
+            type: ParticleEffect
+            particles: 25
+            sizeFrom: 9
+            sizeTo: 0
+            cone: 180
+            length: 90
+            colorFrom: "6e5d59"
+            colorTo: "2e2927"
+            lifetime: 100
+        }
+
+        {
+            type: ParticleEffect
+            particles: 20
+            sizeFrom: 9
+            sizeTo: 0
+            cone: 180
+            length: 130
+            colorFrom: "ff7a70"
+            colorTo: "661c16"
+            line: true
+            strokeFrom: 6
+            strokeTo: 0
+            lifetime: 40
+        }
+    ]
+}

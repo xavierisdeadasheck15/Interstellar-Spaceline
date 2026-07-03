@@ -1,0 +1,183 @@
+{
+  "type": "mech",
+  "name": "Cyclotron",
+  "description": "Medium Size Ground Rapid Gunner Ground Enemy from Xanthration",
+  "outlineColor": "141d21",
+  "targetPriority": 5,
+  "healColor": "ef5350",
+  "flying": false,
+  "speed": 0.55,
+  "rotateSpeed": 2.25,
+  "hitSize": 21,
+  "health": 9000,
+  "armor": 10,
+  "immunities": [
+    "burning",
+    "blasted"
+  ],
+  "deathSound": "x-explosionDeath2",
+  "deathExplosionEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 25,
+        "sizeFrom": 9,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 110,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 100
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 20,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 180,
+        "colorFrom": "ff7a70",
+        "colorTo": "661c16",
+        "line": true,
+        "strokeFrom": 6,
+        "strokeTo": 0,
+        "lifetime": 40
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "cyclotron-gun",
+      "top": false,
+      "shootY": 17,
+      "shootx": 0,
+      "reload": 20,
+      "x": -22,
+      "y": -1,
+      "alternate": true,
+      "mirror": true,
+      "recoil": 3,
+      "inaccuracy": 1,
+      "shootShake": 5,
+      "shootSound": "x-shootBig",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 60,
+        "pierce": true,
+        "pierceDamageFactor": 0.01,
+        "height": 17.5,
+        "width": 12,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "particles": 9,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 40,
+          "length": 50,
+          "colorFrom": "b71c1c",
+          "colorTo": "e57373",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 15
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 9,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 40,
+          "length": 50,
+          "colorFrom": "b71c1c",
+          "colorTo": "e57373",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 15
+        },
+        "shootEffect": "shootBig2",
+        "smokeEffect": "shootSmokeSquareBig",
+        "trailEffect": "colorTrail",
+        "trailWidth": 2.5,
+        "trailLength": 5,
+        "speed": 8,
+        "lifetime": 35
+      }
+    },
+    {
+      "name": "cyclotron-mount-gun",
+      "top": true,
+      "shootY": 7,
+      "shootx": 0,
+      "reload": 40,
+      "x": -15,
+      "y": -6.5,
+      "alternate": true,
+      "mirror": true,
+      "rotate": true,
+      "rotateSpeed": 1.95,
+      "recoil": 2,
+      "inaccuracy": 5,
+      "shoot": {
+        "type": "shootPattern",
+        "shotDelay": 2,
+        "shots": 5
+      },
+      "shootShake": 2,
+      "shootSound": "x-shootLmg",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 30,
+        "height": 9.5,
+        "width": 9.5,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "particles": 9,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 40,
+          "length": 50,
+          "colorFrom": "b71c1c",
+          "colorTo": "e57373",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 15
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 9,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 40,
+          "length": 50,
+          "colorFrom": "b71c1c",
+          "colorTo": "e57373",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 15
+        },
+        "shootEffect": "shootBig",
+        "smokeEffect": "shootSmokeSquareBig",
+        "trailEffect": "colorTrail",
+        "trailWidth": 2,
+        "trailLength": 5,
+        "speed": 7,
+        "lifetime": 50
+      }
+    }
+  ],
+  "research": "x-medium-machinery-assembler",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

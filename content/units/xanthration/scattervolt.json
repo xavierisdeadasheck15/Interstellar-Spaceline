@@ -1,0 +1,155 @@
+{
+  "type": "mech",
+  "name": "Scattervolt",
+  "description": "Medium Size Ground base Shotgunner Enemy from Xanthration",
+  "outlineColor": "141d21",
+  "targetPriority": 3,
+  "healColor": "ef5350",
+  "flying": false,
+  "speed": 0.5,
+  "rotateSpeed": 2.95,
+  "hitSize": 16,
+  "health": 650,
+  "armor": 3,
+  "deathSound": "x-explosionDeath2",
+  "deathExplosionEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 25,
+        "sizeFrom": 9,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 90,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 100
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 20,
+        "sizeFrom": 9,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 130,
+        "colorFrom": "ff7a70",
+        "colorTo": "661c16",
+        "line": true,
+        "strokeFrom": 6,
+        "strokeTo": 0,
+        "lifetime": 40
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "scattervolt-gun",
+      "top": false,
+      "shootY": 7,
+      "shootx": 0,
+      "reload": 50,
+      "x": -10,
+      "y": -1,
+      "alternate": true,
+      "mirror": true,
+      "recoil": 5,
+      "inaccuracy": 8,
+      "shoot": {
+        "type": "shootPattern",
+        "shots": 6,
+        "shotDelay": 1
+      },
+      "shootStatusDuration": 30,
+      "shootStatus": "slow",
+      "shootShake": 3,
+      "shootSound": "x-shootShotgun",
+      "bullet": {
+        "type": "BasicBulletType",
+        "recoil": 0.07,
+        "damage": 20,
+        "pierceArmor": false,
+        "pierce": true,
+        "pierceDamageFactor": 0.01,
+        "height": 12,
+        "width": 9,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "ParticleEffect",
+          "particles": 9,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 40,
+          "length": 50,
+          "colorFrom": "b71c1c",
+          "colorTo": "e57373",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 15
+        },
+        "hitEffect": {
+          "type": "ParticleEffect",
+          "particles": 9,
+          "sizeFrom": 4,
+          "sizeTo": 0,
+          "cone": 40,
+          "length": 50,
+          "colorFrom": "b71c1c",
+          "colorTo": "e57373",
+          "line": true,
+          "strokeFrom": 2,
+          "strokeTo": 0,
+          "lifetime": 15
+        },
+        "shootEffect": "shootSmall",
+        "smokeEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 3,
+              "sizeTo": 0,
+              "cone": 30,
+              "length": 50,
+              "colorFrom": "757575",
+              "colorTo": "424242",
+              "lifetime": 30
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 2,
+              "sizeTo": 0,
+              "cone": 20,
+              "length": 25,
+              "colorFrom": "d32f2f",
+              "colorTo": "b71c1c",
+              "line": true,
+              "strokeFrom": 5,
+              "strokeTo": 0,
+              "lifetime": 15
+            }
+          ]
+        },
+        "trailEffect": "colorTrail",
+        "trailWidth": 2,
+        "trailLength": 5,
+        "speed": 7,
+        "lifetime": 38
+      }
+    }
+  ],
+  "research": "x-medium-refabricator",
+  "immunities": [
+    "melting",
+    "burning"
+  ],
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}

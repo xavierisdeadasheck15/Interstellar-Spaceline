@@ -1,0 +1,199 @@
+{
+  "type": "flying",
+  "name": "Missilith",
+  "description": "One of Xantharion Medium Missile Tank, Exploding Enemy with Bombardment Projectile",
+  "flying": false,
+  "lowAltitude": true,
+  "outlineColor": "141d21",
+  "targetPriority": 5,
+  "healColor": "ef5350",
+  "rotateMoveFirst": true,
+  "speed": 1.15,
+  "accel": 0.015,
+  "drag": 0.06,
+  "rotateSpeed": 1,
+  "hitSize": 30,
+  "health": 4750,
+  "armor": 19,
+  "singleTarget": false,
+  "omniMovement": false,
+  "faceTarget": false,
+  "hoverable": true,
+  "hovering": true,
+  "parts": [
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -15,
+      "y": 15,
+      "radius": 15,
+      "phase": 200,
+      "color": "ef5350",
+      "stroke": 5,
+      "layerOffset": -0.001
+    },
+    {
+      "type": "HoverPart",
+      "mirror": true,
+      "x": -15,
+      "y": -15,
+      "radius": 15,
+      "phase": 200,
+      "color": "ef5350",
+      "stroke": 5,
+      "layerOffset": -0.001
+    }
+  ],
+  "immunities": [
+    "shocked",
+    "freezing",
+    "melting",
+    "burning",
+    "blasted"
+  ],
+  "abilities": [
+    {
+      "type": "SpawnDeathAbility",
+      "unit": "executor",
+      "amount": 3
+    }
+  ],
+  "deathSound": "x-explosionDeath2",
+  "deathExplosionEffect": {
+    "type": "MultiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 30,
+        "sizeFrom": 7,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 185,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 100
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 12,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 100,
+        "colorFrom": "6e5d59",
+        "colorTo": "2e2927",
+        "lifetime": 180
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 30,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 250,
+        "colorFrom": "ff7a70",
+        "colorTo": "661c16",
+        "line": true,
+        "strokeFrom": 7,
+        "strokeTo": 0,
+        "lifetime": 60
+      }
+    ]
+  },
+  "weapons": [
+    {
+      "name": "missilith-turret",
+      "top": true,
+      "shootY": 20,
+      "reload": 500,
+      "x": 0,
+      "y": 0,
+      "alternate": false,
+      "mirror": false,
+      "shootCone": 20,
+      "rotate": true,
+      "rotateSpeed": 1.15,
+      "rotationLimit": 180,
+      "recoil": 2,
+      "inaccuracy": 1,
+      "shoot": {
+        "type": "ShootAlternate",
+        "shotDelay": 2,
+        "spread": 15,
+        "barrels": 2,
+        "shots": 10
+      },
+      "shootStatusDuration": 100,
+      "shootStatus": "slow",
+      "shootSound": "x-missile",
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "sprite": "missile-large",
+        "backSprite": "missile-large-back",
+        "buildingDamageMultiplier": 1.5,
+        "damage": 150,
+        "splashDamage": 75,
+        "splashDamageRadius": 45,
+        "height": 15,
+        "width": 15,
+        "status": "blasted",
+        "statusDuration": 200,
+        "frontColor": "d32f2f",
+        "backColor": "b71c1c",
+        "trailColor": "d32f2f",
+        "despawnEffect": {
+          "type": "MultiEffect",
+          "effects": [
+            {
+              "type": "WaveEffect",
+              "sides": 0,
+              "sizeFrom": 0,
+              "sizeTo": 20,
+              "strokeFrom": 3,
+              "strokeTo": 0,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "lifetime": 10
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 20,
+              "sizeFrom": 8,
+              "sizeTo": 0,
+              "cone": 180,
+              "length": 70,
+              "colorFrom": "6e5d59",
+              "colorTo": "2e2927",
+              "lifetime": 80
+            },
+            {
+              "type": "ParticleEffect",
+              "particles": 8,
+              "sizeFrom": 5,
+              "sizeTo": 0,
+              "cone": 180,
+              "length": 80,
+              "colorFrom": "b71c1c",
+              "colorTo": "e57373",
+              "line": true,
+              "strokeFrom": 2,
+              "strokeTo": 0,
+              "lifetime": 20
+            }
+          ]
+        },
+        "shootEffect": "shootBig2",
+        "smokeEffect": "missileTrailSmoke",
+        "trailWidth": 2,
+        "trailLength": 15,
+        "speed": 8,
+        "lifetime": 60
+      }
+    }
+  ],
+  "research": "x-medium-machinery-assembler",
+  "shownPlanets": [
+    "infernia-cruor",
+    "profanum-vox"
+  ]
+}
