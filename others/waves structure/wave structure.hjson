@@ -1,0 +1,14 @@
+[
+  {
+    type: //what type the enemy spawn
+    begin: //Default is are 0
+    end: //where the type would end in the wave
+    max: //max Cap of how much type will spawn
+    spacing: //spacing mean that if the type spawned, and they have a spacing, example, 2, then they have to wait for 2 wave before they could spawn, this also affect scaling
+    scaling: //act as scaling, example, if the amount are 2, and the scale are 0.5, then every 2 wave add 1 amount, if 1 add 1 amount per 1 wave
+    shield: //act as health but absorb the damage
+    shieldScaling: //same as scaling, but if they have 0 and the shield scale are 5, then the next wave, the type will have 5 shield
+    amount: //how much type will spawn
+    effect: //type that will applied, if the type are meant to be boss, then the effect should be boss
+  },
+]
