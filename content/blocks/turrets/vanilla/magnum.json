@@ -1,0 +1,223 @@
+{
+  "type": "ItemTurret",
+  "name": "Magnum",
+  "description": "Consecutively shot toughest target, can pierce through enemy",
+  "ammoUseEffect": "casing2",
+  "unitSort": "strongest",
+  "ammoEjectBack": 5,
+  "size": 2,
+  "health": 750,
+  "buildTime": 10,
+  "coolantMultiplier": 1.5,
+  "consumes": {
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shake": 5,
+  "maxAmmo": 60,
+  "ammoPerShot": 10,
+  "reload": 50,
+  "range": 210,
+  "shootY": 4,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 6,
+  "inaccuracy": 1.5,
+  "recoil": 5,
+  "shootSound": "magnumShoot",
+  "ammoTypes": {
+    "copper": {
+      "type": "BasicBulletType",
+      "buildingDamageMultiplier": 0.01,
+      "reloadMultiplier": 1.0,
+      "damage": 30,
+      "splashDamage": 15,
+      "splashDamageRadius": 15,
+      "pierce": true,
+      "pierceBuilding": false,
+      "pierceCap": 2,
+      "pierceDamageFactor": 0.025,
+      "speed": 7,
+      "lifetime": 30,
+      "height": 10,
+      "width": 10,
+      "frontColor": "eac1a8",
+      "backColor": "b8705c",
+      "trailColor": "b8705c",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "despawnEffect": "hitBulletBig",
+      "hitEffect": "hitBulletBig",
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "trailRotation": true
+    },
+    "graphite": {
+      "type": "BasicBulletType",
+      "buildingDamageMultiplier": 0.10,
+      "reloadMultiplier": 0.80,
+      "knockback": 2,
+      "damage": 20,
+      "splashDamage": 10,
+      "splashDamageRadius": 20,
+      "speed": 7,
+      "lifetime": 30,
+      "height": 10,
+      "width": 10,
+      "frontColor": "a1b6c4",
+      "backColor": "7ca6c2",
+      "trailColor": "7ca6c2",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "despawnEffect": "hitBulletBig",
+      "hitEffect": "hitBulletBig",
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "trailRotation": true
+    },
+    "titanium": {
+      "type": "BasicBulletType",
+      "buildingDamageMultiplier": 0.25,
+      "damage": 40,
+      "splashDamage": 20,
+      "splashDamageRadius": 10,
+      "pierce": true,
+      "pierceBuilding": false,
+      "pierceCap": 4,
+      "pierceDamageFactor": 0.02,
+      "speed": 7,
+      "lifetime": 30,
+      "height": 10,
+      "width": 10,
+      "frontColor": "a4b8fa",
+      "backColor": "7575c8",
+      "trailColor": "7575c8",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "despawnEffect": "hitBulletBig",
+      "hitEffect": "hitBulletBig",
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "trailRotation": true
+    },
+    "tungsten": {
+      "type": "BasicBulletType",
+      "buildingDamageMultiplier": 0.50,
+      "reloadMultiplier": 0.80,
+      "damage": 60,
+      "splashDamage": 30,
+      "splashDamageRadius": 10,
+      "pierce": true,
+      "pierceBuilding": true,
+      "pierceCap": 8,
+      "pierceDamageFactor": 0.01,
+      "speed": 7,
+      "lifetime": 30,
+      "height": 10,
+      "width": 10,
+      "frontColor": "a0b0c8",
+      "backColor": "4c5878",
+      "trailColor": "4c5878",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "despawnEffect": "hitBulletBig",
+      "hitEffect": "hitBulletBig",
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "trailRotation": true
+    },
+    "thorium": {
+      "type": "BasicBulletType",
+      "buildingDamageMultiplier": 0.70,
+      "reloadMultiplier": 0.60,
+      "damage": 50,
+      "splashDamage": 25,
+      "splashDamageRadius": 25,
+      "pierce": true,
+      "pierceBuilding": true,
+      "pierceCap": 5,
+      "pierceDamageFactor": 0.01,
+      "speed": 9,
+      "lifetime": 23.33,
+      "height": 10,
+      "width": 10,
+      "frontColor": "ffa8ec",
+      "backColor": "cb8ebf",
+      "trailColor": "cb8ebf",
+      "trailWidth": 2,
+      "trailLength": 5,
+      "despawnEffect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "cone": 180,
+        "length": 60,
+        "colorFrom": "ff8ad6",
+        "colorTo": "422e34"
+      },
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "cone": 50,
+        "length": 70,
+        "colorFrom": "ff8ad6",
+        "colorTo": "422e34"
+      },
+      "shootEffect": "shootBig",
+      "smokeEffect": "blastExplosion",
+      "trailRotation": true,
+      "despawnSound": "missileImpactHit",
+      "hitSound": "missileImpactHit"
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 50
+    },
+    {
+      "item": "bronze",
+      "amount": 75
+    },
+    {
+      "item": "graphite",
+      "amount": 30
+    },
+    {
+      "item": "tungsten",
+      "amount": 20
+    },
+    {
+      "item": "titanium",
+      "amount": 60
+    }
+  ],
+  "category": "turret",
+  "research": "trial",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveY": -4
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

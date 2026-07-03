@@ -1,0 +1,141 @@
+{
+  "type": "ItemTurret",
+  "name": "Penetrator",
+  "description": "Rapid Penetration Turret",
+  "ammoUseEffect": "casing2",
+  "ammoEjectBack": 3,
+  "size": 2,
+  "health": 700,
+  "buildTime": 10,
+  "coolantMultiplier": 2.5,
+  "consumes": {
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+  "shake": 2,
+  "maxAmmo": 60,
+  "ammoPerShot": 1,
+  "reload": 5,
+  "range": 250,
+  "shootY": 6,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 3.25,
+  "inaccuracy": 0.90,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "shootPenetrator",
+  "ammoTypes": {
+    "titanium": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 1.0,
+      "damage": 25,
+      "pierceArmor": true,
+      "pierceBuilding": false,
+      "pierceCap": 5,
+      "pierceDamageFactor": 0.01,
+      "speed": 5,
+      "lifetime": 50,
+      "height": 12,
+      "width": 5,
+      "frontColor": "a4b8fa",
+      "backColor": "7575c8",
+      "despawnEffect": "hitBulletSmall",
+      "hitEffect": "hitBulletSmall",
+      "shootEffect": "shootSmall",
+      "smokeEffect": "disperseTrail",
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    },
+    "nickel": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 1.25,
+      "damage": 22.5,
+      "pierce": true,
+      "pierceArmor": false,
+      "pierceBuilding": false,
+      "pierceCap": 3,
+      "pierceDamageFactor": 0.02,
+      "speed": 5,
+      "lifetime": 50,
+      "height": 12,
+      "width": 5,
+      "frontColor": "a1887f",
+      "backColor": "57453f",
+      "despawnEffect": "hitBulletSmall",
+      "hitEffect": "hitBulletSmall",
+      "shootEffect": "shootSmall",
+      "smokeEffect": "disperseTrail",
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    },
+    "tungsten": {
+      "type": "BasicBulletType",
+      "reloadMultiplier": 0.75,
+      "damage": 52.5,
+      "pierceArmor": true,
+      "pierceBuilding": true,
+      "pierceCap": 7,
+      "pierceDamageFactor": 0.01,
+      "speed": 6,
+      "lifetime": 42,
+      "height": 14,
+      "width": 6,
+      "frontColor": "a0b0c8",
+      "backColor": "4c5878",
+      "despawnEffect": "hitBulletSmall",
+      "hitEffect": "hitBulletSmall",
+      "shootEffect": "shootSmall",
+      "smokeEffect": "disperseTrail",
+      "trailEffect": "colorSpark",
+      "trailRotation": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 300
+    },
+    {
+      "item": "graphite",
+      "amount": 100
+    },
+    {
+      "item": "silicon",
+      "amount": 200
+    },
+    {
+      "item": "titanium",
+      "amount": 250
+    },
+    {
+      "item": "plastanium",
+      "amount": 50
+    }
+  ],
+  "category": "turret",
+  "research": "volt-arch",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-turret",
+        "mirror": false,
+        "under": false,
+        "progress": "recoil",
+        "moveY": -3
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

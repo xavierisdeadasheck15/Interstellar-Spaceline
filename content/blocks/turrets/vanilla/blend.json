@@ -1,0 +1,183 @@
+{
+  "type": "ItemTurret",
+  "name": "Blend",
+  "description": "Inherit to Fuse, fire cluster of shrapnel in close area",
+  "size": 4,
+  "health": 1540,
+  "buildTime": 10,
+  "coolantMultiplier": 1.20,
+  "consumes": {
+    "coolant": {
+      "amount": 0.3
+    }
+  },
+  "shake": 7.5,
+  "maxAmmo": 50,
+  "ammoPerShot": 10,
+  "reload": 50,
+  "range": 150,
+  "shootY": 7,
+  "targetAir": true,
+  "targetGround": true,
+  "rotateSpeed": 2.25,
+  "inaccuracy": 2.5,
+  "shootCone": 2,
+  "shootSound": "shootFuse",
+  "shoot": {
+    "type": "shootPattern",
+    "shotDelay": 2,
+    "shots": 4
+  },
+  "ammoTypes": {
+    "titanium": {
+      "type": "ShrapnelBulletType",
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "reloadMultiplier": 1.40,
+      "knockback": 1,
+      "hitLarge": false,
+      "length": 150,
+      "damage": 30,
+      "width": 15,
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 1,
+        "sizeTo": 0,
+        "cone": 90,
+        "length": 90,
+        "colorFrom": "a4b8fa",
+        "colorTo": "7575c8",
+        "line": true,
+        "strokeFrom": 3,
+        "strokeTo": 0
+      },
+      "fromColor": "a4b8fa",
+      "toColor": "7575c8"
+    },
+    "tungsten": {
+      "type": "ShrapnelBulletType",
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "reloadMultiplier": 1,
+      "pierceArmor": true,
+      "knockback": 3,
+      "hitLarge": true,
+      "length": 150,
+      "damage": 90,
+      "width": 15,
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 1,
+        "sizeTo": 0,
+        "cone": 90,
+        "length": 90,
+        "colorFrom": "a0b0c8",
+        "colorTo": "4c5878",
+        "line": true,
+        "strokeFrom": 3,
+        "strokeTo": 0
+      },
+      "fromColor": "a0b0c8",
+      "toColor": "4c5878"
+    },
+    "thorium": {
+      "type": "ShrapnelBulletType",
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootBigSmoke",
+      "reloadMultiplier": 1.20,
+      "knockback": 1,
+      "hitLarge": true,
+      "length": 150,
+      "damage": 60,
+      "width": 15,
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 1,
+        "sizeTo": 0,
+        "cone": 90,
+        "length": 90,
+        "colorFrom": "ffa8ec",
+        "colorTo": "cb8ebf",
+        "line": true,
+        "strokeFrom": 3,
+        "strokeTo": 0
+      },
+      "fromColor": "ffa8ec",
+      "toColor": "cb8ebf"
+    }
+  },
+  "requirements": [
+    { "item": "copper", "amount": 450 },
+    { "item": "silicon", "amount": 800 },
+    { "item": "bronze", "amount": 300 },
+    { "item": "titanium", "amount": 500 },
+    { "item": "thorium", "amount": 400 }
+  ],
+  "category": "turret",
+  "research": "derail",
+  "alwaysUnlocked": false,
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveY": -3.25
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-upper-spike-l",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveRot": 45,
+        "moveY": 3,
+        "moveX": -7
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-under-spike-l",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveRot": 90,
+        "moveY": 7,
+        "moveX": -20
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-upper-spike-r",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveRot": -45,
+        "moveY": 3,
+        "moveX": 7
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-under-spike-r",
+        "mirror": false,
+        "under": true,
+        "progress": "recoil",
+        "moveRot": -90,
+        "moveY": 7,
+        "moveX": 20
+      }
+    ]
+  },
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}

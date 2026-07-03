@@ -1,0 +1,169 @@
+{
+  "type": "ItemTurret",
+  "name": "Torrid",
+  "description": "Bigger flamethrower and better arc",
+  "size": 2,
+  "health": 550,
+  "buildTime": 10,
+  "coolantMultiplier": 1.5,
+  "consumes": {
+    "coolant": {
+      "amount": 0.1
+    }
+  },
+  "shake": 1,
+  "maxAmmo": 20,
+  "ammoPerShot": 1,
+  "reload": 20,
+  "range": 90,
+  "shootY": 3,
+  "targetAir": false,
+  "targetGround": true,
+  "rotateSpeed": 3.5,
+  "inaccuracy": 1,
+  "recoilAmount": 60,
+  "restitution": 0.8,
+  "shootSound": "flame",
+  "shoot": {
+    "type": "shootPattern",
+    "shotDelay": 1,
+    "shots": 10
+  },
+  "ammoTypes": {
+    "coal": {
+      "type": "BasicBulletType",
+      "damage": 20,
+      "speed": 6,
+      "pierce": true,
+      "pierceDamageFactor": 0.01,
+      "lifetime": 15,
+      "height": 1,
+      "width": 1,
+      "collidesAir": false,
+      "statusDuration": 400,
+      "status": "burning",
+      "despawnEffect": "none",
+      "hitEffect": "burning",
+      "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 2,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 120,
+            "colorFrom": "ffa229",
+            "colorTo": "5e0b00",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 3,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 100,
+            "colorFrom": "ff722b",
+            "colorTo": "540000",
+            "lifetime": 20
+          }
+        ]
+      },
+      "smokeEffect": {
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 40,
+        "length": 75,
+        "colorFrom": "665953",
+        "colorTo": "383635",
+        "lifetime": 30
+      }
+    },
+    "pyratite": {
+      "type": "BasicBulletType",
+      "damage": 40,
+      "speed": 6,
+      "pierce": true,
+      "pierceArmor": true,
+      "pierceDamageFactor": 0.01,
+      "lifetime": 15,
+      "height": 1,
+      "width": 1,
+      "collidesAir": false,
+      "statusDuration": 600,
+      "status": "burning",
+      "despawnEffect": "burning",
+      "hitEffect": "burning",
+      "shootEffect": {
+        "type": "MultiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "particles": 2,
+            "sizeFrom": 4,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 120,
+            "colorFrom": "ffd061",
+            "colorTo": "5e2e1a",
+            "lifetime": 20
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 3,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "cone": 20,
+            "length": 100,
+            "colorFrom": "ff7b42",
+            "colorTo": "4f1e1e",
+            "lifetime": 20
+          }
+        ]
+      },
+      "smokeEffect": {
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "cone": 40,
+        "length": 75,
+        "colorFrom": "665953",
+        "colorTo": "383635",
+        "lifetime": 30
+      }
+    }
+  },
+  "requirements": [
+    {
+      "item": "copper",
+      "amount": 50
+    },
+    {
+      "item": "lead",
+      "amount": 25
+    },
+    {
+      "item": "bronze",
+      "amount": 20
+    },
+    {
+      "item": "graphite",
+      "amount": 44
+    }
+  ],
+  "category": "turret",
+  "research": "trial",
+  "shownPlanets": [
+    "serpulo", 
+    "aqualis-archipel", 
+    "glaciera-prime", 
+    "infernia-cruor", 
+    "neon-expanse", 
+    "profanum-vox"
+  ]
+}
